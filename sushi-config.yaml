@@ -1,12 +1,13 @@
 # ╭────────────────────────────────────────────sushi-config.yaml───────────────────────────────────────────────╮
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ihe.mpd.fhir
-canonical: http://profiles.ihe.net/ITI/MPD
-name: IHE_MHD
+id: ihe.mpd
+canonical: http://profiles.ihe.net/PHARM/ihe.pharm.mpd
+name: IHE_MPD
 version: 0.1.0
 fhirVersion: 4.0.1
 status: active
+packageId: ihe.pharm.mpd
 title: "Medication Prescription and Delivery (MPD)"
 description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
@@ -29,19 +30,19 @@ jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
  
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
-#    - input/resources
-#    - fsh-generated/resources
-#    - input/examples
-#  path-pages:
-#    - input/pagecontent
-#    - fsh-generated/includes
+    - input/resources
+    - fsh-generated/resources
+    - input/examples
+  path-pages:
+    - input/pagecontent
+    - fsh-generated/includes
 #  active-tables: 'false'
   apply-contact: 'true'
   apply-jurisdiction: 'true'
 #  apply-publisher: 'true'
   apply-version: 'true'
 #  show-inherited-invariants: 'false'
-#  usage-stats-opt-out: 'true'
+  usage-stats-opt-out: 'true'
   autoload-resources: 'true'
 #  shownav: 'true'
 
@@ -56,7 +57,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # │  The pages property corresponds to IG.definition.page.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 pages:
-  index.md:
+  index.xml:
     title: "MPD Home"
 
 
