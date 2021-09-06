@@ -24,4 +24,6 @@
 
 "Administration" -[#orange]->[Administration Report]  "Pharmacy Distribution"
 
+"Distribution / Preparation" -[#blue]d->[Preparation Report]  "Pharmacy Validation"
+
 @enduml

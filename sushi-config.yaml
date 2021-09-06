@@ -59,7 +59,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
   index.xml:
     title: "MPD Home"
-  useCases.md:
+  useCases.html:
     title : "Use Cases"
 
 

@@ -15,6 +15,7 @@ The use cases for this profile are:
    10. validation cancelled by pharmacist after administration
    11. cancellation of administration
 
+[comment]: # (Community Medication Prescription and Dispense)
 
 2.  Community prescription and dispense
     1. prescription-dispense scenario - only order, validation and dispense 
@@ -23,6 +24,8 @@ The use cases for this profile are:
     4. changes to medication list (?)
     5. change or cancel medication after dispense
 
+
+[comment]: # (MMA)
 
 3. Mobile Medication administration
    1. Home chemotherapy

@@ -1,0 +1,44 @@
+@startuml
+title Typical Medication Workflow
+skinparam actorStyle awesome
+
+hide footbox
+
+
+actor "**Prescription** \n **Placer**" as P #d1ebf1
+actor "**Pharmaceutical** \n **Adviser**" as PHA #edcdcb
+actor "** Medication** \n **Dispenser **" as PD #cadaa9
+actor "** Medication Administration** \n **Informer **" as MAI #ffff99
+
+activate P #d1ebf1
+
+P --> MAI : Advance Prescription Notification
+P --> PD: Advance Prescription Notification 
+P --> PHA: Medication Order
+deactivate P
+
+
+PHA --> P: Pharmacy Validated Order
+activate PHA #edcdcb
+
+PHA --> MAI: Validated Order Confirmation
+PHA --> PD: Pharmacy Validated Order
+deactivate PHA
+
+
+PD --> P: Med. Preparation Report
+activate PD #cadaa9
+
+PD --> MAI: Med. Preparation Report
+deactivate PD
+
+== Repetition ==
+
+
+MAI --> P: Administration report <i>n</i>
+activate MAI #ffff99
+
+MAI --> PD: Administration report <i>n</i>
+deactivate MAI
+
+@enduml
