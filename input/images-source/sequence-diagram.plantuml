@@ -12,15 +12,14 @@ hide footbox
 
 
 actor "**Prescription** \n **Placer**" as P #d1ebf1
-
 actor "**Pharmaceutical** \n **Adviser**" as PHA #edcdcb
-actor "** Medication** \n **Dispenser **" as PD #cadaa9
-actor "** Medication Administration** \n **Informer **" as MAI #ffff99
+actor "**Medication** \n **Dispenser**" as PD #cadaa9
+actor "**Medication Administration** \n **Informer**" as MAI #ffff99
 
 activate P #d1ebf1
 
-P --> MAI : Advance Prescription Notification
-P --> PD: Advance Prescription Notification 
+P --> MAI: Advance Prescription Notification
+P --> PD: Advance Prescription Notification
 P --> PHA: Medication Order
 deactivate P
 

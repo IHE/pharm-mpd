@@ -60,9 +60,9 @@ pages:
   index.xml:
     title: "MPD Home"
   intro.md:
-    title: "introduction"
-    interoperability-model.md:
-      title: "Interoperability Model"
+    title: "Introduction"
+  interoperability-model.md:
+    title: "Interoperability Model"
   use-cases.md:
     title : "Use Cases"
 
