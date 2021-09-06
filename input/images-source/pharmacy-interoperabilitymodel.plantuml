@@ -1,8 +1,27 @@
 @startuml
-:Order Entry;
-:pharmacy validation;
-:pharmacy distribution;
-:distribution / preparation;
-:administration;
+
+"Plan" -[#cyan]r->[Planning]  "Order Entry"
+
+"Plan" -[#cyan]r->[Planning]  "Pharmacy Validation"
+
+"Order Entry" -[#black]r->[Prescription Order]  "Pharmacy Validation"
+
+"Pharmacy Validation" -[#purple]r->[Pharmacy Validated Order]  "Pharmacy Distribution"
+
+"Pharmacy Distribution" -[#purple]r->[Pharmacy Validated Order]  "Distribution / Preparation"
+
+"Distribution / Preparation" -[#blue]r->[Preparation Report]  "Administration"
+
+"Administration" -[#orange]d->[Administration Report]  "Order Entry"
+
+"Order Entry" -[#black]d->[Prescription Order]  "Administration"
+
+"Pharmacy Validation" -[#purple]d->[Pharmacy Validated Order]  "Order Entry"
+
+"Distribution / Preparation" -[#blue]d->[Preparation Report]  "Order Entry"
+
+"Pharmacy Validation" -[#purple]d->[Pharmacy Validated Order]  "Administration"
+
+"Administration" -[#orange]->[Administration Report]  "Pharmacy Distribution"
 
 @enduml
