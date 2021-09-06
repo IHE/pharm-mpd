@@ -1,10 +1,13 @@
 @startuml
 title Typical Medication Workflow
 skinparam actorStyle awesome
-skinparam {
-    ActorBorderColor None
 
+skinparam sequence {
+ArrowColor gray
+ActorBorderColor gray
+LifeLineBorderColor black
 }
+skinparam shadowing false
 hide footbox
 
 
