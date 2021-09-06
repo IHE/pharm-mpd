@@ -1,0 +1,8 @@
+@startuml
+:Order Entry;
+:pharmacy validation;
+:pharmacy distribution;
+:distribution / preparation;
+:administration;
+
+@enduml
