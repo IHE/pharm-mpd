@@ -61,9 +61,9 @@ pages:
     title: "MPD Home"
   intro.md:
     title: "Introduction"
-  interoperability-model.md:
+  interoperabilitymodel.md:
     title: "Interoperability Model"
-  use-cases.md:
+  usecases.md:
     title : "Use Cases"
 
 
