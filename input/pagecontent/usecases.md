@@ -37,7 +37,7 @@ The use cases for this profile are:
    3. dispense made but drug not taken
    4. dispense of product that do not require prescription
    5. drug administration stopped due to allergic reaction/Adverse drug effect
-   6. 
+   
 5. Chemotherapy
    1. planning of drug cycles
    2. drug cycle management
