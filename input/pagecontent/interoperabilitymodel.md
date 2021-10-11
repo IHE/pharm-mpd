@@ -4,3 +4,7 @@ regarding the information exchange between all actors, we can check the image be
 
 As for the sequence, we have the following:  
 
+<div>
+{% include interoperabilitymodel.svg %}
+</div>
+
