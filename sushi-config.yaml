@@ -72,7 +72,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   MPD Home: index.html
-  TOC: toc.html
+  Table of Contents: toc.html
   Volume 1: 
     Introduction: intro.html
     "Overview": overview.html
@@ -82,7 +82,7 @@ menu:
     "Security Considerations": security_considerations.html
     "Cross Profile Considerations": cross_profile_considerations.html
   Volume 2:
-    Introduction2: intro_2.html
+    Introduction: intro_2.html
 #    "Provide Document Bundle [ITI-65]": ITI-65.html
 #    "Find Document Lists [ITI-66]": ITI-66.html
 #    "Find Document References [ITI-67]": ITI-67.html
