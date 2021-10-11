@@ -72,8 +72,9 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   MPD Home: index.html
+  Table of Contents: toc.html
   Volume 1: 
-    Introduction: index.html
+    Introduction: intro.html
     "Overview": overview.html
     "Actors and Transactions": actors_and_transactions.html
     "Actor Options": actor_options.html
@@ -90,3 +91,4 @@ menu:
     "FHIR Maps": fhir_maps.html
   Test Plan: testplan.html
   Artifact Index: artifacts.html
+
