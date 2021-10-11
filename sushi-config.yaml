@@ -73,20 +73,20 @@ pages:
 menu:
   MPD Home: index.html
   Volume 1: 
-#    Introduction: index.html
-#    "Actors and Transactions": 1331_actors_and_transactions.html
-#    "Actor Options": 1332_actor_options.html
+    Introduction: index.html
+    "Overview": overview.html
+    "Actors and Transactions": actors_and_transactions.html
+    "Actor Options": actor_options.html
 #    "Actor Required Grouping": 1333_required_grouping.html
-#    "Overview": 1334_overview.html
-#    "Security Considerations": 1335_security_considerations.html
-#    "Cross Profile Considerations": 1336_cross_profile_considerations.html
+    "Security Considerations": security_considerations.html
+    "Cross Profile Considerations": cross_profile_considerations.html
   Volume 2:
 #    "Provide Document Bundle [ITI-65]": ITI-65.html
 #    "Find Document Lists [ITI-66]": ITI-66.html
 #    "Find Document References [ITI-67]": ITI-67.html
 #    "Retrieve Document [ITI-68]": ITI-68.html
-#  Volume 3:
-#    "Error Codes": 31_xds.html
-#    "FHIR Maps": 32_fhir_maps.html
-#  Test Plan: testplan.html
+  Volume 3:
+    "Error Codes": error_codes.html
+    "FHIR Maps": fhir_maps.html
+  Test Plan: testplan.html
   Artifact Index: artifacts.html
