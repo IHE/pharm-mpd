@@ -1,4 +1,5 @@
 @startuml
+title Interoperability Model
 
 "Plan" -[#cyan]r->[Planning]  "Order Entry"
 
