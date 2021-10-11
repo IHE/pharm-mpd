@@ -1,10 +1,7 @@
-regarding the information exchange between all actors, we can check the image below.  
-
-
-
-As for the sequence, we have the following:  
+The Pharmacy Interoperability Model provides the basis for the interactions needs that are supported by this publication.
 
 <div>
 {% include interoperabilitymodel.svg %}
 </div>
 
+.
