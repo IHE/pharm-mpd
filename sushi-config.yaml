@@ -60,12 +60,32 @@ pages:
   index.xml:
     title: "MPD Home"
   intro.md:
-    title: "Introduction"
+    title: "Introduction to Volume 1"
   interoperabilitymodel.md:
     title: "Interoperability Model"
   usecases.md:
     title: "Use Cases"
+  overview.md:
+    title: "Overview"
+  actors_and_transactions.md:
+    title: "Actors and Transactions"
+  actor_options.md:
+    title: "Actor Options"
+  security_considerations.md:
+    title: "Security Considerations"
+  cross_profile_considerations.md:
+    title: "Cross Profile Considerations"
 
+  intro_2.md:
+    title: "Introduction to Volume 2"
+
+  error_codes.md:
+    title: "Error Codes"
+  fhir_maps.md:
+    title: "FHIR Maps"
+
+  testplan.md:
+    title: "Test Plan"
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
