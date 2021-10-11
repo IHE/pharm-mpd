@@ -1,6 +1,6 @@
 Logical: MedicationOrderHMW
-Title: "Logical Model for medication order from HMW"
-Description: "Logical Model for medication order from HMW"
+Title: "[HMW] Logical Model for medication order"
+Description: "[HMW] Logical Model for medication order"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication Order" "The business identifier(s) for the medication order"
 * patient 1..1 Reference(Patient) "The person for which the medication is prescribed." "The person for which the medication is prescribed."
@@ -16,8 +16,8 @@ Description: "Logical Model for medication order from HMW"
 * date 0..1 dateTime "When prescription was initially made" "When prescription was initially made"
 
 Logical: PharmaceuticalAdviceHMW
-Title: "Logical Model for Pharmaceutical Advice from HMW"
-Description: "Logical Model for Pharmaceutical Advice from HMW"
+Title: "[HMW] Logical Model for Pharmaceutical Advice"
+Description: "[HMW] Logical Model for Pharmaceutical Advice"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication prescription" "The business identifier(s) for the medication prescription"
 * patient 1..1 Reference(Patient) "The person for which the medication is prescribed." "The person for which the medication is prescribed."
@@ -41,8 +41,8 @@ Description: "Logical Model for Pharmaceutical Advice from HMW"
 * substitutionStatus
 
 Logical: MedicationDispenseHMW
-Title: "Logical Model for dispense from HMW"
-Description: "Logical Model for dispense from HMW"
+Title: "[HMW] Logical Model for dispense"
+Description: "[HMW] Logical Model for dispense"
 
 * identifier 0..1 Identifier "The business identifier(s) for the medication dispense session" "The business identifier(s) for the medication dispense session"
 * patient 1..1 Reference(Patient) "The person for which the medication is dispensed." "The person for which the medication is dispensed."
@@ -58,8 +58,8 @@ Description: "Logical Model for dispense from HMW"
 
 
 Logical: MedicationAdministrationHMW
-Title: "Logical Model for administration from HMW"
-Description: "Logical Model for administration from HMW"
+Title: "[HMW] Logical Model for administration"
+Description: "[HMW] Logical Model for administration"
 
 * identifier 0..* Identifier "The business identifier(s) for the medication Administration"  "The business identifier(s) for the medication Administration"
 * status 1..1 code "Status of the medication administration" "Status of the medication administration"
