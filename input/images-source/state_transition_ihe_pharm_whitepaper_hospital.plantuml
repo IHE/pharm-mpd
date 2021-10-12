@@ -10,13 +10,13 @@ title State transitions of Medication Prescription (Item) in the Hospital subdom
 
 "In Progress" -[#green]r->[complete]  "Completed"
 
-"In Progress" -[#cyan]u->[suspend]  "Suspended"
+"In Progress" -[#cyan]r->[suspend]  "Suspended"
 
 
 "Suspended" -[#black]u->[abort]  "Discontinued"
 
-"Suspended" -[#green]r->[complete]  "Completed"
+"Suspended" -[#green]d->[complete]  "Completed"
 
-"Suspended" -[#blue]r->[resume]  "In Progress"
+"Suspended" -[#blue]d->[resume]  "In Progress"
 
 @enduml
