@@ -1,0 +1,18 @@
+@startuml
+title State transitions of Medication Prescription (Item) in Community subdomain
+
+"Ordered" -[#purple]r->[place to pharmacy]  "Placed"
+
+"Ordered" -[#black]u->[cancel or expire]  "Cancelled"
+
+
+"Placed" -[#black]u->[abort]  "Discontinued"
+
+"Placed" -[#orange]r->[accept]  "In Progress"
+
+"In Progress" -[#black]u->[abort]  "Discontinued"
+
+"In Progress" -[#green]r->[complete]  "Completed"
+
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+title State transitions of Medication Prescription (Item) in the Hospital subdomain
+
+"Placed" -[#orange]r->[accept]  "In Progress"
+
+"Placed" -[#black]u->[abort]  "Discontinued"
+
+
+"In Progress" -[#black]u->[abort]  "Discontinued"
+
+"In Progress" -[#green]r->[complete]  "Completed"
+
+"In Progress" -[#cyan]u->[suspend]  "Suspended"
+
+
+"Suspended" -[#black]u->[abort]  "Discontinued"
+
+"Suspended" -[#green]r->[complete]  "Completed"
+
+"Suspended" -[#blue]r->[resume]  "In Progress"
+
+@enduml
