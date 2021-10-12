@@ -24,21 +24,28 @@ The use cases for this profile are:
     4. changes to medication list (?)
     5. change or cancel medication after dispense
 
+[comment]: # (White paper)
+
+3.  Hospital-Community interface  
+    1. admission   
+    2. discharge  
+    3. reconcilliation as a whole  
+
 
 [comment]: # (MMA)
 
-3. Mobile Medication administration
+4. Mobile Medication administration
    1. Home chemotherapy
    2. Home nursing
 
-4. Others/ungrouped
+5. Others/ungrouped
    1. Medication brand change on validation/dispense
    2. Dispense made before prescription
    3. dispense made but drug not taken
    4. dispense of product that do not require prescription
    5. drug administration stopped due to allergic reaction/Adverse drug effect
    
-5. Chemotherapy
+6. Chemotherapy
    1. planning of drug cycles
    2. drug cycle management
    3. ... other
