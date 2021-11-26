@@ -148,27 +148,27 @@ Logical: MedicationDispenseIHEMM
 Title: "[IHE MM] Logical Model for medication dispense"
 Description: "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care."
 
-* identifier
-* status
-* statusReason
-* category
-* medication
-* subject
-* context
-* supportingInformation
-* type
-* quantity
-* note
-* prescription
-* steps
-  * step_name
-  * datetime
-  * actor
-* substitution
-* receiver
-* destination
-* detectedIssues
-* eventHistory
+* identifier 0..1 string "" ""
+* status 0..1 string "" ""
+* statusReason 0..1 string "" ""
+* category 0..1 string "" ""
+* medication 0..1 string "" ""
+* subject 0..1 string "" ""
+* context 0..1 string "" ""
+* supportingInformation 0..1 string "" ""
+* type 0..1 string "" ""
+* quantity 0..1 string "" ""
+* note 0..1 string "" ""
+* prescription 0..1 string "" ""
+* steps 0..* BackboneElement "" ""
+  * step_name 0..1 string "" ""
+  * datetime 0..1 string "" ""
+  * actor 0..1 string "" ""
+* substitution 0..1 string "" ""
+* receiver 0..1 string "" ""
+* destination 0..1 string "" ""
+* detectedIssues 0..1 string "" ""
+* eventHistory 0..1 string "" ""
 
 
 Logical: PharmaceuticalAdviceIHEMM
