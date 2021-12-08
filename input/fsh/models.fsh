@@ -181,4 +181,4 @@ Description: "A prescription is issued by one ordering healthcare professional f
 
 Logical: MedicationAdministrationIHEMM
 Title: "[IHE MM] Logical Model for administration"
-Description: "[HMW] Logical Model for administration"
+Description: "Logical Model for administration"
