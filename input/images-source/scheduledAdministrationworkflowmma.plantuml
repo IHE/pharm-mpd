@@ -1,0 +1,78 @@
+@startuml
+title Mobile Medication Administration
+skinparam actorStyle awesome
+
+skinparam sequence {
+ArrowColor gray
+ActorBorderColor gray
+LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+actor "**Nurse**" as N #FE9270
+participant "**Medication** \n **Administration** \n **Performer**" as MAP #d1ebf1
+participant "**Medication** \n **Administration** \n **Informer**" as MAI #edcdcb
+participant "**Medication** \n **Administration** \n **Request Placer**" as MARP #cadaa9
+participant "**Medication** \n **Administration** \n **Consumer**" as MAC #ffff99
+
+
+group query
+activate MARP #cadaa9
+
+N --> MAP: get today's schedule
+activate MAP #d1ebf1
+MAP --> MARP: Query for medication administration requests \n - For today's shift \n - For today's patients
+
+deactivate MAP
+deactivate MARP
+end 
+
+group visit Medication
+
+N-->N: Visit Patient
+activate N #FE9270
+N-->MAP: Scan patient's barcode
+deactivate N
+activate MAP #d1ebf1
+
+
+group Planned Medication
+MAP-->N: List planned medication for patient
+activate N #FE9270
+
+deactivate MAP
+N-->N: Pick Medication
+N-->MAP: Scan barcodes
+deactivate N
+activate MAP #d1ebf1
+MAP-->MAP: Check 5 rights
+
+activate N #FE9270
+MAP-->N: Ok to administer
+deactivate MAP
+N-->N: Administer medication
+end 
+group Unplanned Medication
+N-->N: Pick Medication
+N-->MAP: Scan barcodes
+deactivate N
+activate MAP #d1ebf1
+MAP-->N: Show medication Info
+deactivate MAP
+activate N #FE9270
+N-->N: Administer medication
+N-->MAI: Register Administration
+deactivate N
+
+activate MAI #edcdcb
+deactivate MAI
+end
+end
+group Report
+MAI-->MAC: Submit Report
+activate MAC #ffff99
+deactivate MAC
+end
+
+@enduml

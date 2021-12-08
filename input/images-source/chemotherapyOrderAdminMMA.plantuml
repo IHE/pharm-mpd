@@ -1,0 +1,53 @@
+@startuml
+title Mobile Medication Administration
+skinparam actorStyle awesome
+
+skinparam sequence {
+ArrowColor gray
+ActorBorderColor gray
+LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+actor "**Physician**" as PH #FE9270
+participant "**Medication** \n **Administration** \n **Request Placer**" as MARP #cadaa9
+
+actor "**Patient**" as P
+participant "**Medication** \n **Administration** \n **Informer**" as MAI #edcdcb
+
+participant "**Medication** \n **Administration** \n **Consumer**" as MAC #ffff99
+
+
+group Administration Request
+
+PH --> PH: Review treatment to date
+PH --> MARP: Place today's administration request
+activate MARP #d1ebf1
+end
+
+group Administer Medication
+
+
+P-->MARP: Get today's administration requests
+deactivate MARP
+
+activate P
+
+group administration
+P-->P: Pick Medication
+P-->P: Scan barcode
+P-->P: Administer Medication
+end
+
+P-->MAI: Register Administration
+deactivate P
+activate MAI
+
+
+MAI-->MAC: Report Administration
+activate MAC
+deactivate MAC
+deactivate MAI
+end
+@enduml
