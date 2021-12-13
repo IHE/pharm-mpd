@@ -65,10 +65,10 @@ pages:
     title: "Interoperability Model"
   usecases.md:
     title: "Use Cases"
-    MMA-homenursing.md
-    title: "Mobile Medication Administration - Home Nursing"
-    MMA-chemotherapy.md
-    title: "Mobile Medication Administration - Chemotherapy"
+    MMA-homenursing.md:
+      title: "Mobile Medication Administration - Home Nursing"
+    MMA-chemotherapy.md:
+      title: "Mobile Medication Administration - Chemotherapy"
   overview.md:
     title: "Overview"
   actors_and_transactions.md:
