@@ -66,9 +66,9 @@ pages:
   usecases.md:
     title: "Use Cases"
     MMA-homenursing.md
-    title: Mobile Medication Administration - Home Nursing
+    title: "Mobile Medication Administration - Home Nursing"
     MMA-chemotherapy.md
-    title: Mobile Medication Administration - Chemotherapy
+    title: "Mobile Medication Administration - Chemotherapy"
   overview.md:
     title: "Overview"
   actors_and_transactions.md:
@@ -79,15 +79,12 @@ pages:
     title: "Security Considerations"
   cross_profile_considerations.md:
     title: "Cross Profile Considerations"
-
   intro_2.md:
     title: "Introduction to Volume 2"
-
   error_codes.md:
     title: "Error Codes"
   fhir_maps.md:
     title: "FHIR Maps"
-
   testplan.md:
     title: "Test Plan"
 
