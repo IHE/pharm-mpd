@@ -1,0 +1,56 @@
+@startuml
+title Typical Medication Workflow
+skinparam actorStyle awesome
+
+skinparam sequence {
+ArrowColor gray
+ActorBorderColor gray
+LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+
+actor "**Prescription** \n **Placer**" as P #d1ebf1
+actor "**Medication** \n **Dispenser**" as PD #cadaa9
+actor "**Medication Administration** \n **Informer**" as MAI #ffff99
+
+activate P #d1ebf1
+
+P --> P: Plan
+P --> P: Review
+P --> P: Validation
+P --> P: Confirmation (ordering)
+
+
+P -> PD: Validated (or not) Order Confirmation
+deactivate P
+
+activate PD #cadaa9
+
+
+
+
+PD -> P: Med. Preparation Report
+PD --> P: Review/validate
+P --> PD: Reviewed/Validated dispense
+
+PD -> MAI: Med. Preparation Report
+deactivate PD
+
+== Repetition ==
+
+
+MAI --> P: Review/validate
+activate MAI #ffff99
+
+P --> MAI: Reviewed/Validated  administration
+MAI --> P: Administration report <i>n</i>
+
+MAI --> PD: Administration report <i>n</i>
+
+
+
+deactivate MAI
+
+@enduml

@@ -63,6 +63,8 @@ pages:
     title: "Introduction to Volume 1"
   interoperabilitymodel.md:
     title: "Interoperability Model"
+  alternative1.md:
+    title: "Trial Model"
   usecases.md:
     title: "Use Cases"
     MMA-homenursing.md:
