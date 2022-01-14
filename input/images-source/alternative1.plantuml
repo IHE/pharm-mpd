@@ -32,19 +32,18 @@ activate PD #cadaa9
 
 
 PD -> P: Med. Preparation Report
-PD --> P: Review/validate
-P --> PD: Reviewed/Validated dispense
+PD --> PD: Review/validate
 
 PD -> MAI: Med. Preparation Report
 deactivate PD
 
 == Repetition ==
 
-
-MAI --> P: Review/validate
 activate MAI #ffff99
 
-P --> MAI: Reviewed/Validated  administration
+MAI --> MAI: Review/validate
+
+MAI --> MAI: Reviewed/Validated  administration
 MAI --> P: Administration report <i>n</i>
 
 MAI --> PD: Administration report <i>n</i>

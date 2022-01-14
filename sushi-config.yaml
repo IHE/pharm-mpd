@@ -63,8 +63,8 @@ pages:
     title: "Introduction to Volume 1"
   interoperabilitymodel.md:
     title: "Interoperability Model"
-  alternative1.md:
-    title: "Trial Model"
+  alternative.md:
+    title: "Trial Models"
   usecases.md:
     title: "Use Cases"
     MMA-homenursing.md:
@@ -102,7 +102,7 @@ menu:
     "Actors and Transactions": actors_and_transactions.html
     "Actor Options": actor_options.html
 #    "Actor Required Grouping": 1333_required_grouping.html
-    "Trial Model": alternative1.html
+    "Trial Models": alternative.html
     "Security Considerations": security_considerations.html
     "Cross Profile Considerations": cross_profile_considerations.html
   Volume 2:
