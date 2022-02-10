@@ -1,0 +1,31 @@
+@startuml
+hide footbox
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+
+'title Use Case: Order straight to dispense
+
+
+
+actor "Prescription Actor" as PRESC 
+participant "Server" as Server
+
+actor "Dispenser" as DISP
+
+PRESC -> Server: Send Prescription to Server
+note left
+**Prescription data**
+# Product Identification
+### **National Product identifier**
+### **Product code**
+### **Product name**
+# **Dosage**
+...
+endnote
+
+Server -> DISP: Get Prescription from Server
+
+
+
+@enduml
