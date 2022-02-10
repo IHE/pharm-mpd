@@ -67,6 +67,8 @@ pages:
     title: "Trial Models"
   usecases.md:
     title: "Use Cases"
+    presc-use-case1.md:
+      title: "Use Case 1: Order straight to dispense"
     MMA-homenursing.md:
       title: "Mobile Medication Administration - Home Nursing"
     MMA-chemotherapy.md:
