@@ -69,6 +69,8 @@ pages:
     title: "Use Cases"
     presc-use-case1.md:
       title: "Use Case 1: Order straight to dispense"
+    presc-use-case-2.md:
+      title: "Use Case 2: Proposal order"
     MMA-homenursing.md:
       title: "Mobile Medication Administration - Home Nursing"
     MMA-chemotherapy.md:

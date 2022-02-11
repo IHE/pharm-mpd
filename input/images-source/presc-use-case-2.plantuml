@@ -1,0 +1,43 @@
+@startuml
+hide footbox
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+
+'title Use Case: Proposal order
+'In this case, the pharmacist proposes the medication to be ordered
+
+
+
+
+actor "Prescription Actor 1\n 'i.e. pharmacist'" as PRESC1
+participant "Server" as Server
+
+actor "Prescription Actor 2\n 'i.e. physician'" as PRESC2
+
+actor "Prescription Actor 3\n 'i.e. another pharmacist'" as PRESC3
+
+
+actor "Dispenser" as DISP
+
+PRESC1 -> Server: Send Prescription Proposal to Server
+note left
+**Prescription data**
+# Product Identification
+### **National Product identifier**
+### **Product code**
+### **Product name**
+# **Dosage**
+...
+endnote
+Server -> PRESC2: Get proposal 
+PRESC2 -> Server: Send approval or changed proposal 
+
+Server --> PRESC3: Get prescription and validate
+PRESC3 --> Server: Send validated prescription 
+
+Server -> DISP: Get Prescription from Server
+
+
+
+@enduml
