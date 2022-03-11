@@ -1,8 +1,8 @@
 ## Main actors
 
 1. Prescription Actor  
-This actor is responsible for all things prescription related. It can be someone (or system) that triggers a new prescription or someone who acts on a existing prescription.
-For this, it can review the prescription (only overview and comment), validate (can block prescription from going further down the line) or plan a prescription for someone else to analyse and formalize the request.
+This actor is responsible for all things prescription-related. It can be someone that triggers a new prescription or someone who acts on an existing prescription.
+For acting on existing prescriptions, it can be a review of the prescription (only overview and comment), validation (can block prescription from going further down the line) or plannnig a prescription for someone else to analyse and formalize the request.
 
 **Roles**
 - Prescription Placer
