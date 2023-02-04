@@ -6,8 +6,8 @@ This is the source for the IHE Pharmacy Medication Prescription and Delivery pro
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/IHE/pharm-mm__  
-Continuous Build: __http://ihe.github.io/pharm-mm__  
+Continuous Build: __http://build.fhir.org/ig/IHE/pharm-mpd__  
+Continuous Build: __http://ihe.github.io/pharm-mpd__  
 Canonical / permanent URL: 
 <br> </br>
 
