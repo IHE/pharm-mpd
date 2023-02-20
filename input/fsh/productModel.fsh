@@ -17,9 +17,11 @@ Description: "DRAFT. eP/eD/PS medicinal product as a implementation-agnostic log
 * fullName 0..* ST "Name of the product"
 * packSize 1..* QT "Overall amount (100ml; 20 tablets; 1 tube & 6 pessaries)"
 * doseForm 1..1 CD "Authorised dose form for eD; authorised or pharmaceutical for eP"
-* routeOfAdministration 1..* CD "Route of Administration - if we need it on product level"
+* routeOfAdministration 0..* CD "Route of Administration - if we need it on product level"
+// I made routeOfAdministration 0..*, because in EDQM/EMA SPOR you normally have the route built into the dose form, and many implementations don't use the route separately. If they do, it's on the posology level, not product.
 * constitution 0..* Class "What's in it - straight to ingredients or listing manuf items"
 // to continue - levels of constitution vs content
+// Rutt: if we continue with the flatter version, I think we should remove ingredients from here, and just go with manufactured item. The only downside to this would be, that if the authorised dose form is the same as the manufactured item dose form, this might have to be repeated.
   * ingredient 0..* Class "Active (/relevant?) ingredients"
     * role 1..1 CD "Active ingredient, excipient,... If we only want active, then not needed"
     * substance 1..1 CD "Substance"
@@ -41,5 +43,5 @@ Description: "DRAFT. eP/eD/PS medicinal product as a implementation-agnostic log
       * device 1..1 CD "Device coded"
 
 // package type
-// administrable dose form
+// administrableDoseForm 0..* CD "Administrable dose form. One product can contain several manufactured items that are mixed into one administrable product, or have multiple manufactured items that are administered separately.  
     
