@@ -4,8 +4,8 @@ Title: "DRAFT: Flattened Medicinal Product on ePrescription. Focused on an autho
 Description: "DRAFT. eP/eD/PS medicinal product as a implementation-agnostic logical model"
 
 * identifier 0..* Class "Identifier(s) for the product"
-    * type 1..1 CD "Type of identifier, e.g. PCID, PhPID, MPID, VMP, VMPP, BE-VMPG..."
-    * identifier 1..1 II "Identifier"
+  * type 1..1 CD "Type of identifier, e.g. PCID, PhPID, MPID, VMP, VMPP, BE-VMPG..."
+  * identifier 1..1 II "Identifier"
 * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
 * classification 0..* Class "Classification"
   * atc 1..1 CD "ATC code"
