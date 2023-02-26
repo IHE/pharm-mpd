@@ -1,3 +1,4 @@
+/*
 // This attempts to be flatter than other models, but still allow complex packages.
 Logical: PrescribedProductModel1
 Title: "DRAFT: Flattened Medicinal Product on ePrescription. Focused on an authorised product."
@@ -66,3 +67,4 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-
 * marketingAuthorisationHolder 0..1 ST "MAH name - do we need more?"
 * routeOfAdministration 1..* CD "Route of Administration - if we need it on product level"
     
+*/
