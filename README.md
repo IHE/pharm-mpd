@@ -14,8 +14,8 @@ Canonical / permanent URL:
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/IHE/pharm-mm/issues__  
-Kanban board:  __https://github.com/IHE/pharm-mm/projects/1__  
+Issues:  __https://github.com/IHE/pharm-mpd/issues__  
+Kanban board:  __https://github.com/IHE/pharm-mpd/projects/1__  
 
 ---
    
