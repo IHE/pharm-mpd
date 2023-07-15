@@ -5,7 +5,7 @@ id: ihe.mpd
 canonical: http://profiles.ihe.net/PHARM/ihe.pharm.mpd
 name: IHE_MPD
 version: 0.1.0
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 status: active
 packageId: ihe.pharm.mpd
 title: "Medication Prescription and Delivery (MPD)"
