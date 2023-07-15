@@ -166,7 +166,7 @@ Description: "A medication dispense relates to zero or one prescription item of 
   * actor 0..1 string "" ""
 * substitution 0..1 boolean "" ""
 * receiver 0..1 Reference(Patient or Person or Practitioner) "" ""
-* destination 0..1 Reference(location) "" ""
+* destination 0..1 Reference(Location) "" ""
 * detectedIssues 0..1 Reference(DetectedIssue) "" ""
 * eventHistory 0..1 Reference(Provenance) "" ""
 
