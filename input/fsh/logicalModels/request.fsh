@@ -3,7 +3,7 @@ Title: "Medication prescription/request/order - logical model"
 Description: "Logical model for medication request (incl prescription, or some other form of order)"
 
 * identifier 0..* II "Business identifier for the prescription" "Question: 0..1 or 0..*? I think crossborder use cases may have several?"
-* date 0..1 dateTime "Time of creating the prescription"
+* issueDate 0..1 dateTime "Time of creating the prescription"
 * validUntil 0..1 dateTime "The validity period end date"
 * patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered" "Question: would we want to add basic Patient model?"
 * status 1..1 CD "Status of the prescription"
@@ -23,6 +23,7 @@ Description: "Logical model for medication request (incl prescription, or some o
 * reimbursementRate 0..1 PQ "Reimbursement/discount rate for the patient at the time of prescribing"
 // related to chronic disease
 // specific follow-up
-
+// treatment start and end? It is in dosaging I think
+// authoring information like in meow treatment line?
 
 
