@@ -1,5 +1,5 @@
 Logical: MedicationPrescription
-Title: "Medication prescription/request/order - logical model"
+Title: "Medication prescription/request/order"
 Description: "Logical model for medication request (incl prescription, or some other form of order)"
 
 * identifier 0..* II "Business identifier for the prescription" "Question: 0..1 or 0..*? I think crossborder use cases may have several?"

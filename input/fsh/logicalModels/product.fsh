@@ -1,6 +1,6 @@
 // Check the latest version in MEOW IG
 Logical: MedicinalProduct
-Title: "Medication for clinical workflows"
+Title: "Medicinal product"
 Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
 * medicinalProductIdentifier 0..* II "MPID or national identifier"
