@@ -27,5 +27,3 @@ Description: "Logical model for medication dispensation (based on request or ind
 // destination (Location ) - workflow? or relevant for epharmacy?
 // detected issues
 // event history
-
-
