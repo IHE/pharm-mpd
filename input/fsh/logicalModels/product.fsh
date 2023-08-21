@@ -1,11 +1,12 @@
 // Check the latest version in MEOW IG
 Logical: MedicinalProduct
-Title: "Medicinal product"
+Title: "Medication"
 Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 
 * medicinalProductIdentifier 0..* II "MPID or national identifier"
 * packagedProductIdentifier 0..* II "PCID or national"
 * pharmaceuticalProductIdentifier 0..* II "PhPID or national virtual/administrable product code"
+* code 0..1 CD "Medication code from a terminology"
 * atc 0..1 CD "ATC code"
 * classification 0..* CD "Classification (narcotic/psychotropic; orphan drug; etc)"
 * packSize 0..* PQ "Overall amount of product in one virtual or real package (100ml; 20 tablets; 1 creme & 6 pessaries)"
