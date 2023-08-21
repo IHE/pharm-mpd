@@ -4,6 +4,7 @@ Description: "Logical model for medication request (incl prescription, or some o
 
 * identifier 1..* II "Business identifier(s) for the prescription"
 * recordingDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
+* recorder 0..1 Reference(PractitionerBasic) "The recorder of the prescription/draft in the information system"
 * issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
 * validFrom 0..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
 * validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
@@ -13,7 +14,8 @@ Description: "Logical model for medication request (incl prescription, or some o
 * statusReasonText 0..1 ST "Textual reason for the current status of prescription"
 * medication 1..1 Reference(MedicinalProduct) "Prescribed product, branded, generic, virtual, extemporal, etc"
 * prescriber 1..1 Reference(PractitionerBasic) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
-* indication 0..* CD "Reason for the prescription (typically diagnosis, or a procedure)" "Question: cardinality 0..1 or 0..*? Should we allow text like in meow treatment line?"
+* indication 0..* CD "Reason for the prescription (typically diagnosis, or a procedure)"
+* indicationText 0..1 ST "Reason for the prescription in textual form. This might not be allowed by some implementations."
 * groupIdentifier 0..1 II "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 * usageInstructions 1..1 Reference(DosagingInformation) "Dosaging and administration instructions"
 * preparationInstructions 0..* string "Additional instructions about preparation or dispense" 
