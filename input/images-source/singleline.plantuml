@@ -1,0 +1,111 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'skinparam defaultFontName Avenir-Book
+'skinparam defaultFontSize 17
+'skinparam monochrome true
+
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+class "** Medication Product **" as M<<TM>> {
+    |_ identifier 1..*
+    |_ doseForm 0..1
+    |_ name 0..1
+    |_ ingredient 0..1
+      |_ strength 0..1
+      |_ product 0..1
+    }
+
+
+class "**Prescription Line**" as PL<<TM>> {
+  |_ issueDate 1..1 <&calendar>
+  |_ patient 0..1 <&person>
+  |_ prescriber 0..1 <&person>
+  |_ recorder 0..1 <&person>
+  |_ recordedDate 1..1 <&calendar>
+  |_ validFrom 1..1 <&calendar>
+  |_ validUntil 1..1 <&calendar>
+  |_ identifier 1..*
+  |_ treatment 0..1
+  |_ status 1..1 <&list>
+  |_ statusReasonCoded 0..1 <&list>
+  |_ statusReasonText 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ indication 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ usageInstructions 0..1 <&text>
+  |_ preparationInstructions 0..1 <&text>
+  |_ substitution 0..1 <&ellipses>
+    |_ .noSubstitutionFlag  0..1 <&check>
+    |_ .noSubstitutionReasonCode  0..1 <&list>  
+    |_ .noSubstitutionReasonText  0..1 <&text>  
+  |_ comment 0..1 <&text>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>
+}
+
+
+class "**Dispense**" as D<<TM>> {
+  |_ identifier 1..*
+  |_ patient 0..1 <&person>
+  |_ receiver 0..1 <&person>
+  |_ dispenser 0..1 <&person>
+  |_ request 1..1 <&calendar>
+  |_ status 1..1 <&list>
+  |_ statusReasonCoded 0..1 <&list>
+  |_ statusReasonText 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ dispensedQuantity 0..1 <&link-intact>
+  |_ timeOfDispensation  0..1 <&clock>
+  |_ substitution  0..1 <&check>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>   
+}
+
+
+class "**Administration Request**" as MAR<<MD>> {
+  |_ identifier 1..*
+  |_ basedOn 0..1 <&link-intact>
+  |_ status 1..1 <&list>
+  |_ patient 0..1 <&person>
+  |_ performer 1..1 <&person>
+  |_ medication 0..1 <&link-intact>
+  |_ ...
+}
+
+
+
+D -l-> PL :" authorizedBy "
+D .l.> MAR :" authorizedBy ?"
+D -d-> M :" medication "
+MAR -l-> PL :" based on "
+MAR -d-> M :" medication "
+'P *-r- PL :"           "
+'PL -r[hidden]- M
+PL -r-> M :" medication "
+'PL ||-d-o{ M :"                  "
+MAR -r[hidden]- D : "                        "
+MAR -l[hidden]- PL : "     "
+
+@enduml
