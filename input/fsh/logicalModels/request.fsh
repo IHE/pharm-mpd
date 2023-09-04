@@ -23,8 +23,9 @@ Description: "Logical model for medication request (incl prescription, or some o
   * noSubstitutionFlag 1..1 boolean "Substitution of the product is not allowed."
   * noSubstitutionReason 0..1 CD "Coded reason for the no-substitution requirement"
   * noSubstitutionReasonText 0..1 ST "Textual reason for the no-substitution requirement"
+* allowedSubstitutionType 0..* CD "Specific type of substitution that is allowed. Can be an explicit relaxation to normal jurisdictional substitution rules, especially in hospital context."
 * comment 0..* ST "Additional information or comments"
-* reimbursementRate 0..1 PQ "Reimbursement/discount rate for the patient at the time of prescribing"
+//* reimbursementRate 0..1 PQ "Reimbursement/discount rate for the patient at the time of prescribing"
 // related to chronic disease
 // specific follow-up
 // treatment start and end? It is in dosaging I think
