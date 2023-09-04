@@ -41,8 +41,9 @@ class "**Prescription**" as P<<TM>> {
   |_ identifier 1..* 
   |_ treatment 0..1
   |_ status 1..1 <&list>
-  |_ statusReasonCoded 0..1 <&list>
-  |_ statusReasonText 0..1 <&text>
+  |_ statusReason
+    |_ code 0..1 <&list>
+    |_ statusText 0..1 <&text>
   |_ issueDate 1..1 <&calendar>
   |_ patient 0..1 <&person>
   |_ prescriber 0..1 <&person>
@@ -55,6 +56,7 @@ class "**Prescription**" as P<<TM>> {
     |_ .noSubstitutionFlag  0..1 <&check>
     |_ .noSubstitutionReasonCode  0..1 <&list>  
     |_ .noSubstitutionReasonText  0..1 <&text>  
+    |_ .allowedSubstitutionTypes 0..* <&check>
   |_ comment 0..1 <&text>
   |_ coverage 0..1 <&ellipses>
     |_ reimbursementRate 0..1 <&ellipses>
@@ -123,5 +125,4 @@ PL -r-> M :" medication "
 'PL ||-d-o{ M :"                  "
 MAR -r[hidden]- D : "                        "
 MAR -l[hidden]- PL : "     "
-
 @enduml
