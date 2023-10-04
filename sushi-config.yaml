@@ -65,8 +65,6 @@ pages:
     title: "Single- and mutliline prescriptions"
   interoperabilitymodel.md:
     title: "Interoperability Model"
-  prescription-lines.md: 
-    title: "Single and multiple prescription lines"
   alternative.md:
     title: "Trial Models"
   usecases.md:
