@@ -1,38 +1,51 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
-  <a name="scope">  </a>
-	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
-   </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
-	</blockquote>
-	<p> </p>
-  <h3>Content</h3> <a name="content"> </a>
-	<p/>
+# IHE MPD (Medication Prescription and Dispense) Profile
 
-<p>This publication contains the full set of specifications...</p>
-<p></p>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
-<p></p>
+The IHE MPD profile sets a universal baseline amidst varying regulations and practices in medication management across jurisdictions. Focused on interoperability, it identifies commonalities and standardizes pivotal data points to facilitate seamless integration across diverse healthcare systems.
 
-<a name="navigation"> </a>
-<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
-<p></p>
-	<a name="ip"> </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
-    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
-    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
-    licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
-  </p>
+## Overview
 
-	<a name="disclaimer"> </a>
-	<h3>Disclaimer</h3>
-	<p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
-  </p>
-</div>
+The MPD Profile emphasizes a unified set of guidelines, ensuring that while medication prescription and dispensing processes may differ by jurisdiction or drug type, fundamental data and processes remain interoperable.
+
+## Key Features
+
+1. **Unified Medication Ordering**: Harmonizing varied prescription scenarios, order grouping, and validation workflows to ensure consistency across jurisdictions.
+2. **Standardized Medication Dispensing**: Addressing cross-jurisdictional challenges, special preparations, and varying contexts of hospital and community dispensing.
+3. **Comprehensive Medication Data**: Establishing standardized data sets and terminologies to represent medication data universally.
+
+## Organization of This Guide 
+
+### Volume 1: Use Cases and Standards
+
+This section delves into functional aspects, detailing various use cases, and standardizing them for a global perspective.
+
+- **Prescriptions**: Types and content of prescriptions.
+- **Order Grouping**: Grouping of orders with and without interdependencies.
+- **Ordering Workflows**: Common workflow aspects for medication ordering, considering approval, review, etc. with allowances for jurisdiction-specific requirements.
+
+### Volume 2: Transactions
+
+This technical section focuses on the technical data exchange.
+
+- **Prescription Placement**:
+- **Prescription Consult**
+- **Dispense Report**: 
+
+### Volume 3: Content and Terminology
+
+The medicinal product data structure and terminology ensures the correct identification and description of the products.
+
+- **Medication Resource Definition**: A common data structure to represent any medication.
+- **Terminologies**: Common terminologies for he product and its attributes.
+
+### Other Resources:
+
+- **Download and Analysis**: [Link](download_mpd.html)
+
+For a detailed view, refer to the [Table of Contents](toc_mpd.html) or the index of [Artifacts](artifacts.html).
+
+## Must Support
+
+Within the MPD profile, `Must Support` elements signify core elements that must be commonly understood and not ignored.
+
+---
+
