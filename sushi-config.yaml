@@ -57,7 +57,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # │  The pages property corresponds to IG.definition.page.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 pages:
-  index.xml:
+  index.md:
     title: "MPD Home"
   intro.md:
     title: "Introduction to Volume 1"
