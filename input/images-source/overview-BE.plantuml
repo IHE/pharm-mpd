@@ -1,0 +1,175 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'skinparam defaultFontName Avenir-Book
+'skinparam defaultFontSize 17
+'skinparam monochrome true
+
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+skinparam class<<Doc>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+<style>
+file {
+  BackGroundColor APPLICATION
+  LineThickness 1
+  LineColor black
+}
+</style>
+
+'file MDd [
+'  MedicationSchema
+'  ===
+'  |_ patient
+'  |_ LastUpdate
+'  |_ Label
+'  |_ Version
+'  ]
+
+
+class "** Medication Schema **" as MS<<TM>> {
+|_ Patient
+|_ LastUpdate
+|_ Label
+|_ Version
+'|_ VersionDate
+}
+
+
+class "** Medication Product **" as M<<TM>> {
+    |_ identifier 1..*
+    |_ doseForm 0..1
+    |_ name 0..1
+    |_ ingredient 0..1
+      |_ strength 0..1
+      |_ product 0..1
+    }
+
+class "**Medication Line**" as ML<<TM>> {
+  |_ identifier 1..*
+  |_ version
+  |_ dateAsserted 0..1
+  |_ <i>recorder
+  |_ patient 0..1
+  |_ status 0..1
+  |_ <i>statusReason
+  |_ InformationSource 0..1
+  |_ medication
+    |_ product/substance
+    |_ <i>type
+  |_ <i> originType
+  |_ reason
+    |_ reference 
+  |_ EffectivePeriod
+    |_ start
+    |_ end
+  |_ Dosage
+  |_ Adherence
+    |_ code <&list>  
+    |_ reason
+  |_ Note
+  |_ DispenseRequestNeeded?
+  |_ Visible <&list>  
+--
+Identifier NameSpace
+Do we want a "dosage changed from SAMv2"?
+}
+
+
+ML -u-* MS : ""
+
+class "**Prescription (Group)**" as P<<TM>> {
+  |_ identifier 1..* 
+  |_ status?
+  |_ period?
+  |_ indication
+  |_ comment?
+  |_ coverage?
+}
+
+
+'P -u-> ML : supportingInformation
+PL -u-> ML : supportingInformation
+D -u-> ML : supportingInformation
+
+class "**Prescription Line**" as PL<<TM>> {
+  |_ identifier 1..* 
+  |_ AuthoredOn
+  |_ SupportingInformation
+  |_ Subject
+  |_ Status
+  |_ statusReason
+  |_ Intent?
+  |_ Medication
+  |_ Requester
+  |_ Reason
+  |_ Dosage
+  |_ EffectivePeriod
+    |_ start
+    |_ end
+  |_ DispenseRequest
+    |_ quantity
+    |_ dispenseInterval
+    |_ ValidityPeriod
+  |_ Visible <&list>
+--
+Effective/Valid?
+Authored/Recorded?
+Recorder?
+Substitution?
+}
+
+
+class "**Dispense**" as D<<TM>> {
+  |_ identifier 1..*
+  |_ patient 0..1 <&person>
+  |_ receiver 0..1 <&person>
+  |_ dispenser 0..1 <&person>
+  |_ request 1..1 <&calendar>
+  |_ status 1..1 <&list>
+  |_ statusReasonCoded 0..1 <&list>
+  |_ statusReasonText 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ dispensedQuantity 0..1 <&link-intact>
+  |_ timeOfDispensation  0..1 <&clock>
+  |_ substitution  0..1 <&check>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>   
+}
+
+
+
+
+D -l-> PL :" authorizedBy "
+D -d-> M :" medication "
+P *-r- PL :"           "
+'PL -r[hidden]- M
+PL -r-> M :" medication "
+'PL ||-d-o{ M :"                  "
+
+@enduml
