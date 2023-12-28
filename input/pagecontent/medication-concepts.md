@@ -7,7 +7,7 @@ These are only three examples, but every country has a similar grouping, only di
 
 <figure>
 {% include medication-concepts.svg %}
-<figcaption>Examples of grouping of data</figcaption> 
+<figcaption>Examples of medication concepts</figcaption> 
 
 </figure>
 <br clear="all"/>
@@ -17,15 +17,18 @@ Being that the most common way of cataloging product lists is a spreadsheet-like
 
 Example: With e-prescription, drugs are generally prescribed without brand, so something like active principle + strength + form. Like 
 * 500 mg paracetamol tablet -> **which has one code**
-But can only be prescribed by brand (when a single drug exist for a indication, or physician wants to lock to a certain brand, or patient's request, etc).
+
+
+But prescription by brand also exist (when a single drug exist for an indication, or physician wants to lock to a certain brand, or patient's request, etc).
 * Ben-u-Ron 500 mg paracetamol -> **which can have a different code from above**
 
-Moreover, following the prescription path, we can say that a different drug (code-wise) can be dispensed. An actual box of a brand (even if "generic brand" like *Drug X from manufacturer Z*)
+Moreover, following the prescription path, we can say that a different drug (code-wise) can be dispensed. An actual box of a brand (even if it is a "generic brand" like *Drug X from manufacturer Z*)
 * A box can be dispensed (community pharmacy example)
 * A couple of pills can be dispensed as well (hospital pharmacy example)
-  
+
+They can be a packaged product or part of it or a single instance of the Medicinal Product.
 <figure>
 {% include med-concept-drug-cycle.svg %}
-<figcaption>Examples of grouping of data</figcaption> 
+<figcaption>Examples of concepts per action.</figcaption> 
 
 </figure>
