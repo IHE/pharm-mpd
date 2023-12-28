@@ -1,0 +1,160 @@
+@startuml
+hide stereotype
+hide circle
+skinparam linetype polyline
+skinparam shadowing false
+
+
+'!pragma graphviz_dot smetana
+
+
+
+skinparam class<<S>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<VMPP>> {
+ BorderColor #997700
+ BackgroundColor BUSINESS
+ HeaderBackgroundColor #ffcc33
+}
+
+skinparam class<<PhP>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+skinparam class<<Oth>> {
+ BorderColor #99770055
+ BackgroundColor #FFFFE055
+ HeaderBackgroundColor #ffDD7344
+ HeaderFontColor 	#ffcc3355
+}
+
+skinparam class<<MP>> {
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+skinparam class<<PMP>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+
+skinparam class<<VMPG>> {
+ BorderColor DarkSlateGrey
+ BackgroundColor #DEE
+ HeaderBackgroundColor #A0B0B0
+}
+
+
+
+  package " Graph Diagram   " as MR #E9EAE0 {
+    class "**Substance**" as S<<S>> {
+      --
+      |_ identifier
+      |_ code    
+      |_ name
+      |_ status
+      |_ productType
+      |_ monograph
+      |_ cost
+      |_ domain
+      |_ contraindication
+      |_ synonym
+      |_ mechanismOfAction
+      --
+      VTM  
+    }
+
+    class " **Pharmaceutical Product** " as PhP<<PhP>> {
+      --
+      |_ identifier
+      |_ code
+      |_ ingredient
+        |_ item
+        |_ isActive
+        |_ strength
+'      |_ productType
+      |_ route
+      |_ doseForm
+      |_ sideEffects
+      |_ kinetics
+      |_ pharmacoeconomics
+      --
+      VMP
+    }
+
+    class " **Medicinal Product ** " as MP<<MP>>{
+      --
+      |_ **identifier**
+      |_ indication
+'      |_ productType
+      |_ **marketingAuthorization**
+      |_ **marketingAuthorizationHolder  **
+      |_ **clinicalTrial**
+      |_ **pricing**
+      |_ **preparationInstructions**
+      |_ **administrationInstructions**
+      --
+      AMP
+    }
+
+    class " **Packaged ** \n  **Medicinal Product **  " as PMP<<PMP>>{
+      --
+      |_ **identifier**
+        |_ GTIN
+      |_ **packaging**
+      |_ **productImage**
+      |_ **batch**
+      |_ **impurity**
+      --
+     AMPP
+    }
+
+    class " **CNPEM **  " as CNPEM <<VMPP>>{
+      --
+      |_ **identifier**
+      |_ **package size**   
+      |_ <color:gray>//ingredient//</color>
+        |_ <color:gray>//item//
+        |_ <color:gray>//isActive//
+        |_ <color:gray>//strength//
+      |_ <color:gray>//doseForm//
+      |_ <color:gray>//strength//
+      --
+      VMPP
+}
+
+    class " ** VMPG **  " as VMPGroup<<VMPG>>{
+      --
+      |_ **identifier  **
+      |_ <color:gray>//ingredient     //</color>
+        |_ <color:gray>//item//
+        |_ <color:gray>//isActive//
+        |_ <color:gray>//strength//
+      |_ <color:gray>//strength//
+      --
+      VMPG
+}
+
+
+  S <-r- PhP: " Pharmaceutical Product of"
+  
+  PhP <-r- MP: " Medicinal Product of"
+  
+  PMP -l-> MP: " Packaged Form of "
+  
+  CNPEM -u-> PhP: " Virtual Packaged form of"
+  'CNPEM -r[hidden]--> MP
+  VMPGroup -u-> PhP: Virtual Pharmaceutical\nProduct Grouping
+  VMPGroup -u[hidden]-> S
+  'CNPEM -r[hidden]--> MP
+}
+@enduml

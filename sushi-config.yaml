@@ -68,6 +68,8 @@ pages:
     title: "Interoperability Model"
   alternative.md:
     title: "Trial Models"
+  medication-concepts.md:
+    title: "Medication Concepts"
   usecases.md:
     title: "Use Cases"
     presc-use-case1.md:
@@ -78,10 +80,6 @@ pages:
       title: "Mobile Medication Administration - Home Nursing"
     MMA-chemotherapy.md:
       title: "Mobile Medication Administration - Chemotherapy"
-
-  actor_options.md:
-    title: "Actor Options"
-
   intro_2.md:
     title: "Introduction to Volume 2"
   error_codes.md:
@@ -90,6 +88,7 @@ pages:
     title: "FHIR Maps"
   testplan.md:
     title: "Test Plan"
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
@@ -100,6 +99,10 @@ menu:
   Volume 1: 
     Overview: volume-1.html
     "Trial Models": alternative.html
+    "Use Cases": usecases.html
+    "Interoperability Model": interoperabilitymodel.html
+    "Single- and mutliline prescriptions": prescription-lines.html
+    "Medication Concepts": medication-concepts.html
   Volume 2:
     Introduction: intro_2.html
 #    "Provide Document Bundle [ITI-65]": ITI-65.html
