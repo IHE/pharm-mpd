@@ -59,8 +59,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
   index.md:
     title: "MPD Home"
-  intro.md:
-    title: "Introduction to Volume 1"
+  volume-1.md:
+    title: Overview
+    generation: markdown
   prescription-lines.md:
     title: "Single- and mutliline prescriptions"
   interoperabilitymodel.md:
@@ -77,16 +78,10 @@ pages:
       title: "Mobile Medication Administration - Home Nursing"
     MMA-chemotherapy.md:
       title: "Mobile Medication Administration - Chemotherapy"
-  overview.md:
-    title: "Overview"
-  actors_and_transactions.md:
-    title: "Actors and Transactions"
+
   actor_options.md:
     title: "Actor Options"
-  security_considerations.md:
-    title: "Security Considerations"
-  cross_profile_considerations.md:
-    title: "Cross Profile Considerations"
+
   intro_2.md:
     title: "Introduction to Volume 2"
   error_codes.md:
@@ -103,14 +98,8 @@ menu:
   MPD Home: index.html
   Table of Contents: toc.html
   Volume 1: 
-    Introduction: intro.html
-    "Overview": overview.html
-    "Actors and Transactions": actors_and_transactions.html
-    "Actor Options": actor_options.html
-#    "Actor Required Grouping": 1333_required_grouping.html
+    Overview: volume-1.html
     "Trial Models": alternative.html
-    "Security Considerations": security_considerations.html
-    "Cross Profile Considerations": cross_profile_considerations.html
   Volume 2:
     Introduction: intro_2.html
 #    "Provide Document Bundle [ITI-65]": ITI-65.html

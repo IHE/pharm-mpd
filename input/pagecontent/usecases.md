@@ -3,7 +3,7 @@ The use cases for this profile are:
 [comment]: # (HMW)
 
 ### Intra-hospital medication 
-   1. usage of the full circuit (order ->pharmacy validation->distribution->administration)
+   1. usage of the full circuit (order -> pharmacy validation -> distribution -> administration)
    2. usage without validation
    3. cancel prescription before validation
    4. cancel prescription after validation
@@ -29,7 +29,7 @@ The use cases for this profile are:
 ###  Hospital-Community interface  
    1. admission   
    2. discharge  
-   3. reconcilliation as a whole  
+   3. reconciliation as a whole  
 
 
 [comment]: # (MMA)

@@ -1,1 +1,0 @@
-a general overview of the use cases, actors and transactions
