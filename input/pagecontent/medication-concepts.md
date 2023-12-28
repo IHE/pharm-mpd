@@ -6,7 +6,7 @@ Standardized information regarding drugs around the world and Europe is not new.
 These are only three examples, but every country has a similar grouping, only differing on the characteristics used for grouping.
 
 <figure>
-{% include chemotherapyOrderAdminMMA.svg %}
+{% include medication-concepts.svg %}
 <figcaption>Examples of grouping of data</figcaption> 
 
 </figure>
@@ -24,5 +24,8 @@ Moreover, following the prescription path, we can say that a different drug (cod
 * A box can be dispensed (community pharmacy example)
 * A couple of pills can be dispensed as well (hospital pharmacy example)
   
+<figure>
+{% include med-concept-drug-cycle.svg %}
+<figcaption>Examples of grouping of data</figcaption> 
 
-......
+</figure>

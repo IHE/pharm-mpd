@@ -55,22 +55,34 @@ skinparam class<<VMPG>> {
 
 
 
-    class "**Substance**" as S<<S>> {
+
+package "Prescription" #DDDDDD {
+  
+    class " **CNPEM **  " as CNPEM <<VMPP>>{
       --
-      |_ identifier
-      |_ code    
-      |_ name
-      |_ status
-      |_ productType
-      |_ monograph
-      |_ cost
-      |_ domain
-      |_ contraindication
-      |_ synonym
-      |_ mechanismOfAction
+      |_ **identifier**
+      |_ **package size**   
+      |_ <color:gray>//ingredient//</color>
+        |_ <color:gray>//item//
+        |_ <color:gray>//isActive//
+        |_ <color:gray>//strength//
+      |_ <color:gray>//doseForm//
+      |_ <color:gray>//strength//
       --
-      VTM  
-    }
+      VMPP
+}
+
+    class " ** VMPG **  " as VMPGroup<<VMPG>>{
+      --
+      |_ **identifier  **
+      |_ <color:gray>//ingredient     //</color>
+        |_ <color:gray>//item//
+        |_ <color:gray>//isActive//
+        |_ <color:gray>//strength//
+      |_ <color:gray>//strength//
+      --
+      VMPG
+}
 
     class " **Pharmaceutical Product** " as PhP<<PhP>> {
       --
@@ -105,6 +117,11 @@ skinparam class<<VMPG>> {
       AMP
     }
 
+}
+
+
+
+package "Dispense" #DDDDDD {
     class " **Packaged ** \n  **Medicinal Product **  " as PMP<<PMP>>{
       --
       |_ **identifier**
@@ -116,44 +133,7 @@ skinparam class<<VMPG>> {
       --
      AMPP
     }
-
-    class " **CNPEM **  " as CNPEM <<VMPP>>{
-      --
-      |_ **identifier**
-      |_ **package size**   
-      |_ <color:gray>//ingredient//</color>
-        |_ <color:gray>//item//
-        |_ <color:gray>//isActive//
-        |_ <color:gray>//strength//
-      |_ <color:gray>//doseForm//
-      |_ <color:gray>//strength//
-      --
-      VMPP
+  
 }
-
-    class " ** VMPG **  " as VMPGroup<<VMPG>>{
-      --
-      |_ **identifier  **
-      |_ <color:gray>//ingredient     //</color>
-        |_ <color:gray>//item//
-        |_ <color:gray>//isActive//
-        |_ <color:gray>//strength//
-      |_ <color:gray>//strength//
-      --
-      VMPG
-}
-
-
-  S <-r- PhP: " Pharmaceutical Product of"
-  
-  PhP <-r- MP: " Medicinal Product of"
-  
-  PMP -l-> MP: " Packaged Form of "
-  
-  CNPEM -u-> PhP: " Virtual Packaged form of"
-  'CNPEM -r[hidden]--> MP
-  VMPGroup -u-> PhP: Virtual Pharmaceutical\nProduct Grouping
-  VMPGroup -u[hidden]-> S
-  'CNPEM -r[hidden]--> MP
 
 @enduml
