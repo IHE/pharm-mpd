@@ -47,7 +47,7 @@ When a prescription is issued with multiple lines, two data objects are used:
 * Prescription line - containing the attributes relative to each medication (medication, dosage, ...)
 
 <figure>
-  {% include single-line.svg %}
+  {% include multiline.svg %}
 </figure>
 
 
