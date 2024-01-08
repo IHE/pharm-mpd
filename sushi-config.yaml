@@ -60,16 +60,16 @@ pages:
   index.md:
     title: "MPD Home"
   volume-1.md:
-    title: Overview
+    title: "Overview of Volume 1"
     generation: markdown
-  prescription-lines.md:
-    title: "Single- and mutliline prescriptions"
-  interoperabilitymodel.md:
-    title: "Interoperability Model"
-  alternative.md:
-    title: "Trial Models"
-  medication-concepts.md:
-    title: "Medication Concepts"
+    prescription-lines.md:
+      title: "Single- and multiline prescriptions"
+    interoperabilitymodel.md:
+      title: "Interoperability Model"
+    alternative.md:
+      title: "Trial Models"
+    medication-concepts.md:
+      title: "Medication Concepts"
   usecases.md:
     title: "Use Cases"
     presc-use-case1.md:
