@@ -1,6 +1,7 @@
 Logical: MedicationDispensation
 Title: "Medication dispensation"
 Description: "Logical model for medication dispensation (based on request or independently)"
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 
 * identifier 0..1 II "Identifier for the dispense"
 * patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered"

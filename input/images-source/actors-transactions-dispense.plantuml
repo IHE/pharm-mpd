@@ -31,7 +31,7 @@ dispenseconsumer -d- dispenseresponder : "   [[PHARM-X4.html PHARM-X4\nRetrieve 
 
 'orderplacer -[hidden]r- orderfiller : "\t\t\t   "
 
-orderfiller -r[hidden]- dispenseconsumer: "\t\t\t "
+orderfiller -r[hidden]- dispenseconsumer: "\t\t\t  "
 
 dispensereceiver -r[hidden]- dispenseresponder : "\t\t\t"
 

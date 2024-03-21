@@ -24,7 +24,7 @@ orderreceiver -r[hidden]- orderresponder : "\t\t\t\t"
 'orderresponder -r[hidden]- dispensereceiver
 orderresponder -r[hidden]- orderfiller
 
-orderplacer -[hidden]r- orderfiller : "\t\t\t\t     "
+orderplacer -[hidden]r- orderfiller : "\t\t\t\t      "
 
 'dispensereceiver -l[hidden]- dispenseresponder : "   "
 

@@ -1,51 +1,39 @@
-The use cases for this profile are:
+The use cases this profile intends to supposr are described here. For each case, the variation is :
 
-[comment]: # (HMW)
+1. Prescription with validation
+  * depending on the drug type - e.g. narcotics
+  * legal requirements
+  * validation by decision of the
 
-### Intra-hospital medication 
-   1. usage of the full circuit (order -> pharmacy validation -> distribution -> administration)
-   2. usage without validation
-   3. cancel prescription before validation
-   4. cancel prescription after validation
-   5. cancel prescription after dispense
-   6. cancel prescription after administration
-   7. prescription refuse by pharmacist
-   8. validation cancelled by pharmacist before dispense
-   9. validation cancelled by pharmacist after dispense
-   10. validation cancelled by pharmacist after administration
-   11. cancellation of administration
+2. Proposal order
 
-[comment]: # (Community Medication Prescription and Dispense)
+3. Optional order review
 
-###  Community prescription and dispense
-   1. prescription-dispense scenario - only order, validation and dispense 
-   2. prescription-dispense scenario - only planning, order, dispense  and administration
-   3. request medication list (?)
-   4. changes to medication list (?)
-   5. change or cancel medication after dispense
+4. Non-actionable order
 
-[comment]: # (White paper)
+5. Cancelling prescription
+5.1. Before validation
+5.2. After validation
+5.3. After dispense
+5.4. After administration
 
-###  Hospital-Community interface  
-   1. admission   
-   2. discharge  
-   3. reconciliation as a whole  
+6. Refused order
 
+7. Administration requests 
 
-[comment]: # (MMA)
+8. Admission and discharge
 
-### Mobile Medication administration
-   1. [Home chemotherapy](MMA-chemotherapy.html)
-   2. [Home nursing](MMA-chemotherapy.html)
+9. Prescription and encoding
 
-### Others/ungrouped
-   1. Medication brand change on validation/dispense
-   2. Dispense made before prescription
-   3. dispense made but drug not taken
-   4. dispense of product that do not require prescription
-   5. drug administration stopped due to allergic reaction/Adverse drug effect
-   
-### Chemotherapy
-   1. planning of drug cycles
-   2. drug cycle management
-   3. ... other
+10. Regimen updates - e.g. Prescripiton for chemotherapy
+
+11. Dispense without prescription
+
+12. Dispense before required prescription
+
+13. Adverse drug event
+
+14. Change order
+14.1 After treatment after dispense
+
+15. Prescription from Treatment Plan/Line

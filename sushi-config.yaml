@@ -25,9 +25,10 @@ contact:
         use: work
 license: CC-BY-SA-4.0
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
-#dependencies:
-#  https://profiles.ihe.net/fhir/ihe.formatcode.fhir: 0.2.4
- 
+dependencies:
+  ihe.domain.logical-datatypes: current
+
+
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/resources
@@ -62,32 +63,36 @@ pages:
   volume-1.md:
     title: "Overview of Volume 1"
     generation: markdown
-    prescription-lines.md:
-      title: "Single- and multiline prescriptions"
-    interoperabilitymodel.md:
-      title: "Interoperability Model"
-    alternative.md:
-      title: "Trial Models"
+    usecases.md:
+      title: "Use Cases"
+      presc-use-case1.md:
+        title: "Use Case 1: Order straight to dispense"
+      presc-use-case-2.md:
+        title: "Use Case 2: Proposal order"
+      MMA-homenursing.md:
+        title: "Mobile Medication Administration - Home Nursing"
+      MMA-chemotherapy.md:
+        title: "Mobile Medication Administration - Chemotherapy"
     medication-concepts.md:
       title: "Medication Concepts"
-  usecases.md:
-    title: "Use Cases"
-    presc-use-case1.md:
-      title: "Use Case 1: Order straight to dispense"
-    presc-use-case-2.md:
-      title: "Use Case 2: Proposal order"
-    MMA-homenursing.md:
-      title: "Mobile Medication Administration - Home Nursing"
-    MMA-chemotherapy.md:
-      title: "Mobile Medication Administration - Chemotherapy"
+    order-management.md:
+      title: "Order Management"
+      prescription-lines.md:
+        title: "Single- and multiline prescriptions"
+      interoperabilitymodel.md:
+        title: "Interoperability Model"
+      alternative.md:
+        title: "Trial Models"
+
+
   intro_2.md:
-    title: "Introduction to Volume 2"
-  error_codes.md:
-    title: "Error Codes"
-  fhir_maps.md:
-    title: "FHIR Maps"
-  testplan.md:
-    title: "Test Plan"
+    title: "Volume 2"
+    error_codes.md:
+      title: "Error Codes"
+    fhir_maps.md:
+      title: "FHIR Maps"
+    testplan.md:
+      title: "Test Plan"
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
