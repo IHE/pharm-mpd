@@ -1,0 +1,232 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationDoseAids",
+      "title" : "Medication Dose Aids",
+      "description" : "Medication Dose Aids",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-dose-aid"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3241"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIntendedPerformerRole",
+      "title" : "Medication Intended Performer Role",
+      "description" : "Medication Intended Performer Role",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1979"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1979"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestAdministrationLocationCodes",
+      "title" : "medicationRequest Administration Location Codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3242"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3242"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "medicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestIntent",
+      "title" : "medicationRequest Intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationrequestStatus",
+      "title" : "medicationrequest Status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "medicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEMedicationPrescription.html" : "IHEMedicationPrescription"
+    }
+  ]
+}

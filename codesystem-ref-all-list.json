@@ -1,0 +1,137 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-dose-aid",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationDoseAid",
+      "title" : "Medication dose aid",
+      "description" : "Medication dose aid",
+      "oids" : ["2.16.840.1.113883.4.642.4.2075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-dose-aid.html" : "Medication Dose Aids"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationIntendedPerformerRole",
+      "title" : "Medication Intended Performer Role",
+      "description" : "Medication Intended Performer Role",
+      "oids" : ["2.16.840.1.113883.4.642.4.2074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-intended-performer-role.html" : "Medication Intended Performer Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationRequestIntentCodes",
+      "title" : "MedicationRequest Intent Codes",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-intent.html" : "medicationRequest Intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationRequestStatusCodes",
+      "title" : "MedicationRequest Status Codes",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-status.html" : "medicationrequest Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-request-priority.html" : "RequestPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequest_Administration_Location_Codes",
+      "title" : "Medication request  administration  location  codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.0"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-admin-location.html" : "medicationRequest Administration Location Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-course-of-therapy.html" : "medicationRequest Course of Therapy Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "MedicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-status-reason.html" : "medicationRequest Status Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "2.1.1",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitution",
+      "title" : "Substance Admin Substitution",
+      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+      "oids" : ["2.16.840.1.113883.5.1070"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

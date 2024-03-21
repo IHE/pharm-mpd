@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ihe.mpd.json	9480	-	0	0	0	0	0	0	3	40	0	0	0	0	0	0	0	1	0	0	79	41	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-DosagingInformation.json	22725	32	0	0	0	1	0	35	0	64	0	0	0	0	0	0	0	2	0	0	490	2321	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-IHEMedicationPrescription.json	1237	18	0	0	0	0	0	52	0	24	0	0	0	0	0	0	0	1	0	0	333	813	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-MedicationDispensation.json	8136	22	0	0	0	0	0	14	0	18	0	0	0	0	0	0	0	0	0	0	114	182	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-MedicationPrescription.json	15119	23	0	0	0	0	0	20	0	23	0	0	0	0	0	0	0	0	0	0	207	246	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-MedicinalProduct.json	18373	25	1	0	0	0	0	29	0	28	0	0	1	0	0	0	0	1	0	0	344	424	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-PatientBasic.json	4085	18	0	0	0	0	0	12	0	11	0	0	0	0	0	0	0	0	0	0	83	111	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-PractitionerBasic.json	6081	19	0	0	0	0	0	15	0	12	0	0	0	0	0	0	0	0	0	0	117	162	0	0	0	3	0	0

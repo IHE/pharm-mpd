@@ -1,0 +1,58 @@
+IHE_MPD : Validation Results
+=========================================
+
+err = 16, warn = 6, info = 8
+IG Publisher Version: 1.6.3
+Generated Thu Mar 21 21:36:12 UTC 2024. FHIR version 5.0.0 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+ Build Errors : 3 / 5 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHEMedicationPrescription : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispensation : 6 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationPrescription : 10 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientBasic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerBasic : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ihe.pharm.mpd
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IHEMedicationPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 325, column 48: The link 'download_mpd.html' for "Link" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 328, column 39: The link 'toc_mpd.html' for "Table of Contents" cannot be resolved
+ERROR: /github/workspace/output/volume-1.html#/html/body/div/div/div/div/div/p/a at Line 258, column 39: The link 'domain-YY.html' for "transaction description" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
+INFORMATION: ImplementationGuide/ihe.mpd: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
+INFORMATION: StructureDefinition/DosagingInformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-IHEMedicationPrescription.json ==
+INFORMATION: StructureDefinition/IHEMedicationPrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationDispensation.json ==
+INFORMATION: StructureDefinition/MedicationDispensation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.differential.element[2].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic|0.1.0], which is not a Resource (which is required because the MedicationDispensation.patient element has type Reference)
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.differential.element[4].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationDispensation.dispenser element has type Reference)
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.differential.element[6].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct|0.1.0], which is not a Resource (which is required because the MedicationDispensation.medication element has type Reference)
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.snapshot.element[2].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic|0.1.0], which is not a Resource (which is required because the MedicationDispensation.patient element has type Reference)
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.snapshot.element[4].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationDispensation.dispenser element has type Reference)
+ERROR: StructureDefinition/MedicationDispensation: StructureDefinition.snapshot.element[6].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct|0.1.0], which is not a Resource (which is required because the MedicationDispensation.medication element has type Reference)
+== fsh-generated/resources/StructureDefinition-MedicationPrescription.json ==
+INFORMATION: StructureDefinition/MedicationPrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.differential.element[5].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.recorder element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.differential.element[6].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.prescriber element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.patient element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct|0.1.0], which is not a Resource (which is required because the MedicationPrescription.medication element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.differential.element[17].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation|0.1.0], which is not a Resource (which is required because the MedicationPrescription.usageInstructions element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.snapshot.element[5].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.recorder element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.snapshot.element[6].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.prescriber element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.snapshot.element[10].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic|0.1.0], which is not a Resource (which is required because the MedicationPrescription.patient element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.snapshot.element[14].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct|0.1.0], which is not a Resource (which is required because the MedicationPrescription.medication element has type Reference)
+ERROR: StructureDefinition/MedicationPrescription: StructureDefinition.snapshot.element[17].type[0].targetProfile[0]: Profile http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation is for type StructureDefinition[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation|0.1.0], which is not a Resource (which is required because the MedicationPrescription.usageInstructions element has type Reference)
+== fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
+INFORMATION: StructureDefinition/MedicinalProduct: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PatientBasic.json ==
+INFORMATION: StructureDefinition/PatientBasic: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PractitionerBasic.json ==
+INFORMATION: StructureDefinition/PractitionerBasic: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
