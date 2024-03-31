@@ -97,13 +97,13 @@ pages:
 
   volume-2.md:
     title: "Volume 2"
-    medication-order-submit.md:
+    submit-medication-order.md:
       title: "PHARM-X1: Submit Medication Order"
-    medication-order-retrieve.md:
+    retrieve-medication-order.md:
       title: "PHARM-X2: Retrieve Medication Orders"
-    medication-dispense-submit.md:
+    submit-medication-dispense.md:
       title: "PHARM-X3: Submit Medication Dispense"
-    medication-dispense-retrieve.md:
+    retrieve-medication-dispense.md:
       title: "PHARM-X4: Retrieve Medication Dispenses"
       
     error_codes.md:
@@ -130,14 +130,11 @@ menu:
     "Cross-profile Considerations": cross-profile.html
   Volume 2:
     Overview: volume-2.html
-    PHARM-X1: Submit Medication Order: submit-medication-order.html
-    PHARM-X2: Retrieve Medication Order: retrieve-medication-order.html
-    PHARM-X3: Submit Medication Dispense: submit-medication-dispense.html
-    PHARM-X4: Retrieve Medication Dispense: retrieve-medication-dispense.html
-#    "Provide Document Bundle [ITI-65]": ITI-65.html
-#    "Find Document Lists [ITI-66]": ITI-66.html
-#    "Find Document References [ITI-67]": ITI-67.html
-#    "Retrieve Document [ITI-68]": ITI-68.html
+    PHARM-X1 - Submit Medication Order: submit-medication-order.html
+    PHARM-X2 - Retrieve Medication Order: retrieve-medication-order.html
+    PHARM-X3 - Submit Medication Dispense: submit-medication-dispense.html
+    PHARM-X4 - Retrieve Medication Dispense: retrieve-medication-dispense.html
+
   Volume 3:
     "Error Codes": error_codes.html
     "FHIR Maps": fhir_maps.html

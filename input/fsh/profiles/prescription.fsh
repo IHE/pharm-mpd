@@ -1,5 +1,5 @@
 Profile: IHEMedicationPrescription
-Title: IHE Medication Prescription
+Title: "IHE Medication Prescription"
 Parent: MedicationRequest
 Description: "IHE Medication Prescription profile"
 

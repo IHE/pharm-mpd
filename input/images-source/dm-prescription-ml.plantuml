@@ -1,0 +1,91 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'skinparam defaultFontName Avenir-Book
+'skinparam defaultFontSize 17
+'skinparam monochrome true
+
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+class "** Medication Product **" as M<<TM>> {
+    }
+
+class "**Prescription**" as P<<TM>> {
+  |_ identifier 1..* 
+  |_ treatment 0..1
+  |_ status 1..1 <&list>
+  |_ statusReason
+    |_ code 0..1 <&list>
+    |_ statusText 0..1 <&text>
+  |_ issueDate 1..1 <&calendar>
+  |_ patient 0..1 <&person>
+  |_ prescriber 0..1 <&person>
+  |_ recorder 0..1 <&person>
+  |_ recordedDate 1..1 <&calendar>
+  |_ validFrom 1..1 <&calendar>
+  |_ validUntil 1..1 <&calendar>
+  |_ indication 0..1 <&text>
+  |_ substitution 0..1 <&ellipses>
+    |_ .noSubstitutionFlag  0..1 <&check>
+    |_ .noSubstitutionReasonCode  0..1 <&list>  
+    |_ .noSubstitutionReasonText  0..1 <&text>  
+    |_ .allowedSubstitutionTypes 0..* <&check>
+  |_ comment 0..1 <&text>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>
+}
+
+
+class "**Prescription Line**" as PL<<TM>> {
+  |_ identifier 1..*
+  |_ status 1..1 <&list>
+  |_ statusReasonCoded 0..1 <&list>
+  |_ statusReasonText 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ indication 0..1 <&text>
+  |_ medication 0..1 <&link-intact>
+  |_ usageInstructions 0..1 <&text>
+  |_ preparationInstructions 0..1 <&text>
+  |_ substitution 0..1 <&ellipses>
+    |_ .noSubstitutionFlag  0..1 <&check>
+    |_ .noSubstitutionReasonCode  0..1 <&list>  
+    |_ .noSubstitutionReasonText  0..1 <&text>  
+  |_ comment 0..1 <&text>
+  |_ coverage 0..1 <&ellipses>
+    |_ reimbursementRate 0..1 <&ellipses>
+}
+
+
+class "**Dispense**" as D<<TM>> {
+}
+
+
+
+
+D -l-> PL :" authorizedBy "
+P *-r- PL :"           "
+'PL -r[hidden]- M
+PL -d-> M :" medication "
+'PL ||-d-o{ M :"                  "
+@enduml
