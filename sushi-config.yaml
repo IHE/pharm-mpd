@@ -120,13 +120,20 @@ menu:
   Table of Contents: toc.html
   Volume 1: 
     Overview: volume-1.html
-    "Trial Models": alternative.html
     "Use Cases": usecases.html
-    "Interoperability Model": interoperabilitymodel.html
-    "Single- and mutliline prescriptions": prescription-lines.html
     "Medication Concepts": medication-concepts.html
+    "Order Management": order-management.html
+    "Interoperability Model": interoperability-model.html
+    "Data Models": data-models.html
+    "Actor and Transactions Overview": actors-transactions.html
+    "Security Considerations": security.html
+    "Cross-profile Considerations": cross-profile.html
   Volume 2:
-    Introduction: intro_2.html
+    Overview: volume-2.html
+    PHARM-X1: Submit Medication Order: submit-medication-order.html
+    PHARM-X2: Retrieve Medication Order: retrieve-medication-order.html
+    PHARM-X3: Submit Medication Dispense: submit-medication-dispense.html
+    PHARM-X4: Retrieve Medication Dispense: retrieve-medication-dispense.html
 #    "Provide Document Bundle [ITI-65]": ITI-65.html
 #    "Find Document Lists [ITI-66]": ITI-66.html
 #    "Find Document References [ITI-67]": ITI-67.html

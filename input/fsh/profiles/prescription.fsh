@@ -1,5 +1,7 @@
 Profile: IHEMedicationPrescription
+Title: IHE Medication Prescription
 Parent: MedicationRequest
+Description: "IHE Medication Prescription profile"
 
 * identifier 1..* MS
 * groupIdentifier 0..1 MS
