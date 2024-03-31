@@ -88,3 +88,7 @@ This is used in a Pull scenario, where an order filler (or other actors) can que
 This is commonly used in a Pull scenario, where before dispense, the order filler (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
 
 
+
+### Actor Options
+
+### Required Grouping

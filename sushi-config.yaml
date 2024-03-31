@@ -61,8 +61,10 @@ pages:
   index.md:
     title: "MPD Home"
   volume-1.md:
-    title: "Overview of Volume 1"
+    title: "Volume 1"
     generation: markdown
+    glossary.md:
+      title: "Glossary"
     usecases.md:
       title: "Use Cases"
       presc-use-case1.md:
@@ -79,18 +81,33 @@ pages:
       title: "Order Management"
       prescription-lines.md:
         title: "Single- and multiline prescriptions"
-      interoperabilitymodel.md:
-        title: "Interoperability Model"
-      alternative.md:
-        title: "Trial Models"
+      order-statuses.md:
+        title: "Managing order status"
+    interoperability-model.md:
+      title: "Interoperability Model"
+    data-models.md:
+      title: "Data Models"
+    actors-transactions.md:
+      title: "Actors and Transactions Overview"
+    security.md:
+      title: "Security Considerations"   
+    cross-profile.md:
+      title: "Cross-profile Considerations"   
 
 
-  intro_2.md:
+  volume-2.md:
     title: "Volume 2"
+    medication-order-submit.md:
+      title: "PHARM-X1: Submit Medication Order"
+    medication-order-retrieve.md:
+      title: "PHARM-X2: Retrieve Medication Orders"
+    medication-dispense-submit.md:
+      title: "PHARM-X3: Submit Medication Dispense"
+    medication-dispense-retrieve.md:
+      title: "PHARM-X4: Retrieve Medication Dispenses"
+      
     error_codes.md:
       title: "Error Codes"
-    fhir_maps.md:
-      title: "FHIR Maps"
     testplan.md:
       title: "Test Plan"
 

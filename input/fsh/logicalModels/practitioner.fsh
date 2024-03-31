@@ -1,6 +1,7 @@
 Logical: PractitionerBasic
-Title: "Practitioner"
+Title: "Practitioner - Data Model"
 Description: "Basic prescribing/dispensing practitioner's data relevant for this use case"
+Characteristics: #can-be-target
 
 * identifier 1..* II "Prescribing/dispensing practitioner's identifier"
 * name 1..* EN "Prescribing/dispensing practitioner's name, incl first name, last name, or any other relevant name parts"

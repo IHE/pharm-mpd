@@ -1,4 +1,4 @@
-The use cases this profile intends to supposr are described here. For each case, the variation is :
+The use cases this profile intends to support are described here. For each case, the variation is :
 
 1. Prescription with validation
   * depending on the drug type - e.g. narcotics
