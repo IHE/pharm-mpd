@@ -17,7 +17,7 @@ Description: "Logical model for medication prescription (or some other form of o
 * status 1..1 CD "Status of the prescription, this should not be status of treatment"
 * statusReason 0..* CD "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 * statusReasonText 0..1 ST "Textual reason for the current status of prescription"
-* medication 1..1 Reference(MedicinalProduct) "Prescribed product, branded, generic, virtual, extemporal, etc"
+* medication 1..1 Reference(MedicinalProductLM) "Prescribed product, branded, generic, virtual, extemporal, etc"
 * indication 0..* CD "Reason for the prescription (typically diagnosis, or a procedure)"
 * indicationText 0..1 ST "Reason for the prescription in textual form. This might not be allowed by some implementations."
 * usageInstructions 1..1 Reference(DosagingInformation) "Dosaging and administration instructions"

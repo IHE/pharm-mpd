@@ -8,7 +8,7 @@ Description: "Logical model for medication dispensation (based on request or ind
 * receiver 0..1 ANY "Identification of the person who received the dispensed medication, especially when it was not the patient"
 * dispenser 1..1 Reference(PractitionerBasic) "The person who dispensed the product, and takes the responsibility of the dispensation"
 * relatedRequest 0..1 Reference(MedicationPrescription) "Prescription/request/order the dispense is related to"
-* medication 1..1 Reference(MedicinalProduct) "Exact dispensed product"
+* medication 1..1 Reference(MedicinalProductLM) "Exact dispensed product"
 * dispensedQuantity 1..1 PQ "Number of dispensed packages if the pack size is known, or number of smaller items/units"
 * timeOfDispensation 1..1 dateTime "Date and time of dispensation"
 * substitutionOccurred 0..1 BL "Indicated whether substitution was made by the dispenser" "Question: is this relevant? It is in eHDSI dispensation."

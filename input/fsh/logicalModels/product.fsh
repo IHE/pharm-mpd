@@ -1,4 +1,4 @@
-Logical: MedicinalProduct
+Logical: MedicinalProductLM
 Title: "Medicinal product"
 Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
