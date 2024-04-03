@@ -38,7 +38,7 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 Instance: 02A-ClotrimazoleCanifugCremolum
 InstanceOf: MedicinalProduct
 Usage: #example
-Description: "1A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packaged product, consisting of different medication items. Defined by attributes."
+Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packaged product, consisting of different medication items. Defined by attributes."
 
 * identifier.value = "1033692"
 * identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
@@ -76,3 +76,38 @@ Description: "Clotrimazole pessary (6 pessaries of 100mg) as part of Canifug Cre
 * ingredient.isActive = true
 * ingredient.strengthRatio.numerator = 100 $ucum#mg "milligram"
 * ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15039000 "Pessary"
+
+
+Instance: 03B-VitaminBComplexBranded
+InstanceOf: MedicinalProduct
+Usage: #example
+Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defined by attributes."
+
+* identifier.value = "1029776"
+* identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
+* doseForm = $edqm-standardterms#13047000 "Solution for suspension for injection"
+* extension[classification].valueCodeableConcept = $who-atc#A11DB "Vitamin B1 in combination with vitamin B6 and/or vitamin B12"
+* extension[productName].extension[name].valueString = "MILGAMMA N"
+* extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
+* extension[sizeOfItem].valueQuantity = 2 $ucum#mL "milliliter"
+* totalVolume = 5 $edqm-standardterms#15002000 "Ampoule" // possibility to use UCUM {Vial} or extension for unit of presentation.
+
+* ingredient[0].item.concept = $snomed#259659006 "Thiamine"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 50 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 1 $ucum#mL "milliliter"
+
+* ingredient[+].item.concept = $snomed#430469009 "Pyridoxine"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 50 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 1 $ucum#mL "milliliter"
+
+* ingredient[+].item.concept = $snomed#419382002 "Cyanocobalamin"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 0.5 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 1 $ucum#mL "milliliter"
+
+* ingredient[+].item.concept = $snomed#387480006 "Lidocaine"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 10 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 1 $ucum#mL "milliliter"
