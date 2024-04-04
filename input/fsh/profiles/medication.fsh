@@ -24,6 +24,16 @@ Description: "Size of a manufactured item or unit of presentation. For example, 
 * value[x] only Quantity
 // Extension for pack size or is the combination of SizeOfMedicationItem and totalAmount sufficient?
 
+Extension: MedicinalProductDevice
+Description: "Device, typically an administration device, included in the medicinal product."
+* extension contains
+    device 1..1 and
+    quantity 1..1
+* extension[device].value[x] only CodeableReference(Device or DeviceDefinition)
+* extension[device] ^short = "Coded or referenced device"
+* extension[quantity].value[x] only Quantity
+* extension[quantity] ^short = "Number of defined devices in te package"
+
 Profile: MedicinalProduct
 Parent: Medication
 Title: "Medicinal product"
@@ -37,6 +47,9 @@ Description: "Medication for clinical use cases. This could be a branded product
 
 * extension contains SizeOfMedicationItem named sizeOfItem 0..1 // item.containedQuantity
 * extension[sizeOfItem] ^short = "Size of one item (for example, in a pack of 5 vials, this would represent the size of 1 vial)"
+
+* extension contains MedicinalProductDevice named device 0..1 // device
+* extension[device] ^short = "Device, typically an administration device, included in the product."
 
 * identifier MS 
   * ^short = "Identifier for the medicinal product, its generic representation, or packaged product." //identifier
@@ -55,4 +68,4 @@ Description: "Medication for clinical use cases. This could be a branded product
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
 
   //item.unitOfPresentation not profiled
-  //device not profiled.
+ 
