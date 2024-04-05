@@ -1,16 +1,13 @@
 # IHE MPD (Medication Prescription and Dispense) Profile
 
-The IHE MPD profile sets a universal baseline amidst varying regulations and practices in medication management across jurisdictions. Focused on interoperability, it identifies commonalities and standardizes pivotal data points to facilitate seamless integration across diverse healthcare systems.
+The IHE MPD profile defines global data exchange specifications for medication prescription and dispense, in different settings and compatible with different workflows and jurisdictions.
 
 ## Overview
 
-The MPD Profile emphasizes a unified set of guidelines, ensuring that while medication prescription and dispensing processes may differ by jurisdiction or drug type, fundamental data and processes remain interoperable.
-
-## Key Features
-
-1. **Unified Medication Ordering**: Harmonizing varied prescription scenarios, order grouping, and validation workflows to ensure consistency across jurisdictions.
-2. **Standardized Medication Dispensing**: Addressing cross-jurisdictional challenges, special preparations, and varying contexts of hospital and community dispensing.
-3. **Comprehensive Medication Data**: Establishing standardized data sets and terminologies to represent medication data universally.
+The MPD Profile describes 
+* actors and transactions for creating and updating prescriptions, as well as consulting them;
+* actors and transactions for creating and updating dispense reports, as well as consulting them;
+* core concepts that are impactful to these specifications or to their use
 
 ## Organization of This Guide 
 
