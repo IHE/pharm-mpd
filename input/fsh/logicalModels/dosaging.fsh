@@ -4,6 +4,7 @@ Title: "Dosaging - Data Model"
 Description: "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."
 Characteristics: #can-be-target
 
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * sequence 0..1 INT "Order of the dosage instruction, in case one treatment consists of several dosaging schemes"
 * text 0..1 ST "Free text usage/dosage instructions"
 * additionalInstruction 0..* CD "Coded instructions, e.g warnings to the patient, like 'may cause drowsiness' etc"

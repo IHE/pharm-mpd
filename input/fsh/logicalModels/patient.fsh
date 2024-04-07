@@ -3,6 +3,7 @@ Title: "Patient - Data Model"
 Description: "Basic patient data relevant for this use case"
 Characteristics: #can-be-target
 
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * identifier 1..* II "Patient identifier"
 * name 1..* EN "Patient's name, incl first name, last name, or any other relevant name parts"
 * gender 0..1 CD "Gender" "Question: eHDSI prescription emphasisis the biological gender, but I think the reality is that most systems would have administrative gender or somekindof gender" 

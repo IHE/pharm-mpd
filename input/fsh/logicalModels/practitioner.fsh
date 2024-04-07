@@ -3,6 +3,7 @@ Title: "Practitioner - Data Model"
 Description: "Basic prescribing/dispensing practitioner's data relevant for this use case"
 Characteristics: #can-be-target
 
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * identifier 1..* II "Prescribing/dispensing practitioner's identifier"
 * name 1..* EN "Prescribing/dispensing practitioner's name, incl first name, last name, or any other relevant name parts"
 * specialtyProfession 0..* CD "Specialty/profession of the prescribing/dispensing practitioner"
