@@ -2,8 +2,9 @@
 The MPD profile is a Workflow and Conent profile. It describes the data exchange between systems for electronic prescriptions and dispenses.
 
 
-### HL7 Gemini and Europe
+### HL7 Gemini 
 
+### HL7 Europe and European specifications
 
 
 ### Related work

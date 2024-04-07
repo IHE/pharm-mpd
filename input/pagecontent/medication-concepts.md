@@ -1,5 +1,8 @@
+### Examples
 
-## Drug Information Elements
+### Uses for different medication concepts
+
+### Drug Information Elements
 
 A medicinal drug can be in short defined by the following elements:
 1. substance(s)

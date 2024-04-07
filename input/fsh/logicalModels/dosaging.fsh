@@ -1,7 +1,8 @@
 // Check the latest version in MEOW IG
 Logical: DosagingInformation
-Title: "Dosaging"
+Title: "Dosaging - Data Model"
 Description: "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."
+Characteristics: #can-be-target
 
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * sequence 0..1 INT "Order of the dosage instruction, in case one treatment consists of several dosaging schemes"

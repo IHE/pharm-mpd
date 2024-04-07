@@ -1,3 +1,4 @@
+
 //These extensions and profiles are shared between IHE-MEOW and IHE-MPD profiles
 
 Extension: Classification
@@ -39,6 +40,7 @@ Parent: Medication
 Title: "Medicinal product"
 Description: "Medication for clinical use cases. This could be a branded product or a generic concept, also allowing describing pack size and components of complex products."
 
+
 * extension contains MedicinalProductName named productName 0..* // productName
 * extension[productName] ^short = "Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant." 
 
@@ -69,3 +71,4 @@ Description: "Medication for clinical use cases. This could be a branded product
 
   //item.unitOfPresentation not profiled
  
+

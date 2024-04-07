@@ -1,5 +1,5 @@
 Logical: MedicationPrescription
-Title: "Medication prescription"
+Title: "Medication prescription - Data Model"
 Description: "Logical model for medication prescription (or some other form of order)"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 
