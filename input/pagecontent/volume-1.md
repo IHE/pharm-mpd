@@ -1,8 +1,17 @@
 
-The MPD profile is a Workflow and Conent profile. It describes the data exchange between systems for electronic prescriptions and dispenses.
+The MPD profile is a Workflow and Content profile. It describes the data exchange between systems for electronic prescriptions and dispenses.
 
 
 ### HL7 Gemini 
+
+IHE MPD is a Gemini project. This means that the specifications are hosted by IHE .....
+
+<div style="display: flex; justify-content: center; align-items: center">
+    <img src="./gemini-logo-fin.png" alt="GEMINI" style="max-width: 90%; max-height: 100%; margin: 20px;">
+</div>
+
+<br>
+
 
 ### HL7 Europe and European specifications
 

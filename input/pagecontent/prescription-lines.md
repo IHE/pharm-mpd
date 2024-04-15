@@ -100,10 +100,10 @@ The table below provides a comparison of prescription data elements, indicating 
 | coverage 0..1              | -                  | -          | -             | Coverage is out of scope for the current version. |
 | reimbursementRate 0..1     | -                  | -          | -             |       |
 | category                   | Y                  | Shared     | Shared        |       |
-{:.table-bordered .table-striped .table-light"}
+{:.table-bordered .table-striped .table-light}
 
 
-*Notes: "Y" indicates presence, "N" indicates absence, "Shared" means the element at the prescription level applies to all lines, "Unique" indicates different potential values at each level, and "Dependent" denotes elements whose shared or unique nature depends on specific scenarios or requirements.*
+> *Notes: "Y" indicates presence, "N" indicates absence, "Shared" means the element at the prescription level applies to all lines, "Unique" indicates different potential values at each level, and "Dependent" denotes elements whose shared or unique nature depends on specific scenarios or requirements.*
 
 ## Interpretation and Key Considerations
 

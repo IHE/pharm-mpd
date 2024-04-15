@@ -59,7 +59,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 pages:
   index.md:
-    title: "MPD Home"
+    title: "IHE MPD (Medication Prescription and Dispense)"
   volume-1.md:
     title: "Volume 1"
     generation: markdown

@@ -1,5 +1,3 @@
-# IHE MPD (Medication Prescription and Dispense) Profile
-
 The IHE MPD profile defines global data exchange specifications for medication prescription and dispense, in different settings and compatible with different workflows and jurisdictions.
 
 ## Overview
@@ -8,6 +6,9 @@ The MPD Profile describes
 * actors and transactions for creating and updating prescriptions, as well as consulting them;
 * actors and transactions for creating and updating dispense reports, as well as consulting them;
 * core concepts that are impactful to these specifications or to their use
+
+
+
 
 ## Organization of This Guide 
 
