@@ -1,5 +1,5 @@
 Logical: MedicationDispensation
-Title: "Medication dispensation - Data Model"
+Title: "Medication dispensation (model)"
 Description: "Logical model for medication dispensation (based on request or independently)"
 Characteristics: #can-be-target
 

@@ -1,6 +1,6 @@
 Logical: PractitionerBasic
-Title: "Practitioner - Data Model"
-Description: "Basic prescribing/dispensing practitioner's data relevant for this use case"
+Title: "Practitioner (model)"
+Description: "Logical model for practitioner (basic data relevant for this use case)"
 Characteristics: #can-be-target
 
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true

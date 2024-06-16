@@ -1,6 +1,6 @@
 Logical: PatientBasic
-Title: "Patient - Data Model"
-Description: "Basic patient data relevant for this use case"
+Title: "Patient (model)"
+Description: "Logical model for patient (basic data relevant for this use case)"
 Characteristics: #can-be-target
 
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true

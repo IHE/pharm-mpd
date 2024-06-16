@@ -1,6 +1,6 @@
 Logical: MedicinalProductLM
-Title: "Medicinal product"
-Description: "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
+Title: "Medicinal product (model)"
+Description: "Logical model for prescribed/dispensed medication. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."
 Characteristics: #can-be-target
 * ^status = #active
 
