@@ -1,7 +1,7 @@
 # ╭────────────────────────────────────────────sushi-config.yaml───────────────────────────────────────────────╮
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ihe.mpd
+id: ihe.pharm.mpd
 canonical: http://profiles.ihe.net/PHARM/ihe.pharm.mpd
 name: IHE_MPD
 version: 0.1.0
