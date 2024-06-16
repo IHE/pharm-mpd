@@ -1,5 +1,5 @@
 Instance: 01A-Cefuroxime1500GenericExplicit
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by attributes."
 
@@ -11,14 +11,14 @@ Description: "1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generi
 * ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
 
 Instance: 01B-Cefuroxime1500GenericConcept
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "1B. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by a code system (receiving system is expected to have access to the code system for additional attributes or display names)."
 
 * code = $snomed#1193769004 "Cefuroxime (as cefuroxime sodium) 1.5 g powder for solution for injection vial"
 
 Instance: 01C-Cefuroxime1500Branded
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Branded packaged product, defined by attributes."
 
@@ -36,7 +36,7 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * marketingAuthorizationHolder.display = "MIP Pharma GmbH" //We did not profile MAH data, shall we try better?
 
 Instance: 02A-ClotrimazoleCanifugCremolum
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packaged product, consisting of different medication items. Defined by attributes."
 
@@ -53,7 +53,7 @@ Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packag
 * ingredient[+].item.reference = Reference(02A2-CanifugCremolumPessaryItem)
 
 Instance: 02A1-CanifugCremolumCreamItem
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug Cremolum product (ISO IDMP manufactured item)"
 
@@ -66,7 +66,7 @@ Description: "Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug Crem
 * ingredient.strengthRatio.denominator = 1 $ucum#g "gram"
 
 Instance: 02A2-CanifugCremolumPessaryItem
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "Clotrimazole pessary (6 pessaries of 100mg) as part of Canifug Cremolum product (ISO IDMP manufactured item)"
 
@@ -79,7 +79,7 @@ Description: "Clotrimazole pessary (6 pessaries of 100mg) as part of Canifug Cre
 
 
 Instance: 03B-VitaminBComplexBranded
-InstanceOf: MedicinalProduct
+InstanceOf: IHEMedication
 Usage: #example
 Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defined by attributes."
 

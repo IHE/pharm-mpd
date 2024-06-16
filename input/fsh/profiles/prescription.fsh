@@ -14,7 +14,7 @@ Description: "IHE Medication Prescription profile"
 * category MS // category
 * dispenseRequest.validityPeriod MS // validFrom, validUntil
 * medication MS // medication
-* medication only Reference(MedicinalProduct)
+* medication only Reference(IHEMedication)
 * subject MS // patient
 * dosageInstruction MS // usageInstructions
 * dosageInstruction.patientInstruction MS // preparationInstructions (?)
