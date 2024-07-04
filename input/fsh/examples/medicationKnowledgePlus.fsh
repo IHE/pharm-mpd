@@ -1,4 +1,3 @@
-/*
 Instance: 100-CanifugCremolum-With-MedicationKnowledge
 InstanceOf: Medication
 Usage: #example
@@ -9,6 +8,12 @@ Description: "100. Canifug Cremolum (cream and pessaries in one package), define
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * definition = Reference(100-CanifugCremolum-MedicationKnowledge)
 * contained[0] = 100-CanifugCremolum-MedicationKnowledge
+* contained[+] = 100-CanifugCremolum-PackagedProductDefinition
+* contained[+] = CanifugCremolum-10mg1g-Cream-EE-MID
+* contained[+] = CanifugCremolum-100mg-Pessary-EE-MID
+* contained[+] = CanifugCremolum-10mg1g-Cream-EE-I
+* contained[+] = CanifugCremolum-100mg-Pessary-EE-I
+
 
 Instance: 100-CanifugCremolum-MedicationKnowledge
 InstanceOf: MedicationKnowledge
@@ -31,16 +36,16 @@ Description: "Canifug Cremolum - combipackage description with PackagedProductDe
 //* description = "Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi"
 //* packaging.type = $100000073346#100000073498 "Box"
 //* packaging.quantity = 1
-* packaging[0].containedItem.item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
-* packaging[=].containedItem.amount.value = 6
-* packaging[+].type = $edqm-standardterms#15058000 "Tube"
-* packaging[=].quantity = 1
-* packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
-* packaging[=].containedItem.amount = 20 $ucum#g "gram(s)"
+* packaging.containedItem[+].item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
+* packaging.containedItem[=].amount.value = 6
+//* packaging.type = $edqm-standardterms#15058000 "Tube"
+//* packaging.quantity = 1
+* packaging.containedItem[+].item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
+* packaging.containedItem[=].amount = 20 $ucum#g "gram(s)"
 
 
 Instance: CanifugCremolum-10mg1g-Cream-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #inline
 Description: "Manufactured Item: cream in tube"
 * status = #active
@@ -48,15 +53,15 @@ Description: "Manufactured Item: cream in tube"
 * unitOfPresentation = $edqm-standardterms#15058000 "Tube"
 
 Instance: CanifugCremolum-100mg-Pessary-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #inline
 Description: "Manufactured Item: pessary"
 * status = #active
-* manufacturedDoseForm = $200000000004#100000073815 "Pessary"
+* manufacturedDoseForm = $edqm-standardterms#10909000 "Pessary"
 * unitOfPresentation = $edqm-standardterms#15039000 "Pessary"
 
 Instance: CanifugCremolum-10mg1g-Cream-EE-I
-InstanceOf: PPLIngredient
+InstanceOf: Ingredient
 Usage: #inline
 Description: "Ingredient: clotrimazole, concentration strength"
 * status = #active
@@ -67,7 +72,7 @@ Description: "Ingredient: clotrimazole, concentration strength"
 * substance.strength.concentrationRatio.denominator = 1 $ucum#g "gram(s)"
 
 Instance: CanifugCremolum-100mg-Pessary-EE-I
-InstanceOf: PPLIngredient
+InstanceOf: Ingredient
 Usage: #inline
 Description: "Ingredient: clotrimazole, presentation strength"
 * status = #active
@@ -76,5 +81,3 @@ Description: "Ingredient: clotrimazole, presentation strength"
 * substance.code.concept = $sms#100000092074 "CLOTRIMAZOLE"
 * substance.strength.presentationRatio.numerator = 100 $ucum#mg "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $edqm-standardterms#15039000 "Pessary"
-
-*/
