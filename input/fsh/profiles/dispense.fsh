@@ -9,7 +9,7 @@ Description: "MedicationDispense profile for capturing dispensation information 
 * authorizingPrescription MS // relatedRequest
 * authorizingPrescription only Reference(IHEMedicationPrescription)
 * medication MS // medication 1
-* medication only Reference(IHEMedication)
+* medication only CodeableReference(IHEMedication)
 * quantity 1..1 MS // dispensedQuantity 1
 * whenHandedOver 1..1 MS // timeOfDispensation 1
 * substitution.wasSubstituted MS // substitutionOccurred

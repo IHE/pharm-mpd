@@ -26,8 +26,7 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
 * doseForm = $edqm-standardterms#50053000 "Powder for solution for injection or infusion"
 * extension[classification].valueCodeableConcept = $who-atc#J01DC02 "cefuroxime"
-* extension[productName].extension[name].valueString = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
-* extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
+* extension[productName].valueString = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
 * totalVolume = 10 $edqm-standardterms#15060000 "Vial"
 * ingredient.item.concept = $snomed#372833007 "Cefuroxime"
 * ingredient.isActive = true
@@ -44,8 +43,8 @@ Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packag
 * identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * extension[classification].valueCodeableConcept = $who-atc#G01AF02 "clotrimazole"
-* extension[productName].extension[name].valueString = "Canifug Cremolum"
-* extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
+* extension[productName].valueString = "Canifug Cremolum"
+
 //* extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10909000 "Pessary"
 //* extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10901000 "Vaginal cream"
 
@@ -87,8 +86,7 @@ Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defin
 * identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
 * doseForm = $edqm-standardterms#13047000 "Solution for suspension for injection"
 * extension[classification].valueCodeableConcept = $who-atc#A11DB "Vitamin B1 in combination with vitamin B6 and/or vitamin B12"
-* extension[productName].extension[name].valueString = "MILGAMMA N"
-* extension[productName].extension[language].valueCodeableConcept = $bcp47#et-EE "Estonian (Estonia)"
+* extension[productName].valueString = "MILGAMMA N"
 * extension[sizeOfItem].valueQuantity = 2 $ucum#mL "milliliter"
 * totalVolume = 5 $edqm-standardterms#15002000 "Ampoule" // possibility to use UCUM {Vial} or extension for unit of presentation.
 

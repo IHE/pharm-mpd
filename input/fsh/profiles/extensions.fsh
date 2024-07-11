@@ -11,19 +11,11 @@ Description: "Medication classification/category. Allows the product to be class
 Extension: MedicationProductName
 Id:        ihe-ext-medication-productname
 Title:     "Medication - Product Name"
-Description: "Name of the medicinal product. Optionally the type of name (Full official name, prescribing name, invented name) and language of the name can be specified. The extension is a simplified approach of what is used in MedicinalProductDefinition resource."
+Description: "Name of the medicinal product. This is typically the name of a real product as registered. This element should not contain display names of virtual product concepts."
 // Extension on Medication
-* extension contains
-    name 1..1 and
-    nameType 0..1 and
-    language 0..1
-* extension[name].value[x] only string
-* extension[name] ^short = "Product name"
-* extension[nameType].value[x] only CodeableConcept
-* extension[nameType] ^short = "Type of product name (full name, common name, prescription name, etc)"
-* extension[language].value[x] only CodeableConcept
-* extension[language].valueCodeableConcept from AllLanguages
-* extension[language] ^short = "Language code of this name. A code with a combination of country and name can be used."
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"
+* value[x] only string
 
 
 Extension: MedicationSizeOfItem

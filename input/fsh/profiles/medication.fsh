@@ -7,7 +7,7 @@ Title: "Medicinal product"
 Description: "Medication for clinical use cases. This could be a branded product or a generic concept, also allowing describing pack size and components of complex products."
 
 
-* extension contains MedicationProductName named productName 0..* // productName
+* extension contains MedicationProductName named productName 0..1 // productName
 * extension[productName] ^short = "Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant." 
 
 * extension contains MedicationClassification named classification 0..* // classification

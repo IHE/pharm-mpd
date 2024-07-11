@@ -33,7 +33,7 @@ Characteristics: #can-be-target
   * deviceQuantity 1..1 PQ "Number of such devices"
   * device 1..1 CD "Device coded"
 
-Logical: Medication-NewLM
+Logical: MedicationNewLM
 Title: "REVISED Medicinal product (model)"
 Description: "Medication model for prescribing and dispensing. Being revised by Joint MPD group."
 Characteristics: #can-be-target
