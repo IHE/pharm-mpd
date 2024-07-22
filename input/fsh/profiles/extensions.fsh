@@ -40,6 +40,19 @@ Description: "Device, typically an administration device, included in the medici
 * extension[quantity] ^short = "Number of defined devices in te package"
 
 
+Extension: MedicationCharacteristic
+Id:        ihe-ext-medication-characteristic
+Title:     "Medication - Characteristic"
+Description: "Any characteristic of the medicinal product prescribed or dispensed (for example, price, textual package description, special program information, etc)"
+// Extension on Medication
+* extension contains
+    type 1..1 and
+    value 0..1
+* extension[type].value[x] only CodeableConcept
+* extension[type] ^short = "Code specifying the type of characteristic of medication"
+* extension[value] ^short = "Descriptive value of the characteristic"
+
+
 Extension: MedicationRequestTotalAmount
 Id:        ihe-ext-medicationrequest-totalamount
 Title:     "MedicationRequest - Total Amount"

@@ -19,6 +19,9 @@ Description: "Medication for clinical use cases. This could be a branded product
 * extension contains MedicationDevice named device 0..1 // device
 * extension[device] ^short = "Device, typically an administration device, included in the product."
 
+* extension contains MedicationCharacteristic named characteristic 0..* // characteristic
+* extension[characteristic] ^short = "Specifies other descriptive properties of the medication."
+
 * identifier MS 
   * ^short = "Identifier for the medicinal product, its generic representation, or packaged product." //identifier
 * code MS 
@@ -36,5 +39,6 @@ Description: "Medication for clinical use cases. This could be a branded product
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
 
   //item.unitOfPresentation not profiled
+  //strengthSubstance not profiled
  
 
