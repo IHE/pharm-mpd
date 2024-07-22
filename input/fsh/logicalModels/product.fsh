@@ -4,19 +4,14 @@ Description: "Logical model for prescribed/dispensed medication. The model is sh
 Characteristics: #can-be-target
 * ^status = #active
 
-* identifier 0..* Class "The identifier(s) of the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings." 
-  * medicinalProductIdentifier 0..* II "Identifier at the product level - can be MPID or national identifier" 
-  * packagedProductIdentifier 0..* II "Identifier at the package level - can be PCID or national"
-  * pharmaceuticalProductIdentifier 0..* II "Identifier at the virtual or administrable product level - can be PhPID or national virtual/administrable product code"
-* productCode 0..1 CD "Code for the product that is actually being specified, in established terminologies" // To do: challenge this with examples. Do  we want one code or more? 
+* identifyingCode[x] 0..* CD or II "Identifier or product code for the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings or very different granularities." 
 * classification 0..* CD "Classification (e.g. ATC; narcotic/psychotropic; orphan drug; etc.)"
-* packSize 0..* PQ "Overall amount of product in one package (100ml; 20 tablets; 1 creme & 6 pessaries)"
-* productName 0..* Class "Name of the product (full name, invented name, other)"
-  * name 1..1 ST "Name of type and language that is relevant for the users"
-  * language 0..1 CD "Language of the name"
-  * type 0..1 CD "Type of the name (full name, common name, etc)"
+* productName 0..1 ST "Name of the product (full name, invented name, other). When the product has different names, the appropriate one for the context should be used. Translations of names can be provided."
+* marketingAuthorisationHolder 0..1 Class "Marketing authorisation holder of manufacturer of the medicinal product. Relevant for identifying the exact product."
+  * organizationName 0..1 ST "Name of the organisation holding the authorisation for marketing/mahufacturing"
+  * organizationIdentifier 0..* II "Identifier of the organisation and/or its physical location"
 * doseForm 0..1 CD "Dose form(s) on a product level. Dose form for a single package item is defined below."
-
+* packSize 0..* PQ "Overall amount of product in one package (100ml; 20 tablets; 1 creme & 6 pessaries)"
 * item 0..* Class "A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined"
   * doseForm 0..1 CD "Dose form"
   * ingredient 1..* Class "Ingredients"
@@ -32,6 +27,10 @@ Characteristics: #can-be-target
 * device 0..* Class "Administration device included in the product"
   * deviceQuantity 1..1 PQ "Number of such devices"
   * device 1..1 CD "Device coded"
+* characteristic 0..* Class "Other features of the product"
+  * type 1..1 CD "A code expressing the type of characteristic"
+  * value[x] 0..1 ANY "Description of the characteristic"
+* additionalProductInformation 0..1 Class "Additional information about product - for example, a reference to a product catalogue"
 
 
 Logical: MedicationNewLM

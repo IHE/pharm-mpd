@@ -3,7 +3,7 @@
 
 Profile: IHEMedication
 Parent: Medication
-Title: "Medicinal product"
+Title: "IHE Medication"
 Description: "Medication for clinical use cases. This could be a branded product or a generic concept, also allowing describing pack size and components of complex products."
 
 
