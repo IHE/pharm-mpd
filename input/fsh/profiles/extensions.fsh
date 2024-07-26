@@ -5,7 +5,7 @@ Description: "Medication classification/category. Allows the product to be class
 // Extension on Medication
 * ^context[+].type = #element
 * ^context[=].expression = "Medication"
-* value[x] only CodeableConcept  // 0 or more
+* value[x] only CodeableConcept 
 
 
 Extension: MedicationProductName
@@ -16,6 +16,7 @@ Description: "Name of the medicinal product. This is typically the name of a rea
 * ^context[+].type = #element
 * ^context[=].expression = "Medication"
 * value[x] only string
+* valueString 1..1
 
 
 Extension: MedicationSizeOfItem
@@ -23,7 +24,9 @@ Id:        ihe-ext-medication-sizeofitem
 Title:     "Medication - Size of Item"
 Description: "Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials."
 // Extension on Medication
+* ^context[=].expression = "Medication"
 * value[x] only Quantity
+* valueQuantity 1..1
 
 
 Extension: MedicationDevice
@@ -53,6 +56,17 @@ Description: "Any characteristic of the medicinal product prescribed or dispense
 * extension[value] ^short = "Descriptive value of the characteristic"
 
 
+Extension: MedicationUnitOfPresentation
+Id:        ihe-ext-medication-unitofpresentation
+Title:     "Medication - Unit of presentation"
+Description: "Unit of presentation, typically describing the smallest countable package item (e.g tablet, vial, ampoule, etc). Unit of presentation is also often used in describing pack size and the denominator of strength. If the size of presentation unit is relevant, it should be described in sizeOfItem extension."
+// Extension on Medication
+* ^context[+].type = #element
+* ^context[=].expression = "Medication"
+* value[x] only CodeableConcept 
+* valueCodeableConcept 1..1
+
+
 Extension: MedicationRequestTotalAmount
 Id:        ihe-ext-medicationrequest-totalamount
 Title:     "MedicationRequest - Total Amount"
@@ -60,6 +74,6 @@ Description: "Total amount of product being requested."
 // Extension on MedicationRequest
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
-* value[x] only Quantity  // 0 or more
+* value[x] only Quantity
 
 

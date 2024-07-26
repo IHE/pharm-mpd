@@ -27,6 +27,7 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * doseForm = $edqm-standardterms#50053000 "Powder for solution for injection or infusion"
 * extension[classification].valueCodeableConcept = $who-atc#J01DC02 "cefuroxime"
 * extension[productName].valueString = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15060000 "Vial"
 * totalVolume = 10 $edqm-standardterms#15060000 "Vial"
 * ingredient.item.concept = $snomed#372833007 "Cefuroxime"
 * ingredient.isActive = true
@@ -58,6 +59,7 @@ Description: "2A2. Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug
 
 * doseForm = $edqm-standardterms#10901000 "Vaginal cream"
 * totalVolume = 1 $edqm-standardterms#15058000 "Tube"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15058000 "Tube"
 * extension[sizeOfItem].valueQuantity = 20 $ucum#g "gram"
 * ingredient.item.concept = $snomed#387325003 "Clotrimazole"
 * ingredient.isActive = true
@@ -71,6 +73,7 @@ Description: "2A1. Clotrimazole pessary (6 pessaries of 100mg) as part of Canifu
 
 * doseForm = $edqm-standardterms#10909000 "Pessary"
 * totalVolume = 6 $edqm-standardterms#15039000 "Pessary"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15039000 "Pessary"
 * ingredient.item.concept = $snomed#387325003 "Clotrimazole"
 * ingredient.isActive = true
 * ingredient.strengthRatio.numerator = 100 $ucum#mg "milligram"
@@ -88,7 +91,8 @@ Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defin
 * extension[classification].valueCodeableConcept = $who-atc#A11DB "Vitamin B1 in combination with vitamin B6 and/or vitamin B12"
 * extension[productName].valueString = "MILGAMMA N"
 * extension[sizeOfItem].valueQuantity = 2 $ucum#mL "milliliter"
-* totalVolume = 5 $edqm-standardterms#15002000 "Ampoule" // possibility to use UCUM {Vial} or extension for unit of presentation.
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15002000 "Ampoule"
+* totalVolume = 5 $edqm-standardterms#15002000 "Ampoule" // possibility to use UCUM {Ampoule} or extension for unit of presentation.
 
 * ingredient[0].item.concept = $snomed#259659006 "Thiamine"
 * ingredient[=].isActive = true

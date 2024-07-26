@@ -16,11 +16,14 @@ Description: "Medication for clinical use cases. This could be a branded product
 * extension contains MedicationSizeOfItem named sizeOfItem 0..1 // item.containedQuantity
 * extension[sizeOfItem] ^short = "Size of one item (for example, in a pack of 5 vials, this would represent the size of 1 vial)"
 
-* extension contains MedicationDevice named device 0..1 // device
+* extension contains MedicationDevice named device 0..* // device
 * extension[device] ^short = "Device, typically an administration device, included in the product."
 
 * extension contains MedicationCharacteristic named characteristic 0..* // characteristic
 * extension[characteristic] ^short = "Specifies other descriptive properties of the medication."
+
+* extension contains MedicationUnitOfPresentation named unitOfPresentation 0..1 // item.unitOfPresentation
+* extension[unitOfPresentation] ^short = "Unit of presentation of the product (e.g. tablet, vial, ampoule, etc)"
 
 * identifier MS 
   * ^short = "Identifier for the medicinal product, its generic representation, or packaged product." //identifier
@@ -38,7 +41,7 @@ Description: "Medication for clinical use cases. This could be a branded product
   * isActive MS // item.ingredient.role
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
 
-  //item.unitOfPresentation not profiled
+  
   //strengthSubstance not profiled
  
 
