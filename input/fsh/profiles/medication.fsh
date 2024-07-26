@@ -40,6 +40,8 @@ Description: "Medication for clinical use cases. This could be a branded product
   * item only CodeableReference(Substance or IHEMedication) // item.ingredient.substance; item
   * isActive MS // item.ingredient.role
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
+    * extension contains MedicationStrengthSubstance named strengthSubstance 0..1 
+    * extension[strengthSubstance] ^short = "Substance for which the strength is provided (this could be different from the precise active ingredient)."
 
   
   //strengthSubstance not profiled

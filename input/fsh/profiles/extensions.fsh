@@ -23,8 +23,8 @@ Extension: MedicationSizeOfItem
 Id:        ihe-ext-medication-sizeofitem
 Title:     "Medication - Size of Item"
 Description: "Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials."
-// Extension on Medication
-* ^context[=].expression = "Medication"
+Context: Medication
+
 * value[x] only Quantity
 * valueQuantity 1..1
 
@@ -64,6 +64,15 @@ Description: "Unit of presentation, typically describing the smallest countable 
 * ^context[+].type = #element
 * ^context[=].expression = "Medication"
 * value[x] only CodeableConcept 
+* valueCodeableConcept 1..1
+
+
+Extension: MedicationStrengthSubstance
+Id: ihe-ext-medication-strengthsubstance
+Title: "Medication - Strength substance"
+Description: "Substance for marking the basis of strength. When the precise active ingredient is a salt, the strength is often provided for the active moiety (basis of strength)."
+Context: Medication.ingredient.strength[x]
+* value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 
 

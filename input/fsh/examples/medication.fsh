@@ -29,10 +29,11 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * extension[productName].valueString = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
 * extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15060000 "Vial"
 * totalVolume = 10 $edqm-standardterms#15060000 "Vial"
-* ingredient.item.concept = $snomed#372833007 "Cefuroxime"
+* ingredient.item.concept = $snomed#48753004 "Cefuroxime sodium"
 * ingredient.isActive = true
 * ingredient.strengthRatio.numerator = 1500 $ucum#mg "milligram"
 * ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
+* ingredient.strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
 * marketingAuthorizationHolder.display = "MIP Pharma GmbH" //We did not profile MAH data, shall we try better?
 
 Instance: 02A-ClotrimazoleCanifugCremolum
@@ -51,6 +52,8 @@ Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packag
 
 * ingredient[0].item.reference = Reference(02A1-CanifugCremolumCreamItem)
 * ingredient[+].item.reference = Reference(02A2-CanifugCremolumPessaryItem)
+//* ingredient[+].item.concept = $edqm-standardterms#30002000 "Applicator"
+
 
 Instance: 02A1-CanifugCremolumCreamItem
 InstanceOf: IHEMedication
