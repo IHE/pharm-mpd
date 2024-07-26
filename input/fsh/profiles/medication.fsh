@@ -42,6 +42,8 @@ Description: "Medication for clinical use cases. This could be a branded product
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
     * extension contains MedicationStrengthSubstance named strengthSubstance 0..1 
     * extension[strengthSubstance] ^short = "Substance for which the strength is provided (this could be different from the precise active ingredient)."
+    * extension contains MedicationStrengthType named strengthType 0..1
+    * extension[strengthType] ^short = "Type of the given strength (concentration strength, presentation strength, or other)"
 
   
   //strengthSubstance not profiled

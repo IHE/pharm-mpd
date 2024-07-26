@@ -46,9 +46,9 @@ Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packag
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * extension[classification].valueCodeableConcept = $who-atc#G01AF02 "clotrimazole"
 * extension[productName].valueString = "Canifug Cremolum"
+* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30002000 "Applicator"
+* extension[device].extension[quantity].valueQuantity.value = 1
 
-//* extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10909000 "Pessary"
-//* extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10901000 "Vaginal cream"
 
 * ingredient[0].item.reference = Reference(02A1-CanifugCremolumCreamItem)
 * ingredient[+].item.reference = Reference(02A2-CanifugCremolumPessaryItem)

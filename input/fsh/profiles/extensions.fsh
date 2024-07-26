@@ -33,7 +33,7 @@ Extension: MedicationDevice
 Id:        ihe-ext-medication-device
 Title:     "Medication - Device"
 Description: "Device, typically an administration device, included in the medicinal product."
-// Extension on Medication
+Context: Medication
 * extension contains
     device 1..1 and
     quantity 1..1
@@ -71,6 +71,15 @@ Extension: MedicationStrengthSubstance
 Id: ihe-ext-medication-strengthsubstance
 Title: "Medication - Strength substance"
 Description: "Substance for marking the basis of strength. When the precise active ingredient is a salt, the strength is often provided for the active moiety (basis of strength)."
+Context: Medication.ingredient.strength[x]
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1
+
+
+Extension: MedicationStrengthType
+Id: ihe-ext-medication-strengthtype
+Title: "Medication - Strength type"
+Description: "Strength type (e.g. concentration strength, presentation strength)"
 Context: Medication.ingredient.strength[x]
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
