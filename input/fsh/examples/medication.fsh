@@ -141,6 +141,6 @@ Description: "04. Firmagon. Branded packaged product, defined by attributes, inc
 * extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
 * extension[device].extension[quantity].valueQuantity.value = 2
 
-//* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
-//* extension[device].extension[quantity].valueQuantity.value = 2
+* extension[device][+].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
+* extension[device][=].extension[quantity].valueQuantity.value = 2
 // 2 trays containing 2 powder vials, 2 solvent pre-filled syrnges, 2 plunger rods, 2 vial adapters, 2 needles
