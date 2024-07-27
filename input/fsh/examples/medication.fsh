@@ -116,3 +116,31 @@ Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defin
 * ingredient[=].isActive = true
 * ingredient[=].strengthRatio.numerator = 10 $ucum#mg "milligram"
 * ingredient[=].strengthRatio.denominator = 1 $ucum#mL "milliliter"
+
+Instance: 04-FirmagonBranded
+InstanceOf: IHEMedication
+Usage: #example
+Description: "04. Firmagon. Branded packaged product, defined by attributes, includes administration devices."
+
+* identifier.value = "1400601"
+* identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
+* doseForm = $edqm-standardterms#11207000 "Powder and solvent for solution for injection"
+* extension[classification].valueCodeableConcept = $who-atc#L02BX02 "degarelix"
+* extension[productName].valueString = "FIRMAGON"
+* extension[sizeOfItem].valueQuantity = 3 $ucum#mL "milliliter"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15060000 "Vial"
+
+* totalVolume = 2 $edqm-standardterms#15060000 "Vial"
+* ingredient.item.concept = $snomed#441864003 "Degarelix"
+* ingredient.isActive = true
+* ingredient.strengthRatio.numerator = 120 $ucum#mg "milligram"
+* ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
+* ingredient.strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#441864003 "Degarelix"
+* marketingAuthorizationHolder.display = "Ferring Pharmaceuticals A/S"
+ 
+* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
+* extension[device].extension[quantity].valueQuantity.value = 2
+
+//* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
+//* extension[device].extension[quantity].valueQuantity.value = 2
+// 2 trays containing 2 powder vials, 2 solvent pre-filled syrnges, 2 plunger rods, 2 vial adapters, 2 needles
