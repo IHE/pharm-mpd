@@ -144,3 +144,31 @@ Description: "04. Firmagon. Branded packaged product, defined by attributes, inc
 * extension[device][+].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
 * extension[device][=].extension[quantity].valueQuantity.value = 2
 // 2 trays containing 2 powder vials, 2 solvent pre-filled syrnges, 2 plunger rods, 2 vial adapters, 2 needles
+
+Instance: 05A-Tilidin-Branded
+InstanceOf: IHEMedication
+Usage: #example
+Description: "05A. Tilidin (50mg), Naloxon (4mg) oral drops. Branded packaged product, defined by attributes. Unusual strength."
+
+* identifier.value = "12345"
+//* identifier.system = "example"
+* doseForm = $edqm-standardterms#10101000 "Oral drops, solution"
+* extension[classification].valueCodeableConcept = $who-atc#N02AX51 "tilidine and naloxone"
+* extension[productName].valueString = "Tilidin HEXAL® comp Lösung, 50/4 mg je 0,72 ml Tropfen zum Einnehmen, Lösung"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15022000 "Drop"
+* totalVolume = 10 $ucum#mL "milliliter"
+* ingredient[0].item.concept = $snomed#373562008 "Tilidine"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 50 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 20 $edqm-standardterms#15022000 "Drop"
+* ingredient[=].strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#96186004 "Tilidine hydrochloride" 
+
+* ingredient[+].item.concept = $snomed#372890007 "Naloxone"
+* ingredient[=].isActive = true
+* ingredient[=].strengthRatio.numerator = 4 $ucum#mg "milligram"
+* ingredient[=].strengthRatio.denominator = 20 $edqm-standardterms#15022000 "Drop"
+* ingredient[=].strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#21518006 "Naloxone hydrochloride" 
+
+* marketingAuthorizationHolder.display = "Hexal AG" //We did not profile MAH data, shall we try better?
+
+//Lösung (20 Tropfen = 4 Hübe) enthalten 51,45 mg Tilidinhydrochlorid-Hemihydrat (entsprechend 50 mg Tilidinhydrochlorid) und 4,40 mg Naloxonhydrochlorid-Dihydrat (entsprechend 4 mg Naloxonhydrochlorid).
