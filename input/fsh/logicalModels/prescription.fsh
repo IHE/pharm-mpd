@@ -22,11 +22,10 @@ Description: "Logical model for medication prescription (or some other form of o
 * indicationText 0..1 ST "Reason for the prescription in textual form. This might not be allowed by some implementations."
 * usageInstructions 1..1 Reference(DosagingInformation) "Dosaging and administration instructions"
 * preparationInstructions 0..* ST "Additional instructions about preparation or dispense" 
-* noSubstitution 0..1 BackboneElement "Substitution is not allowed for a given reason" 
-  * noSubstitutionFlag 1..1 BL "Substitution of the product is not allowed."
-  * noSubstitutionReason 0..1 CD "Coded reason for the no-substitution requirement"
-  * noSubstitutionReasonText 0..1 ST "Textual reason for the no-substitution requirement"
-* allowedSubstitutionType 0..* CD "Specific type of substitution that is allowed. Can be an explicit relaxation to normal jurisdictional substitution rules, especially in hospital context."
+* substitution 0..1 Class "Whether and which type of substitution is allowed for this medication treatment line" 
+  * substitutionType 1..1 CD "The type of substitution that is allowed."
+  * substitutionTypeReason 0..1 CD "Coded reason for the substitution requirement"
+  * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
 * comment 0..* ST "Additional information or comments"
 
 
