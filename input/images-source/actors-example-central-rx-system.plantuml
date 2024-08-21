@@ -1,35 +1,37 @@
 @startuml
-'!include ./style.iuml
 skinparam linetype ortho
 skinparam linetype polyline
 
-title Medication Prescription and Dispense - Actors and Transactions - Prescription
-agent "  [[actors_and_transactions.html#order-placer Order Placer ]]" as orderplacer 
-agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
-agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
+title Medication Actors \n Central Prescription Repository architecture\n
+agent "  [[actors-transactions.html#order-placer Order Placer ]]\n(e.g. GP system)" as orderplacer 
 
-agent " [[actors_and_transactions.html#orderfiller Order Filler   ]]" as orderfiller 
+
+Package "Central Prescription Repository" {
+agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
+agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
+
+}
+agent "[[actors-transactions.html#orderfiller Order Consumer  ]]\n (e.g. Pharmacy)" as orderfiller 
 
 
 'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
 'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
 
-
 ' \n\n   [[PHARM-X2.html PHARM-S2 Supply Response/status]] ↑
-
-orderplacer -d- orderreceiver : "   [[PHARM-X1.html PHARM-X1\nSubmit Medication Order]] ↓       "
-orderreceiver -[hidden]r- orderresponder : "\t\t\t\t"
+orderplacer -r- orderreceiver : " "
+orderreceiver -[hidden]r-> orderresponder :" "
 
 'orderresponder -d[hidden]- dispensereceiver
 'orderresponder -r[hidden]- dispensereceiver
-orderresponder -[hidden]r- orderfiller
+'orderresponder -r[hidden]- orderfiller
 
-orderplacer -[hidden]r- orderfiller : "\t\t\t\t      "
+'orderplacer -[hidden]r- orderfiller :  "      "
 
 'dispensereceiver -l[hidden]- dispenseresponder : "   "
 
 
-orderresponder -u- orderfiller: "   [[PHARM-X1.html PHARM-X2\nRetrieve Medication Orders]] ↓          "
+
+orderresponder -r- orderfiller: " "
 'orderfiller -d- dispensereceiver: "   [[PHARM-X3.html PHARM-X3\nDispense]]↓  "
 
 ' → ↑ ← ↓

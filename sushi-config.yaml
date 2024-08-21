@@ -60,6 +60,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
   index.md:
     title: "IHE MPD (Medication Prescription and Dispense)"
+  howtoread.md:
+    title: "How to read this publication"
+    generation: markdown
   volume-1.md:
     title: "Volume 1"
     generation: markdown
@@ -67,14 +70,18 @@ pages:
       title: "Glossary"
     usecases.md:
       title: "Use Cases"
-      presc-use-case1.md:
+      presc-use-case-1.md:
         title: "Use Case 1: Order straight to dispense"
       presc-use-case-2.md:
         title: "Use Case 2: Proposal order"
-      MMA-homenursing.md:
-        title: "Mobile Medication Administration - Home Nursing"
-      MMA-chemotherapy.md:
-        title: "Mobile Medication Administration - Chemotherapy"
+      presc-use-case-3.md:
+        title: "Use Case 3: Dispense before prescription"
+      presc-use-case-4.md:
+        title: "Use Case 4: Change dosage during treatment"
+      # MMA-homenursing.md:
+      #   title: "Mobile Medication Administration - Home Nursing"
+      # MMA-chemotherapy.md:
+      #   title: "Mobile Medication Administration - Chemotherapy"
     medication-concepts.md:
       title: "Medication Concepts"
     order-management.md:
@@ -93,7 +100,9 @@ pages:
       title: "Security Considerations"   
     cross-profile.md:
       title: "Cross-profile Considerations"   
-
+  example-architectures.md:
+    title: "Example implementation architectures"
+    generation: markdown
 
   volume-2.md:
     title: "Volume 2"
