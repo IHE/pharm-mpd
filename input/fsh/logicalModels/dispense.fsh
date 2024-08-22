@@ -10,7 +10,7 @@ Characteristics: #can-be-target
 * relatedRequest 0..1 Reference(MedicationPrescription) "Prescription/request/order the dispense is related to"
 * medication 1..1 Reference(MedicinalProductLM) "Exact dispensed product"
 * dispensedQuantity 1..1 PQ "Number of dispensed packages if the pack size is known, or number of smaller items/units"
-* timeOfDispensation 1..1 dateTime "Date and time of dispensation"
+* timeOfDispensation 1..1 DT "Date and time of dispensation"
 * substitutionOccurred 0..1 BL "Indicated whether substitution was made by the dispenser" "Question: is this relevant? It is in eHDSI dispensation."
 * reimbursementRate 0..1 PQ "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation."
 
