@@ -1,0 +1,147 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+class "**MedicationPrescription**" as MedicationPrescription {
+  |_ identifier 1..*   
+  |_ groupIdentifier 0..1   
+  |_ recordingDate 0..1   
+  |_ issueDate 1..1   
+  |_ recorder 0..1   
+  |_ prescriber 1..1   
+  |_ category 0..*   
+  |_ validFrom 0..1   
+  |_ validUntil 0..1   
+  |_ patient 1..1   
+  |_ status 1..1   
+  |_ statusReason 0..*   
+  |_ statusReasonText 0..1   
+  |_ medication 1..1   
+  |_ indication 0..*   
+  |_ indicationText 0..1   
+  |_ ** dosageInstructions 0..1  **
+  |_ preparationInstructions 0..1   
+  |_ substitution 0..1   
+    |_ ** substitutionBoolean 1..1 **  
+    |_ substitutionType 1..1   
+    |_ substitutionTypeReason 0..1   
+    |_ substitutionTypeReasonText 0..1   
+  |_ comment 0..*   
+
+}
+
+class "**MedicinalProductLM**" as MedicinalProductLM {
+  |_ identifyingCode[x] 0..*   
+  |_ classification 0..*   
+  |_ productName 0..1   
+  |_ marketingAuthorisationHolder 0..1   
+    |_ organizationName 0..1   
+    |_ organizationIdentifier 0..*   
+  |_ doseForm 0..1   
+  |_ packSize 0..*   
+  |_ item 0..*   
+    |_ doseForm 0..1   
+    |_ ingredient 1..*   
+      |_ role 0..1   
+      |_ substance 1..1   
+      |_ strengthInfo 0..*   
+        |_ strength 1..1   
+        |_ strengthType 0..1   
+        |_ strengthSubstance 0..1   
+    |_ unitOfPresentation 0..1   
+    |_ containedQuantity 0..1   
+    |_ amount 0..1   
+  |_ device 0..*   
+    |_ deviceQuantity 1..1   
+    |_ device 1..1   
+  |_ characteristic 0..*   
+    |_ type 1..1   
+    |_ value[x] 0..1   
+  |_ additionalProductInformation 0..1   
+}
+
+
+class "**DosagingInformation**" as DosagingInformation {
+  |_ dosageDetails 0..* 
+    |_ sequence 0..1   
+    |_ text 0..1   
+    |_ additionalInstruction 0..*   
+    |_ patientInstruction 0..1   
+    |_ doseAndRate 0..*   
+      |_ type 0..1   
+      |_ dose 0..1   
+      |_ rate 0..1   
+    |_ timing 0..1   
+      |_ event 0..*   
+      |_ code 0..1   
+      |_ repeat 0..1   
+        |_ bounds 0..1   
+          |_ duration 0..1   
+          |_ range 0..1   
+          |_ period 0..1   
+        |_ count 0..1   
+          |_ count 1..1   
+          |_ countMax 0..1   
+        |_ duration 0..1   
+          |_ duration 1..1   
+          |_ durationMax 0..1   
+        |_ frequency 0..1   
+          |_ numberOfTimes 1..1   
+          |_ maxNumberOfTimes 0..1   
+          |_ period 1..1   
+          |_ periodMax 0..1   
+        |_ dayOfWeek 0..*   
+        |_ timeOfDay 0..*   
+        |_ eventTime 0..*   
+          |_ when 0..*   
+          |_ offset 0..1   
+    |_ asNeeded 0..1   
+    |_ asNeededFor 0..*   
+    |_ bodySite 0..1   
+    |_ routeOfAdministration 0..1   
+    |_ methodOfAdministration 0..1   
+    |_ maxDose 0..*   
+      |_ maxDosePerPeriod 0..*   
+      |_ maxDosePerAdministration 0..1   
+      |_ maxDosePerLifetime 0..1   
+}
+
+
+class "**Patient**" as PatientBasic {
+  |_ identifier 1..*   
+  |_ name 1..*   
+  |_ gender 0..1   
+  |_ dateOfBirth 0..1   
+  |_ insuranceInformation 0..1   
+}
+
+class "**Practitioner**" as PractitionerBasic {
+  |_ identifier 1..*   
+  |_ name 1..*   
+  |_ specialtyProfession 0..*   
+  |_ organisation 0..1   
+    |_ identifier 0..1   
+    |_ facilityName 0..1   
+    |_ facilityAddress 0..1   
+  |_ contactInformation 0..1   
+    |_ phone 0..1   
+    |_ email 0..*   
+}
+
+
+
+
+MedicationPrescription -r- "1..1" MedicinalProductLM : "            "
+MedicationPrescription *-d- "0..1" DosagingInformation 
+
+PatientBasic "1..1" -r- MedicationPrescription 
+PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
+PractitionerBasic "0..1" -r- MedicationPrescription : "   \t  recorder        "
+PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
+PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
+PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
+PractitionerBasic "1..1" -r- MedicationPrescription : " prescriber  "
+
+PatientBasic -d[hidden]- PractitionerBasic
+@enduml
