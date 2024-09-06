@@ -6,7 +6,7 @@ Characteristics: #can-be-target
 * identifier 0..* II "Identifier for the dispense"
 * patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered"
 * receiver 0..1 Reference(PatientBasic or PractitionerBasic) "Identification of the person who received the dispensed medication, especially when it was not the patient"
-* dispenser 1..1 Reference(PractitionerBasic, Organization, Device) "The person who dispensed the product, and takes the responsibility of the dispensation" //TODO not all models exist, references FHIR resources
+* dispenser 1..1 Reference(PractitionerBasic or Organization or Device) "The person who dispensed the product, and takes the responsibility of the dispensation" //TODO not all models exist, references FHIR resources
 * relatedRequest 0..* Reference(MedicationPrescription) "Prescription/request/order the dispense is related to"
 * medication 1..1 Reference(MedicinalProductLM) "Exact dispensed product"
 * dispensedQuantity 1..1 PQ "Number of dispensed packages if the pack size is known, or number of smaller items/units"
