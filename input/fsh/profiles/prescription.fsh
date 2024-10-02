@@ -15,6 +15,7 @@ Description: "IHE Medication Prescription profile"
 * medication MS // medication
 * medication only CodeableReference(IHEMedication)
 * subject MS // patient
+* effectiveDosePeriod MS // treatmentPeriod
 * dosageInstruction MS // usageInstructions
 * dosageInstruction.patientInstruction MS // preparationInstructions (?)
 * reason MS // indication, indicationText
