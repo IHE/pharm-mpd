@@ -22,6 +22,10 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dosageInstruction[=].timing.repeat.periodUnit = $ucum#d "day"
 * dosageInstruction[=].timing.repeat.when = $timing#EVE.late "Late Evening"
 * dosageInstruction[=].timing.repeat.boundsDuration = 42 $ucum#d "day"
+* dispenseRequest.numberOfRepeatsAllowed = 1
+* dispenseRequest.quantity = 168 $snomed#732936001 "Tablet"
+* dispenseRequest.validityPeriod.start = "2024-10-03"
+* dispenseRequest.validityPeriod.end = "2024-12-03"
 
 
 Instance: 100-3-medication-prescription-request2
@@ -45,6 +49,10 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dosageInstruction[=].timing.repeat.periodUnit = $ucum#d "day"
 //* dosageInstruction[=].timing.repeat.when = $timing#EVE.late "Late Evening"
 * dosageInstruction[=].timing.repeat.boundsDuration = 4 $ucum#d "day"
+* dispenseRequest.numberOfRepeatsAllowed = 1
+* dispenseRequest.quantity = 16 $snomed#732936001 "Tablet"
+* dispenseRequest.validityPeriod.start = "2024-10-03"
+* dispenseRequest.validityPeriod.end = "2024-12-03"
 
 
 Instance: 100-3-medication-prescription-request3
@@ -68,3 +76,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dosageInstruction[=].timing.repeat.periodUnit = $ucum#d "day"
 //* dosageInstruction[=].timing.repeat.when = $timing#EVE.late "Late Evening"
 * dosageInstruction[=].timing.repeat.boundsDuration = 4 $ucum#d "day"
+* dispenseRequest.numberOfRepeatsAllowed = 1
+* dispenseRequest.quantity = 12 $snomed#732936001 "Tablet"
+* dispenseRequest.validityPeriod.start = "2024-10-03"
+* dispenseRequest.validityPeriod.end = "2024-12-03"
