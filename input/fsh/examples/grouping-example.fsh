@@ -5,10 +5,10 @@ Instance: PrescriptionLine1
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line1"
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr1"
 * status = #active
 * intent = #option
@@ -23,7 +23,7 @@ InstanceOf: MedicationRequest
   * system = "http://example.com/NamingSystem/prescriptionlines"
   * value = "line2"
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr1"
 * status = #active
 * intent = #option
@@ -35,10 +35,10 @@ Instance: PrescriptionLine3
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line3"
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr1"
 * status = #active
 * intent = #option
@@ -52,11 +52,11 @@ Instance: RequestOrchestration1
 InstanceOf: RequestOrchestration
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/requestorchestration"
+  * system = "http://example.com/requestorchestration"
   * value = "prescr1"
 
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr1"
 
 * status = #active
@@ -74,10 +74,10 @@ Instance: PrescriptionLine4
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line4"
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr2"
 * status = #active
 * intent = #order
@@ -89,11 +89,11 @@ Instance: PrescriptionLine5
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line5"
 
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr2"
 * status = #active
 * intent = #order
@@ -110,10 +110,10 @@ Instance: PrescriptionLine6
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line6"
 * groupIdentifier
-  * system = "http://example.com/NamingSystem/prescriptions"
+  * system = "http://example.com/prescriptions"
   * value = "prescr3"
 * status = #active
 * intent = #order
@@ -132,7 +132,7 @@ Instance: PrescriptionLine7
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line7"
 * status = #active
 * intent = #order
@@ -144,7 +144,7 @@ Instance: PrescriptionLine8
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line8"
 * status = #active
 * intent = #order
@@ -154,7 +154,7 @@ Instance: PrescriptionLine9
 InstanceOf: MedicationRequest
 * subject.identifier.value = "patient1"
 * identifier
-  * system = "http://example.com/NamingSystem/prescriptionlines"
+  * system = "http://example.com/prescriptionlines"
   * value = "line9"
 * status = #active
 * intent = #order
