@@ -1,6 +1,6 @@
 Instance: patient1
 InstanceOf: Patient
-Usage: #inline
+Usage: #example
 Description: "A patient"
 
 * identifier.value = "12345"
@@ -10,7 +10,7 @@ Description: "A patient"
 
 Instance: practitioner1
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 Description: "A doctor"
 
 * identifier.value = "hpc-265"
@@ -19,7 +19,7 @@ Description: "A doctor"
 
 Instance: practitioner2
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 Description: "A pharmacist"
 
 * identifier.value = "hpc-pharm-124"
@@ -29,7 +29,7 @@ Description: "A pharmacist"
 
 Instance: organization1
 InstanceOf: Organization
-Usage: #inline
+Usage: #example
 Description: "An organization"
 
 * identifier.value = "A12567"
@@ -37,7 +37,7 @@ Description: "An organization"
 
 Instance: organization2
 InstanceOf: Organization
-Usage: #inline
+Usage: #example
 Description: "An organization"
 
 * identifier.value = "Ph-1234"
@@ -45,7 +45,7 @@ Description: "An organization"
 
 Instance: doctor1
 InstanceOf: PractitionerRole
-Usage: #inline
+Usage: #example
 Description: "Clinical oncologist in a practice"
 
 * practitioner = Reference(practitioner1)

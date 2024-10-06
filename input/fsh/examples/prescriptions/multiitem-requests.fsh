@@ -245,7 +245,7 @@ Description: "A grouper for the lines of a multiitem prescription."
 
 Instance: 300-2-medication-prescription-request1
 InstanceOf: IHEMedicationPrescription
-Usage: #inline
+Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Thalidomide 50mgx4 once a day before bed for 42 days."
 
 * identifier.value = "300-1/2"
@@ -271,7 +271,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 
 Instance: 300-2-medication-prescription-request2
 InstanceOf: IHEMedicationPrescription
-Usage: #inline
+Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Melphalan 2mgx4 once a day for 4 days in the beginning of cycle."
 
 * identifier.value = "300-2/2"
