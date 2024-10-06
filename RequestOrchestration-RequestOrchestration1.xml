@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestOrchestration xmlns="http://hl7.org/fhir">
+  <id value="RequestOrchestration1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestOrchestration RequestOrchestration1</b></p><a name="RequestOrchestration1"> </a><a name="hcRequestOrchestration1"> </a><a name="RequestOrchestration1-en-US"> </a><p><b>identifier</b>: <code>http://example.com/requestorchestration</code>/prescr1</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/prescr1</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>subject</b>: Identifier: patient1</p><blockquote><p><b>action</b></p><p><b>resource</b>: <a href="MedicationRequest-PrescriptionLine1.html">MedicationRequest: identifier = http://example.com/prescriptionlines#line1; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><p><b>resource</b>: <a href="MedicationRequest-PrescriptionLine2.html">MedicationRequest: identifier = http://example.com/NamingSystem/prescriptionlines#line2; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><p><b>resource</b>: <a href="MedicationRequest-PrescriptionLine3.html">MedicationRequest: identifier = http://example.com/prescriptionlines#line3; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://example.com/requestorchestration"/>
+    <value value="prescr1"/>
+  </identifier>
+  <groupIdentifier>
+    <system value="http://example.com/prescriptions"/>
+    <value value="prescr1"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <subject>
+    <identifier>
+      <value value="patient1"/>
+    </identifier>
+  </subject>
+  <action>
+    <resource>
+      <reference value="MedicationRequest/PrescriptionLine1"/>
+    </resource>
+  </action>
+  <action>
+    <resource>
+      <reference value="MedicationRequest/PrescriptionLine2"/>
+    </resource>
+  </action>
+  <action>
+    <resource>
+      <reference value="MedicationRequest/PrescriptionLine3"/>
+    </resource>
+  </action>
+</RequestOrchestration>
