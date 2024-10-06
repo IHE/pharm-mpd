@@ -1,17 +1,30 @@
 Instance: patient1
 InstanceOf: Patient
 Usage: #example
-Description: "A patient"
+Description: "A patient: Thomas, born 1950"
 
 * identifier.value = "12345"
 * name.given = "Thomas"
 * name.family = "Engine"
+* birthDate = "1950-09-15"
+* gender = #male
+
+Instance: patient2
+InstanceOf: Patient
+Usage: #example
+Description: "A patient: Emily, born 1990"
+
+* identifier.value = "12345"
+* name.given = "Emily"
+* name.family = "Engine"
+* birthDate = "1990-10-28"
+* gender = #female
 
 
 Instance: practitioner1
 InstanceOf: Practitioner
 Usage: #example
-Description: "A doctor"
+Description: "Dr Meryl Ärztin"
 
 * identifier.value = "hpc-265"
 * name[0].given = "Meryl"
@@ -20,7 +33,7 @@ Description: "A doctor"
 Instance: practitioner2
 InstanceOf: Practitioner
 Usage: #example
-Description: "A pharmacist"
+Description: "Mr Moon Farmatseut"
 
 * identifier.value = "hpc-pharm-124"
 * name[0].given = "Moon"
@@ -30,7 +43,7 @@ Description: "A pharmacist"
 Instance: organization1
 InstanceOf: Organization
 Usage: #example
-Description: "An organization"
+Description: "An organization: clinic"
 
 * identifier.value = "A12567"
 * name = "Dr Ärztin Private Practice"
@@ -38,7 +51,7 @@ Description: "An organization"
 Instance: organization2
 InstanceOf: Organization
 Usage: #example
-Description: "An organization"
+Description: "An organization: pharmacy"
 
 * identifier.value = "Ph-1234"
 * name = "Su-Bin Pharmacy B"
@@ -46,7 +59,7 @@ Description: "An organization"
 Instance: doctor1
 InstanceOf: PractitionerRole
 Usage: #example
-Description: "Clinical oncologist in a practice"
+Description: "Dr Meryl Ärztin - clinical oncologist"
 
 * practitioner = Reference(practitioner1)
 * practitioner.display = "Dr Meryl Ärztin"
@@ -57,7 +70,7 @@ Description: "Clinical oncologist in a practice"
 Instance: pharmacist1
 InstanceOf: PractitionerRole
 Usage: #example
-Description: "Pharmacist in a practice"
+Description: "Mr Moon Farmatseut - pharmacist"
 
 * practitioner = Reference(practitioner2)
 * practitioner.display = "Moon Farmatseut"
