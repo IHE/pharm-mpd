@@ -1,0 +1,22 @@
+@startuml
+
+hide footbox
+
+'!include ./style.iuml
+
+
+Participant "[[actors_and_transactions.html#order-placer Order\nPlacer]]" as OP
+Participant "[[actors_and_transactions.html#order-filler Order\nFiller]]" as OF
+
+activate OP
+activate OF
+
+OP -[hidden]> OF
+OP -> OF: \Medication Order \n\t[[StructureDefinition-MedicationOrder.html{Medication Order} Medication Order]]
+OP <-- OF: \t(response)\t
+OP -[hidden]> OF
+
+deactivate OP
+deactivate OF
+
+@enduml

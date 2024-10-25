@@ -27,27 +27,57 @@ Description: "Multiitem prescription with RequestOrchestration. 42-day cycle tre
 * entry[+].fullUrl = "https://example.com/Patient/patient1"
 * entry[=].resource = patient1
 
+
 Instance: 100-RequestOrchestration
 InstanceOf: RequestOrchestration
-Usage: #inline
-Description: "A grouper for the lines of a multiitem prescription."
+Usage: #example
+Description: "RequestOrchestration for the medication to be taken at the same time - in this case start at the same time."
 
-// No identifier, because it's not an actual business object. 
-// groupIdentifier is the prescription identifier. All MedicationRequest instances should have the same groupIdentifier value.
-* groupIdentifier
-  * value = "100"
-* subject = Reference(Patient/patient1)
 * status = #active
-* action[0].resource = Reference(100-3-medication-prescription-request1)
-// related action concurrent-with-start
-* action[+].resource = Reference(100-3-medication-prescription-request2)
-* action[+].resource = Reference(100-3-medication-prescription-request3)
 * intent = #order
+
+* subject = Reference(Patient1)
+* identifier
+  * system = "http://example.com/requestorchestration"
+  * value = "prescr1"
+
+* groupIdentifier
+  * system = "http://example.com/prescriptions"
+  * value = "100"
+
+
+* action[0]
+  * id = "1"
+  * resource = Reference(100-3-medication-prescription-request1)
+  * relatedAction[0]
+    * targetId = "2"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "3"
+    * relationship = #concurrent-with-start
+* action[+] 
+  * id = "2"
+  * resource = Reference(100-3-medication-prescription-request2)
+  * relatedAction[0]
+    * targetId = "1"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "3"
+    * relationship = #concurrent-with-start
+* action[+]
+  * id = "3"
+  * resource = Reference(100-3-medication-prescription-request1)
+  * relatedAction[0]
+    * targetId = "1"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "2"
+    * relationship = #concurrent-with-start
 
 
 Instance: 100-3-medication-prescription-request1
 InstanceOf: IHEMedicationPrescription
-Usage: #inline
+Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Thalidomide 50mgx4 once a day before bed for 42 days."
 
 * identifier.value = "100-1/3"
@@ -72,9 +102,10 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dispenseRequest.validityPeriod.end = "2024-12-03"
 
 
+
 Instance: 100-3-medication-prescription-request2
 InstanceOf: IHEMedicationPrescription
-Usage: #inline
+Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Melphalan 2mgx4 once a day for 4 days in the beginning of cycle."
 
 * identifier.value = "100-2/3"
@@ -83,9 +114,9 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * status = #active
 * intent = #order
 * authoredOn = "2024-10-03"
-* requester = Reference(PractitionerRole/doctor1)
+* requester = Reference(Doctor1)
 * medication.concept = $snomed#326766003 "Melphalan 2 mg oral tablet"
-* subject = Reference(Patient/patient1)
+* subject = Reference(Patient1)
 * reason.concept = $snomed#109989006 "Multiple myeloma"
 * dosageInstruction[0].doseAndRate.doseQuantity = 4 $snomed#732936001 "Tablet"
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -98,9 +129,13 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dispenseRequest.validityPeriod.end = "2024-12-03"
 
 
+
+
+
+
 Instance: 100-3-medication-prescription-request3
 InstanceOf: IHEMedicationPrescription
-Usage: #inline
+Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Prednisone 50mgx3 once a day for 4 days in the beginning of cycle."
 
 * identifier.value = "100-3/3"
@@ -109,9 +144,9 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * status = #active
 * intent = #order
 * authoredOn = "2024-10-03"
-* requester = Reference(PractitionerRole/doctor1)
+* requester = Reference(Doctor1)
 * medication.concept = $snomed#374072009 "Prednisone 50 mg oral tablet"
-* subject = Reference(Patient/patient1)
+* subject = Reference(Patient1)
 * reason.concept = $snomed#109989006 "Multiple myeloma"
 * dosageInstruction[0].doseAndRate.doseQuantity = 3 $snomed#732936001 "Tablet"
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -292,5 +327,10 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * dispenseRequest.quantity = 20 $ucum#g "gram(s)"
 * dispenseRequest.validityPeriod.start = "2024-10-06"
 * dispenseRequest.validityPeriod.end = "2024-12-06"
+
+
+
+
+
 
 

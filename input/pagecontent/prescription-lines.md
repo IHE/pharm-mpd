@@ -1,5 +1,5 @@
 
-In some jurisdictions, a prescription has only one line - one prescription, one medication. In other countries, a prescription is a group of medication lines. This is normally legally established, and it is important to support both these cases.
+In some jurisdictions, a prescription is modeled as having only one line - one prescription means one medication. In other countries or models, a prescription is a group of medication lines. This is normally legally established, and it is important to support both these cases.
 
 The IHE MPD profile provides a common model that supports both these cases. This allows different types of implementations to use IHE, and allows for interoperability between these different systems, understanding the data needs and assumptions.
 
@@ -47,7 +47,7 @@ When a prescription has one single line, the prescription and the line are the s
 
 
 **Scenario b (Multi-line Prescriptions)**:
-When a prescription is issued with multiple lines, two data objects are used:
+When a prescription is issued with multiple lines, two data concepts apply:
 * Prescription - containing the attributes of the order (prescriber, patient,...)
 * Prescription line - containing the attributes relative to each medication (medication, dosage, ...)
 

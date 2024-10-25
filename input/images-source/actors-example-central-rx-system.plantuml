@@ -3,13 +3,12 @@ skinparam linetype ortho
 skinparam linetype polyline
 
 title Medication Actors \n Central Prescription Repository architecture\n
-agent "  [[actors-transactions.html#order-placer Order Placer ]]\n(e.g. GP system)" as orderplacer 
 
 
 Package "Central Prescription Repository" {
+agent "  [[actors-transactions.html#order-placer Order Placer ]]\n(e.g. GP system)" as orderplacer 
 agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
-
 }
 agent "[[actors-transactions.html#orderfiller Order Consumer  ]]\n (e.g. Pharmacy)" as orderfiller 
 
@@ -17,7 +16,7 @@ agent "[[actors-transactions.html#orderfiller Order Consumer  ]]\n (e.g. Pharmac
 'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
 'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
 
-' \n\n   [[PHARM-X2.html PHARM-S2 Supply Response/status]] ↑
+' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
 orderplacer -r- orderreceiver : " "
 orderreceiver -[hidden]r-> orderresponder :" "
 
@@ -39,7 +38,7 @@ orderresponder -r- orderfiller: " "
 'orderresponder -r- dispensereceiver:  "   [[PHARM-X2.html PHARM-X2 Dispense]]  ←   "
 ' dispensereceiver -r- dispenseresponder : ""
 
-'orderfiller -d- orderfiller : "   [[PHARM-S2.html PHARM-S2 Fetch Orders]] ←  "
+'orderfiller -d- orderfiller : "   [[PHARM-M2.html PHARM-M2 Fetch Orders]] ←  "
 'dispenser -[hidden]r- invreporter : "\t\t\t\t\t "
-'invreporter -d- invmanager : "   [[PHARM-S5.html PHARM-S5 Inventory Status]] ↑                  \n\n   [[PHARM-S6.html PHARM-S6 Inventory Update]] ↓                 \n\n[[PHARM-S7.html PHARM-S7 Inventory Query]] ↓\t\t  "
+'invreporter -d- invmanager : "   [[PHARM-M5.html PHARM-M5 Inventory Status]] ↑                  \n\n   [[PHARM-M6.html PHARM-M6 Inventory Update]] ↓                 \n\n[[PHARM-M7.html PHARM-M7 Inventory Query]] ↓\t\t  "
 @enduml

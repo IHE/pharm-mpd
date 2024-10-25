@@ -60,9 +60,34 @@ InstanceOf: RequestOrchestration
   * value = "prescr1"
 
 * status = #active
-* action[0].resource = Reference(PrescriptionLine1)
-* action[+].resource = Reference(PrescriptionLine2)
-* action[+].resource = Reference(PrescriptionLine3)
+* action[0]
+  * id = "1"
+  * resource = Reference(PrescriptionLine1)
+  * relatedAction[0]
+    * targetId = "2"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "3"
+    * relationship = #concurrent-with-start
+* action[+] 
+  * id = "2"
+  * resource = Reference(PrescriptionLine2)
+  * relatedAction[0]
+    * targetId = "1"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "3"
+    * relationship = #concurrent-with-start
+* action[+]
+  * id = "3"
+  * resource = Reference(PrescriptionLine3)
+  * relatedAction[0]
+    * targetId = "1"
+    * relationship = #concurrent-with-start
+  * relatedAction[+]
+    * targetId = "2"
+    * relationship = #concurrent-with-start
+
 * intent = #order
 
 
