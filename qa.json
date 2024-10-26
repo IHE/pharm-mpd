@@ -1,0 +1,19 @@
+{
+  "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.pharm.mpd",
+  "name" : "IHE_MPD",
+  "title" : "Medication Prescription and Delivery (MPD)",
+  "description" : "ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery",
+  "status" : "active",
+  "package-id" : "ihe.pharm.mpd",
+  "ig-ver" : "0.1.0",
+  "date" : "Sat, 26 Oct, 2024 04:01:38 +0000",
+  "dateISO8601" : "2024-10-26T04:01:38+00:00",
+  "errs" : 32,
+  "warnings" : 50,
+  "hints" : 26,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1414779776
+}
