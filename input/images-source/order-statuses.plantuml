@@ -1,0 +1,28 @@
+@startuml
+scale 600 width
+
+state State3 {
+  state active
+  state "on-hold" as onhold
+  state ended {
+    state stopped
+    state completed
+    state cancelled
+  }
+  state "entered-in-error" as error
+  state draft
+  state unknown
+  
+}
+
+[*] -d-> unknown
+[*] -d-> draft
+  draft --> active 
+  draft -r-> error
+  active -r-> onhold 
+  onhold -l-> active 
+  active --> ended
+  ended --> [*] 
+
+
+@enduml

@@ -84,8 +84,8 @@ pages:
       #   title: "Mobile Medication Administration - Chemotherapy"
     medication-concepts.md:
       title: "Medication Concepts"
-    order-management.md:
-      title: "Order Management"
+    status-workflow-management.md:
+      title: "Status and Workflow Management"
       prescription-lines.md:
         title: "Single- and multiline prescriptions"
       order-statuses.md:
