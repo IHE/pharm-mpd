@@ -6,6 +6,7 @@ Description: "Medication classification/category. Allows the product to be class
 * ^context[+].type = #element
 * ^context[=].expression = "Medication"
 * value[x] only CodeableConcept 
+* valueCodeableConcept from $atcVS (example)
 
 
 Extension: MedicationProductName
@@ -52,6 +53,7 @@ Description: "Any characteristic of the medicinal product prescribed or dispense
     type 1..1 and
     value 0..1
 * extension[type].value[x] only CodeableConcept
+* extension[type].valueCodeableConcept from $medication-characteristic (example)
 * extension[type] ^short = "Code specifying the type of characteristic of medication"
 * extension[value] ^short = "Descriptive value of the characteristic"
 
@@ -64,7 +66,8 @@ Description: "Unit of presentation, typically describing the smallest countable 
 * ^context[+].type = #element
 * ^context[=].expression = "Medication"
 * value[x] only CodeableConcept 
-* valueCodeableConcept 1..1
+* valueCodeableConcept 1..1 
+* valueCodeableConcept from $unitOfPresentation (example)
 
 
 Extension: MedicationStrengthSubstance
