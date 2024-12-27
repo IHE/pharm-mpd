@@ -56,7 +56,8 @@ Description: "Any characteristic of the medicinal product prescribed or dispense
 * extension[type].valueCodeableConcept from $medication-characteristic (example)
 * extension[type] ^short = "Code specifying the type of characteristic of medication"
 * extension[value] ^short = "Descriptive value of the characteristic"
-
+* extension[value].value[x] only boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio
+// the list of allowed types is from EHDS logical models. Might consider adding Attachment, as it is in MedicationKnowledge and MedicationDefinition characteristics.
 
 Extension: MedicationUnitOfPresentation
 Id:        ihe-ext-medication-unitofpresentation
@@ -77,6 +78,7 @@ Description: "Substance for marking the basis of strength. When the precise acti
 Context: Medication.ingredient.strength[x]
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
+* valueCodeableConcept from $substanceSCT (example)
 
 
 Extension: MedicationStrengthType

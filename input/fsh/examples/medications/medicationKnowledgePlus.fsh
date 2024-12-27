@@ -1,3 +1,9 @@
+/*
+
+This is an example of how a combination pack would be described by using MedicationKnowledge. 
+This approach is deprecated from this IG.
+
+
 Instance: 100-CanifugCremolum-With-MedicationKnowledge
 InstanceOf: Medication
 Usage: #example
@@ -81,3 +87,4 @@ Description: "Ingredient: clotrimazole, presentation strength"
 * substance.code.concept = $sms#100000092074 "CLOTRIMAZOLE"
 * substance.strength.presentationRatio.numerator = 100 $ucum#mg "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $edqm-standardterms#15039000 "Pessary"
+*/

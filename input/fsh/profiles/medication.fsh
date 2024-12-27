@@ -38,6 +38,7 @@ Description: "Medication for clinical use cases. This could be a branded product
   * item MS
     * ^short = "Substance (Substance resource or concept from terminology) or a medicinal product (Medication resource or concept from terminology). Medicinal product can be an ingredient in case of extemporal medications or combination packs (e.g Creme + 6 tablets)"
   * item only CodeableReference(Substance or IHEMedication) // item.ingredient.substance; item
+  * item from $substanceSCT (example)
   * isActive MS // item.ingredient.role
   * strength[x] MS // item.ingredient.strengthInfo (does not map exactly)
     * extension contains MedicationStrengthSubstance named basisOfStrengthSubstance 0..1 
