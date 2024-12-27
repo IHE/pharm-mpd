@@ -29,5 +29,5 @@ Characteristics: #can-be-target
   * device 1..1 CD "Device coded"
 * characteristic 0..* Class "Other features of the product"
   * type 1..1 CD "A code expressing the type of characteristic"
-  * value[x] 0..1 ANY "Description of the characteristic"
+  * value[x] 0..1 BL or CD or ST or PQ or DT or INT or REAL or RTO "Description of the characteristic"
 * additionalProductInformation 0..1 Class "Additional information about product - for example, a reference to a product catalogue"
