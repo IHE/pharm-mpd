@@ -26,7 +26,7 @@ Description: "Logical model for medication prescription (or some other form of o
 * substitution 0..1 Class "Whether and which type of substitution is allowed for this medication treatment line"
   * allowed 0..1 BL "Whether substitution is allowed or not."
   * type 1..1 CD "The type of substitution that is allowed."
-  * typeReason[x] 0..1 CD or ST "Reason for the substitution requirement"
+  * reason[x] 0..1 CD or ST "Reason for the substitution requirement"
 //  * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
 * comment 0..* ST "Additional information or comments"
 

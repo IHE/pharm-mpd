@@ -36,6 +36,25 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
 * marketingAuthorizationHolder.display = "MIP Pharma GmbH" //We did not profile MAH data, shall we try better?
 
+Instance: 01D-Cefuroxime750Branded
+InstanceOf: IHEMedication
+Usage: #example
+Description: "1D. Cefuroxime 750mg powder for solution in a vial (5 vials per package). Branded packaged product, defined by attributes."
+
+* identifier.value = "1529928"
+* identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
+* doseForm = $edqm-standardterms#11205000 "Powder for solution for injection"
+* extension[classification].valueCodeableConcept = $who-atc#J01DC02 "cefuroxime"
+* extension[productName].valueString = "Cefuroxime MIP 750 mg, süstelahuse pulber"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15060000 "Vial"
+* totalVolume = 5 $edqm-standardterms#15060000 "Vial"
+* ingredient.item.concept = $snomed#48753004 "Cefuroxime sodium"
+* ingredient.isActive = true
+* ingredient.strengthRatio.numerator = 750 $ucum#mg "milligram"
+* ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
+* ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
+* marketingAuthorizationHolder.display = "MIP Pharma GmbH"
+
 Instance: 02A-ClotrimazoleCanifugCremolum
 InstanceOf: IHEMedication
 Usage: #example

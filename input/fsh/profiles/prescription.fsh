@@ -11,6 +11,8 @@ Description: "IHE Medication Prescription profile"
 * recorder 0..1 MS // recorder
 * requester 0..1 MS // prescriber
 * category MS // category
+* dispenseRequest.extension contains MedicationRequestPrescribedQuantity named prescribedQuantity 0..1 
+* dispenseRequest.extension[prescribedQuantity] ^short = "Total amount of product requested on this medication request."
 * dispenseRequest.validityPeriod MS // validFrom, validUntil
 * medication MS // medication
 * medication only CodeableReference(IHEMedication)

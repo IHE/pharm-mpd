@@ -90,13 +90,13 @@ Context: Medication.ingredient.strength[x]
 * valueCodeableConcept 1..1
 
 
-Extension: MedicationRequestTotalAmount
-Id:        ihe-ext-medicationrequest-totalamount
-Title:     "MedicationRequest - Total Amount"
-Description: "Total amount of product being requested."
-// Extension on MedicationRequest
+Extension: MedicationRequestPrescribedQuantity
+Id:        ihe-ext-medicationrequest-prescribedQuantity
+Title:     "MedicationRequest - Prescribed Quantity"
+Description: "Total amount of product being requested. This may refer to number of packages when package size is indicated in Medication resource."
+
 * ^context[+].type = #element
-* ^context[=].expression = "MedicationRequest"
+* ^context[=].expression = "MedicationRequest.dispenseRequest"
 * value[x] only Quantity
 
 
