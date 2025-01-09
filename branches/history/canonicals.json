@@ -1,0 +1,226 @@
+[
+  {
+    "id" : "ihe.mpd",
+    "type" : "ImplementationGuide",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd",
+    "version" : "0.1.0",
+    "name" : "IHE_MPD"
+  },
+  {
+    "id" : "AD",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/AD",
+    "version" : "0.1.0",
+    "name" : "AD"
+  },
+  {
+    "id" : "ANY",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ANY",
+    "version" : "0.1.0",
+    "name" : "ANY"
+  },
+  {
+    "id" : "BL",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/BL",
+    "version" : "0.1.0",
+    "name" : "BL"
+  },
+  {
+    "id" : "CD",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CD",
+    "version" : "0.1.0",
+    "name" : "CD"
+  },
+  {
+    "id" : "Class",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Class",
+    "version" : "0.1.0",
+    "name" : "Class"
+  },
+  {
+    "id" : "CommonPrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CommonPrescription",
+    "version" : "0.1.0",
+    "name" : "CommonPrescription"
+  },
+  {
+    "id" : "CrossBorderProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CrossBorderProduct",
+    "version" : "0.1.0",
+    "name" : "CrossBorderProduct"
+  },
+  {
+    "id" : "DT",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DT",
+    "version" : "0.1.0",
+    "name" : "DT"
+  },
+  {
+    "id" : "EN",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/EN",
+    "version" : "0.1.0",
+    "name" : "EN"
+  },
+  {
+    "id" : "II",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/II",
+    "version" : "0.1.0",
+    "name" : "II"
+  },
+  {
+    "id" : "INT",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/INT",
+    "version" : "0.1.0",
+    "name" : "INT"
+  },
+  {
+    "id" : "MedicationAdministrationHMW",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationAdministrationHMW",
+    "version" : "0.1.0",
+    "name" : "MedicationAdministrationHMW"
+  },
+  {
+    "id" : "MedicationAdministrationIHEMM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationAdministrationIHEMM",
+    "version" : "0.1.0",
+    "name" : "MedicationAdministrationIHEMM"
+  },
+  {
+    "id" : "MedicationDispenseHMW",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseHMW",
+    "version" : "0.1.0",
+    "name" : "MedicationDispenseHMW"
+  },
+  {
+    "id" : "MedicationDispenseIHEMM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEMM",
+    "version" : "0.1.0",
+    "name" : "MedicationDispenseIHEMM"
+  },
+  {
+    "id" : "MedicationDispenseIHEPWP",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEPWP",
+    "version" : "0.1.0",
+    "name" : "MedicationDispenseIHEPWP"
+  },
+  {
+    "id" : "MedicationOrderHMW",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW",
+    "version" : "0.1.0",
+    "name" : "MedicationOrderHMW"
+  },
+  {
+    "id" : "MedicationOrderIHEMM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEMM",
+    "version" : "0.1.0",
+    "name" : "MedicationOrderIHEMM"
+  },
+  {
+    "id" : "MedicationOrderIHEPWP",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEPWP",
+    "version" : "0.1.0",
+    "name" : "MedicationOrderIHEPWP"
+  },
+  {
+    "id" : "PQ",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PQ",
+    "version" : "0.1.0",
+    "name" : "PQ"
+  },
+  {
+    "id" : "PharmaceuticalAdviceHMW",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceHMW",
+    "version" : "0.1.0",
+    "name" : "PharmaceuticalAdviceHMW"
+  },
+  {
+    "id" : "PharmaceuticalAdviceIHEMM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEMM",
+    "version" : "0.1.0",
+    "name" : "PharmaceuticalAdviceIHEMM"
+  },
+  {
+    "id" : "PharmaceuticalAdviceIHEPWP",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEPWP",
+    "version" : "0.1.0",
+    "name" : "PharmaceuticalAdviceIHEPWP"
+  },
+  {
+    "id" : "PrescribedProductModel1",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PrescribedProductModel1",
+    "version" : "0.1.0",
+    "name" : "PrescribedProductModel1"
+  },
+  {
+    "id" : "QT",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/QT",
+    "version" : "0.1.0",
+    "name" : "QT"
+  },
+  {
+    "id" : "REAL",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/REAL",
+    "version" : "0.1.0",
+    "name" : "REAL"
+  },
+  {
+    "id" : "RTO",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/RTO",
+    "version" : "0.1.0",
+    "name" : "RTO"
+  },
+  {
+    "id" : "ST",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ST",
+    "version" : "0.1.0",
+    "name" : "ST"
+  },
+  {
+    "id" : "TS",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/TS",
+    "version" : "0.1.0",
+    "name" : "TS"
+  },
+  {
+    "id" : "Untyped",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Untyped",
+    "version" : "0.1.0",
+    "name" : "Untyped"
+  },
+  {
+    "id" : "eHDSIePrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/eHDSIePrescription",
+    "version" : "0.1.0",
+    "name" : "eHDSIePrescription"
+  }
+]
