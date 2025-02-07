@@ -1,39 +1,48 @@
-The use cases this profile intends to support are described here. For each case, the variation is :
+The use cases this profile intends to support are described here. For each case, the variation is:
 
-1. Prescription with validation
-  * depending on the drug type - e.g. narcotics
-  * legal requirements
-  * validation by decision of the
+## Basic Flow(s)
 
-2. Proposal order
+1. Simple prescription and dispense
 
-3. Optional order review
 
-4. Non-actionable order
 
-5. Cancelling prescription
-5.1. Before validation
-5.2. After validation
-5.3. After dispense
-5.4. After administration
 
-6. Refused order
+<hr/>
 
-7. Administration requests 
 
-8. Admission and discharge
+## Workflow Patterns
 
-9. Prescription and encoding
+1. Prescription creation  
+1.1. Simple Prescription  
+1.1. Required validation ?  
+1.1. Optional review ?  
+1.1. Prescription drafting + confirmation  
 
-10. Regimen updates - e.g. Prescripiton for chemotherapy
+1. Dispense without prescription  
+1.1. OTC  
+1.1. Medication requiring prescription e.g. acute 
 
-11. Dispense without prescription
+1. Authorisation / validation  
 
-12. Dispense before required prescription
+1. Cancellation/change of the prescription 
 
-13. Adverse drug event
+1. Substitution or override  
+1.1. Override by pharmacist?  
+1.1. Substitution  
+1.1. Denied dispense 
+1.1. e.g. prescription 500mg tablet and dispense 1000mg half tablet
 
-14. Change order
-14.1 After treatment after dispense
 
-15. Prescription from Treatment Plan/Line
+1. Status management?  
+1. Dispense discarding
+1. Medication overview?
+
+
+
+
+
+
+
+
+
+
