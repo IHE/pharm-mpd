@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MedicationOrderIHEPWP"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP" title="A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).">MedicationOrderIHEPWP</a><a name="MedicationOrderIHEPWP"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">[IHE PHARM White Paper] Logical Model for order</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.identifier" title="The business identifier(s) for the medication order">identifier</a><a name="MedicationOrderIHEPWP.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The business identifier(s) for the medication Order</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.date" title="When prescription was initially made">date</a><a name="MedicationOrderIHEPWP.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">When prescription was initially made</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.patient" title="The person for which the medication is prescribed.">patient</a><a name="MedicationOrderIHEPWP.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person for which the medication is prescribed.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.reason" title="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)">reason</a><a name="MedicationOrderIHEPWP.reason"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> | <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.note" title="Additional Information about the prescription">note</a><a name="MedicationOrderIHEPWP.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional Information about the prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.requester" title="Who made the prescription">requester</a><a name="MedicationOrderIHEPWP.requester"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who made the prescription</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.status" title="Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED">status</a><a name="MedicationOrderIHEPWP.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem" title="A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.">prescriptionItem</a><a name="MedicationOrderIHEPWP.prescriptionItem"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID" title=" Prescription Item ID ">prescriptionItemID</a><a name="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> Prescription Item ID </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.treatmentDate" title="Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals">treatmentDate</a><a name="MedicationOrderIHEPWP.prescriptionItem.treatmentDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing" title="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)">reasonForPrescribing</a><a name="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.Frequency">Frequency</a><a name="MedicationOrderIHEPWP.prescriptionItem.Frequency"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed" title="Substitution allowed or not (can the pharmacist do a substitution of medication?)">substitutionAllowed</a><a name="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Substitution allowed or not (can the pharmacist do a substitution of medication?)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.route" title="Route of administration">route</a><a name="MedicationOrderIHEPWP.prescriptionItem.route"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Route of administration</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.Dosage">Dosage</a><a name="MedicationOrderIHEPWP.prescriptionItem.Dosage"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.intakePattern" title="Intake pattern for the medication">intakePattern</a><a name="MedicationOrderIHEPWP.prescriptionItem.intakePattern"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Intake pattern for the medication</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.medicalInstructions" title="Diagnosis or reason for prescribing is this similar the 3rd bullet point?">medicalInstructions</a><a name="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diagnosis or reason for prescribing is this similar the 3rd bullet point?</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions" title="Alert about prescribing restrictions">alertAboutRestrictions</a><a name="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alert about prescribing restrictions</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic" title="Related to a chronic disease or not (listed or unlisted)">relatedtoChronic</a><a name="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Related to a chronic disease or not (listed or unlisted)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.specificFollowUp" title="Specific follow-up elements">specificFollowUp</a><a name="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specific follow-up elements</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.additionalComment" title="Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)">additionalComment</a><a name="MedicationOrderIHEPWP.prescriptionItem.additionalComment"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationOrderIHEPWP-definitions.html#MedicationOrderIHEPWP.prescriptionItem.status" title="Status (see the “Relevant Standards” chapter)">status</a><a name="MedicationOrderIHEPWP.prescriptionItem.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status (see the “Relevant Standards” chapter)</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEPWP"/>
+  <version value="0.1.0"/>
+  <name value="MedicationOrderIHEPWP"/>
+  <title value="[IHE PHARM White Paper] Logical Model for order"/>
+  <status value="active"/>
+  <date value="2023-02-19T14:45:07+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEPWP"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="MedicationOrderIHEPWP">
+      <path value="MedicationOrderIHEPWP"/>
+      <short value="[IHE PHARM White Paper] Logical Model for order"/>
+      <definition value="A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="MedicationOrderIHEPWP.identifier">
+      <path value="MedicationOrderIHEPWP.identifier"/>
+      <short value="The business identifier(s) for the medication Order"/>
+      <definition value="The business identifier(s) for the medication order"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.identifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.date">
+      <path value="MedicationOrderIHEPWP.date"/>
+      <short value="When prescription was initially made"/>
+      <definition value="When prescription was initially made"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.patient">
+      <path value="MedicationOrderIHEPWP.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.reason">
+      <path value="MedicationOrderIHEPWP.reason"/>
+      <short value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)"/>
+      <definition value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.reason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.note">
+      <path value="MedicationOrderIHEPWP.note"/>
+      <short value="Additional Information about the prescription"/>
+      <definition value="Additional Information about the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.note"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Annotation"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.requester">
+      <path value="MedicationOrderIHEPWP.requester"/>
+      <short value="Who made the prescription"/>
+      <definition value="Who made the prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.requester"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.status">
+      <path value="MedicationOrderIHEPWP.status"/>
+      <short value="Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED"/>
+      <definition value="Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem">
+      <path value="MedicationOrderIHEPWP.prescriptionItem"/>
+      <short value="A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing."/>
+      <definition value="A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.id">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.extension">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.modifierExtension">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID"/>
+      <short value=" Prescription Item ID "/>
+      <definition value=" Prescription Item ID "/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.treatmentDate">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.treatmentDate"/>
+      <short value="Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals "/>
+      <definition value="Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.treatmentDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing"/>
+      <short value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)"/>
+      <definition value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.Frequency">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.Frequency"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.Frequency"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed"/>
+      <short value="Substitution allowed or not (can the pharmacist do a substitution of medication?)"/>
+      <definition value="Substitution allowed or not (can the pharmacist do a substitution of medication?)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.route">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.route"/>
+      <short value="Route of administration"/>
+      <definition value="Route of administration"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.route"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.Dosage">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.Dosage"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.Dosage"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.intakePattern">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.intakePattern"/>
+      <short value="Intake pattern for the medication"/>
+      <definition value="Intake pattern for the medication"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.intakePattern"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions"/>
+      <short value="Diagnosis or reason for prescribing is this similar the 3rd bullet point?"/>
+      <definition value="Diagnosis or reason for prescribing is this similar the 3rd bullet point?"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions"/>
+      <short value="Alert about prescribing restrictions"/>
+      <definition value="Alert about prescribing restrictions"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic"/>
+      <short value="Related to a chronic disease or not (listed or unlisted)"/>
+      <definition value="Related to a chronic disease or not (listed or unlisted)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp"/>
+      <short value="Specific follow-up elements"/>
+      <definition value="Specific follow-up elements"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.additionalComment">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.additionalComment"/>
+      <short value="Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)"/>
+      <definition value="Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.additionalComment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.status">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.status"/>
+      <short value="Status (see the “Relevant Standards” chapter)"/>
+      <definition value="Status (see the “Relevant Standards” chapter)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationOrderIHEPWP.prescriptionItem.status"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="MedicationOrderIHEPWP">
+      <path value="MedicationOrderIHEPWP"/>
+      <short value="[IHE PHARM White Paper] Logical Model for order"/>
+      <definition value="A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)."/>
+    </element>
+    <element id="MedicationOrderIHEPWP.identifier">
+      <path value="MedicationOrderIHEPWP.identifier"/>
+      <short value="The business identifier(s) for the medication Order"/>
+      <definition value="The business identifier(s) for the medication order"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.date">
+      <path value="MedicationOrderIHEPWP.date"/>
+      <short value="When prescription was initially made"/>
+      <definition value="When prescription was initially made"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.patient">
+      <path value="MedicationOrderIHEPWP.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.reason">
+      <path value="MedicationOrderIHEPWP.reason"/>
+      <short value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)"/>
+      <definition value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.note">
+      <path value="MedicationOrderIHEPWP.note"/>
+      <short value="Additional Information about the prescription"/>
+      <definition value="Additional Information about the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Annotation"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.requester">
+      <path value="MedicationOrderIHEPWP.requester"/>
+      <short value="Who made the prescription"/>
+      <definition value="Who made the prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.status">
+      <path value="MedicationOrderIHEPWP.status"/>
+      <short value="Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED"/>
+      <definition value="Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem">
+      <path value="MedicationOrderIHEPWP.prescriptionItem"/>
+      <short value="A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing."/>
+      <definition value="A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID"/>
+      <short value=" Prescription Item ID "/>
+      <definition value=" Prescription Item ID "/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.treatmentDate">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.treatmentDate"/>
+      <short value="Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals "/>
+      <definition value="Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing"/>
+      <short value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)"/>
+      <definition value="Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.Frequency">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.Frequency"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed"/>
+      <short value="Substitution allowed or not (can the pharmacist do a substitution of medication?)"/>
+      <definition value="Substitution allowed or not (can the pharmacist do a substitution of medication?)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.route">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.route"/>
+      <short value="Route of administration"/>
+      <definition value="Route of administration"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.Dosage">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.Dosage"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.intakePattern">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.intakePattern"/>
+      <short value="Intake pattern for the medication"/>
+      <definition value="Intake pattern for the medication"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.medicalInstructions"/>
+      <short value="Diagnosis or reason for prescribing is this similar the 3rd bullet point?"/>
+      <definition value="Diagnosis or reason for prescribing is this similar the 3rd bullet point?"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions"/>
+      <short value="Alert about prescribing restrictions"/>
+      <definition value="Alert about prescribing restrictions"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic"/>
+      <short value="Related to a chronic disease or not (listed or unlisted)"/>
+      <definition value="Related to a chronic disease or not (listed or unlisted)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.specificFollowUp"/>
+      <short value="Specific follow-up elements"/>
+      <definition value="Specific follow-up elements"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.additionalComment">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.additionalComment"/>
+      <short value="Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)"/>
+      <definition value="Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationOrderIHEPWP.prescriptionItem.status">
+      <path value="MedicationOrderIHEPWP.prescriptionItem.status"/>
+      <short value="Status (see the “Relevant Standards” chapter)"/>
+      <definition value="Status (see the “Relevant Standards” chapter)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

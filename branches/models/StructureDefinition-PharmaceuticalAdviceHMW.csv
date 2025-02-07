@@ -1,0 +1,43 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PharmaceuticalAdviceHMW","PharmaceuticalAdviceHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for Pharmaceutical Advice","[HMW] Logical Model for Pharmaceutical Advice","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PharmaceuticalAdviceHMW.identifier","PharmaceuticalAdviceHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication prescription","The business identifier(s) for the medication prescription","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.identifier",0,1,"",""
+"PharmaceuticalAdviceHMW.patient","PharmaceuticalAdviceHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.patient",1,1,"",""
+"PharmaceuticalAdviceHMW.status","PharmaceuticalAdviceHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the prescription","Status of the prescription","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.status",1,1,"",""
+"PharmaceuticalAdviceHMW.statusReason","PharmaceuticalAdviceHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for current prescription status","Reason for current prescription status","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.statusReason",0,*,"",""
+"PharmaceuticalAdviceHMW.product[x]","PharmaceuticalAdviceHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product prescribed","Product prescribed","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.product[x]",1,1,"",""
+"PharmaceuticalAdviceHMW.encounter","PharmaceuticalAdviceHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter on which the medication was prescribed","Encounter on which the medication was prescribed","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.encounter",0,1,"",""
+"PharmaceuticalAdviceHMW.requester","PharmaceuticalAdviceHMW.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.requester",0,1,"",""
+"PharmaceuticalAdviceHMW.reason","PharmaceuticalAdviceHMW.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason or indication for ordering or not ordering the product","Reason or indication for ordering or not ordering the product","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.reason",0,*,"",""
+"PharmaceuticalAdviceHMW.dosageInstruction","PharmaceuticalAdviceHMW.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
+","How the product should be taken/administered","How the product should be taken/administered","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.dosageInstruction",0,*,"",""
+"PharmaceuticalAdviceHMW.note","PharmaceuticalAdviceHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.note",0,*,"",""
+"PharmaceuticalAdviceHMW.date","PharmaceuticalAdviceHMW.date","","","",0,1,"","","","dateTime {[]} {[]}
+","When advice was initially made","When advice was initially made","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.date",0,1,"",""
+"PharmaceuticalAdviceHMW.prescription","PharmaceuticalAdviceHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+","The prescription identification","The prescription identification","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.prescription",0,1,"",""
+"PharmaceuticalAdviceHMW.Observation","PharmaceuticalAdviceHMW.Observation","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.Observation",0,1,"",""
+"PharmaceuticalAdviceHMW.problems","PharmaceuticalAdviceHMW.problems","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.problems",0,1,"",""
+"PharmaceuticalAdviceHMW.summaryOf","PharmaceuticalAdviceHMW.summaryOf","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.summaryOf",0,1,"",""
+"PharmaceuticalAdviceHMW.physicianPharmacistDiscussion","PharmaceuticalAdviceHMW.physicianPharmacistDiscussion","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.physicianPharmacistDiscussion",0,1,"",""
+"PharmaceuticalAdviceHMW.Decision","PharmaceuticalAdviceHMW.Decision","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.Decision",0,1,"",""
+"PharmaceuticalAdviceHMW.pharmacist","PharmaceuticalAdviceHMW.pharmacist","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.pharmacist",0,1,"",""
+"PharmaceuticalAdviceHMW.pharmacy","PharmaceuticalAdviceHMW.pharmacy","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.pharmacy",0,1,"",""
+"PharmaceuticalAdviceHMW.substitutionStatus","PharmaceuticalAdviceHMW.substitutionStatus","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.substitutionStatus",0,1,"",""
