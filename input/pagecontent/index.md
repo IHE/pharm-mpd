@@ -1,3 +1,8 @@
+INCLUDE
+
+{% include feature1.feature %}
+
+
 The IHE MPD profile defines global data exchange specifications for medication prescription and dispense, in different settings and compatible with different workflows and jurisdictions.
 
 ## Overview

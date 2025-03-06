@@ -17,6 +17,7 @@ The use cases this profile intends to support are described here. For each case,
 1.1. Required validation ?  
 1.1. Optional review ?  
 1.1. Prescription drafting + confirmation  
+1.1. Prescription from proposal
 
 1. Dispense without prescription  
 1.1. OTC  
@@ -38,6 +39,45 @@ The use cases this profile intends to support are described here. For each case,
 1. Medication overview?
 
 
+
+
+1. Prescription with validation  
+  1.1. depending on the drug type - e.g. narcotics  
+  1.1. legal requirements  
+  1.1. validation by decision of the prescriber
+
+
+3. Optional order review
+
+5. Cancelling prescription  
+5.1. Before validation    
+5.2. After validation  
+5.3. After dispense  
+5.4. After administration  
+
+14. Change order  
+14.1 After treatment   
+15.1 After dispense  
+
+6. Refused order
+
+9. Prescription and encoding
+
+10. Regimen updates - e.g. Prescription for chemotherapy
+
+11. Dispense without prescription
+
+12. Dispense before required prescription
+
+13. Adverse drug event
+
+8. Substitution
+
+8. Admission and discharge
+
+7. Administration requests 
+
+5. Grouping
 
 
 
