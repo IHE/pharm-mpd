@@ -1,3 +1,22 @@
+Extension: OffLabelUse
+Id:        ihe-ext-medicationrequest-offlabeluse
+Title:     "Off-label use"
+Description: "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."
+
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationRequest"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationStatement"
+* extension contains
+    true 1..1 and
+    reason 0..*
+* extension[true].value[x] only boolean
+* extension[true] ^short = "Indicates off-label use. Must be 'true' when .reason is provided."
+* extension[reason].value[x] only CodeableConcept
+* extension[reason] ^short = "Reason or related clarification for off-label use."
+
+//Add proper invariant for offLabelUse?
+
 Extension: MedicationClassification
 Id:        ihe-ext-medication-classification
 Title:     "Medication - Classification"
