@@ -30,8 +30,8 @@ Description: "Logical model for medication prescription (or some other form of o
   * reason[x] 0..1 CD or ST "Reason for the substitution requirement"
 //  * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
 * offLabel 0..1 Base "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
-  * isOffLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
-  * reason[x] 0..* CodeableConcept or string "Reason or related clarification for off-label use."
+  * offLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
+  * offLabelUseReason[x] 0..* CodeableConcept or string "Reason or related clarification for off-label use."
 * comment 0..* ST "Additional information or comments"
 
 
