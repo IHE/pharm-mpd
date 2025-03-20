@@ -5,8 +5,11 @@ skinparam linetype polyline
 
 title Medication Prescription and Dispense - Actors and Transactions - Prescription
 agent "  [[actors_and_transactions.html#order-placer Order Placer ]]" as orderplacer 
+
+database "Central Server" #cee {
 agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
+}
 
 agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as OrderConsumer 
 
@@ -16,9 +19,9 @@ agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as Ord
 
 
 ' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
-
 orderplacer -d- orderreceiver : "   [[PHARM-X1.html PHARM-X1\nSubmit Medication Order]] ↓       "
 orderreceiver -[hidden]r- orderresponder : "\t\t\t"
+
 
 'orderresponder -d[hidden]- dispensereceiver
 'orderresponder -r[hidden]- dispensereceiver

@@ -8,12 +8,12 @@ title Medication Prescription and Dispense - Actors and Transactions - Dispense
 'agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 'agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
 
-agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as OrderConsumer 
-agent " [[actors_and_transactions.html#dispenseconsumer DispenseConsumer ?? ]]" as dispenseconsumer 
+agent " [[actors_and_transactions.html#DispenseReporter Dispense Reporter  ]]" as OrderConsumer 
+agent " [[actors_and_transactions.html#DispenseConsumer Dispense Consumer  ]]" as dispenseconsumer 
 
 
-agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
-agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
+agent "[[actors_and_transactions.html#DipenseReceiver Dispense Receiver]]" as dispensereceiver
+agent "[[actors_and_transactions.html#DipenseResponder Dispense Responder]]" as dispenseresponder 
 
 
 ' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
@@ -31,7 +31,7 @@ dispenseconsumer -d- dispenseresponder : "   [[PHARM-X4.html PHARM-X4\nRetrieve 
 
 'orderplacer -[hidden]r- OrderConsumer : "\t\t\t   "
 
-OrderConsumer -r[hidden]- dispenseconsumer: "\t\t\t  "
+OrderConsumer -r[hidden]- dispenseconsumer: "\t\t     "
 
 dispensereceiver -r[hidden]- dispenseresponder : "\t\t\t"
 

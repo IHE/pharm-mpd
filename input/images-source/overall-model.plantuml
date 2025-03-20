@@ -3,7 +3,7 @@ skinparam linetype polyline
 hide circle
 hide stereotype
 
-class "**MedicationPrescription**" as MedicationPrescription {
+class "**MedicationOrder**" as MedicationOrder {
   |_ identifier 1..*   
   |_ groupIdentifier 0..1   
   |_ recordingDate 0..1   
@@ -132,16 +132,16 @@ class "**Practitioner**" as PractitionerBasic {
 
 
 
-MedicationPrescription -r- "1..1" MedicinalProductLM : "            "
-MedicationPrescription *-d- "0..1" DosagingInformation 
+MedicationOrder -r- "1..1" MedicinalProductLM : "            "
+MedicationOrder *-d- "0..1" DosagingInformation 
 
-PatientBasic "1..1" -r- MedicationPrescription 
-PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
-PractitionerBasic "0..1" -r- MedicationPrescription : "   \t  recorder        "
-PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
-PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
-PractitionerBasic "0..1" -[hidden]r- MedicationPrescription : " prescriber  "
-PractitionerBasic "1..1" -r- MedicationPrescription : " prescriber  "
+PatientBasic "1..1" -r- MedicationOrder 
+PractitionerBasic "0..1" -[hidden]r- MedicationOrder : " prescriber  "
+PractitionerBasic "0..1" -r- MedicationOrder : "   \t  recorder        "
+PractitionerBasic "0..1" -[hidden]r- MedicationOrder : " prescriber  "
+PractitionerBasic "0..1" -[hidden]r- MedicationOrder : " prescriber  "
+PractitionerBasic "0..1" -[hidden]r- MedicationOrder : " prescriber  "
+PractitionerBasic "1..1" -r- MedicationOrder : " prescriber  "
 
 PatientBasic -d[hidden]- PractitionerBasic
 @enduml

@@ -1,9 +1,9 @@
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
-Instance: IHE.MPD.OrderConsumer
+Instance: IHE.MPD.OrderConsumerCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumer"
+* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumerCS"
 * version = "3.0.5-current"
 * name = "IHEOrderConsumer"
 * title = "IHE Pharmacy Order Consumer Actor"
@@ -11,6 +11,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
 * publisher = "IHE Pharmacy Technical Committee"
+//* actorDefinition = Canonical(IHE.MPD.OrderConsumer)
 * contact[0].telecom
   * system = #url
   * value = "https://www.ihe.net/ihe_domains/pharmacy/"
@@ -34,4 +35,4 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
-    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEOrder"
+    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"

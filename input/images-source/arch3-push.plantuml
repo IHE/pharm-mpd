@@ -1,0 +1,31 @@
+@startuml
+'!include ./style.iuml
+skinparam linetype ortho
+skinparam linetype polyline
+
+title Prescription Exchange - "Push" architecture
+agent "  [[actors_and_transactions.html#order-placer Order Placer ]]" as orderplacer 
+
+rectangle "Filler/Receiver system" as PS #cee{
+  agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
+  agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
+  agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as OrderConsumer 
+}
+
+
+'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
+'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
+
+' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
+
+orderplacer -r- orderreceiver : " [[PHARM-X1.html PHARM-X1\nSubmit Medication Order]] →  "
+
+orderreceiver -r[hidden]- orderresponder 
+
+
+'orderreceiver -[hidden]r- orderresponder : "\t\t\t"
+orderresponder -u- OrderConsumer
+
+
+
+@enduml

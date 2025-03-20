@@ -1,7 +1,7 @@
-Instance: IHE.MPD.OrderResponder
+Instance: IHE.MPD.OrderResponderCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponder"
+* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponderCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderResponder"
 * title = "IHE MPD Order Responder (server)"
@@ -9,6 +9,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
 * publisher = "IHE Pharmacy Technical Committee"
+
 * contact[0].telecom
   * system = #url
   * value = "https://www.ihe.net/ihe_domains/it_infrastructure/"
@@ -32,29 +33,7 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource[+]
     * type = #MedicationRequest
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"
-    * interaction[0]
-      * code = #vread
-    * interaction[+]
-      * code = #create
-      * documentation = "Create MedicationOrders [PHARM-104]"
-    * interaction[+]
-      * code = #update
-      * documentation = "Update for [PHARM-104]"
-    * interaction[+]
-      * code = #delete
-    * interaction[+]
-      * code = #history-instance
-    * interaction[+]
-      * code = #search-type
-      * documentation = "conditional delete for [PHARM-104] for Remove Patient Option"
-    * conditionalCreate = true
-    * conditionalUpdate = true
-    * conditionalDelete = #single
-    * searchParam[0]
-      * name = "patient"
-      * type = #reference
-      * documentation = "Search on Patient"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationOrder"
     * searchParam[+]
       * name = "group-or-identifier"
       * definition = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/SearchParameter/group-or-identifier"
@@ -67,27 +46,26 @@ Usage: #definition
       * code = #vread
     * interaction[+]
       * code = #create
-      * documentation = "Create MedicationOrders [PHARM-104]"
+      * documentation = "Create MedicationOrders [PHARM-X1]"
     * interaction[+]
       * code = #update
-      * documentation = "Update for [PHARM-104]"
+      * documentation = "Update for [PHARM-X1]"
     * interaction[+]
       * code = #delete
     * interaction[+]
       * code = #history-instance
     * interaction[+]
       * code = #search-type
-      * documentation = "conditional delete for [PHARM-104] for Remove Patient Option"
+      * documentation = "conditional delete for [PHARM-X1] for Remove Patient Option"
     * conditionalCreate = true
     * conditionalUpdate = true
     * conditionalDelete = #single
   * resource[+]
     * type = #RequestOrchestration
-//    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"
+//    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationOrder"
     * interaction[0]
       * code = #create
-      * documentation = "Create MedicationOrders [PHARM-104]"
-
+      * documentation = "Create MedicationOrders [PHARM-X1]"
     * conditionalCreate = true
     * conditionalUpdate = true
     * conditionalDelete = #single

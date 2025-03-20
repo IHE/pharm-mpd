@@ -8,8 +8,8 @@ version: 0.1.0
 fhirVersion: 5.0.0
 status: active
 packageId: ihe.pharm.mpd
-title: "Medication Prescription and Delivery (MPD)"
-description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
+title: "Medication Prescription and Dispense (MPD)"
+description: ImplementationGuide for IHE Pharmacy Medication Prescription and Dispense
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -90,9 +90,7 @@ pages:
     status-workflow-management.md:
       title: "Status and Workflow Management"
       prescription-lines.md:
-        title: "Single- and multiline prescriptions"
-#      order-statuses.md:
-#        title: "Managing order status"
+        title: "Single- and multiline orders"
     interoperability-model.md:
       title: "Interoperability Model"
     data-models.md:

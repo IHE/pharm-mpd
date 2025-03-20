@@ -1,7 +1,7 @@
-Instance: IHE.MPD.OrderReceiver
+Instance: IHE.MPD.OrderReceiverCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiver"
+* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderReceiver"
 * title = "IHE MPD Order Receiver (server)"
@@ -9,6 +9,8 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
 * publisher = "IHE Pharmacy Technical Committee"
+//* actorDefinition = Canonical(IHE.MPD.OrderReceiver)
+
 * contact[0].telecom
   * system = #url
   * value = "https://www.ihe.net/ihe_domains/it_infrastructure/"
@@ -32,7 +34,7 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationOrder"
     // * interaction[0]
     //   * code = #update
     //   * documentation = "conditional update for [PHARM-104]"

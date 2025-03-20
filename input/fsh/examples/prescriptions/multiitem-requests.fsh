@@ -76,7 +76,7 @@
 
 
 Instance: 100-3-medication-prescription-request1
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Thalidomide 50mgx4 once a day before bed for 42 days."
 
@@ -104,7 +104,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 
 
 Instance: 100-3-medication-prescription-request2
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Melphalan 2mgx4 once a day for 4 days in the beginning of cycle."
 
@@ -134,7 +134,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 
 
 Instance: 100-3-medication-prescription-request3
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #example
 Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Prednisone 50mgx3 once a day for 4 days in the beginning of cycle."
 
@@ -183,7 +183,7 @@ Description: "Multiitem prescription where items on the same prescription are no
 
 
 Instance: 200-2-medication-prescription-request1
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #inline
 Description: "A prescription item (MedicationRequest) that is a part of a two-item-prescription. "
 
@@ -207,7 +207,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a two-it
 * dispenseRequest.validityPeriod.end = "2024-12-06"
 
 Instance: 200-2-medication-prescription-request2
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #inline
 Description: "A prescription item (MedicationRequest) that is a part of a two-item-prescription. "
 
@@ -279,7 +279,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a two-it
 
 
 // Instance: 300-2-medication-prescription-request1
-// InstanceOf: IHEMedicationPrescription
+// InstanceOf: IHEMedicationOrder
 // Usage: #example
 // Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Thalidomide 50mgx4 once a day before bed for 42 days."
 
@@ -305,7 +305,7 @@ Description: "A prescription item (MedicationRequest) that is a part of a two-it
 
 
 // Instance: 300-2-medication-prescription-request2
-// InstanceOf: IHEMedicationPrescription
+// InstanceOf: IHEMedicationOrder
 // Usage: #example
 // Description: "A prescription item (MedicationRequest) that is a part of a three-item-prescription (42-day treatment cycle). Generic. Melphalan 2mgx4 once a day for 4 days in the beginning of cycle."
 
