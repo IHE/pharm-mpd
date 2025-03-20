@@ -6,9 +6,9 @@
   * **Order Receiver** - This actor represents the entity that receives the orders from the placer. This is used in a Push scenario, where the order receiver receives the pushed order.
 
   * **Order Responder** - this actor is responsible for responding to order queries, e.g feching the orders for a patient, etc.
-This is used in a Pull scenario, where an order filler (or other actors) can query the existing orders from the Order Responder.
+This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
 
-  * **Order Filler** - this actor represents an entity that handles or processes the order, typically for dispensing, but can also be for further authorization, verification, etc.
+  * **Order Consumer** - this actor represents an entity that handles or processes the order, typically for dispensing, but can also be for further authorization, verification, etc.
 
 * Transactions
 
@@ -77,7 +77,7 @@ This actor is responsible for the process of dispensing medication to the patien
 
 
 **Dispense Responder** - this actor is responsible for responding to order queries, e.g feching the dispenses for a patient, etc.
-This is used in a Pull scenario, where an order filler (or other actors) can query the existing dispenses from the Dispense Responder.
+This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder.
 
 <a name="Dispense Consumer"> </a>
 
@@ -85,7 +85,7 @@ This is used in a Pull scenario, where an order filler (or other actors) can que
 
 
 **Dispense Consumer** - this actor supports querying for dispenses, e.g feching the dispenses for a patient, etc.
-This is commonly used in a Pull scenario, where before dispense, the order filler (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
+This is commonly used in a Pull scenario, where before dispense, the Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
 
 
 

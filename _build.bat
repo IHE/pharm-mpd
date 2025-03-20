@@ -66,7 +66,7 @@ IF NOT "%online_status%"=="true" (
     IF NOT "!jar_location!"=="not_found" (
         ECHO Publisher not found, defaulting to download
         SET "default_choice=1"
-    )    
+        )    
     ELSE (
     IF NOT "!publisher_version!"=="!latest_version!" (
         ECHO An update is recommended.

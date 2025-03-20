@@ -2,7 +2,7 @@ This section corresponds to transaction [PHARM-M1] of the IHE Technical Framewor
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Order [PHARM-M1] transaction passes a Medication Order from a Medication Order Placer to a Medication Order Filler.
+The Submit Medication Order [PHARM-M1] transaction passes a Medication Order from a Medication Order Placer to a Medication Order Consumer.
 
 ### X:Y.Z.2 Actors Roles
 
@@ -10,8 +10,8 @@ The Submit Medication Order [PHARM-M1] transaction passes a Medication Order fro
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Medication Order Placer](actors_and_transactions.html#order-placer)    | Submits Medication Orders to the Medication Order Filler |
-| [Medication Order Filler](actors_and_transactions.html#order-filler) | Accepts the orders from the Medication Order Placer |
+| [Medication Order Placer](actors_and_transactions.html#order-placer)    | Submits Medication Orders to the Medication Order Consumer |
+| [Medication Order Consumer](actors_and_transactions.html#order-filler) | Accepts the orders from the Medication Order Placer |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards
@@ -47,14 +47,14 @@ The semantics of the request and data elements are captured in the [Submit Medic
 
 
 ##### X:Y.Z.4.1.3 Expected Actions
-Upon receiving the Medication Order, the Medication Order Filler is expected to store and/or forward the order.
-The Submit Medication Order Filler shall issue a response confirming the request has been accepted (created), or informing of any error. 
+Upon receiving the Medication Order, the Medication Order Consumer is expected to store and/or forward the order.
+The Submit Medication Order Consumer shall issue a response confirming the request has been accepted (created), or informing of any error. 
 
 
 
 
 #### X:Y.Z.4.2 Submit Medication Order Response
-The Submit Medication Order Filler always returns a HTTP Status code appropriate to the processing outcome.
+The Submit Medication Order Consumer always returns a HTTP Status code appropriate to the processing outcome.
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
@@ -76,4 +76,4 @@ The response to a Submit Medication Order shall consist of:
 * In case of error, the response SHALL contain an OperationOutcome providing more information about the issue.
 
 ##### X:Y.Z.4.1.3 Expected Actions
-Upon receiving the response to the Submit Medication Order, the Medication Order Placer can persist the information provided by the Medication Order Filler (status, id, etc.) for future tracking, and can trigger a response to any issues, if they exist.
+Upon receiving the response to the Submit Medication Order, the Medication Order Placer can persist the information provided by the Medication Order Consumer (status, id, etc.) for future tracking, and can trigger a response to any issues, if they exist.

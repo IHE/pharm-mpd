@@ -8,14 +8,14 @@ agent "  [[actors_and_transactions.html#order-placer Order Placer ]]" as orderpl
 agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
 
-agent " [[actors_and_transactions.html#orderfiller Order Filler   ]]" as orderfiller 
+agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as OrderConsumer 
 
 
 agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
 agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
 
 
-' \n\n   [[PHARM-X2.html PHARM-S2 Supply Response/status]] ↑
+' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
 
 orderplacer -d- orderreceiver : "   [[PHARM-X1.html PHARM-X1\nMedication Order]] ↓       "
 orderreceiver -r[hidden]- orderresponder : "\t\t\t\t\t "
@@ -24,22 +24,22 @@ orderreceiver -d[hidden]- dispenseresponder : "   "
 
 orderresponder -d[hidden]- dispensereceiver
 orderresponder -r[hidden]- dispensereceiver
-orderresponder -r[hidden]- orderfiller
+orderresponder -r[hidden]- OrderConsumer
 
-orderplacer -[hidden]r- orderfiller : "\t\t\t   "
+orderplacer -[hidden]r- OrderConsumer : "\t\t\t   "
 
 dispensereceiver -l[hidden]- dispenseresponder : "   "
 
 
-orderresponder -u- orderfiller: "   [[PHARM-X1.html PHARM-X2\n GET Medication Orders]] ↑          "
-orderfiller -d- dispensereceiver: "   [[PHARM-X3.html PHARM-X3\nDispense]]↓  "
+orderresponder -u- OrderConsumer: "   [[PHARM-X1.html PHARM-X2\n GET Medication Orders]] ↑          "
+OrderConsumer -d- dispensereceiver: "   [[PHARM-X3.html PHARM-X3\nDispense]]↓  "
 
 ' → ↑ ← ↓
 
 'orderresponder -r- dispensereceiver:  "   [[PHARM-X2.html PHARM-X2 Dispense]]  ←   "
 ' dispensereceiver -r- dispenseresponder : ""
 
-'orderfiller -d- orderfiller : "   [[PHARM-S2.html PHARM-S2 Fetch Orders]] ←  "
+'OrderConsumer -d- OrderConsumer : "   [[PHARM-M2.html PHARM-M2 Fetch Orders]] ←  "
 'dispenser -[hidden]r- invreporter : "\t\t\t\t\t "
-'invreporter -d- invmanager : "   [[PHARM-S5.html PHARM-S5 Inventory Status]] ↑                  \n\n   [[PHARM-S6.html PHARM-S6 Inventory Update]] ↓                 \n\n[[PHARM-S7.html PHARM-S7 Inventory Query]] ↓\t\t  "
+'invreporter -d- invmanager : "   [[PHARM-M5.html PHARM-M5 Inventory Status]] ↑                  \n\n   [[PHARM-M6.html PHARM-M6 Inventory Update]] ↓                 \n\n[[PHARM-M7.html PHARM-M7 Inventory Query]] ↓\t\t  "
 @enduml
