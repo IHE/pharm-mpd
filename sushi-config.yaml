@@ -88,8 +88,8 @@ pages:
       title: "Order Management"
       prescription-lines.md:
         title: "Single- and multiline prescriptions"
-      order-statuses.md:
-        title: "Managing order status"
+      # order-statuses.md:
+      #   title: "Managing order status"
     interoperability-model.md:
       title: "Interoperability Model"
     data-models.md:

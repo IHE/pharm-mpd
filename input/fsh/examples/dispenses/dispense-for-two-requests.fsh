@@ -1,5 +1,5 @@
 Instance: 300-dispense-for-2-requests
-InstanceOf: IHEMedicationDispensation
+InstanceOf: IHEMedicationDispense
 Usage: #example
 Description: "Medication dispense dispensing one combination product for two prescribed products (multiitem prescription)"
 

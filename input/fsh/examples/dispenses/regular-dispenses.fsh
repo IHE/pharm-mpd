@@ -1,5 +1,5 @@
 Instance: 10-dispense-1
-InstanceOf: IHEMedicationDispensation
+InstanceOf: IHEMedicationDispense
 Usage: #example
 Description: "Medication dispense fulfilling the first part of the order: 1 package containing 10 vials"
 
@@ -14,7 +14,7 @@ Description: "Medication dispense fulfilling the first part of the order: 1 pack
 * whenHandedOver = "2024-12-06T19:54:00Z"
 
 Instance: 10-dispense-2
-InstanceOf: IHEMedicationDispensation
+InstanceOf: IHEMedicationDispense
 Usage: #example
 Description: "Medication dispense fulfilling the second part of the order: 3 packages containing 5 vials each"
 

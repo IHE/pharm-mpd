@@ -1,5 +1,5 @@
 Instance: 10-prescription-cefuroxime-singleline
-InstanceOf: IHEMedicationPrescription
+InstanceOf: IHEMedicationOrder
 Usage: #example
 Description: "A prescription/request with one medication and changing dosaging. Uses 'actionable' tag. Cefuroxime sodium."
 

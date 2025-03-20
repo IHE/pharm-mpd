@@ -1,6 +1,8 @@
-Profile: IHEMedicationDispensation
+Profile: IHEMedicationDispense
 Parent: MedicationDispense
+Title: "IHE Medication Dispense"
 Description: "MedicationDispense profile for capturing dispensation information based on a medication prescription."
+
 
 * identifier MS // identifier
 * subject MS // patient 1

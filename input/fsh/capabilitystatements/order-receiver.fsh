@@ -22,7 +22,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Order Receiver Actor](volume-1.html#141111-Order-placer) expresses the compliance requirements for systems implementing the actor.\n- using FHIR R5\n- using json or xml encoding\n - should use a security framework."
+* description = "The CapabililtyStatement for the [Order Receiver Actor](volume-1.html#141111-Order-placer) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1

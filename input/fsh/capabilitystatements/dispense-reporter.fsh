@@ -25,7 +25,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Dispense Reporter Actor](volume-1.html#141111-Order-Responder) expresses the compliance requirements for systems implementing the actor.\n- using FHIR R5\n- using json or xml encoding\n - should use a security framework."
+* description = "The CapabililtyStatement for the [Dispense Reporter Actor](volume-1.html#141111-Order-Responder) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1
@@ -37,7 +37,7 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource[+]
     * type = #MedicationDispense
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispensation"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispense"
     * interaction[0]
       * code = #vread
     * interaction[+]
