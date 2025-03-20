@@ -25,8 +25,21 @@ The use cases this profile intends to support are described here. For each case,
 1.1. Order protocols
 1.1. Prescription after dispense
 
+## Changes
+1. Cancellation/change of the prescription 
+1.1. By prescriber
+1.1. By pharmacist or patient
+1.1. After initiation
+
 
 ## Dispense
+1. Substitution or override  
+1.1. Change from Pharmaceutical to Medicinal product
+1.1. Extemporaneous preparations
+1.1. Override by pharmacist?  
+1.1. Substitution  
+1.1. Declined dispense 
+1.1. e.g. prescription 500mg tablet and dispense 1000mg half tablet
 
 1. Dispense without prescription  
 1.1. OTC  
@@ -36,20 +49,8 @@ The use cases this profile intends to support are described here. For each case,
 1. Administration orders
 
 
-Changes
-1. Cancellation/change of the prescription 
-1.1. By prescriber
-1.1. By pharmacist or patient
-1.1. After initiation
 
 
-1. Substitution or override  
-1.1. Change from Pharmaceutical to Medicinal product
-1.1. Extemporaneous preparations
-1.1. Override by pharmacist?  
-1.1. Substitution  
-1.1. Declined dispense 
-1.1. e.g. prescription 500mg tablet and dispense 1000mg half tablet
 
 
 <hr/>
