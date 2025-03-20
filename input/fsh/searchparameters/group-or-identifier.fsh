@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * status = #active
 * name = "group-or-identifier"
-* description = "Single search that incides on both request.identifier or groupIdentifier"
+* description = "Single search on both request.identifier or groupIdentifier"
 * code = #group-or-identifier
 * base = #MedicationRequest
 * type = #token
