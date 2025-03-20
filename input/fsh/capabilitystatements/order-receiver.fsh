@@ -20,7 +20,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Order Receiver Actor](volume-1.html#141111-Order-placer) expresses the compliance requirements for systems implementing the actor.\n- using FHIR R5\n- using json or xml encoding\n - using conditional update for [ITI-104](ITI-104.html)\n - using conditional delete for [ITI-104](ITI-104.html) if Remove Patient Option is supported\n - provide supported Patient profile for crosss-referencing for [ITI-104](ITI-104.html)\n - should use a security framework. Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
+* description = "The CapabililtyStatement for the [Order Receiver Actor](volume-1.html#141111-Order-placer) expresses the compliance requirements for systems implementing the actor.\n- using FHIR R5\n- using json or xml encoding\n - should use a security framework."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1
@@ -33,12 +33,12 @@ Usage: #definition
   * resource
     * type = #MedicationRequest
     * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"
-    * interaction[0]
-      * code = #update
-      * documentation = "conditional update for [ITI-104]"
-    * interaction[+]
-      * code = #delete
-      * documentation = "conditional delete for [ITI-104] for Remove Patient Option"
-    * conditionalCreate = true
-    * conditionalUpdate = true
-    * conditionalDelete = #single
+    // * interaction[0]
+    //   * code = #update
+    //   * documentation = "conditional update for [PHARM-104]"
+    // * interaction[+]
+    //   * code = #delete
+    //   * documentation = "conditional delete for [PHARM-104] for Remove Patient Option"
+    // * conditionalCreate = true
+    // * conditionalUpdate = true
+    // * conditionalDelete = #single

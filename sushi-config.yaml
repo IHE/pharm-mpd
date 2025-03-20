@@ -46,6 +46,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   usage-stats-opt-out: 'true'
   autoload-resources: 'true'
 #  shownav: 'true'
+  # generate-version:
+  #   - r4
+    
 
 # additional examples that need descriptions
 #resources:

@@ -10,7 +10,7 @@ agent "  [[actors-transactions.html#order-placer Order Placer ]]\n(e.g. GP syste
 agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
 }
-agent "[[actors-transactions.html#orderfiller Order Consumer  ]]\n (e.g. Pharmacy)" as orderfiller 
+agent "[[actors-transactions.html#OrderConsumer Order Consumer  ]]\n (e.g. Pharmacy)" as OrderConsumer 
 
 
 'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
@@ -22,23 +22,23 @@ orderreceiver -[hidden]r-> orderresponder :" "
 
 'orderresponder -d[hidden]- dispensereceiver
 'orderresponder -r[hidden]- dispensereceiver
-'orderresponder -r[hidden]- orderfiller
+'orderresponder -r[hidden]- OrderConsumer
 
-'orderplacer -[hidden]r- orderfiller :  "      "
+'orderplacer -[hidden]r- OrderConsumer :  "      "
 
 'dispensereceiver -l[hidden]- dispenseresponder : "   "
 
 
 
-orderresponder -r- orderfiller: " "
-'orderfiller -d- dispensereceiver: "   [[PHARM-X3.html PHARM-X3\nDispense]]↓  "
+orderresponder -r- OrderConsumer: " "
+'OrderConsumer -d- dispensereceiver: "   [[PHARM-X3.html PHARM-X3\nDispense]]↓  "
 
 ' → ↑ ← ↓
 
 'orderresponder -r- dispensereceiver:  "   [[PHARM-X2.html PHARM-X2 Dispense]]  ←   "
 ' dispensereceiver -r- dispenseresponder : ""
 
-'orderfiller -d- orderfiller : "   [[PHARM-M2.html PHARM-M2 Fetch Orders]] ←  "
+'OrderConsumer -d- OrderConsumer : "   [[PHARM-M2.html PHARM-M2 Fetch Orders]] ←  "
 'dispenser -[hidden]r- invreporter : "\t\t\t\t\t "
 'invreporter -d- invmanager : "   [[PHARM-M5.html PHARM-M5 Inventory Status]] ↑                  \n\n   [[PHARM-M6.html PHARM-M6 Inventory Update]] ↓                 \n\n[[PHARM-M7.html PHARM-M7 Inventory Query]] ↓\t\t  "
 @enduml
