@@ -2,14 +2,14 @@
 # | documentation of this sushi-config.yaml file https://fshschool.org/docs/sushi/configuration/               |
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: ihe.pharm.mpd
-canonical: http://profiles.ihe.net/PHARM/ihe.pharm.mpd
+canonical: http://profiles.ihe.net/PHARM/MPD
 name: IHE_MPD
 version: 0.1.0
 fhirVersion: 5.0.0
 status: active
 packageId: ihe.pharm.mpd
-title: "Medication Prescription and Dispense (MPD)"
-description: ImplementationGuide for IHE Pharmacy Medication Prescription and Dispense
+title: "Medication Prescription and Delivery (MPD)"
+description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -46,9 +46,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   usage-stats-opt-out: 'true'
   autoload-resources: 'true'
 #  shownav: 'true'
-  # generate-version:
-  #   - r4
-    
 
 # additional examples that need descriptions
 #resources:
@@ -87,10 +84,12 @@ pages:
       #   title: "Mobile Medication Administration - Chemotherapy"
     medication-concepts.md:
       title: "Medication Concepts"
-    status-workflow-management.md:
-      title: "Status and Workflow Management"
+    order-management.md:
+      title: "Order Management"
       prescription-lines.md:
-        title: "Single- and multiline orders"
+        title: "Single- and multiline prescriptions"
+      order-statuses.md:
+        title: "Managing order status"
     interoperability-model.md:
       title: "Interoperability Model"
     data-models.md:

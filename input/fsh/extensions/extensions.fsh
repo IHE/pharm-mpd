@@ -1,20 +1,35 @@
+Extension: OffLabelUse
+Id:        ihe-ext-medicationrequest-offlabeluse
+Title:     "MedicationRequest - Off-label use"
+Description: "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."
+Context: MedicationRequest, MedicationStatement
+
+* extension contains
+    true 1..1 and
+    reason 0..*
+* extension[true].value[x] only boolean
+* extension[true] ^short = "Indicates off-label use. Must be 'true' when .reason is provided."
+* extension[reason].value[x] only CodeableConcept
+* extension[reason] ^short = "Reason or related clarification for off-label use."
+
+//Add proper invariant for offLabelUse?
+
 Extension: MedicationClassification
 Id:        ihe-ext-medication-classification
 Title:     "Medication - Classification"
 Description: "Medication classification/category. Allows the product to be classified by various systems, e.g ATC, narcotic class, legal status of supply, etc.."
-// Extension on Medication
-* ^context[+].type = #element
-* ^context[=].expression = "Medication"
+Context: Medication
+
 * value[x] only CodeableConcept 
+* valueCodeableConcept from $atcVS (example)
 
 
 Extension: MedicationProductName
 Id:        ihe-ext-medication-productname
 Title:     "Medication - Product Name"
 Description: "Name of the medicinal product. This is typically the name of a real product as registered. This element should not contain display names of virtual product concepts."
-// Extension on Medication
-* ^context[+].type = #element
-* ^context[=].expression = "Medication"
+Context: Medication
+
 * value[x] only string
 * valueString 1..1
 
@@ -47,24 +62,28 @@ Extension: MedicationCharacteristic
 Id:        ihe-ext-medication-characteristic
 Title:     "Medication - Characteristic"
 Description: "Any characteristic of the medicinal product prescribed or dispensed (for example, price, textual package description, special program information, etc)"
+Context: Medication
+
 // Extension on Medication
 * extension contains
     type 1..1 and
     value 0..1
 * extension[type].value[x] only CodeableConcept
+* extension[type].valueCodeableConcept from $medication-characteristic (example)
 * extension[type] ^short = "Code specifying the type of characteristic of medication"
 * extension[value] ^short = "Descriptive value of the characteristic"
-
+* extension[value].value[x] only boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio
+// the list of allowed types is from EHDS logical models. Might consider adding Attachment, as it is in MedicationKnowledge and MedicationDefinition characteristics.
 
 Extension: MedicationUnitOfPresentation
 Id:        ihe-ext-medication-unitofpresentation
 Title:     "Medication - Unit of presentation"
 Description: "Unit of presentation, typically describing the smallest countable package item (e.g tablet, vial, ampoule, etc). Unit of presentation is also often used in describing pack size and the denominator of strength. If the size of presentation unit is relevant, it should be described in sizeOfItem extension."
-// Extension on Medication
-* ^context[+].type = #element
-* ^context[=].expression = "Medication"
+Context: Medication
+
 * value[x] only CodeableConcept 
-* valueCodeableConcept 1..1
+* valueCodeableConcept 1..1 
+* valueCodeableConcept from $unitOfPresentation (example)
 
 
 Extension: MedicationStrengthSubstance
@@ -74,6 +93,7 @@ Description: "Substance for marking the basis of strength. When the precise acti
 Context: Medication.ingredient.strength[x]
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
+* valueCodeableConcept from $substanceSCT (example)
 
 
 Extension: MedicationStrengthType
@@ -85,13 +105,12 @@ Context: Medication.ingredient.strength[x]
 * valueCodeableConcept 1..1
 
 
-Extension: MedicationRequestTotalAmount
-Id:        ihe-ext-medicationrequest-totalamount
-Title:     "MedicationRequest - Total Amount"
-Description: "Total amount of product being requested."
-// Extension on MedicationRequest
-* ^context[+].type = #element
-* ^context[=].expression = "MedicationRequest"
+Extension: MedicationRequestPrescribedQuantity
+Id:        ihe-ext-medicationrequest-prescribedQuantity
+Title:     "MedicationRequest - Prescribed Quantity"
+Description: "Total amount of product being requested. This may refer to number of packages when package size is indicated in Medication resource."
+Context: MedicationRequest.dispenseRequest
+
 * value[x] only Quantity
 
 

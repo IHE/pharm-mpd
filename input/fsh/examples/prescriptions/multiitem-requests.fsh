@@ -36,10 +36,10 @@
 // * status = #active
 // * intent = #order
 
-// * subject = Reference(Patient1)
-// * identifier
-//   * system = "http://example.com/requestorchestration"
-//   * value = "prescr1"
+* subject = Reference(patient1)
+* identifier
+  * system = "http://example.com/requestorchestration"
+  * value = "prescr1"
 
 // * groupIdentifier
 //   * system = "http://example.com/prescriptions"
@@ -114,9 +114,9 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * status = #active
 * intent = #order
 * authoredOn = "2024-10-03"
-* requester = Reference(Doctor1)
+* requester = Reference(doctor1)
 * medication.concept = $snomed#326766003 "Melphalan 2 mg oral tablet"
-* subject = Reference(Patient1)
+* subject = Reference(patient1)
 * reason.concept = $snomed#109989006 "Multiple myeloma"
 * dosageInstruction[0].doseAndRate.doseQuantity = 4 $snomed#732936001 "Tablet"
 * dosageInstruction[=].timing.repeat.frequency = 1
@@ -144,9 +144,9 @@ Description: "A prescription item (MedicationRequest) that is a part of a three-
 * status = #active
 * intent = #order
 * authoredOn = "2024-10-03"
-* requester = Reference(Doctor1)
+* requester = Reference(doctor1)
 * medication.concept = $snomed#374072009 "Prednisone 50 mg oral tablet"
-* subject = Reference(Patient1)
+* subject = Reference(patient1)
 * reason.concept = $snomed#109989006 "Multiple myeloma"
 * dosageInstruction[0].doseAndRate.doseQuantity = 3 $snomed#732936001 "Tablet"
 * dosageInstruction[=].timing.repeat.frequency = 1

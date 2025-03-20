@@ -25,9 +25,13 @@ Description: "Logical model for medication prescription (or some other form of o
 * preparationInstructions 0..1 ST "Additional instructions about preparation or dispense" 
 * substitution 0..1 Class "Whether and which type of substitution is allowed for this medication treatment line"
   * allowed 0..1 BL "Whether substitution is allowed or not."
+  //See issue 47 for removing or relaxing the following element
   * type 1..1 CD "The type of substitution that is allowed."
-  * typeReason[x] 0..1 CD or ST "Reason for the substitution requirement"
+  * reason[x] 0..1 CD or ST "Reason for the substitution requirement"
 //  * substitutionTypeReasonText 0..1 ST "Textual reason for the substitution requirement"
+* offLabel 0..1 Base "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
+  * offLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
+  * offLabelUseReason[x] 0..* CodeableConcept or string "Reason or related clarification for off-label use."
 * comment 0..* ST "Additional information or comments"
 
 

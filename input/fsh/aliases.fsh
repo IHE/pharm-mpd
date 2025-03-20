@@ -6,3 +6,7 @@ Alias: $bcp47 = urn:ietf:bcp:47 // BCP47
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
 Alias: $ingredient-role = http://hl7.org/fhir/ingredient-role // Codes are from EMA SPOR
 Alias: $timing = http://hl7.org/fhir/event-timing // FHIR Event Timing
+Alias: $atcVS = http://hl7.org/fhir/ValueSet/medicinal-product-classification // ATC ValueSet by HL7
+Alias: $substanceSCT = http://hl7.org/fhir/ValueSet/substance-codes // All substances from SNOMED CT by HL7 (includes more than pharmaceuticals)
+Alias: $unitOfPresentation = http://hl7.org/fhir/ValueSet/unit-of-presentation // Unit of presentation value set by HL7, uses EMA SPOR RMS codes defined as a HL7 code system.
+Alias: $medication-characteristic = http://hl7.org/fhir/ValueSet/medicationknowledge-characteristic // MedicationKnowledge drug characteristic binding value set

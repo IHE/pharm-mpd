@@ -1,4 +1,4 @@
-Empty IG
+IHE Pharmacy - MPD
 ---
 This is the source for the IHE Pharmacy Medication Prescription and Dispense profile.
 <br> </br>

@@ -33,8 +33,27 @@ Description: "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Brande
 * ingredient.isActive = true
 * ingredient.strengthRatio.numerator = 1500 $ucum#mg "milligram"
 * ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
-* ingredient.strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
+* ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
 * marketingAuthorizationHolder.display = "MIP Pharma GmbH" //We did not profile MAH data, shall we try better?
+
+Instance: 01D-Cefuroxime750Branded
+InstanceOf: IHEMedication
+Usage: #example
+Description: "1D. Cefuroxime 750mg powder for solution in a vial (5 vials per package). Branded packaged product, defined by attributes."
+
+* identifier.value = "1529928"
+* identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
+* doseForm = $edqm-standardterms#11205000 "Powder for solution for injection"
+* extension[classification].valueCodeableConcept = $who-atc#J01DC02 "cefuroxime"
+* extension[productName].valueString = "Cefuroxime MIP 750 mg, süstelahuse pulber"
+* extension[unitOfPresentation].valueCodeableConcept = $edqm-standardterms#15060000 "Vial"
+* totalVolume = 5 $edqm-standardterms#15060000 "Vial"
+* ingredient.item.concept = $snomed#48753004 "Cefuroxime sodium"
+* ingredient.isActive = true
+* ingredient.strengthRatio.numerator = 750 $ucum#mg "milligram"
+* ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
+* ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#372833007 "Cefuroxime" 
+* marketingAuthorizationHolder.display = "MIP Pharma GmbH"
 
 Instance: 02A-ClotrimazoleCanifugCremolum
 InstanceOf: IHEMedication
@@ -135,7 +154,7 @@ Description: "04. Firmagon. Branded packaged product, defined by attributes, inc
 * ingredient.isActive = true
 * ingredient.strengthRatio.numerator = 120 $ucum#mg "milligram"
 * ingredient.strengthRatio.denominator = 1 $edqm-standardterms#15060000 "Vial"
-* ingredient.strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#441864003 "Degarelix"
+* ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#441864003 "Degarelix"
 * marketingAuthorizationHolder.display = "Ferring Pharmaceuticals A/S"
  
 * extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
@@ -161,13 +180,13 @@ Description: "05A. Tilidin (50mg), Naloxon (4mg) oral drops. Branded packaged pr
 * ingredient[=].isActive = true
 * ingredient[=].strengthRatio.numerator = 50 $ucum#mg "milligram"
 * ingredient[=].strengthRatio.denominator = 20 $edqm-standardterms#15022000 "Drop"
-* ingredient[=].strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#96186004 "Tilidine hydrochloride" 
+* ingredient[=].strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#96186004 "Tilidine hydrochloride" 
 
 * ingredient[+].item.concept = $snomed#372890007 "Naloxone"
 * ingredient[=].isActive = true
 * ingredient[=].strengthRatio.numerator = 4 $ucum#mg "milligram"
 * ingredient[=].strengthRatio.denominator = 20 $edqm-standardterms#15022000 "Drop"
-* ingredient[=].strengthRatio.extension[strengthSubstance].valueCodeableConcept = $snomed#21518006 "Naloxone hydrochloride" 
+* ingredient[=].strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#21518006 "Naloxone hydrochloride" 
 
 * marketingAuthorizationHolder.display = "Hexal AG" //We did not profile MAH data, shall we try better?
 
