@@ -25,8 +25,8 @@ contact:
         use: work
 license: CC-BY-SA-4.0
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
-dependencies:
-  ihe.domain.logical-datatypes: current
+#dependencies:
+#  ihe.domain.logical-datatypes: current
 
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -88,8 +88,8 @@ pages:
       title: "Order Management"
       prescription-lines.md:
         title: "Single- and multiline prescriptions"
-      order-statuses.md:
-        title: "Managing order status"
+      # order-statuses.md:
+      #   title: "Managing order status"
     interoperability-model.md:
       title: "Interoperability Model"
     data-models.md:

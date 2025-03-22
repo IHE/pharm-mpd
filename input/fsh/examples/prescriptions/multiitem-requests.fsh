@@ -36,10 +36,10 @@
 // * status = #active
 // * intent = #order
 
-* subject = Reference(patient1)
-* identifier
-  * system = "http://example.com/requestorchestration"
-  * value = "prescr1"
+// * subject = Reference(patient1)
+// * identifier
+//   * system = "http://example.com/requestorchestration"
+//   * value = "prescr1"
 
 // * groupIdentifier
 //   * system = "http://example.com/prescriptions"

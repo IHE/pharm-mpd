@@ -45,7 +45,6 @@ Description: "IHE Medication Order profile"
 * statusReason MS // statusReason, statusReasonText
 * authoredOn 1..1 MS // issueDate; recordingDate maybe in Provenance?
 * recorder 0..1 MS // recorder
-* requester 0..1 MS // prescriber
 * category MS // category
 * dispenseRequest.validityPeriod MS // validFrom, validUntil
 * medication MS // medication
