@@ -35,6 +35,14 @@ Description: "Medication for clinical use cases. This could be a branded product
   * ^short = "Total volume or number of package items inside a package. This element should not contain overall prescribed amount, but describe the product itself. In case of complex packages, this element could be left empty, and number of different items could be indicated in the nested Medications." //packSize (almost)
 * ingredient MS 
   * ^short = "Ingredient or a part product. For combination packs, each ingredient can be a separate manufactured item with its own ingredients, dose form, and strength" // item
+
+
+  * extension contains MedicationIngredientRole named ingredientRole 0..1
+  * extension[ingredientRole] ^short = "Role of the ingredient in the medication"
+  * extension[ingredientRole] ^definition = "Role of the ingredient in the medication, e.g. active ingredient, excipient, etc."
+
+// do we want an invariant??
+
   * item MS
     * ^short = "Substance (Substance resource or concept from terminology) or a medicinal product (Medication resource or concept from terminology). Medicinal product can be an ingredient in case of extemporal medications or combination packs (e.g Creme + 6 tablets)"
   * item only CodeableReference(Substance or IHEMedication) // item.ingredient.substance; item
