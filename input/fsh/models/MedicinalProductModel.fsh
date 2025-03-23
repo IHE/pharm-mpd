@@ -19,7 +19,8 @@ Characteristics: #can-be-target
     * substance 1..1 CodeableConcept "Substance"
     * strengthInfo 0..1 BackboneElement "Concentration or presentation strength"
       * strength 1..1 Ratio "Concentration or presentation strength of the precise active ingredient"
-      * strengthType 0..1 CodeableConcept "Type of strength that is expressed"
+      // * strengthType 0..1 CodeableConcept "Type of strength that is expressed"
+      // // possibly remove
       * basisOfStrengthSubstance 0..1 CodeableConcept "Substance that the strength refers to, if different from the main substance"
   * unitOfPresentation 0..1 CodeableConcept "Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package."
   * containedQuantity 0..1 Ratio "Manufactured item quantity for liquids (3ml/vial)"
