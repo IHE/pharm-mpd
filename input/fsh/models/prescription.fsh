@@ -42,6 +42,7 @@ Description: "Logical model for medication prescription (or some other form of o
 //16
 * indicationText 0..* string "Reason for the prescription in textual form. This might not be allowed by some implementations."
 //17
+* indicationReference 0..* string "Reason for the prescription - as a reference to a problem, result, etc."
 //17
 
 * treatmentPeriod 0..1 Period "Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"
