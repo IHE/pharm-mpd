@@ -1,4 +1,4 @@
-Profile: IHEMedicationOrder
+Profile: IHEMedicationOrderModel
 Title: "IHE Medication Order"
 Parent: MedicationRequest
 Description: "IHE Medication Order profile"
