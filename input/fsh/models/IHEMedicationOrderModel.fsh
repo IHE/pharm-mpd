@@ -35,7 +35,7 @@ Description: "Logical model for medication prescription (or some other form of o
 * prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
 //18
 
-* medication 1..1 Reference(MedicinalProductLM) "Prescribed product, branded, generic, virtual, extemporal, etc"
+* medication 1..1 Reference(MedicinalProductModel) "Prescribed product, branded, generic, virtual, extemporal, etc"
 //15
 
 * indication 0..* CodeableConcept "Reason for the prescription (typically diagnosis, prophylaxis, or a procedure)"
