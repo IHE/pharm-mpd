@@ -14,7 +14,7 @@ Characteristics: #can-be-target
 * substitution 0..1 BackboneElement "Substitution was made"
   * substitutionOccurred 1..1 boolean "Indicates whether substitution was made by the dispenser"
   * type 0..1 CodeableConcept "Indicates the type of substitution made by the dispenser"
-  * reason 0..1 CodeableConcept "The reason for the substitution by the dispenser"
+  * reason 0..1 CodeableConcept "The reason for the substitution by the dispenser or why a substitution was not made"
 * status 1..1 CodeableConcept "Status of the dispensation"
 * statusReason 0..* CodeableConcept "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid"
 * statusReasonText 0..1 string "Textual reason for the current status of dispensation"
