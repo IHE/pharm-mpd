@@ -30,4 +30,4 @@ Characteristics: #can-be-target
 * characteristic 0..* BackboneElement "Other features of the product"
   * type 1..1 CodeableConcept "A code expressing the type of characteristic"
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or unsignedInt or decimal or Ratio "Description of the characteristic"
-* additionalProductInformation 0..1 BackboneElement "Additional information about product - for example, a reference to a product catalogue"
+// * additionalProductInformation 0..1 BackboneElement "Additional information about product - for example, a reference to a product catalogue"
