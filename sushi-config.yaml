@@ -8,8 +8,8 @@ version: 0.1.0
 fhirVersion: 5.0.0
 status: active
 packageId: ihe.pharm.mpd
-title: "Medication Prescription and Delivery (MPD)"
-description: ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery
+title: "Medication Prescription and Dispense (MPD)"
+description: ImplementationGuide for IHE Pharmacy Medication Prescription and Dispense (MPD) profile
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2021+
 releaseLabel: ci-build

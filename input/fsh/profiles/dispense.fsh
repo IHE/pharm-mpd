@@ -9,7 +9,7 @@ Description: "MedicationDispense profile for capturing dispensation information 
 * receiver MS // receiver
 * performer.actor 1..1 MS // dispenser 1
 * authorizingPrescription MS // relatedRequest
-* authorizingPrescription only Reference(IHEMedicationOrder)
+* authorizingPrescription only Reference(MedicationRequest)
 * medication MS // medication 1
 * medication only CodeableReference(IHEMedication)
 * quantity 1..1 MS // dispensedQuantity 1

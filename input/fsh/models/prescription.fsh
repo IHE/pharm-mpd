@@ -1,28 +1,29 @@
-Logical: MedicationOrder
+Logical: IHEMedicationOrder
 Title: "Medication prescription (model)"
 Description: "Logical model for medication prescription (or some other form of order)"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 
-* identifier 1..* Identifier "Business identifier(s) for the prescription"
-//1
 * groupIdentifier 0..1 Identifier "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 
-* patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered" "Question: would we want to add basic Patient model?"
-//4
-
-* recordingDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
-//9
-
-* basedOn 0..1 Reference (MedicationOrder) "What this order is based on" "This is a reference to the order that this order is based on. For example, a prescription for a medication may be based on a proposal, and an administration request may be based on a prescription."
-//
-
-* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
-//3
-* recorder 0..1 Reference(PractitionerBasic or PractitionerRole) "The recorder of the prescription/draft in the information system"
-//8
-
+* identifier 1..* Identifier "Business identifier(s) for the prescription"
+//1
 * prescriber 1..1 Reference(PractitionerBasic or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
 //2
+* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
+//3
+* patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered" "Question: would we want to add basic Patient model?"
+//4
+* recorder 0..1 Reference(PractitionerBasic or PractitionerRole) "The recorder of the prescription/draft in the information system"
+//8
+* recordingDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
+//9
+* status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
+//10
+* statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
+//11
+
+* basedOn 0..1 Reference (IHEMedicationOrder) "What this order is based on" "This is a reference to the order that this order is based on. For example, a prescription for a medication may be based on a proposal, and an administration request may be based on a prescription."
+
 * category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
 //5
 * validFrom 0..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
@@ -30,35 +31,27 @@ Description: "Logical model for medication prescription (or some other form of o
 * validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
 //7
 
-* status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
-//10
-* statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
-//11
 
-* comment 0..* string "Additional information or comments"
-//12
+* prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
+//18
 
 * medication 1..1 Reference(MedicinalProductLM) "Prescribed product, branded, generic, virtual, extemporal, etc"
 //15
 
 * indication 0..* CodeableConcept "Reason for the prescription (typically diagnosis, prophylaxis, or a procedure)"
 //16
-
-* indicationText 0..1 string "Reason for the prescription in textual form. This might not be allowed by some implementations."
+* indicationText 0..* string "Reason for the prescription in textual form. This might not be allowed by some implementations."
 //17
-
-* prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
-//18
+* indicationReference 0..* string "Reason for the prescription - as a reference to a problem, result, etc."
+//17
 
 * treatmentPeriod 0..1 Period "Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"
 //19
-
 * quantityPrescribed 0..1 Quantity "Overall quantity of prescribed product (e.g number of packages or number of tablets)."
 //20 NEW
 
 * dosageInstructions 0..* Reference(DosagingInformation) "Dosaging and administration instructions"
 //21
-
 * preparationInstructions 0..1 string "Additional instructions about preparation or dispense" 
 //22
 
@@ -76,6 +69,8 @@ Description: "Logical model for medication prescription (or some other form of o
 
 * minimumDispenseInterval 0..1 Duration "Minimum Dispense Interval" "If a prescription allows for repeated dispensations, the interval between dispensations shall be stated here."
 
+* comment 0..* string "Additional information or comments"
+//12
 
 //* reimbursementRate 0..1 Quantity "Reimbursement/discount rate for the patient at the time of prescribing"
 // related to chronic disease
