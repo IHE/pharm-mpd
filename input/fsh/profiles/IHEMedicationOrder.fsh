@@ -4,8 +4,8 @@ Parent: MedicationRequest
 Description: "IHE Medication Order profile"
 
 
-* extension contains OffLabelUse named offLabelUse 0..1 
-* extension[offLabelUse] ^short = "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
+* extension contains OffLabel named offLabel 0..1 
+* extension[offLabel] ^short = "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
 
 
 * identifier 
