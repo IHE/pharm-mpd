@@ -32,3 +32,7 @@ Characteristics: #can-be-target
   * type 1..1 CodeableConcept "A code expressing the type of characteristic"
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or unsignedInt or decimal or Ratio "Description of the characteristic"
 // * additionalProductInformation 0..1 BackboneElement "Additional information about product - for example, a reference to a product catalogue"
+* batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
+  * lotNumber 0..1 string "Batch identifier of the medicinal product"
+  * expirationDate 0..1 dateTime "Batch expiration date of the medicinal product."
+  * serialNumber 0..1 dateTime "Serial Number of the medicinal product."  
