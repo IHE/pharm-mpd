@@ -56,14 +56,16 @@ Description: "Logical model for medication prescription (or some other form of o
 //22
 
 * substitution 0..1 BackboneElement "Whether and which type of substitution is allowed for this medication treatment line"
-  * allowed 0..1 boolean "Whether substitution is allowed or not."
-  //See issue 47 for removing or relaxing the following element
-  * type 0..1 CodeableConcept "The type of substitution that is allowed."
+  * allowed[x] 0..1 boolean or CodeableConcept "Whether substitution is allowed or not (or type of substitution)."
+  // * allowed 0..1 boolean "Whether substitution is allowed or not."
+  // //See issue 47 for removing or relaxing the following element
+  // * type 0..1 CodeableConcept "The type of substitution that is allowed."
   * reason[x] 0..1 CodeableConcept or string "Reason for the substitution requirement"
 //  * substitutionTypeReasonText 0..1 string "Textual reason for the substitution requirement"
+
 * offLabel 0..1 Base "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
-  * offLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
-  * offLabelUseReason[x] 0..* CodeableConcept or string "Reason or related clarification for off-label use."
+  * isOffLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
+  * reason[x] 0..* CodeableConcept or string "Reason or related clarification for off-label use."
 
 * repeatsAllowed 0..1 integer "Number of refills authorized" "How many times the prescription item can be dispensed in addition to the original dispense."
 
