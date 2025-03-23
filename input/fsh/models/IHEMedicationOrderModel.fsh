@@ -1,6 +1,6 @@
 Logical: IHEMedicationOrderModel
-Title: "Medication prescription (model)"
-Description: "Logical model for medication prescription (or some other form of order)"
+Title: "Medication order (model)"
+Description: "Logical model for medication prescription or other types of medication orders"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 
 * groupIdentifier 0..1 Identifier "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
