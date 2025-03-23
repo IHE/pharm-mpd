@@ -28,7 +28,7 @@ Description: "Logical model for multiline medication prescription"
   * category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
   //5
   * basedOn 0..1 Reference (IHEMultilineOrder) "What this order is based on" "This is a reference to the order that this order is based on. For example, a prescription for a medication may be based on a proposal, and an administration request may be based on a prescription."
-  * medication 1..1 Reference(MedicinalProductLM) "Prescribed product, branded, generic, virtual, extemporal, etc"
+  * medication 1..1 Reference(MedicinalProductModel) "Prescribed product, branded, generic, virtual, extemporal, etc"
   * prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
   //18
   * indication 0..* CodeableConcept "Reason for the prescription (typically diagnosis, prophylaxis, or a procedure)"
