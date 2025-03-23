@@ -1,4 +1,4 @@
 Detailed diagram:
 <figure>
-  {% include IHEMultilineOrder.svg %}
+  {% include IHEMedicationOrderModel.svg %}
 </figure>
