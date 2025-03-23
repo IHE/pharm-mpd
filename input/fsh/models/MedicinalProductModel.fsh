@@ -22,7 +22,7 @@ Characteristics: #can-be-target
       * strengthType 0..1 CodeableConcept "Type of strength that is expressed"
       * basisOfStrengthSubstance 0..1 CodeableConcept "Substance that the strength refers to, if different from the main substance"
   * unitOfPresentation 0..1 CodeableConcept "Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package."
-  * containedQuantity 0..1 Quantity "Manufactured item quantity for liquids (3ml/vial)"
+  * containedQuantity 0..1 Ratio "Manufactured item quantity for liquids (3ml/vial)"
   * amount 0..1 Quantity "Number of such manufactured items in this product (5 vials)"
 * device 0..* BackboneElement "Administration device included in the product"
   * deviceQuantity 1..1 Quantity "Number of such devices"
