@@ -29,13 +29,14 @@ Description: "Logical model for multiline medication prescription"
   //5
   * basedOn 0..1 Reference (IHEMultilineOrder) "What this order is based on" "This is a reference to the order that this order is based on. For example, a prescription for a medication may be based on a proposal, and an administration request may be based on a prescription."
   * medication 1..1 Reference(MedicinalProductLM) "Prescribed product, branded, generic, virtual, extemporal, etc"
+  * prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
+  //18
   * indication 0..* CodeableConcept "Reason for the prescription (typically diagnosis, prophylaxis, or a procedure)"
   //16
   * indicationText 0..1 string "Reason for the prescription in textual form. This might not be allowed by some implementations."
   //17
-
-  * prescriptionIntent 0..1 CodeableConcept "Type of intent of the prescription - prophylaxis, treatment, anesthesia, etc"
-  //18
+  * indicationReference 0..* string "Reason for the prescription - as a reference to a problem, result, etc."
+  //17
 
   * treatmentPeriod 0..1 Period "Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"
   //19
