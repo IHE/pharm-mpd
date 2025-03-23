@@ -1,4 +1,4 @@
-Logical: MedicationDispense
+Logical: IHEMedicationDispense
 Title: "Medication dispense (model)"
 Description: "Logical model for medication dispense report (based on request or independently)"
 Characteristics: #can-be-target
@@ -12,7 +12,7 @@ Characteristics: #can-be-target
 * dispensedQuantity 1..1 Quantity "Number of dispensed packages if the pack size is known, or number of smaller items/units"
 * timeOfDispensation 1..1 dateTime "Date and time of dispensation"
 * substitution 0..1 BackboneElement "Substitution was made"
-  * substitutionOccurred 0..1 boolean "Indicates whether substitution was made by the dispenser"
+  * substitutionOccurred 1..1 boolean "Indicates whether substitution was made by the dispenser"
   * type 0..1 CodeableConcept "Indicates the type of substitution made by the dispenser"
   * substitutionReason 0..1 CodeableConcept "The reason for the substitution by the dispenser"
 * status 1..1 CodeableConcept "Status of the dispensation"
