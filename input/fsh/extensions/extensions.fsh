@@ -114,3 +114,14 @@ Context: MedicationRequest.dispenseRequest
 * value[x] only Quantity
 
 
+
+
+
+Extension: MedicationIngredientRole
+Id:        ihe-ext-medication-ingredient-role
+Title:     "Medication - Ingreditne role"
+Description: "Medication ingredient role - whether it is an active ingredient, excipient, adjuvant, solvent, flavouring, etc."
+Context: Medication
+
+* value[x] only CodeableConcept 
+* valueCodeableConcept from https://www.hl7.org/fhir/valueset-ingredient-role.html (example)

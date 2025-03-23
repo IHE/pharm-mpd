@@ -39,9 +39,6 @@ Description: "IHE Medication Order profile"
   * extension[prescribedQuantity] ^short = "Overall amount of product prescribed, independent from the number of repeats."
   * extension[prescribedQuantity] ^definition = "When Medication resource implies a pack size, prescribedQuantity should convey number of packages. When the Medication does not imply an amount, overall amount could be in tablets or millilitres."
 
-
-
-
 * statusReason MS // statusReason, statusReasonText
 * authoredOn 1..1 MS // issueDate; recordingDate maybe in Provenance?
 * recorder 0..1 MS // recorder

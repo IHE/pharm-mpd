@@ -1,6 +1,6 @@
-Logical: MedicationDispensation
-Title: "Medication dispensation (model)"
-Description: "Logical model for medication dispensation (based on request or independently)"
+Logical: MedicationDispense
+Title: "Medication dispense (model)"
+Description: "Logical model for medication dispense report (based on request or independently)"
 Characteristics: #can-be-target
 
 * identifier 0..* Identifier "Identifier for the dispense"
@@ -19,6 +19,9 @@ Characteristics: #can-be-target
 * statusReason 0..* CodeableConcept "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid"
 * statusReasonText 0..1 string "Textual reason for the current status of dispensation"
 * usageInstructions 0..* Reference(DosagingInformation) "Dosaging and administration instructions" //TODO Validate the inclusion, added according to a proposal from 5.09.2024
+
+* comment 0..* string "Additional information or comments"
+//12
 
 //* reimbursementRate 0..1 Quantity "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation."
 // price, broken to patient part and reimbursed part and per package and per dispensation
