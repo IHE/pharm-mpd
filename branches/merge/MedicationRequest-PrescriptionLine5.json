@@ -1,0 +1,30 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "PrescriptionLine5",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest PrescriptionLine5</b></p><a name=\"PrescriptionLine5\"> </a><a name=\"hcPrescriptionLine5\"> </a><a name=\"PrescriptionLine5-en-US\"> </a><p><b>identifier</b>: <code>http://example.com/prescriptionlines</code>/line5</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/prescr2</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">med1</span></td></tr></table><p><b>subject</b>: Identifier: patient1</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.com/prescriptionlines",
+    "value" : "line5"
+  }],
+  "groupIdentifier" : {
+    "system" : "http://example.com/prescriptions",
+    "value" : "prescr2"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "medication" : {
+    "concept" : {
+      "coding" : [{
+        "code" : "med1"
+      }]
+    }
+  },
+  "subject" : {
+    "identifier" : {
+      "value" : "patient1"
+    }
+  }
+}
