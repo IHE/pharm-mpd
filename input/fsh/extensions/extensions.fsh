@@ -1,6 +1,6 @@
 Extension: OffLabel
-Id:        ihe-ext-medicationrequest-offlabeluse
-Title:     "MedicationRequest - Off-label use"
+Id:        ihe-ext-offLabel
+Title:     "Off-label use"
 Description: "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."
 Context: MedicationRequest, MedicationStatement
 
