@@ -5,14 +5,14 @@ hide footbox
 '!include ./style.iuml
 
 
-Participant "[[actors_and_transactions.html#order-placer Order\nPlacer]]" as OP
-Participant "[[actors_and_transactions.html#order-filler Order\nFiller]]" as OF
+Participant "[[actors_and_transactions.html#order-placer Medication\nOrder\nPlacer]]" as OP
+Participant "[[actors_and_transactions.html#order-receiver Medication\nOrder\nReceiver]]" as OF
 
 activate OP
 activate OF
 
 OP -[hidden]> OF
-OP -> OF: \Medication Order \n\t[[StructureDefinition-MedicationOrder.html{Medication Order} Medication Order]]
+OP -> OF: \t[[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]
 OP <-- OF: \t(response)\t
 OP -[hidden]> OF
 

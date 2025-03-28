@@ -8,12 +8,10 @@ title Medication Prescription and Dispense - Actors and Transactions - Dispense
 'agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
 'agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
 
-agent " [[actors_and_transactions.html#DispenseReporter Dispense Reporter  ]]" as OrderConsumer 
-agent " [[actors_and_transactions.html#DispenseConsumer Dispense Consumer  ]]" as dispenseconsumer 
-
-
-agent "[[actors_and_transactions.html#DipenseReceiver Dispense Receiver]]" as dispensereceiver
-agent "[[actors_and_transactions.html#DipenseResponder Dispense Responder]]" as dispenseresponder 
+agent " [[actors_and_transactions.html#DispenseReporter Medication\nDispense Reporter  ]]" as OrderConsumer 
+agent " [[actors_and_transactions.html#DispenseConsumer Medication\nDispense Consumer  ]]" as dispenseconsumer 
+agent "[[actors_and_transactions.html#DipenseReceiver Medication\nDispense Receiver]]" as dispensereceiver
+agent "[[actors_and_transactions.html#DipenseResponder Medication\nDispense Responder]]" as dispenseresponder 
 
 
 ' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
