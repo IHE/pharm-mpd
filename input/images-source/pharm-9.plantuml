@@ -1,0 +1,23 @@
+@startuml
+
+hide footbox
+
+'!include ./style.iuml
+
+Title Retrieve Medication Order [PHARM-9]
+
+Participant "[[actors_and_transactions.html#order-placer Medication\nOrder\nPlacer]]" as OP
+Participant "[[actors_and_transactions.html#order-receiver Medication\nOrder\nReceiver]]" as OF
+
+activate OP
+activate OF
+
+OP -[hidden]> OF
+OP -> OF: \t[[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]
+OP <-- OF: \t(response)\t
+OP -[hidden]> OF
+
+deactivate OP
+deactivate OF
+
+@enduml

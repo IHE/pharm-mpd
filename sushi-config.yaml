@@ -70,14 +70,14 @@ pages:
       title: "Glossary" 
     usecases.md: # remove all this and below (unless JCT can do this today / tomorrow) - low pritority JCT
       title: "Use Cases"
-      presc-use-case-1.md:
-        title: "Use Case 1: Order straight to dispense"
-      presc-use-case-2.md:
-        title: "Use Case 2: Proposal order"
-      presc-use-case-3.md:
-        title: "Use Case 3: Dispense before prescription"
-      presc-use-case-4.md:
-        title: "Use Case 4: Change dosage during treatment"
+      # presc-use-case-1.md:
+      #   title: "Use Case 1: Order straight to dispense"
+      # presc-use-case-2.md:
+      #   title: "Use Case 2: Proposal order"
+      # presc-use-case-3.md:
+      #   title: "Use Case 3: Dispense before prescription"
+      # presc-use-case-4.md:
+      #   title: "Use Case 4: Change dosage during treatment"
     medication-concepts.md: # Copy or sumarize from EU MPD (with credits) MR
       title: "Medication Concepts"
     order-management.md:  # possibly rename, but include key concept (reusing from COW?) - order status, Task, grouping, changes cancellation, ...  JCT can copy COW
@@ -102,14 +102,14 @@ pages:
 
   volume-2.md:
     title: "Volume 2"
-    submit-medication-order.md: # FCFS
+    pharm-5.md: # FCFS
       title: "PHARM-5: Submit Medication Order" 
-    retrieve-medication-order.md: # FCFS
-      title: "PHARM-6: Retrieve Medication Orders"
-    submit-medication-dispense.md: # FCFS
-      title: "PHARM-7: Submit Medication Dispense"
-    retrieve-medication-dispense.md: # FCFS
-      title: "PHARM-8: Retrieve Medication Dispenses"
+    pharm-7.md: # FCFS
+      title: "PHARM-7: Retrieve Medication Orders"
+    pharm-8.md: # FCFS
+      title: "PHARM-8: Submit Medication Dispense"
+    pharm-9.md: # FCFS
+      title: "PHARM-9: Retrieve Medication Dispenses"
 
 
 
@@ -137,10 +137,10 @@ menu:
     "Cross-profile Considerations": cross-profile.html
   Volume 2:
     Overview: volume-2.html
-    PHARM-5 - Submit Medication Order: submit-medication-order.html
-    PHARM-6 - Retrieve Medication Order: retrieve-medication-order.html
-    PHARM-7 - Submit Medication Dispense: submit-medication-dispense.html
-    PHARM-8 - Retrieve Medication Dispense: retrieve-medication-dispense.html
+    PHARM-5 - Submit Medication Order: pharm-5.html
+    PHARM-7 - Retrieve Medication Order: pharm-7.html
+    PHARM-8 - Submit Medication Dispense: pharm-8.html
+    PHARM-9 - Retrieve Medication Dispense: pharm-9.html
 
   Volume 3:
     "Error Codes": error_codes.html

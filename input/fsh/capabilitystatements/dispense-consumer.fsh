@@ -24,4 +24,4 @@ Usage: #definition
     * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispense"
     * interaction[+]
       * code = #read
-      * documentation = "Retrieve a MedicationDispense [PHARM-X4]"
+      * documentation = "Retrieve a MedicationDispense [PHARM-9]"

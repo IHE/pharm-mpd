@@ -4,6 +4,7 @@ hide footbox
 
 '!include ./style.iuml
 
+Title Retrieve Medication Order [PHARM-5]
 
 Participant "[[actors_and_transactions.html#order-placer Medication\nOrder\nPlacer]]" as OP
 Participant "[[actors_and_transactions.html#order-receiver Medication\nOrder\nReceiver]]" as OF

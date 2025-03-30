@@ -1,8 +1,8 @@
-This section corresponds to transaction [PHARM-M1] of the IHE Technical Framework. Transaction [PHARM-M1] is used by the Order Placer and the Order Receiver actors. The Submit Medication Order [PHARM-M1] transaction is used to transmit an medication order - typically a prescription.
+This section corresponds to transaction [PHARM-7] of the IHE Technical Framework. Transaction [PHARM-7] is used by the Order Placer and the Order Receiver actors. The Submit Medication Order [PHARM-7] transaction is used to transmit an medication order - typically a prescription.
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Order [PHARM-M1] transaction passes a Medication Order from a Medication Order Placer to a Medication Order Consumer.
+The Submit Medication Order [PHARM-7] transaction passes a Medication Order from a Medication Order Placer to a Medication Order Consumer.
 
 ### X:Y.Z.2 Actors Roles
 
@@ -21,7 +21,7 @@ The Submit Medication Order [PHARM-M1] transaction passes a Medication Order fro
 ### X:Y.Z.4 Messages
 
 <figure>
-{% include PHARM-M1.svg %}
+{% include pharm-7.svg %}
 </figure>
 
 

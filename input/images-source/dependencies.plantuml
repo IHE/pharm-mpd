@@ -1,0 +1,60 @@
+@startuml
+' Enable skinparams for background colors
+skinparam backgroundColor White
+skinparam linetype polyline
+hide circle
+hide stereotype
+hide attribute
+hide method
+
+
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+' Define packages with background color for each scope
+package "                                    International                                           " as INT <<Rectangle>> {
+    skinparam packageBackgroundColor #CCE5FF
+    class "IHE MPD (FHIR R5)" as IHE_R5
+}
+
+package "EU"  as EU <<Rectangle>> #aliceblue {
+    skinparam packageBackgroundColor #D4EDDA
+    class "  HL7 MPD (FHIR R4)  " as HL7_R4
+    class "  HL7 MPD (FHIR R5)  " as HL7_R5
+
+    package "National (Europe)" as NAT <<Rectangle>> #dfd {
+        skinparam packageBackgroundColor #FFF3CD
+        class "  National MPD (FHIR R4)  " as Nat_R4
+        class "  National MPD (FHIR R5)  " as Nat_R5
+    }
+    
+}
+
+
+package "  Other / Non-EU  " as INTL <<Rectangle>> {
+    skinparam packageBackgroundColor #F8D7DA
+    class "National MPD\n(Outside EU)" as OtherNat
+}   
+
+' Relationships / notes
+'IHE_R5 <|-d[hidden]-> HL7_R4
+IHE_R5 <|-d-- OtherNat
+'INT -d[hidden]-> EU
+HL7_R4 -r[hidden]-> HL7_R5 
+HL7_R5 <|-- Nat_R5 
+HL7_R4 <|-- Nat_R4 
+IHE_R5 <|-d- HL7_R5 : Derives from
+
+'NAT -r[hidden]- INTL: "            "
+'Nat_R5 -r[hidden]- OtherNat : "                 \t\t\t       ";
+
+'Note about absence of R4 for international
+note right of HL7_R5
+  No international
+  profile in FHIR R4
+end note
+
+@enduml

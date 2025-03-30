@@ -17,8 +17,6 @@ agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as Ord
 'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
 'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
 
-' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
-
 orderplacer -d- orderreceiver 
 
 orderreceiver -r[hidden]- orderresponder 
@@ -26,7 +24,7 @@ orderreceiver -r[hidden]- orderresponder
 
 
 'orderreceiver -[hidden]r- orderresponder : "\t\t\t"
-orderresponder -r- OrderConsumer: " ← [[PHARM-X1.html PHARM-X2\nRetrieve Medication Orders]]    "
+orderresponder -r- OrderConsumer: " ← [[pharm-7.html PHARM-7\nRetrieve Medication Orders]]    "
 
 
 
