@@ -16,9 +16,8 @@ rectangle "Filler/Receiver system" as PS #cee{
 'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
 'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
 
-' \n\n   [[PHARM-X2.html PHARM-M2 Supply Response/status]] ↑
 
-orderplacer -r- orderreceiver : " [[PHARM-X1.html PHARM-X1\nSubmit Medication Order]] →  "
+orderplacer -r- orderreceiver : " [[PHARM-5.html PHARM-5\nSubmit Medication Order]] →  "
 
 orderreceiver -r[hidden]- orderresponder 
 

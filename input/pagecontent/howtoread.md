@@ -2,6 +2,8 @@
 This publication is in the form of a FHIR implementation guide.
 Readers are invited to refer to the [IHE General Intro](https://profiles.ihe.net/GeneralIntro). Implementers are expected to be familiar with the key concepts of the IHE approach.
 
+
+
 ### IHE Approach - actors and transactions
 IHE Profiles (which are different from "FHIR Profiles") provide implementable and testable specifications by using existing standards and applying them to specific parts of clinical workflow.
 The parts of the workflow about data exchange are represented by Actors (modular abstract functionalities that are implemented in systems) and Transactions (data exchange specifications). 
@@ -23,8 +25,10 @@ One key aspect of IHE profiles is to define these modular actors and transaction
 ... volume 2 contains the technical description of the transactions
 
 
-### Considerations 
 
 #### Must Support
 
-This specification defines `Must Support` in StructureDefinition profiles as the element, when the minimal cardionality is zero, is **R2** `Required if Known`, as found in [Appendix Z](http://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir). `Must Support` when the element minimal cardionality is not zero means **R**.
+This specification defines `Must Support` in StructureDefinition profiles as the element, when the minimal cardionality is zero, is **R2** `Required if Known`, as found in [Appendix Z](http://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir). 
+`Must Support` when the element minimal cardionality is not zero means **R**.
+Note that data access controls may apply to this rule.
+

@@ -1,31 +1,15 @@
 
-The MPD profile is a Workflow and Content profile. It describes the data exchange between systems for electronic prescriptions and dispenses.
+The MPD profile describes the data exchange between systems for electronic prescriptions and dispenses, both in terms of content - semantic and syntax of the data exchange - and workflow - actors and transactions, which should be implemented in systems aiming for interoperability.
+
+From implementer experience and analysis of standards implementation, IHE acknowledges the variation in medication workflows, depending on jurisdiction, organizational factors, practitioner or patient preferences, and other operational factors such as product availability. 
 
 
-### HL7 Gemini 
+To achieve this, IHE has sought to:
 
-IHE MPD is a Gemini project. This means that the specifications are hosted by IHE .....
-
-<div style="display: flex; justify-content: center; align-items: center">
-    <img src="./gemini-logo-fin.png" alt="GEMINI" style="max-width: 90%; max-height: 100%; margin: 20px;">
-</div>
-
-<br>
-
-
-### HL7 Europe and European specifications
-
-
-### Related work
-
-#### MPD
-
-#### MMA
-
-#### IPS
-
-#### SUPPLY
-
+* Address the use cases that have been described by IHE since the [IHE Pharmacy White Paper](), from order creation and validation to pharmacy preparation and dispensation. 
+* Ensure coverage of the [Use Cases](usecases.html) that present common situations in current technology systems and for which standard interoperability is sought.
+* Describe common data models and FHIR profiles for exchanging medication-related information
+* Create a common set of actors that can be combined, adopted and adapted to address the variety of use cases and exceptions, while standardizing data exchange and interoperability architectures.
 
 
 
