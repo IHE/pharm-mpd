@@ -86,8 +86,8 @@ pages:
         title: "Single- and multiline prescriptions"
       # order-statuses.md:
       #   title: "Managing order status"
-    interoperability-model.md: # drop for now 
-      title: "Interoperability Model"
+#    interoperability-model.md: # drop for now 
+#      title: "Interoperability Model"
     data-models.md: # update and write simple narrative JCT
       title: "Data Models" 
     actors-transactions.md: # Finish it MR on monday
