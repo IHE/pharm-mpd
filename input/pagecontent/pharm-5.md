@@ -1,8 +1,8 @@
-This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the Order Placer and the Order Receiver actors. The Submit Medication Order [PHARM-5] transaction is used to transmit an medication order - typically a prescription.
+This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the Medication Order Placer and the Medication Order Receiver actors. The Submit Medication Order [PHARM-5] transaction is used to transmit a medicationrequest - typically a prescription.
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Order [PHARM-5] transaction passes a Medication Order from a Medication Order Placer to a Medication Order Consumer. The MeEdication Order can be 
+The Submit Medication Order [PHARM-5] transaction passes a MedicationRequest from a Medication Order Placer to a Medication Order Receiver. The MedicationRequest can be:
 * a single-line Prescription
 * a prescription as part of a group of prescriptions
 * a proposal, or a draft
@@ -14,10 +14,10 @@ The Submit Medication Order [PHARM-5] transaction passes a Medication Order from
 
 **Table X:Y.Z.2-1: Actor Roles**
 
-|Actor | Role |
+| Actor | Role |
 |-------------------+--------------------------|
-| [Medication Order Placer](actors_and_transactions.html#order-placer)    | Submits Medication Orders to the Medication Order Consumer |
-| [Medication Order Receiver](actors_and_transactions.html#order-receiver) | Accepts Medication orders from the Medication Order Placer |
+| [Medication Order Placer](actors_and_transactions.html#order-placer) | Submits Medication Orders to the Medication Order Consumer |
+| [Medication Order Receiver](actors_and_transactions.html#order-receiver) | Accepts Medication Orders from the Medication Order Placer |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards
@@ -30,56 +30,52 @@ The Submit Medication Order [PHARM-5] transaction passes a Medication Order from
 {% include pharm-5.svg %}
 </figure>
 
-
 **Figure X:Y.Z.4-1: Submit Medication Order Interactions**
 
 #### X:Y.Z.4.1 Submit Medication Order Request Message
-The Medication Order Placer submits a MedicationRequest resource using the HTTP PUT or POST method to the /MedicationRequest endpoint.
+
+The Medication Order Placer submits a MedicationRequest resource using the HTTP POST or PUT method to the /MedicationRequest endpoint.
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
-This method is invoked when the Medication Order Placer intends to submit one or more Medication Orders to a Medication Order Receiver - for example when submitting a prescription, or when submitting a draft. 
+This method is invoked When submitting a prescription or draft.
 
 ##### X:Y.Z.4.1.2 Message Semantics
 
 The content type of the HTTP body shall be either `application/fhir+json` or `application/fhir+xml`.
 
-The Medication Order Placer shall assure the request is consistent and actionable before sending, e.g. in case of a prescription, all authorizations and approvals are present.  
+The Medication Order Placer shall assure the request is consistent and actionable before sending.
 
 ###### X:Y.Z.4.1.2.1 Resource content
 
-* The Submit Medication Order is a MedicationRequest resource.
-The semantics of the request and data elements are captured in the [Medication Order Data Model](StructureDefinition-IHEMedicationOrderModel.html) and the technical specification in the [Medication Order](StructureDefinition-IHEMedicationOrder.html) profile.
-
+The Submit Medication Order is a MedicationRequest resource.  
+The semantics of the request and data elements are captured in the [StructureDefinition-IHEMedicationOrderModel.html] and the technical specification in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
 
 ##### X:Y.Z.4.1.3 Expected Actions
-Upon receiving the Medication Order, the Medication Order Receiver is expected to store and/or forward the order.
 
-
+Upon receiving the MedicationRequest, the Medication Order Receiver is expected to store and/or forward the order.
 
 #### X:Y.Z.4.2 Submit Medication Order Response
-The Medication Order Consumer always returns 
-The Medication Order Receiver SHALL return a HTTP Status code appropriate to the processing outcome, or informing of any error. 
-The response SHALL conform to the FHIR general specifications on [response codes](https://build.fhir.org/http.html#Status-Codes) and [desired response detail level](https://build.fhir.org/http.html#ops). 
 
-##### X:Y.Z.4.1.1 Trigger Events
+The Medication Order Receiver SHALL return an HTTP Status code appropriate to the processing outcome.
 
-This response is always expected and provides the Medication Order Placer with the ackowledgement of the request including any technical issues.
-The response shall immediately follow the request.
-In case any delayed validation of the order is expected, such validation shall not impede the immediate response to a Submit Medication Order.
+##### X:Y.Z.4.2.1 Trigger Events
 
+This response is always expected and provides the Medication Order Placer with acknowledgement of the request including any technical issues.
 
-##### X:Y.Z.4.1.2 Message Semantics
+##### X:Y.Z.4.2.2 Message Semantics
 
-The response to a Submit Medication Order shall consist of:
-* In case the request is accepted, the response shall have the response code `201 (Created)`
-* In case of any error, the response shall have the adequate error code (see [FHIR RESTful API](https://hl7.org/fhir/R5/http.html) for information on error handling)
+* On success: `201 (Created)`
+* On error: `Appropriate error code`
+
+###### X:Y.Z.4.2.2.1 Resource content
 
 
-###### X:Y.Z.4.1.2.1 Resource content
+The response shall contain the resource created from the request, including the `id`, `version`, etc. assigned by the server.
 
-* When the request is accepted (regardless of whether it may be acted upon), the response shall contain the resource that has been created from the request, including the id, version, etc. as assigned by the server. This allows the Medication Order Placer to confirm what has been accepted and track the request on that server by its internal `id`.
-* In case of error, the response SHALL contain an OperationOutcome providing more information about the issue.
 
-##### X:Y.Z.4.1.3 Expected Actions
-Upon receiving the response to the Submit Medication Order, the Medication Order Placer can persist the information provided by the Medication Order Consumer (status, id, etc.) for future tracking, and can trigger a response to any issues, if they exist.
+In case of error, the response SHALL contain an `OperationOutcome`.
+
+##### X:Y.Z.4.2.3 Expected Actions
+
+Upon receiving the response, the Medication Order Placer can persist the `id`, `status`, or trigger any issue resolution if needed.

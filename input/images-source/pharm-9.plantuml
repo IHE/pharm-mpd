@@ -4,16 +4,19 @@ hide footbox
 
 '!include ./style.iuml
 
-Title Retrieve Medication Order [PHARM-9]
+Title Retrieve Dispense Report [PHARM-9]
 
-Participant "[[actors_and_transactions.html#order-placer Medication\nOrder\nPlacer]]" as OP
-Participant "[[actors_and_transactions.html#order-receiver Medication\nOrder\nReceiver]]" as OF
+Participant "[[actors_and_transactions.html#dispense-consumer Dispense\nConsumer]]" as OP
+Participant "[[actors_and_transactions.html#dispense-responder Dispense\nResponder]]" as OF
 
 activate OP
 activate OF
 
 OP -[hidden]> OF
-OP -> OF: \t[[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]
+OC -> OR: \tQuery Medication Dispenses\t
+OC <-- OR: \t[[StructureDefinition-IHEMedicationDispense.html{Medication Dispense} Medication Dispense]]\t
+
+OP -> OF: \t[[StructureDefinition-IHEMedicationDispense.html{Medication Dispense} Medication Dispense]]
 OP <-- OF: \t(response)\t
 OP -[hidden]> OF
 
