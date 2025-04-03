@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderReceiverCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS"
+* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderReceiver"
 * title = "IHE MPD Order Receiver (server)"
@@ -22,7 +22,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Order Receiver Actor](volume-1.html#141111-Order-placer) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Order Receiver Actor](actors-transactions.html#order-placer) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1

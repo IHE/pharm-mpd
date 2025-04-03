@@ -10,8 +10,8 @@ The Submit Medication Order [PHARM-7] transaction passes a Medication Order from
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Medication Order Placer](actors_and_transactions.html#order-placer)    | Submits Medication Orders to the Medication Order Consumer |
-| [Medication Order Consumer](actors_and_transactions.html#order-filler) | Accepts the orders from the Medication Order Placer |
+| [Medication Order Consumer](actors-transactions.html#order-consumer) | Queries existing medication orders from the Order Responder |
+| [Medication Order Responder](actors-transactions.html#order-responder) | Provides access to stored medication orders |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards

@@ -16,8 +16,8 @@ The Submit Medication Order [PHARM-5] transaction passes a Medication Order from
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Medication Order Placer](actors_and_transactions.html#order-placer)    | Submits Medication Orders to the Medication Order Consumer |
-| [Medication Order Receiver](actors_and_transactions.html#order-receiver) | Accepts Medication orders from the Medication Order Placer |
+| [Medication Order Placer](actors-transactions.html#order-placer) | Submits Medication Orders to the Medication Order Consumer |
+| [Medication Order Receiver](actors-transactions.html#order-receiver) | Accepts Medication Orders from the Medication Order Placer |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards

@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderReceiver
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderReceiver"
+* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderReceiver"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderReceiver"
 * title = "IHE MPD Order Receiver"

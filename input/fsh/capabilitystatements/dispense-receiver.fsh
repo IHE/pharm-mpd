@@ -5,7 +5,7 @@
 Instance: IHE.MPD.DispenseReceiverCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseReceiverCS"
+* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseReceiverCS"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseReceiver"
 * title = "IHE MPD Dispense Receiver(server)"
@@ -26,7 +26,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Dispense Reporter Actor](volume-1.html#141111-Order-Responder) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Dispense Reporter Actor](actors-transactions.html#order-responder) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1

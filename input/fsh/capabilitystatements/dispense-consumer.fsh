@@ -1,7 +1,7 @@
 Instance: IHE.MPD.DispenseConsumerCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseConsumerCS"
+* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseConsumerCS"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseConsumer"
 * title = "IHE MPD Dispense Consumer"
