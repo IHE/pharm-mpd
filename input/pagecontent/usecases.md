@@ -1,17 +1,20 @@
-The use cases this profile intends to support are described here. For each case, the variation is:
+The use cases this profile intends to support are described here. ses to different variations and patterns, 
+
 
 ## Basic Flow(s)
 
-1. Simple prescription and dispense
+1. Simple prescription and dispense  
+In the most simple workflow, there is one prescription created in one step, and a dispense by a pharmacist selected by the patient, or even a designated pharmacy, as is common in hospital pharmacy. This use case is very simple in terms of workflow and serves as the basis for the following patterns and variations:
 
 
-## Workflow Concepts
+## Workflow: Related Concepts
 
-1. Status management 
-1. Medication overview
-1. Adverse drug events
-1. Lists - admission and discharge
-1. Grouping
+1. Status management  
+   Status management is and important aspect
+1. Medication overview  
+1. Adverse drug events  
+1. Lists - admission and discharge  
+1. Grouping  
 
 
 ## Order initiation
