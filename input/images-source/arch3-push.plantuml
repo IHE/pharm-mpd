@@ -17,7 +17,7 @@ rectangle "Filler/Receiver system" as PS #cee{
 'agent "[[actors-transactions.html#dispenseresponder Dispense Responder]]" as dispenseresponder 
 
 
-orderplacer -r- orderreceiver : " [[PHARM-5.html PHARM-5\nSubmit Medication Order]] →  "
+orderplacer -r- orderreceiver : " [[pharm-5.html PHARM-5\nSubmit Medication Order]] →  "
 
 orderreceiver -r[hidden]- orderresponder 
 
