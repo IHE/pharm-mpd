@@ -9,22 +9,22 @@
 // Description: "Multiitem prescription with RequestOrchestration. 42-day cycle treatment consisting of three medications that should start at the same time. Wrapped in a Bundle for better readability."
 
 // * type = #collection
-// * entry[0].fullUrl = "https://example.com/RequestOrchestration/100-RequestOrchestration"
+// * entry[0].fullUrl = "http://example.org/RequestOrchestration/100-RequestOrchestration"
 // * entry[=].resource = 100-RequestOrchestration
 
-// * entry[+].fullUrl = "https://example.com/MedicationRequest/100-3-medication-prescription-request1"
+// * entry[+].fullUrl = "http://example.org/MedicationRequest/100-3-medication-prescription-request1"
 // * entry[=].resource = 100-3-medication-prescription-request1
 
-// * entry[+].fullUrl = "https://example.com/MedicationRequest/100-3-medication-prescription-request2"
+// * entry[+].fullUrl = "http://example.org/MedicationRequest/100-3-medication-prescription-request2"
 // * entry[=].resource = 100-3-medication-prescription-request2
 
-// * entry[+].fullUrl = "https://example.com/MedicationRequest/100-3-medication-prescription-request3"
+// * entry[+].fullUrl = "http://example.org/MedicationRequest/100-3-medication-prescription-request3"
 // * entry[=].resource = 100-3-medication-prescription-request3
 
-// * entry[+].fullUrl = "https://example.com/PractitionerRole/doctor1"
+// * entry[+].fullUrl = "http://example.org/PractitionerRole/doctor1"
 // * entry[=].resource = doctor1
 
-// * entry[+].fullUrl = "https://example.com/Patient/patient1"
+// * entry[+].fullUrl = "http://example.org/Patient/patient1"
 // * entry[=].resource = patient1
 
 
@@ -38,11 +38,11 @@
 
 // * subject = Reference(patient1)
 // * identifier
-//   * system = "http://example.com/requestorchestration"
+//   * system = "http://example.org/requestorchestration"
 //   * value = "prescr1"
 
 // * groupIdentifier
-//   * system = "http://example.com/prescriptions"
+//   * system = "http://example.org/prescriptions"
 //   * value = "100"
 
 
@@ -169,16 +169,16 @@ Usage: #example
 Description: "Multiitem prescription where items on the same prescription are not interdependent. Kept together by the same groupIdentifier."
 
 * type = #collection
-* entry[0].fullUrl = "https://example.com/MedicationRequest/200-2-medication-prescription-request1"
+* entry[0].fullUrl = "http://example.org/MedicationRequest/200-2-medication-prescription-request1"
 * entry[=].resource = 200-2-medication-prescription-request1
 
-* entry[0].fullUrl = "https://example.com/MedicationRequest/200-2-medication-prescription-request2"
+* entry[0].fullUrl = "http://example.org/MedicationRequest/200-2-medication-prescription-request2"
 * entry[=].resource = 200-2-medication-prescription-request2
 
-* entry[+].fullUrl = "https://example.com/PractitionerRole/doctor1"
+* entry[+].fullUrl = "http://example.org/PractitionerRole/doctor1"
 * entry[=].resource = doctor1
 
-* entry[+].fullUrl = "https://example.com/Patient/patient1"
+* entry[+].fullUrl = "http://example.org/Patient/patient1"
 * entry[=].resource = patient1
 
 
@@ -241,25 +241,25 @@ Description: "A prescription item (MedicationRequest) that is a part of a two-it
 // Description: "Multiitem prescription with RequestOrchestration. 2 products dispensable as 1 multiitem product."
 
 // * type = #collection
-// * entry[0].fullUrl = "https://example.com/RequestOrchestration/300-RequestOrchestration"
+// * entry[0].fullUrl = "http://example.org/RequestOrchestration/300-RequestOrchestration"
 // * entry[=].resource = 300-RequestOrchestration
 
-// * entry[+].fullUrl = "https://example.com/MedicationRequest/300-2-medication-prescription-request1"
+// * entry[+].fullUrl = "http://example.org/MedicationRequest/300-2-medication-prescription-request1"
 // * entry[=].resource = 300-2-medication-prescription-request1
 
-// * entry[+].fullUrl = "https://example.com/MedicationRequest/300-2-medication-prescription-request2"
+// * entry[+].fullUrl = "http://example.org/MedicationRequest/300-2-medication-prescription-request2"
 // * entry[=].resource = 300-2-medication-prescription-request2
 
-// * entry[+].fullUrl = "https://example.com/PractitionerRole/doctor1"
+// * entry[+].fullUrl = "http://example.org/PractitionerRole/doctor1"
 // * entry[=].resource = doctor1
 
-// * entry[+].fullUrl = "https://example.com/Patient/patient1"
+// * entry[+].fullUrl = "http://example.org/Patient/patient1"
 // * entry[=].resource = patient1
 
-// * entry[+].fullUrl = "https://example.com/Medication/02A2-CanifugCremolumPessaryItem"
+// * entry[+].fullUrl = "http://example.org/Medication/02A2-CanifugCremolumPessaryItem"
 // * entry[=].resource = 02A2-CanifugCremolumPessaryItem
 
-// * entry[+].fullUrl = "https://example.com/Medication/02A1-CanifugCremolumCreamItem"
+// * entry[+].fullUrl = "http://example.org/Medication/02A1-CanifugCremolumCreamItem"
 // * entry[=].resource = 02A1-CanifugCremolumCreamItem
 
 // Instance: 300-RequestOrchestration

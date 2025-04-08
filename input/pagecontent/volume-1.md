@@ -36,7 +36,7 @@ At this moment, MPD doesn't specify any required groupings. For some examples on
 
 ## XX.4 Overview
 
-The page [Example Implementation Architectures](example-architectures.html) describes how the different actors can be combined in different exchange architectures. For detailed usage of the transactions, the section [Usage examples](usage-examples.html) provide a description of several use cases and how these use cases use the transactions described in Volume 2.  
+The [Actor grouping examples](actor-grouping-examples.html) page describes how the different actors can be combined in different exchange architectures. For detailed usage of the transactions, the section [Usage examples](usage-examples.html) provide a description of several use cases and how these use cases use the transactions described in Volume 2.  
 
 
 ### XX.4.1 Concepts

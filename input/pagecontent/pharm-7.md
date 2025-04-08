@@ -50,7 +50,7 @@ Search parameters that SHALL be supported:
 
 ###### X:Y.Z.4.1.2.1 Resource content
 * The Submit Medication Order is a MedicationRequest resource.
-The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-MedicationOrderModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-SubmitMedicationOrder.html) profile.
+The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-IHEMedicationOrderModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-IHEMedicationOrder.html) profile.
 
 
 The Retrieve Medication Orders is a search query. 

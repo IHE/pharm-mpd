@@ -124,4 +124,4 @@ Description: "Medication ingredient role - whether it is an active ingredient, e
 Context: Medication
 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from https://www.hl7.org/fhir/valueset-ingredient-role.html (example)
+* valueCodeableConcept from http://hl7.org/fhir/ValueSet/ingredient-role (example)

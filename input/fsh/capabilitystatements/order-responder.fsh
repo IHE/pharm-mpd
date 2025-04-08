@@ -37,7 +37,7 @@ Usage: #definition
     * searchParam[+]
       * name = "group-or-identifier"
       * definition = "http://profiles.ihe.net/PHARM/MPD/SearchParameter/group-or-identifier"
-      * type = #reference
+      * type = #token
       * documentation = "Search on Group Or Identifier"
     * searchRevInclude[0] = "['RequestOrchestration:activity-resource:MedicationRequest']"
   * resource[+]

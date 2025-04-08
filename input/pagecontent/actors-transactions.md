@@ -1,7 +1,7 @@
 
 ### Transactions
 
-For managing the lifecycle of orders (from proposal to draft or plan, to active prescription and fulfilled prescription), and considering the variety of use cases and architectures that this profile is intended to support ([Push, Pull, central repositories, etc.](example-architectures.html)), IHE presents the following actors for managing orders - submission and retrieval:
+For managing the lifecycle of orders (from proposal to draft or plan, to active prescription and fulfilled prescription), and considering the variety of use cases and architectures that this profile is intended to support ([Push, Pull, central repositories, etc.](actor-grouping-examples.html)), IHE presents the following actors for managing orders - submission and retrieval:
 
 <div>{% include actors-transactions-prescription.svg %}</div>
 <br clear="all"/>
