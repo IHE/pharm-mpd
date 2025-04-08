@@ -76,6 +76,7 @@ The Response SHALL be a search Bundle containing the MedicationRequests (optiona
 
 ###### X:Y.Z.4.2.2.1 Resource content
 
+
 The content of the MedicationRequests in the Bundle SHALL conform to the profiles defined in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
 
 In case of error, the response SHALL contain an `OperationOutcome`.

@@ -9,3 +9,4 @@ particular cases pharmacists, nurses, etc.), for a medication to be dispensed to
 * **Dispense** - the act of assigning a medication to a patient, normally as indicated in the authorizing prescription.
   > Note: in many cases, the "dispense process" entails more activities, such as preparation, packaging, transport, etc. These vary according to the scenario - community or hospital, unit dose or traditional dispensing,... while the single differentiation activity that defines a Dispense is the assignment of a product that was available, to a specific patient.
 
+(This section will be updated wtih additional definitions)
