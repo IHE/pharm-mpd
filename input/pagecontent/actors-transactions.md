@@ -54,20 +54,20 @@ if Actor B supports XYZ Option, see Section XX.3.X.*
 The actors in this profile are described in more detail in the sections below.
 
 
-<a name="order-reporter"> </a>
+<a name="order-placer"> </a>
 
 #### **Order Placer** - this actor is responsible for submitting an order. This can be a prescription, or an update of an existing prescription, or a draft prescrition, or other.
 
-<a name="order-reporter"> </a>
+<a name="order-receiver"> </a>
 
 #### **Order Receiver** - This actor represents the entity that receives the orders from the placer. This is used in a Push scenario, where the order receiver receives the pushed order.
 
-<a name="order-reporter"> </a>
+<a name="order-responder"> </a>
 
 #### **Order Responder** - this actor is responsible for responding to order queries, e.g feching the orders for a patient, etc.  
-    This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
+This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
 
-<a name="order-reporter"> </a>
+<a name="order-consumer"> </a>
 
 #### **Order Consumer** - this actor represents an entity that handles or processes the order, typically for dispensing, but can also be for further authorization, verification, etc.
 
@@ -94,7 +94,7 @@ This is used in a Pull scenario, where an Order Consumer (or other actors) can q
 
 <a name="dispense-consumer"> </a>
 
-#### **Dispense Consumer** - this actor supports querying for dispenses, e.g feching the dispenses for a patient, etc.
+#### **Dispense Consumer** - this actor supports querying for dispenses, e.g fetching the dispenses for a patient, etc.
 This is commonly used in a Pull scenario, where before dispense, the Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
 
 
@@ -110,7 +110,7 @@ This is commonly used in a Pull scenario, where before dispense, the Order Consu
 <a id="dispense-responder"></a>
 
 #### **Dispense Responder** - this actor is responsible for responding to queries for dispenses.  
-    This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
+This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
 
 <a id="dispense-consumer"></a>
 

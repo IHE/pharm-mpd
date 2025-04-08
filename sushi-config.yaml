@@ -45,7 +45,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 #  show-inherited-invariants: 'false'
   usage-stats-opt-out: 'true'
   autoload-resources: 'true'
-#  shownav: 'true'
+  shownav: 'true'
+
 
 # additional examples that need descriptions
 #resources:
@@ -80,24 +81,25 @@ pages:
       #   title: "Use Case 4: Change dosage during treatment"
     medication-concepts.md: # Copy or sumarize from EU MPD (with credits) MR
       title: "Medication Concepts"
-    order-management.md:  # possibly rename, but include key concept (reusing from COW?) - order status, Task, grouping, changes cancellation, ...  JCT can copy COW
-      title: "Order Management"
-      prescription-lines.md: # if not finished, remove and reuse content in above section JCT
-        title: "Single- and multiline prescriptions"
+    grouping.md: # if not finished, remove and reuse content in above section JCT
+      title: "Single- and multiline prescriptions"
+
+#    order-management.md:  # possibly rename, but include key concept (reusing from COW?) - order status, Task, grouping, changes cancellation, ...  JCT can copy COW
+#      title: "Order Management"
       # order-statuses.md:
       #   title: "Managing order status"
-    interoperability-model.md: # drop for now 
-      title: "Interoperability Model"
+#    interoperability-model.md: # drop for now 
+#      title: "Interoperability Model"
     data-models.md: # update and write simple narrative JCT
       title: "Data Models" 
     actors-transactions.md: # Finish it MR on monday
       title: "Actors and Transactions Overview"
-    security.md: # Copy from somewhere MR
-      title: "Security Considerations"   
-    cross-profile.md: # Add some narrative to say "this is empty for now" JCT
-      title: "Cross-profile Considerations"   
-  example-architectures.md: # Consolidate inside Actors and Transactions Overview MR
-    title: "Example implementation architectures"
+#    security.md: # Copy from somewhere MR
+#      title: "Security Considerations"   
+#    cross-profile.md: # Add some narrative to say "this is empty for now" JCT
+#      title: "Cross-profile Considerations"   
+  actor-grouping-examples.md: # Consolidate inside Actors and Transactions Overview MR
+    title: "Actor grouping examples"
     generation: markdown
 
   volume-2.md:
@@ -111,12 +113,13 @@ pages:
     pharm-9.md: # FCFS
       title: "PHARM-9: Retrieve Medication Dispenses"
 
-
-
     error_codes.md:
       title: "Error Codes" # Leave page empty for now
     testplan.md:
       title: "Test Plan" # Leave page empty for now
+
+    usage-examples.md:
+      title: "Usage Examples"
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -129,14 +132,14 @@ menu:
     Overview: volume-1.html
     "Use Cases": usecases.html
     "Medication Concepts": medication-concepts.html
-    "Order Management": order-management.html
+#    "Order Management": order-management.html
 #    "Interoperability Model": interoperability-model.html
     "Data Models": data-models.html
     "Actor and Transactions Overview": actors-transactions.html
-    "Security Considerations": security.html
-    "Cross-profile Considerations": cross-profile.html
+#    "Security Considerations": security.html
+#    "Cross-profile Considerations": cross-profile.html
   Volume 2:
-    Overview: volume-2.html
+#    Overview: volume-2.html
     PHARM-5 - Submit Medication Order: pharm-5.html
     PHARM-7 - Retrieve Medication Order: pharm-7.html
     PHARM-8 - Submit Medication Dispense: pharm-8.html

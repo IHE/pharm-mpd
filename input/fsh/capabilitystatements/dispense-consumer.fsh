@@ -21,7 +21,7 @@ Usage: #definition
   * security.description = "Recommended security framework: ATNA, IUA, or SMART-on-FHIR."
   * resource[+]
     * type = #MedicationDispense
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispense"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationDispense"
     * interaction[+]
       * code = #read
       * documentation = "Retrieve a MedicationDispense [PHARM-9]"

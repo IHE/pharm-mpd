@@ -1,0 +1,45 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+hide method
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor #e7fcff
+ HeaderBackgroundColor Application
+}
+
+
+class "**MedicinalProductModel**" as MedicinalProductModel <<TM>>{
+  |_ identifyingCode[x] 0..*   
+  |_ classification 0..*   
+  |_ productName 0..1   
+  |_ marketingAuthorisationHolder 0..1   
+    |_ organizationName 0..1   
+    |_ organizationIdentifier 0..*   
+  |_ doseForm 0..1   
+  |_ packSize 0..*   
+  |_ item 0..*   
+    |_ doseForm 0..1   
+    |_ ingredient 1..*   
+      |_ role[x] 0..1   
+      |_ substance 1..1   
+      |_ strengthInfo 0..1   
+        |_ strength 1..1   
+        |_ basisOfStrengthSubstance 0..1   
+    |_ unitOfPresentation 0..1   
+    |_ containedQuantity 0..1   
+    |_ amount 0..1   
+  |_ device 0..*   
+    |_ deviceQuantity 1..1   
+    |_ device[x] 1..1   
+  |_ characteristic 0..*   
+    |_ type 1..1   
+    |_ value[x] 0..1   
+  |_ batch 0..1   
+    |_ lotNumber 0..1   
+    |_ expirationDate 0..1   
+    |_ serialNumber 0..1   
+}
+@enduml

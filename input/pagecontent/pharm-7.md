@@ -43,7 +43,7 @@ The Medication Order Placer shall assure the request is consistent and actionabl
 ###### X:Y.Z.4.1.2.1 Resource content
 
 * The Submit Medication Order is a MedicationRequest resource.
-The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-PrescriptionModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-SupplyRequest.html) profile.
+The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-MedicationOrderModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-SubmitMedicationOrder.html) profile.
 
 
 ##### X:Y.Z.4.1.3 Expected Actions

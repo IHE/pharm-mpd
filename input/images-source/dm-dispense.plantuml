@@ -7,57 +7,36 @@
 skinparam linetype polyline
 hide circle
 hide stereotype
-
-'skinparam defaultFontName Avenir-Book
-'skinparam defaultFontSize 17
-'skinparam monochrome true
-
-
-'!pragma layout smetana
-
-skinparam class<<MD>> {
- BorderColor DarkSlateGray
- BackgroundColor WhiteSmoke
- HeaderBackgroundColor #909090
-}
+hide method
 
 skinparam class<<TM>> {
  BorderColor #505090
- BackgroundColor APPLICATION
- HeaderBackgroundColor SkyBlue
-}
-
-
-class "** Medication Product **" as M<<TM>> {
-
-    }
-
-
-class "**Prescription Line**" as PL<<TM>> {
+ BackgroundColor #e7fcff
+ HeaderBackgroundColor Application
 }
 
 
 class "**Dispense**" as D<<TM>> {
-  |_ identifier 1..*
-  |_ patient 0..1 <&person>
-  |_ receiver 0..1 <&person>
-  |_ dispenser 0..1 <&person>
-  |_ request 1..1 <&calendar>
-  |_ status 1..1 <&list>
-  |_ statusReasonCoded 0..1 <&list>
-  |_ statusReasonText 0..1 <&text>
-  |_ medication 0..1 <&link-intact>
-  |_ dispensedQuantity 0..1 <&link-intact>
-  |_ timeOfDispensation  0..1 <&clock>
-  |_ substitution  0..1 <&check>
-  |_ coverage 0..1 <&ellipses>
-    |_ reimbursementRate 0..1 <&ellipses>   
+  |_ identifier 0..*   
+  |_ patient 1..1   
+  |_ receiver 0..1   
+  |_ dispenser 1..1   
+  |_ relatedRequest 0..*   
+  |_ medication 1..1   
+  |_ dispensedQuantity 1..1   
+  |_ timeOfDispensation 1..1   
+  |_ substitution 0..1   
+    |_ substitutionOccurred 1..1   
+    |_ type 0..1   
+    |_ reason 0..1   
+  |_ status 1..1   
+  |_ statusReason 0..*   
+  |_ statusReasonText 0..1   
+  |_ usageInstructions 0..*   
+  |_ comment 0..*   
 }
 
 
 
 
-D -r-> PL :" authorizedBy "
-D -d-> M :" medication "
-'PL ||-d-o{ M :"                  "
 @enduml

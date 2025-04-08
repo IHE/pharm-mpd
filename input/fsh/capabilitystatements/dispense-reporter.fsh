@@ -37,7 +37,7 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource[+]
     * type = #MedicationDispense
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispense"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationDispense"
     * interaction[0]
       * code = #vread
     * interaction[+]
@@ -62,7 +62,7 @@ Usage: #definition
     * conditionalDelete = #single
   * resource[+]
     * type = #RequestOrchestration
-//    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationOrder"
+//    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
     * interaction[0]
       * code = #create
       * documentation = "Create DispenseReports [PHARM-104]"
@@ -76,6 +76,6 @@ Usage: #definition
       * documentation = "Search on Patient"
     * searchParam[+]
       * name = "activity-resource"
-      * definition = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/SearchParameter/activity-resource"
+      * definition = "http://profiles.ihe.net/PHARM/MPD/SearchParameter/activity-resource"
       * type = #reference
       * documentation = "Activity Resource"
