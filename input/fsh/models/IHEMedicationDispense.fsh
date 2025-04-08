@@ -1,4 +1,4 @@
-Logical: IHEMedicationDispense
+Logical: IHEMedicationDispenseModel
 Title: "Medication dispense (model)"
 Description: "Logical model for medication dispense report (based on request or independently)"
 Characteristics: #can-be-target

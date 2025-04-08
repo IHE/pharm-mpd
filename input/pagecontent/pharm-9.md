@@ -15,8 +15,8 @@ The Retrieve Dispenses [PHARM-9] transaction allows the Dispense Consumer to que
 
 | Actor | Role |
 |-------------------+--------------------------|
-| [Dispense Consumer](actors_and_transactions.html#order-consumer) | Queries existing Dispenses from the Order Responder |
-| [Dispense Responder](actors_and_transactions.html#order-responder) | Provides access to stored Dispenses |
+| [Dispense Consumer](actors-transactions.html#order-consumer) | Queries existing Dispenses from the Order Responder |
+| [Dispense Responder](actors-transactions.html#order-responder) | Provides access to stored Dispenses |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards
@@ -76,6 +76,7 @@ The Response SHALL be a search Bundle containing the MedicationRequests (optiona
 
 ###### X:Y.Z.4.2.2.1 Resource content
 
+
 The content of the MedicationRequests in the Bundle SHALL conform to the profiles defined in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
 
 In case of error, the response SHALL contain an `OperationOutcome`.
@@ -83,9 +84,6 @@ In case of error, the response SHALL contain an `OperationOutcome`.
 ##### X:Y.Z.4.2.3 Expected Actions
 
 Upon receiving the response, the Dispense Consumer can will store, process or initiate handling of the orders as part of the business process.
-
-
-
 
 
 

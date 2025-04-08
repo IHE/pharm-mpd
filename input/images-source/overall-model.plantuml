@@ -3,33 +3,12 @@ skinparam linetype polyline
 hide circle
 hide stereotype
 
-class "**MedicationOrder**" as MedicationOrder {
-  |_ identifier 1..*   
-  |_ groupIdentifier 0..1   
-  |_ recordingDate 0..1   
-  |_ issueDate 1..1   
-  |_ recorder 0..1   
-  |_ prescriber 1..1   
-  |_ category 0..*   
-  |_ validFrom 0..1   
-  |_ validUntil 0..1   
-  |_ patient 1..1   
-  |_ status 1..1   
-  |_ statusReason 0..*   
-  |_ statusReasonText 0..1   
-  |_ medication 1..1   
-  |_ indication 0..*   
-  |_ indicationText 0..1   
-  |_ ** dosageInstructions 0..1  **
-  |_ preparationInstructions 0..1   
-  |_ substitution 0..1   
-    |_ ** substitutionBoolean 1..1 **  
-    |_ substitutionType 1..1   
-    |_ substitutionTypeReason 0..1   
-    |_ substitutionTypeReasonText 0..1   
-  |_ comment 0..*   
+
+class "**IHEMedicationOrderModel**" as IHEMedicationOrderModel {
 
 }
+
+
 
 class "**MedicinalProductLM**" as MedicinalProductLM {
   |_ identifyingCode[x] 0..*   

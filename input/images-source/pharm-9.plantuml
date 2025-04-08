@@ -4,10 +4,11 @@ hide footbox
 
 '!include ./style.iuml
 
-Title Retrieve Dispense Report [PHARM-9]
 
-Participant "[[actors_and_transactions.html#dispense-consumer Dispense\nConsumer]]" as OP
-Participant "[[actors_and_transactions.html#dispense-responder Dispense\nResponder]]" as OF
+Title Retrieve Medication Dispenses [PHARM-9]
+
+Participant "[[actors-transactions.html#dispense-consumer Dispense\nConsumer]]" as OP
+Participant "[[actors-transactions.html#dispense-responder Dispense\nResponder]]" as OF
 
 activate OP
 activate OF

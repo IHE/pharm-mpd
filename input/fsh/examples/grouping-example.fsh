@@ -12,7 +12,7 @@ InstanceOf: MedicationRequest
   * value = "prescr1"
 * status = #active
 * intent = #option
-* medication.concept = #med1
+* medication.concept = #XM63K0 
 
 
 
@@ -27,7 +27,7 @@ InstanceOf: MedicationRequest
   * value = "prescr1"
 * status = #active
 * intent = #option
-* medication.concept = #med1
+* medication.concept = #XM2L06
 
 
 

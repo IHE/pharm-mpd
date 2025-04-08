@@ -4,10 +4,11 @@ hide footbox
 
 '!include ./style.iuml
 
-Title Submit Dispense Report [PHARM-8]
 
-Participant "[[actors_and_transactions.html#dispense-reporter Dispense\nReporter]]" as OP
-Participant "[[actors_and_transactions.html#dispense-receiver Dispense\nReceiver]]" as OF
+Title Submit Medication Dispense [PHARM-8]
+
+Participant "[[actors-transactions.html#dispense-reporter Dispense\nReporter]]" as OP
+Participant "[[actors-transactions.html#dispense-receiver Dispense\nReceiver]]" as OF
 
 activate OP
 activate OF

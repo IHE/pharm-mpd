@@ -11,8 +11,8 @@ The Retrieve Medication Orders [PHARM-7] transaction allows the Medication Order
 
 | Actor | Role |
 |-------------------+--------------------------|
-| [Medication Order Consumer](actors_and_transactions.html#order-consumer) | Queries existing medication orders from the Order Responder |
-| [Medication Order Responder](actors_and_transactions.html#order-responder) | Provides access to stored medication orders |
+| [Medication Order Consumer](actors-transactions.html#order-consumer) | Queries existing medication orders from the Order Responder |
+| [Medication Order Responder](actors-transactions.html#order-responder) | Provides access to stored medication orders |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards
@@ -48,8 +48,10 @@ Search parameters that SHALL be supported:
 - **`intent`** — Filter by the intent of the MedicationRequest (e.g., order, plan).  
 
 
-
 ###### X:Y.Z.4.1.2.1 Resource content
+* The Submit Medication Order is a MedicationRequest resource.
+The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-MedicationOrderModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-SubmitMedicationOrder.html) profile.
+
 
 The Retrieve Medication Orders is a search query. 
 

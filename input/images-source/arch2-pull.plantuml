@@ -5,17 +5,17 @@ skinparam linetype polyline
 
 title Prescription Exchange - "Pull" architecture
 rectangle "Placer system" as PS #cee{
-agent "  [[actors_and_transactions.html#order-placer Order Placer ]]" as orderplacer 
+agent "  [[actors-transactions.html#order-placer Order Placer ]]" as orderplacer 
 
-agent " [[actors_and_transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
-agent " [[actors_and_transactions.html#order-receiver Order Responder ]]" as orderresponder 
+agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
+agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
 }
 
-agent " [[actors_and_transactions.html#OrderConsumer Order Consumer   ]]" as OrderConsumer 
+agent " [[actors-transactions.html#order-consumer Order Consumer   ]]" as OrderConsumer 
 
 
-'agent "[[actors_and_transactions.html#dipensereceiver Dispense Receiver]]" as dispensereceiver
-'agent "[[actors_and_transactions.html#dipenseresponder Dispense Responder]]" as dispenseresponder 
+'agent "[[actors-transactions.html#dispensereceiver Dispense Receiver]]" as dispensereceiver
+'agent "[[actors-transactions.html#dispenseresponder Dispense Responder]]" as dispenseresponder 
 
 orderplacer -d- orderreceiver 
 

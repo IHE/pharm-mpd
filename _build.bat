@@ -304,9 +304,6 @@ goto end
 start copy /y "_build.new.bat" "_build.bat" ^&^& del "_build.new.bat" ^&^& exit
 
 
-IF NOT "%skipPrompts%"=="true" (
-  PAUSE
-)
 
 GOTO end
 
@@ -381,3 +378,11 @@ GOTO end
 
 
 :end
+
+
+:: Pausing at the end
+
+
+IF NOT "%skipPrompts%"=="true" (
+  PAUSE
+)

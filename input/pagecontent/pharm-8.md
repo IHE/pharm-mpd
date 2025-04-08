@@ -10,8 +10,8 @@ The Submit Medication Dispense [PHARM-8] transaction passes a MedicationDispense
 
 | Actor | Role |
 |-------------------+--------------------------|
-| [Dispense Reporter](actors_and_transactions.html#dispense-reporter) | Submits dispense reports to the Dispense Receiver |
-| [Dispense Receiver](actors_and_transactions.html#dispense-receiver) | Accepts and stores dispense reports from the Dispense Reporter |
+| [Dispense Reporter](actors-transactions.html#dispense-reporter) | Submits dispense reports to the Dispense Receiver |
+| [Dispense Receiver](actors-transactions.html#dispense-receiver) | Accepts and stores dispense reports from the Dispense Reporter |
 {:.table-bordered}
 
 ### X:Y.Z.3 Referenced Standards
