@@ -1,4 +1,4 @@
-Alias: $who-atc = http://www.whocc.no/atc // WHO ATC
+Alias: $who-atc = http://www.whocc.no/atc|2025 // WHO ATC
 Alias: $edqm-standardterms = http://standardterms.edqm.eu // EDQM standard terms 
 Alias: $ucum = http://unitsofmeasure.org // UCUM http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $snomed = http://snomed.info/sct // SNOMED CT

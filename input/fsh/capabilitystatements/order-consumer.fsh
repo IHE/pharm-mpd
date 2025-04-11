@@ -3,7 +3,7 @@ Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 Instance: IHE.MPD.OrderConsumerCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumerCS"
+* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumerCS"
 * version = "3.0.5-current"
 * name = "IHEOrderConsumer"
 * title = "IHE Pharmacy Order Consumer Actor"
@@ -23,7 +23,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "pharmacy@ihe.net"
-* description = "The CapabililtyStatement for the [Order Consumer Actor](volume-1.html#141111-Order-Consumer) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Order Consumer Actor](actors-transactions.html#order-consumer) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #5.0.0
@@ -35,4 +35,4 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
-    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"

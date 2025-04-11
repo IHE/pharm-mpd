@@ -1,0 +1,49 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+class "**DosagingInformation**" as DosagingInformation {
+  |_ sequence 0..1   
+  |_ text 0..1   
+  |_ additionalInstruction 0..*   
+  |_ patientInstruction 0..1   
+  |_ doseAndRate 0..*   
+    |_ type 0..1   
+    |_ dose[x] 0..1   
+    |_ rate[x] 0..1   
+  |_ timing 0..1   
+    |_ event 0..*   
+    |_ code 0..1   
+    |_ repeat 0..1   
+      |_ bounds 0..1   
+        |_ duration 0..1   
+        |_ range 0..1   
+        |_ period 0..1   
+      |_ count 0..1   
+        |_ count 0..1   
+        |_ countMax 0..1   
+      |_ duration 0..1   
+        |_ duration 0..1   
+        |_ durationMax 0..1   
+      |_ frequency 0..1   
+        |_ numberOfTimes 0..1   
+        |_ maxNumberOfTimes 0..1   
+        |_ period 0..1   
+        |_ periodMax 0..1   
+      |_ dayOfWeek 0..*   
+      |_ timeOfDay 0..*   
+      |_ eventTime 0..*   
+        |_ when 0..*   
+        |_ offset 0..1   
+  |_ asNeeded 0..1   
+  |_ asNeededFor 0..*   
+  |_ bodySite 0..1   
+  |_ routeOfAdministration 0..1   
+  |_ methodOfAdministration 0..1   
+  |_ maxDose 0..*   
+    |_ maxDosePerPeriod 0..*   
+    |_ maxDosePerAdministration 0..1   
+    |_ maxDosePerLifetime 0..1   
+}
+@enduml

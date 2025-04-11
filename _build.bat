@@ -6,9 +6,29 @@ SET "publisher_jar=publisher.jar"
 SET "input_cache_path=%CD%\input-cache\"
 SET "skipPrompts=false"
 SET "upper_path=..\"
-SET "scriptdlroot=https://raw.githubusercontent.com/costateixeira/ig-publisher-scripts/main"
+SET "scriptdlroot=https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main"
 SET "build_bat_url=%scriptdlroot%/_build.bat"
 SET "build_sh_url=%scriptdlroot%/_build.sh"
+
+
+
+:: Debugging statements to check jar file location
+ECHO Checking for publisher.jar in %input_cache_path%
+IF EXIST "%input_cache_path%%publisher_jar%" (
+    SET "jar_location=%input_cache_path%%publisher_jar%"
+    ECHO Found publisher.jar in input-cache
+) ELSE (
+    ECHO Checking for publisher.jar in %upper_path%
+    IF EXIST "%upper_path%%publisher_jar%" (
+        SET "jar_location=%upper_path%%publisher_jar%"
+        ECHO Found publisher.jar in parent folder
+    ) ELSE (
+        SET "jar_location=not_found"
+        SET "default_choice=1"
+        ECHO publisher.jar not found in input-cache or parent folder
+    )
+)
+
 
 :: Handle command-line argument to bypass the menu
 IF NOT "%~1"=="" (
@@ -16,9 +36,8 @@ IF NOT "%~1"=="" (
     IF /I "%~1"=="build" SET "userChoice=2"
     IF /I "%~1"=="nosushi" SET "userChoice=3"
     IF /I "%~1"=="notx" SET "userChoice=4"
-    IF /I "%~1"=="continuous" SET "userChoice=5"
-    IF /I "%~1"=="jekyll" SET "userChoice=6"
-    IF /I "%~1"=="clean" SET "userChoice=7"
+    IF /I "%~1"=="jekyll" SET "userChoice=5"
+    IF /I "%~1"=="clean" SET "userChoice=6"
     IF /I "%~1"=="exit" SET "userChoice=0"
     GOTO executeChoice
 )
@@ -42,20 +61,14 @@ IF "%online_status%"=="true" (
 
 echo ---------------------------------------------------------------
 
-IF EXIST "%input_cache_path%%publisher_jar%" (
-    SET "jar_location=%input_cache_path%%publisher_jar%"
-) ELSE IF EXIST "%upper_path%%publisher_jar%" (
-    SET "jar_location=%upper_path%%publisher_jar%"
-) ELSE (
-    SET "jar_location=not_found"
-    
-)
 
 IF NOT "%jar_location%"=="not_found" (
     FOR /F "tokens=*" %%i IN ('java "-Dfile.encoding=UTF-8" -jar "%jar_location%" -v 2^>^&1') DO SET "publisher_version=%%i"
     SET "publisher_version=!publisher_version:"=!"
+    ECHO Detected publisher version: !publisher_version!
 ) ELSE (
     SET "publisher_version=unknown"
+    ECHO publisher.jar location is not found
 )
 
 ECHO Publisher version: !publisher_version!; Latest is !latest_version!
@@ -63,18 +76,12 @@ ECHO Publisher version: !publisher_version!; Latest is !latest_version!
 IF NOT "%online_status%"=="true" (
    ECHO We're offline.
 ) ELSE (
-    IF NOT "!jar_location!"=="not_found" (
-        ECHO Publisher not found, defaulting to download
-        SET "default_choice=1"
-        )    
-    ELSE (
     IF NOT "!publisher_version!"=="!latest_version!" (
         ECHO An update is recommended.
-::        SET "default_choice=1"
+        SET "default_choice=1"
     ) ELSE (
         ECHO Publisher is up to date.
         SET "default_choice=2"
-    )
     )
 )
 
@@ -86,9 +93,8 @@ echo 1. Download or upload publisher
 echo 2. Build IG
 echo 3. Build IG - no sushi
 echo 4. Build IG - force no TX server
-echo 5. Build IG continuously
-echo 6. Jekyll build
-echo 7. Clean up temp directories
+echo 5. Jekyll build
+echo 6. Clean up temp directories
 echo 0. Exit
 :: echo [Press Enter for default (%default_choice%) or type an option number:]
 echo.
@@ -106,9 +112,8 @@ IF "%userChoice%"=="1" GOTO downloadpublisher
 IF "%userChoice%"=="2" GOTO publish_once
 IF "%userChoice%"=="3" GOTO publish_nosushi
 IF "%userChoice%"=="4" GOTO publish_notx
-IF "%userChoice%"=="5" GOTO publish_continuous
-IF "%userChoice%"=="6" GOTO debugjekyll
-IF "%userChoice%"=="7" GOTO clean
+IF "%userChoice%"=="5" GOTO debugjekyll
+IF "%userChoice%"=="6" GOTO clean
 IF "%userChoice%"=="0" EXIT /B
 
 :end
@@ -291,17 +296,14 @@ start copy /y "_build.new.sh" "_build.sh" ^&^& del "_build.new.sh" ^&^& exit
 
 :dl_script_2
 ECHO Updating _build.bat
-call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%build_sh_url%\",\"_build.new.bat\") } else { Invoke-WebRequest -Uri "%build_sh_url%" -Outfile "_build.new.bat" }
+call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%build_bat_url%\",\"_build.new.bat\") } else { Invoke-WebRequest -Uri "%build_bat_url%" -Outfile "_build.new.bat" }
 if %ERRORLEVEL% == 0 goto upd_script_2
 echo "Errors encountered during download: %errorlevel%"
-goto dl_script_2
+goto end
 :upd_script_2
 start copy /y "_build.new.bat" "_build.bat" ^&^& del "_build.new.bat" ^&^& exit
 
 
-IF NOT "%skipPrompts%"=="true" (
-  PAUSE
-)
 
 GOTO end
 
@@ -310,8 +312,10 @@ GOTO end
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+:: Debugging statements before running publisher
+ECHO 1jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
-	JAVA -jar "%jar_location%" -ig . %txoption% %*
+	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% %*
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
@@ -324,8 +328,10 @@ GOTO end
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+:: Debugging statements before running publisher
+ECHO 3jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
-	JAVA -jar "%jar_location%" -ig . %txoption% -no-sushi %*
+	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% -no-sushi %*
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder. Please run _updatePublisher.  Aborting...
 )
@@ -338,8 +344,10 @@ SET txoption=-tx n/a
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+:: Debugging statements before running publisher
+ECHO 2jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
-	JAVA -jar "%jar_location%" -ig . %txoption% %*
+	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% %*
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
@@ -353,15 +361,28 @@ GOTO end
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+:: Debugging statements before running publisher
+ECHO Checking %input_cache_path% for publisher.jar
 IF EXIST "%input_cache_path%\%publisher_jar%" (
-	JAVA -jar "%input_cache_path%\%publisher_jar%" -ig . %txoption% -watch %*
-) ELSE If exist "..\%publisher_jar%" (
-	JAVA -jar "..\%publisher_jar%" -ig . %txoption% -watch %*
+	java %JAVA_OPTS% -jar "%input_cache_path%\%publisher_jar%" -ig . %txoption% -watch %*
 ) ELSE (
-	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
+    ECHO Checking %upper_path% for publisher.jar
+    IF EXIST "..\%publisher_jar%" (
+	    java %JAVA_OPTS% -jar "..\%publisher_jar%" -ig . %txoption% -watch %*
+    ) ELSE (
+	    ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
+    )
 )
 
 GOTO end
 
 
 :end
+
+
+:: Pausing at the end
+
+
+IF NOT "%skipPrompts%"=="true" (
+  PAUSE
+)

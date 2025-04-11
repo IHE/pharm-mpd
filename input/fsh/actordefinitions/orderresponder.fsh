@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderResponder
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderResponder"
+* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderResponder"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderResponder"
 * title = "IHE MPD Order Responder"

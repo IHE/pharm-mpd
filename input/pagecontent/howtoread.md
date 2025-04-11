@@ -15,7 +15,7 @@ IHE Transactions are defined by
 
 * **Expected Actions** - What are the minimal expected actions to be taken by the actor upon the data exchange.
 
-One key aspect of IHE profiles is to define these modular actors and transactions, which systems can adopt in different architectures. The page [example ePrescription architectures](example-architectures.html) shows how the same actors cane be combined to fit into those  architectures.
+One key aspect of IHE profiles is to define these modular actors and transactions, which systems can adopt in different architectures. The page [Actor grouping examples](actor-grouping-examples.html) shows how the same actors cane be combined to fit into those  architectures.
 
 
 
