@@ -28,7 +28,7 @@ The Submit Medication Dispense [PHARM-8] transaction passes a `MedicationDispens
 
 #### X:Y.Z.4.1 Submit Medication Dispense Request Message
 
-The Dispense Reporter submits a MedicationDispense resource using the HTTP `POST` or `PUT` method to the /MedicationDispense endpoint.
+The [Dispense Reporter](actors-transactions.html#dispense-reporter) submits a MedicationDispense resource using the HTTP `POST` or `PUT` method to the /MedicationDispense endpoint.
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
@@ -38,7 +38,7 @@ This method is invoked When medication is dispensed, partially dispensed, update
 
 The content type of the HTTP body **SHALL** be either `application/fhir+json` or `application/fhir+xml`.
 
-The Dispense Reporter **SHALL** assure the Dispense record is consistent and actionable before sending.
+The [Dispense Reporter](actors-transactions.html#dispense-reporter) **SHALL** assure the Dispense record is consistent and actionable before sending.
 
 ###### X:Y.Z.4.1.2.1 Resource content
 

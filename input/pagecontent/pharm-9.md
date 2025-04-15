@@ -1,12 +1,12 @@
-This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the Dispense Consumer and the [Dispense Responder](actors-transactions.html#order-responder) actors. The Retrieve Medication Dispense [PHARM-9] transaction is used to transmit a `medicationDispense` - typically a prescription.
+This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the [Dispense Consumer](actors-transactions.html#order-consumer) and the [Dispense Responder](actors-transactions.html#order-responder) actors. The Retrieve Medication Dispense [PHARM-9] transaction is used to transmit a `medicationDispense` - typically a prescription.
 
 
 
-This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the Dispense Consumer and the [Dispense Responder](actors-transactions.html#order-responder) actors. The Retrieve Dispense [PHARM-9] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
+This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the [Dispense Consumer](actors-transactions.html#order-consumer) and the [Dispense Responder](actors-transactions.html#order-responder) actors. The Retrieve Dispense [PHARM-9] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
 
 ### X:Y.Z.1 Scope
 
-The Retrieve Dispenses [PHARM-9] transaction allows the Dispense Consumer to query the Dispense Responder for Dispenses.
+The Retrieve Dispenses [PHARM-9] transaction allows the [Dispense Consumer](actors-transactions.html#order-consumer) to query the Dispense Responder for Dispenses.
 * ...
 
 ### X:Y.Z.2 Actors Roles

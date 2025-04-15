@@ -1,4 +1,4 @@
-This section corresponds to transaction [PHARM-7] of the IHE Technical Framework. Transaction [PHARM-7] is used by the Medication Order Consumer and the Medication Order Responder actors. The Retrieve Medication Orders [PHARM-7] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
+This section corresponds to transaction [PHARM-7] of the IHE Technical Framework. Transaction [PHARM-7] is used by the [Medication Order Consumer](actors-transactions.html#order-consumer) and the [Medication Order Responder](actors-transactions.html#order-responder) actors. The Retrieve Medication Orders [PHARM-7] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
 
 ### X:Y.Z.1 Scope
 
@@ -57,9 +57,9 @@ The Retrieve Medication Orders is a search query.
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
-Upon receiving the `MedicationRequest`, the Medication Order Responder is expected to respond with the orders if the conditions are met:
+Upon receiving the `MedicationRequest`, the [Medication Order Responder](actors-transactions.html#order-responder) is expected to respond with the orders if the conditions are met:
 * The search parameters match
-* The resources can be accessed i.e. they are not restricted to the Medication Order Consumer
+* The resources can be accessed i.e. they are not restricted to the [Medication Order Consumer](actors-transactions.html#order-consumer)
 
 
 #### X:Y.Z.4.2 Retrieve Medication Orders Response

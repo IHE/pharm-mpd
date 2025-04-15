@@ -1,8 +1,8 @@
-This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the Medication Order Placer and the Medication Order Receiver actors. The Submit Medication Order [PHARM-5] transaction is used to transmit a `MedicationRequest` - typically a prescription.
+This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the [Medication Order Placer](actors-transactions.html#order-placer) and the [Medication Order Receiver](actors-transactions.html#order-receiver) actors. The Submit Medication Order [PHARM-5] transaction is used to transmit a `MedicationRequest` - typically a prescription.
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Order [PHARM-5] transaction passes a `MedicationRequest` from a Medication Order Placer to a Medication Order Receiver. The `MedicationRequest` can be:
+The Submit Medication Order [PHARM-5] transaction passes a `MedicationRequest` from a [Medication Order Placer](actors-transactions.html#order-placer) to a [Medication Order Receiver](actors-transactions.html#order-receiver). The `MedicationRequest` can be:
 * a single-line Prescription
 * a prescription as part of a group of prescriptions
 * a proposal, or a draft
@@ -53,15 +53,15 @@ The semantics of the request and data elements are captured in the [MedicationOr
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
-Upon receiving the `MedicationRequest`, the Medication Order Receiver is expected to store and/or forward the order.
+Upon receiving the `MedicationRequest`, the [Medication Order Receiver](actors-transactions.html#order-receiver) is expected to store and/or forward the order.
 
 #### X:Y.Z.4.2 Submit Medication Order Response
 
-The Medication Order Receiver **SHALL** return an HTTP Status code appropriate to the processing outcome.
+The [Medication Order Receiver](actors-transactions.html#order-receiver) **SHALL** return an HTTP Status code appropriate to the processing outcome.
 
 ##### X:Y.Z.4.2.1 Trigger Events
 
-This response is always expected and provides the Medication Order Placer with acknowledgement of the request including any technical issues.
+This response is always expected and provides the [Medication Order Placer](actors-transactions.html#order-placer) with acknowledgement of the request including any technical issues.
 
 ##### X:Y.Z.4.2.2 Message Semantics
 
@@ -78,4 +78,4 @@ In case of error, the response SHALL contain an `OperationOutcome`.
 
 ##### X:Y.Z.4.2.3 Expected Actions
 
-Upon receiving the response, the Medication Order Placer can persist the `id`, `status`, or trigger any issue resolution if needed.
+Upon receiving the response, the [Medication Order Placer](actors-transactions.html#order-placer) can persist the `id`, `status`, or trigger any issue resolution if needed.

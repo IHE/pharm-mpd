@@ -3,6 +3,8 @@
 
 Instance: PrescriptionLine1
 InstanceOf: MedicationRequest
+Description: "Prescription Line 1"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -18,6 +20,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine2
 InstanceOf: MedicationRequest
+Description: "Prescription Line 2"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/NamingSystem/prescriptionlines"
@@ -33,6 +37,7 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine3
 InstanceOf: MedicationRequest
+Description: "Prescription Line 3"
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -97,6 +102,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine4
 InstanceOf: MedicationRequest
+Description: "Prescription Line 4"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -112,6 +119,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine5
 InstanceOf: MedicationRequest
+Description: "Prescription Line 5"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -133,6 +142,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine6
 InstanceOf: MedicationRequest
+Description: "Prescription Line 6"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -155,6 +166,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine7
 InstanceOf: MedicationRequest
+Description: "Prescription Line 7"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -167,6 +180,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine8
 InstanceOf: MedicationRequest
+Description: "Prescription Line 8"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
@@ -177,6 +192,8 @@ InstanceOf: MedicationRequest
 
 Instance: PrescriptionLine9
 InstanceOf: MedicationRequest
+Description: "Prescription Line 9"
+
 * subject.identifier.value = "patient1"
 * identifier
   * system = "http://example.org/prescriptionlines"
