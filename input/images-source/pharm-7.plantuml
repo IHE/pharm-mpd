@@ -5,8 +5,8 @@ hide footbox
 '!include ./style.iuml
 
 Title Retrieve Medication Order [PHARM-7]
-Participant "[[actors-transactions.html#order-placer Medication\nOrder\nConsumer]]" as OC
-Participant "[[actors-transactions.html#order-receiver Medication\nOrder\nResponder]]" as OR
+Participant "[[actors-transactions.html#order-consumer Medication\nOrder\nConsumer]]" as OC
+Participant "[[actors-transactions.html#order-responder Medication\nOrder\nResponder]]" as OR
 
 activate OC
 activate OR
