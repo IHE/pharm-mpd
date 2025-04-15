@@ -67,39 +67,36 @@ This actor is responsible for the process of dispensing medication to the patien
 
 <a name="dispense-receiver"> </a>
 
-#### **Dispense Receiver** - This actor represents the entity that receives the dispense reports from the placer. This is used in a Push scenario, where the dispense receiver receives the pushed dispense.
-
-
+**Dispense Receiver** - This actor represents the entity that receives the dispense reports from the placer. This is used in a Push scenario, where the dispense receiver receives the pushed dispense.
 
 <a name="dispense-responder"> </a>
 
-#### **Dispense Responder** - this actor is responsible for responding to order queries, e.g feching the dispenses for a patient, etc.
+**Dispense Responder** - this actor is responsible for responding to order queries, e.g feching the dispenses for a patient, etc.
 This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder.
 
 <a name="dispense-consumer"> </a>
 
-#### **Dispense Consumer** - this actor supports querying for dispenses, e.g fetching the dispenses for a patient, etc.
-This is commonly used in a Pull scenario, where before dispense, the Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
+**Dispense Consumer** - this actor supports querying for dispenses, e.g fetching the dispenses for a patient, etc.
+> This is commonly used in a Pull scenario, where before dispense, the Order Consumer (or other actors) can query the existing dispenses from the Dispense Responder. It can also be used for reporting workflow progress after inquiring about dispense status.
 
 
 
 <a id="dispense-reporter"></a>
 
-#### **Dispense Reporter** - this actor is responsible for submitting a dispense report.
+**Dispense Reporter** - this actor is responsible for submitting a dispense report.
 
 <a id="dispense-receiver"></a>
 
-#### **Dispense Receiver** - This actor represents the entity that receives the dispense reports from the dispense reporter. This is used in a Push scenario, where the order dispenser pushes out the reports.
+**Dispense Receiver** - This actor represents the entity that receives the dispense reports from the dispense reporter. This is used in a Push scenario, where the order dispenser pushes out the reports.
 
 <a id="dispense-responder"></a>
 
-#### **Dispense Responder** - this actor is responsible for responding to queries for dispenses.  
+**Dispense Responder** - this actor is responsible for responding to queries for dispenses.  
 This is used in a Pull scenario, where an Order Consumer (or other actors) can query the existing orders from the Order Responder.
 
 <a id="dispense-consumer"></a>
 
-#### **Dispense Consumer** - this actor represents an entity that handles or processes the dispense reports.
-
+**Dispense Consumer** - this actor represents an entity that handles or processes the dispense reports.
 
 
 ### Actor Groupings

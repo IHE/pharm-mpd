@@ -1,5 +1,3 @@
-# Volume 2: Pharmacy Transactions – Introduction
-
 This section introduces the key transactions used in the Pharmacy domain to support communication between actors.  
 These transactions are part of the IHE Pharmacy Technical Framework and provide the foundation for interoperable medication prescription and dispense.
 

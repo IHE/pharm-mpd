@@ -103,7 +103,7 @@ pages:
     generation: markdown
 
   volume-2.md:
-    title: "Volume 2"
+    title: "Volume 2: Pharmacy Transactions – Introduction"
     pharm-5.md: # FCFS
       title: "PHARM-5: Submit Medication Order" 
     pharm-7.md: # FCFS

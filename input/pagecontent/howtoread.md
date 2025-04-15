@@ -20,8 +20,8 @@ One key aspect of IHE profiles is to define these modular actors and transaction
 
 ### Structure
 
-* [volume 1](volume-1.html) contains the introduction and functional considerations of the use cases, actors and transactions.
-* [volume 2](volume-2.html) contains the technical description of the transactions
+* [Volume 1](volume-1.html) contains the introduction and functional considerations of the use cases, actors and transactions.
+* [Volume 2](volume-2.html) contains the technical description of the transactions
 
 ### Must Support
 
