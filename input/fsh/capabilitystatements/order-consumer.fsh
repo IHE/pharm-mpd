@@ -6,7 +6,7 @@ Usage: #definition
 * url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumerCS"
 * version = "3.0.5-current"
 * name = "IHEOrderConsumer"
-* title = "IHE Pharmacy Order Consumer Actor"
+* title = "IHE MPD Order Consumer Actor"
 * status = #active
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"

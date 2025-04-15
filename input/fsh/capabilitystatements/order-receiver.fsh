@@ -4,7 +4,7 @@ Usage: #definition
 * url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderReceiver"
-* title = "IHE MPD Order Receiver (server)"
+* title = "IHE MPD Order Receiver Actor (server)"
 * status = #active
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
@@ -22,7 +22,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Order Receiver Actor](actors-transactions.html#order-placer) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Order Receiver Actor](actors-transactions.html#order-receiver) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1

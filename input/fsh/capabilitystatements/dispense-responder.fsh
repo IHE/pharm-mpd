@@ -4,7 +4,7 @@ Usage: #definition
 * url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseResponderCS"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseResponder"
-* title = "IHE MPD Dispense Responder (server)"
+* title = "IHE MPD Dispense Responder Actor (server)"
 * status = #active
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
@@ -22,7 +22,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Dispense Responder Actor](actors-transactions.html#order-responder) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Dispense Responder Actor](actors-transactions.html#dispense-responder) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1
