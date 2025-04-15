@@ -1,8 +1,8 @@
-This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the Medication Order Placer and the Medication Order Receiver actors. The Submit Medication Order [PHARM-5] transaction is used to transmit a medicationrequest - typically a prescription.
+This section corresponds to transaction [PHARM-5] of the IHE Technical Framework. Transaction [PHARM-5] is used by the Medication Order Placer and the Medication Order Receiver actors. The Submit Medication Order [PHARM-5] transaction is used to transmit a `MedicationRequest` - typically a prescription.
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Order [PHARM-5] transaction passes a MedicationRequest from a Medication Order Placer to a Medication Order Receiver. The MedicationRequest can be:
+The Submit Medication Order [PHARM-5] transaction passes a `MedicationRequest` from a Medication Order Placer to a Medication Order Receiver. The `MedicationRequest` can be:
 * a single-line Prescription
 * a prescription as part of a group of prescriptions
 * a proposal, or a draft
@@ -34,7 +34,7 @@ The Submit Medication Order [PHARM-5] transaction passes a MedicationRequest fro
 
 #### X:Y.Z.4.1 Submit Medication Order Request Message
 
-The Medication Order Placer submits a MedicationRequest resource using the HTTP POST or PUT method to the /MedicationRequest endpoint.
+The [Medication Order Placer](actors-transactions.html#order-placer) submits a `MedicationRequest` resource using the HTTP `POST` or `PUT` method to the /MedicationRequest endpoint.
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
@@ -44,20 +44,20 @@ This method is invoked When submitting a prescription or draft.
 
 The content type of the HTTP body shall be either `application/fhir+json` or `application/fhir+xml`.
 
-The Medication Order Placer shall assure the request is consistent and actionable before sending.
+The [Medication Order Placer](actors-transactions.html#order-placer) shall assure the request is consistent and actionable before sending.
 
 ###### X:Y.Z.4.1.2.1 Resource content
 
-The Submit Medication Order is a MedicationRequest resource.  
-The semantics of the request and data elements are captured in the [StructureDefinition-IHEMedicationOrderModel.html] and the technical specification in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
+The Submit Medication Order is a `MedicationRequest` resource.  
+The semantics of the request and data elements are captured in the [MedicationOrderModel](StructureDefinition-IHEMedicationOrderModel.html) and the technical specification in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
-Upon receiving the MedicationRequest, the Medication Order Receiver is expected to store and/or forward the order.
+Upon receiving the `MedicationRequest`, the Medication Order Receiver is expected to store and/or forward the order.
 
 #### X:Y.Z.4.2 Submit Medication Order Response
 
-The Medication Order Receiver SHALL return an HTTP Status code appropriate to the processing outcome.
+The Medication Order Receiver **SHALL** return an HTTP Status code appropriate to the processing outcome.
 
 ##### X:Y.Z.4.2.1 Trigger Events
 
