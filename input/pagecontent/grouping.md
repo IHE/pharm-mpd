@@ -14,7 +14,12 @@ This diagram shows the two models side by side, and their correspondence:
 </figure>
 <br clear="all"/>
 
-
+### Main Differences
+Element | In IHEMedicationOrderModel | In IHEMultilineOrder | Notes
+groupIdentifier | ✅ | ❌ | Present only in MedOrderModel
+status, medication, etc. | ✅ (at root) | ✅ (under medicationLine) | 1 order vs multiline
+indicationText | 0..* | 0..1 | cardinality difference
+medicationLine | ❌ | ✅ | multilevel structure in multiline
 
 ### Core Entities and Relationships:
 
