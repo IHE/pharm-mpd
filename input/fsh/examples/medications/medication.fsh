@@ -139,7 +139,7 @@ Description: "3B. Milgamma N, B-vitamin complex. Branded packaged product, defin
 Instance: 04-FirmagonBranded
 InstanceOf: IHEMedication
 Usage: #example
-Description: "04. Firmagon. Branded packaged product, defined by attributes, includes administration devices."
+Description: "4. Firmagon. Branded packaged product, defined by attributes, includes administration devices."
 
 * identifier.value = "1400601"
 * identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
