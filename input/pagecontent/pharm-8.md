@@ -1,8 +1,8 @@
-This section corresponds to transaction [PHARM-8] of the IHE Technical Framework. Transaction [PHARM-8] is used by the Dispense Reporter and the Dispense Receiver actors. The Submit Medication Dispense [PHARM-8] transaction is used to transmit a MedicationDispense.
+This section corresponds to transaction [PHARM-8] of the IHE Technical Framework. Transaction [PHARM-8] is used by the [Dispense Reporter](actors-transactions.html#dispense-reporter) and the [Dispense Receiver](actors-transactions.html#dispense-receiver) actors. The Submit Medication Dispense [PHARM-8] transaction is used to transmit a `MedicationDispense`.
 
 ### X:Y.Z.1 Scope
 
-The Submit Medication Dispense [PHARM-8] transaction passes a MedicationDispense from a Dispense Reporter to a Dispense Receiver.
+The Submit Medication Dispense [PHARM-8] transaction passes a `MedicationDispense` from a [Dispense Reporter](actors-transactions.html#dispense-reporter) to a [Dispense Receiver](actors-transactions.html#dispense-receiver).
 
 ### X:Y.Z.2 Actors Roles
 
@@ -28,7 +28,7 @@ The Submit Medication Dispense [PHARM-8] transaction passes a MedicationDispense
 
 #### X:Y.Z.4.1 Submit Medication Dispense Request Message
 
-The Dispense Reporter submits a MedicationDispense resource using the HTTP POST or PUT method to the /MedicationDispense endpoint.
+The Dispense Reporter submits a MedicationDispense resource using the HTTP `POST` or `PUT` method to the /MedicationDispense endpoint.
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
@@ -36,26 +36,26 @@ This method is invoked When medication is dispensed, partially dispensed, update
 
 ##### X:Y.Z.4.1.2 Message Semantics
 
-The content type of the HTTP body shall be either `application/fhir+json` or `application/fhir+xml`.
+The content type of the HTTP body **SHALL** be either `application/fhir+json` or `application/fhir+xml`.
 
-The Dispense Reporter shall assure the Dispense record is consistent and actionable before sending.
+The Dispense Reporter **SHALL** assure the Dispense record is consistent and actionable before sending.
 
 ###### X:Y.Z.4.1.2.1 Resource content
 
-The content of the Submit Medication Dispense is a MedicationDispense resource.  
+The content of the Submit Medication Dispense is a `MedicationDispense` resource.  
 The semantics of the request and data elements are captured in the [IHE Medication Dispense Model](StructureDefinition-IHEMedicationDispenseModel.html) and the technical specification in the [IHEMedicationDispense](StructureDefinition-IHEMedicationDispense.html) profile.
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
-Upon receiving the MedicationDispense, the Dispense Receiver is expected to store and/or forward the order.
+Upon receiving the `MedicationDispense`, the [Dispense Receiver](actors-transactions.html#dispense-receiver) is expected to store and/or forward the order.
 
 #### X:Y.Z.4.2 Submit Medication Dispense Response
 
-The Dispense Receiver SHALL return an HTTP Status code appropriate to the processing outcome.
+The [Dispense Receiver](actors-transactions.html#dispense-receiver) **SHALL** return an HTTP Status code appropriate to the processing outcome.
 
 ##### X:Y.Z.4.2.1 Trigger Events
 
-This response is always expected and provides the Dispense Reporter with acknowledgement including any technical issues.
+This response is always expected and provides the [Dispense Reporter](actors-transactions.html#dispense-reporter) with acknowledgement including any technical issues.
 
 ##### X:Y.Z.4.2.2 Message Semantics
 
@@ -65,11 +65,11 @@ This response is always expected and provides the Dispense Reporter with acknowl
 ###### X:Y.Z.4.2.2.1 Resource content
 
 
-The response shall contain the resource created from the request, including the `id`, `version`, etc. assigned by the server.
+The response **SHALL** contain the resource created from the request, including the `id`, `version`, etc. assigned by the server.
 
 
-In case of error, the response SHALL contain an `OperationOutcome`.
+In case of error, the response **SHALL** contain an `OperationOutcome`.
 
 ##### X:Y.Z.4.2.3 Expected Actions
 
-Upon receiving the response, the Dispense Reporter can persist the `id`, `status`, or trigger any issue resolution if needed.
+Upon receiving the response, the [Dispense Reporter](actors-transactions.html#dispense-reporter) can persist the `id`, `status`, or trigger any issue resolution if needed.
