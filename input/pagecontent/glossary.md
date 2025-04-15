@@ -33,8 +33,10 @@ ers (improving product stability, e.g. ascorbic acid, ascorbyl palmitate, malic 
 
 * **virtual medicinal product (VMP)** A conceptual definition of a medicine, opposed to a real-world marketed product. The focus is what the medicine is intended to be and not what is actually sold or dispensed. An example can be seen below:
 
-Term | Description
-Virtual Medicinal Product | Paracetamol 500 mg tablet — *any tablet with 500mg of paracetamol*
-Actual Medicinal Product | Paracetamol Cinfa 500 mg tablet — *a specific branded version*
-Real Medicinal Product | The actual box or blister of Paracetamol Cinfa on the shelf
+|Term | Description|
+|Virtual Medicinal Product | Paracetamol 500 mg tablet — *any tablet with 500mg of paracetamol*|
+|Actual Medicinal Product | Paracetamol Cinfa 500 mg tablet — *a specific branded version*|
+|Real Medicinal Product | The actual box or blister of Paracetamol Cinfa on the shelf|
+{:.table-bordered .table-striped .thead-light}
 
+Some defintions are or adpated from [Dictionary of Pharmaceutical Medicine](https://link.springer.com/book/10.1007/978-3-7091-1523-7)
