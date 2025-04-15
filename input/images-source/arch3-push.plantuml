@@ -8,7 +8,7 @@ agent "  [[actors-transactions.html#order-placer Order Placer ]]" as orderplacer
 
 rectangle "Filler/Receiver system" as PS #cee{
   agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
-  agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
+  agent " [[actors-transactions.html#order-responder Order Responder ]]" as orderresponder 
   agent " [[actors-transactions.html#order-consumer Order Consumer   ]]" as OrderConsumer 
 }
 
