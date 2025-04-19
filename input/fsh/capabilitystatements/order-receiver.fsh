@@ -4,7 +4,7 @@ Usage: #definition
 * url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderReceiver"
-* title = "IHE MPD Order Receiver (server)"
+* title = "IHE MPD Order Receiver Actor (server)"
 * status = #active
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"
@@ -22,7 +22,7 @@ Usage: #definition
   * telecom
     * system = #email
     * value = "iti@ihe.net"
-* description = "The CapabililtyStatement for the [Order Receiver Actor](actors-transactions.html#order-placer) expresses the compliance requirements for systems implementing the actor."
+* description = "The CapabililtyStatement for the [Order Receiver Actor](actors-transactions.html#order-receiver) expresses the compliance requirements for systems implementing the actor."
 * jurisdiction = $m49.htm#001
 * kind = #requirements
 * fhirVersion = #4.0.1
@@ -34,7 +34,7 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
-    * supportedProfile = "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationOrder"
+    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
     // * interaction[0]
     //   * code = #update
     //   * documentation = "conditional update for [PHARM-104]"

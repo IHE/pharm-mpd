@@ -42,7 +42,8 @@ Volume 3 describes data structures and terminology supporting this specification
 
 
 #### HL7 Europe and European specifications
-The IHE MPD Work was initiated based on the existing IHE profiles and anticipating a FHIR implementation, but has been decisively supported by HL7 Europe, who has worked on [related specifications](http://hl7.eu/fhir/mpd), which are related to past and ongoing projects and specifications that may be relevant, notably:
+The IHE MPD Work was initiated based on the existing IHE profiles and anticipating a FHIR implementation, but has been decisively supported by HL7 Europe, who has worked on [related specifications](http://hl7.eu/fhir/mpd), which are related to past and ongoing projects and specifications that may be relevant.:
+
 
 
 #### HL7 Gemini 

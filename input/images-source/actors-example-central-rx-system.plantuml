@@ -8,7 +8,7 @@ title Medication Actors \n Central Prescription Repository architecture\n
 Package "Central Prescription Repository" {
 agent "  [[actors-transactions.html#order-placer Order Placer ]]\n(e.g. GP system)" as orderplacer 
 agent " [[actors-transactions.html#order-receiver Order Receiver ]]" as orderreceiver 
-agent " [[actors-transactions.html#order-receiver Order Responder ]]" as orderresponder 
+agent " [[actors-transactions.html#order-responder Order Responder ]]" as orderresponder 
 }
 agent "[[actors-transactions.html#order-consumer Order Consumer  ]]\n (e.g. Pharmacy)" as OrderConsumer 
 

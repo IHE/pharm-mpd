@@ -4,6 +4,7 @@ hide footbox
 
 '!include ./style.iuml
 
+
 Title Retrieve Medication Dispenses [PHARM-9]
 
 Participant "[[actors-transactions.html#dispense-consumer Dispense\nConsumer]]" as OP
@@ -13,7 +14,10 @@ activate OP
 activate OF
 
 OP -[hidden]> OF
-OP -> OF: \t[[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]
+OC -> OR: \tQuery Medication Dispenses\t
+OC <-- OR: \t[[StructureDefinition-IHEMedicationDispense.html{Medication Dispense} Medication Dispense]]\t
+
+OP -> OF: \t[[StructureDefinition-IHEMedicationDispense.html{Medication Dispense} Medication Dispense]]
 OP <-- OF: \t(response)\t
 OP -[hidden]> OF
 
