@@ -4,7 +4,7 @@ Usage: #definition
 * url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponderCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderResponder"
-* title = "IHE MPD Order Responder (server)"
+* title = "IHE MPD Order Responder Actor (server)"
 * status = #active
 * experimental = false
 * date = "2024-07-08T16:49:44+00:00"

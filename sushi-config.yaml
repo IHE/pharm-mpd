@@ -46,7 +46,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   usage-stats-opt-out: 'true'
   autoload-resources: 'true'
   shownav: 'true'
-
+  generate-version:
+    - r4
 
 # additional examples that need descriptions
 #resources:
@@ -70,7 +71,7 @@ pages:
     glossary.md: # Add only the core actors and concept definitions (prescription vs order, dispense, etc.) JCT
       title: "Glossary" 
     usecases.md: # remove all this and below (unless JCT can do this today / tomorrow) - low pritority JCT
-      title: "Use Cases"
+      title: "Use Cases and Patterns"
       # presc-use-case-1.md:
       #   title: "Use Case 1: Order straight to dispense"
       # presc-use-case-2.md:

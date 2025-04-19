@@ -6,7 +6,7 @@ skinparam linetype polyline
 title Medication Prescription and Dispense - Actors and Transactions - Prescription
 agent "  [[actors-transactions.html#order-placer Medication\nOrder Placer ]]" as orderplacer 
 agent " [[actors-transactions.html#order-receiver Medication\nOrder Receiver ]]" as orderreceiver 
-agent " [[actors-transactions.html#order-receiver Medication\nOrder Responder ]]" as orderresponder 
+agent " [[actors-transactions.html#order-responder Medication\nOrder Responder ]]" as orderresponder 
 agent " [[actors-transactions.html#order-consumer Medication\nOrder Consumer   ]]" as OrderConsumer 
 
 
