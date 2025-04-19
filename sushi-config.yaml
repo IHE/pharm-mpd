@@ -48,6 +48,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   shownav: 'true'
   generate-version:
     - r4
+    - r4b
+    - r5
 
 # additional examples that need descriptions
 #resources:
