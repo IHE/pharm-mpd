@@ -65,7 +65,10 @@ Description: "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packag
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * extension[classification].valueCodeableConcept = $who-atc#G01AF02 "clotrimazole"
 * extension[productName].valueString = "Canifug Cremolum"
-* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30002000 "Applicator"
+// * extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30002000 "Applicator"
+// temp fix
+* extension[device].extension[device].valueCodeableConcept = $edqm-standardterms#30002000 "Applicator"
+// 
 * extension[device].extension[quantity].valueQuantity.value = 1
 
 
@@ -157,10 +160,16 @@ Description: "4A. Firmagon. Branded packaged product, defined by attributes, inc
 * ingredient.strengthRatio.extension[basisOfStrengthSubstance].valueCodeableConcept = $snomed#441864003 "Degarelix"
 * marketingAuthorizationHolder.display = "Ferring Pharmaceuticals A/S"
  
-* extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
+// * extension[device].extension[device].valueCodeableReference.concept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
+// Temporary fix
+* extension[device].extension[device].valueCodeableConcept = $edqm-standardterms#30051000 "Pre-filled syringe" // solvent pre-filled syringe
 * extension[device].extension[quantity].valueQuantity.value = 2
 
-* extension[device][+].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
+// * extension[device][+].extension[device].valueCodeableReference.concept = $edqm-standardterms#30028000 "Injection needle"
+// Temporary fix
+* extension[device][+].extension[device].valueCodeableConcept = $edqm-standardterms#30028000 "Injection needle"
+// -----------------
+
 * extension[device][=].extension[quantity].valueQuantity.value = 2
 // 2 trays containing 2 powder vials, 2 solvent pre-filled syrnges, 2 plunger rods, 2 vial adapters, 2 needles
 
