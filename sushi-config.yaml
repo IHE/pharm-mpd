@@ -4,7 +4,7 @@
 id: ihe.pharm.mpd
 canonical: http://profiles.ihe.net/PHARM/MPD
 name: IHE_MPD
-version: 0.1.0
+version: 1.0.0-preview
 fhirVersion: 5.0.0
 status: active
 packageId: ihe.pharm.mpd
@@ -18,7 +18,7 @@ publisher:
   url: http://ihe.net
   email: secretary@ihe.net
 contact:
-  - name: Jose Costa Teixeira
+  - name: José Costa Teixeira
     telecom:
       - system: email
         value: jose.a.teixeira@gmail.com
@@ -121,6 +121,12 @@ pages:
 
     usage-examples.md:
       title: "Usage Examples"
+
+  changes.md:
+    title: "Changes and issues in this version"
+
+  downloads.md:
+    title: "Downloads"
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
