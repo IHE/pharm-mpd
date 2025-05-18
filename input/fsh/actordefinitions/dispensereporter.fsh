@@ -1,7 +1,7 @@
 Instance: IHE.MPD.DispenseReporter
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseReporter"
+* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseReporter"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseReporter"
 * title = "IHE MPD Dispense Reporter"

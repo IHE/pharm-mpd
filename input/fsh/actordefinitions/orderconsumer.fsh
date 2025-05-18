@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderConsumer
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderConsumer"
+* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderConsumer"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderConsumer"
 * title = "IHE MPD Order Consumer"

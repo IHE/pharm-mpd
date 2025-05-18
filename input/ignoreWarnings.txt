@@ -18,6 +18,9 @@ A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be 
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
 
+# Some extension don't have examples yet
+The Implementation Guide contains no examples for this extension
+
 # This uses experimental valuesets in R5
 The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
