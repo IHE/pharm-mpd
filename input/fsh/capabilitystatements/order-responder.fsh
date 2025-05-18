@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderResponderCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponderCS"
+* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponderCS"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderResponder"
 * title = "IHE MPD Order Responder Actor (server)"
@@ -33,10 +33,10 @@ Usage: #definition
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource[+]
     * type = #MedicationRequest
-    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
+    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
     * searchParam[+]
       * name = "group-or-identifier"
-      * definition = "http://profiles.ihe.net/PHARM/MPD/SearchParameter/group-or-identifier"
+      * definition = "https://profiles.ihe.net/PHARM/MPD/SearchParameter/group-or-identifier"
       * type = #token
       * documentation = "Search on Group Or Identifier"
     * searchRevInclude[0] = "['RequestOrchestration:activity-resource:MedicationRequest']"
@@ -62,7 +62,7 @@ Usage: #definition
     * conditionalDelete = #single
   * resource[+]
     * type = #RequestOrchestration
-//    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
+//    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
     * interaction[0]
       * code = #create
       * documentation = "Create MedicationOrders [PHARM-5]"
@@ -75,6 +75,6 @@ Usage: #definition
       * documentation = "Search on Patient"
     * searchParam[+]
       * name = "activity-resource"
-      * definition = "http://profiles.ihe.net/PHARM/MPD/SearchParameter/activity-resource"
+      * definition = "https://profiles.ihe.net/PHARM/MPD/SearchParameter/activity-resource"
       * type = #reference
       * documentation = "Activity Resource"

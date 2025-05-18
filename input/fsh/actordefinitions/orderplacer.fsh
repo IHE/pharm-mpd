@@ -1,7 +1,7 @@
 Instance: IHE.MPD.OrderPlacer
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderPlacer"
+* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.OrderPlacer"
 * version = "3.0.5-current"
 * name = "IHEMPDOrderPlacer"
 * title = "IHE MPD Order Placer"

@@ -1,7 +1,7 @@
 Instance: IHE.MPD.DispenseConsumerCS
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseConsumerCS"
+* url = "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseConsumerCS"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseConsumer"
 * title = "IHE MPD Dispense Consumer Actor"
@@ -21,7 +21,7 @@ Usage: #definition
   * security.description = "Recommended security framework: ATNA, IUA, or SMART-on-FHIR."
   * resource[+]
     * type = #MedicationDispense
-    * supportedProfile = "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationDispense"
+    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationDispense"
     * interaction[+]
       * code = #read
       * documentation = "Retrieve a MedicationDispense [PHARM-9]"

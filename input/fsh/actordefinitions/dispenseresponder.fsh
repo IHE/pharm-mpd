@@ -1,7 +1,7 @@
 Instance: IHE.MPD.DispenseResponder
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseResponder"
+* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseResponder"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseResponder"
 * title = "IHE MPD Dispense Responder"

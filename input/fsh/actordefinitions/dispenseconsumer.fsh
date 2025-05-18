@@ -1,7 +1,7 @@
 Instance: IHE.MPD.DispenseConsumer
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseConsumer"
+* url = "https://profiles.ihe.net/PHARM/MPD/ActorDefinition/IHE.MPD.DispenseConsumer"
 * version = "3.0.5-current"
 * name = "IHEMPDDispenseConsumer"
 * title = "IHE MPD Dispense Consumer"
