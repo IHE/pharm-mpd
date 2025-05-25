@@ -93,10 +93,22 @@ Extension: MedicationStrengthSubstance
 Id: ihe-ext-medication-strengthsubstance
 Title: "Medication - Strength substance"
 Description: "Substance for marking the basis of strength. When the precise active ingredient is a salt, the strength is often provided for the active moiety (basis of strength)."
-Context: Medication.ingredient.strength[x]
+//Context: Medication.ingredient.strength[x]
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $substanceSCT (example)
+
+* ^context[+].expression = "Medication.ingredient.strength"
+* ^context[=].type = #element
+* ^context[=].extension[http://hl7.org/fhir/StructureDefinition/version-specific-use].extension[startFhirVersion].valueCode = #4.0
+* ^context[=].extension[http://hl7.org/fhir/StructureDefinition/version-specific-use].extension[endFhirVersion].valueCode = #4.0
+
+
+* ^context[+].expression = "Medication.ingredient.strength[x]"
+* ^context[=].type = #element
+* ^context[=].extension[http://hl7.org/fhir/StructureDefinition/version-specific-use].extension[startFhirVersion].valueCode = #5.0
+* ^context[=].extension[http://hl7.org/fhir/StructureDefinition/version-specific-use].extension[endFhirVersion].valueCode = #5.0
+
 
 
 Extension: MedicationStrengthType
