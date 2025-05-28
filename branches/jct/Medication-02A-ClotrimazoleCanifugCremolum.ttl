@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Medication/02A-ClotrimazoleCanifugCremolum> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "02A-ClotrimazoleCanifugCremolum"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"02A-ClotrimazoleCanifugCremolum\"> </a><a name=\"hc02A-ClotrimazoleCanifugCremolum\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;02A-ClotrimazoleCanifugCremolum&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProduct.html\">Medicinal product</a></p></div><p><b>Classification</b>: clotrimazole <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#G01AF02)</span></p><blockquote><p><b>MedicinalProductName</b></p><blockquote><p><b>url</b></p><code>name</code></blockquote><p><b>value</b>: Canifug Cremolum</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-language.html\">Human Language</a></blockquote><p><b>value</b>: Estonian (Estonia) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#et-EE)</span></p></blockquote><p><b>identifier</b>: <code>https://www.ravimiregister.ee</code>/1033692</p><p><b>doseForm</b>: Cream + pessary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#14001000)</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-02A1-CanifugCremolumCreamItem.html\">Medication/02A1-CanifugCremolumCreamItem</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-02A2-CanifugCremolumPessaryItem.html\">Medication/02A2-CanifugCremolumPessaryItem</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Classification"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G01AF02" ] ;
+         fhir:display [ fhir:v "clotrimazole" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Canifug Cremolum" ]
+     ] [
+       fhir:url [ fhir:v "language"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et-EE" ] ;
+           fhir:display [ fhir:v "Estonian (Estonia)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductName"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.ravimiregister.ee"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1033692" ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14001000" ] ;
+       fhir:display [ fhir:v "Cream + pessary" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Medication/02A1-CanifugCremolumCreamItem> ;
+         fhir:reference [ fhir:v "Medication/02A1-CanifugCremolumCreamItem" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Medication/02A2-CanifugCremolumPessaryItem> ;
+         fhir:reference [ fhir:v "Medication/02A2-CanifugCremolumPessaryItem" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
