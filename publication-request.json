@@ -1,10 +1,10 @@
 {
     "package-id" : "ihe.pharm.mpd",
-    "version" : "1.0.0-comment",
-    "path" : "https://profiles.ihe.net/PHARM/MPD/1.0.0-comment",
+    "version" : "1.0.0-comment-2",
+    "path" : "https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2",
     "mode" : "milestone",
     "status" : "trial-use",
-    "first": true,
+    "first": false,
     "sequence": "Publication",
     "desc" : "Trial Implementation - First draft release.",
     "descmd" : "Version 1.0.0 of the IHE MPD profile is the first release intended to be adopted by projects, namely the base profiles and extensions that have been developed. \n\n It provides FHIR R4 and R5 packages.",
