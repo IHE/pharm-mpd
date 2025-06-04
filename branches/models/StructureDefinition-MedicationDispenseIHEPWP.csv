@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP","","","",0,*,"","","","null {[]} {[]}
+","[IHE PHARM White Paper] Logical Model for medication dispense","A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationDispenseIHEPWP.dispenseID","MedicationDispenseIHEPWP.dispenseID","","","",0,1,"","","","Identifier {[]} {[]}
+","Pharmaceutical advice ID","Pharmaceutical advice ID","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispenseID",0,1,"",""
+"MedicationDispenseIHEPWP.refillnumber","MedicationDispenseIHEPWP.refillnumber","","","",0,1,"","","","string {[]} {[]}
+","refill number","refill number","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.refillnumber",0,1,"",""
+"MedicationDispenseIHEPWP.date","MedicationDispenseIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Time of dispense","Date/Time of dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.date",0,1,"",""
+"MedicationDispenseIHEPWP.location","MedicationDispenseIHEPWP.location","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.location",0,1,"",""
+"MedicationDispenseIHEPWP.patient","MedicationDispenseIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.patient",1,1,"",""
+"MedicationDispenseIHEPWP.expectedQuantity","MedicationDispenseIHEPWP.expectedQuantity","","","",0,1,"","","","integer {[]} {[]}
+","Expected quantity (number of packs/number of units)","Expected quantity (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expectedQuantity",0,1,"",""
+"MedicationDispenseIHEPWP.quantityDelivered","MedicationDispenseIHEPWP.quantityDelivered","","","",0,1,"","","","integer {[]} {[]}
+","Quantity delivered (number of packs/number of units)","Quantity delivered (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.quantityDelivered",0,1,"",""
+"MedicationDispenseIHEPWP.dispensingperiod","MedicationDispenseIHEPWP.dispensingperiod","","","",0,1,"","","","Period {[]} {[]}
+","Dispensing period (period for which the medication is dispensed)","Dispensing period (period for which the medication is dispensed)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingperiod",0,1,"",""
+"MedicationDispenseIHEPWP.dispensingPresentation","MedicationDispenseIHEPWP.dispensingPresentation","","","",0,1,"","","","string {[]} {[]}
+","Dispensing presentation: blister, box, single dose unit","Dispensing presentation: blister, box, single dose unit","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingPresentation",0,1,"",""
+"MedicationDispenseIHEPWP.deliveryMode","MedicationDispenseIHEPWP.deliveryMode","","","",0,1,"","","","string {[]} {[]}
+","Delivery mode : bulk, nominative (per patient)"," Delivery mode : bulk, nominative (per patient)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.deliveryMode",0,1,"",""
+"MedicationDispenseIHEPWP.batchNumber","MedicationDispenseIHEPWP.batchNumber","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.batchNumber",0,1,"",""
+"MedicationDispenseIHEPWP.expirationDate","MedicationDispenseIHEPWP.expirationDate","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expirationDate",0,1,"",""
+"MedicationDispenseIHEPWP.pharmaceuticalInstructions","MedicationDispenseIHEPWP.pharmaceuticalInstructions","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmaceuticalInstructions",0,1,"",""
+"MedicationDispenseIHEPWP.pricepaidbypatient","MedicationDispenseIHEPWP.pricepaidbypatient","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pricepaidbypatient",0,1,"",""
+"MedicationDispenseIHEPWP.pharmacist","MedicationDispenseIHEPWP.pharmacist","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmacist",0,1,"",""
