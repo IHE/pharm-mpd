@@ -15,11 +15,11 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
+  - type: text
     id: where
     attributes:
       label: Section Number
-      description: Identify the most specific section number the issue occurs.
+      description: Identify the most specific section number or location where the issue occurs.
       placeholder:  e.g. 4.1.2
   - type: textarea
     id: what-happened
@@ -43,11 +43,16 @@ body:
     id: priority
     attributes:
       label: Priority
+      description: |
+        Select the priority of the issue:
+        - **High**: Major issue that needs to be resolved. Requires discussion and debate.
+        - **Medium**: Significant issue or clarification. Requires discussion, but should not lead to long debate.
+        - **Low**: Typo or other minor issue. Can be handled without group discussion.
       multiple: false
       options:
-        - High: Important issue where there is major issue to be resolved. Requires discussion and debate.
-        - Medium: Significant issue or clarification. Requires discussion, but should not lead to long debate.
-        - Low: Typo or other minor classification that an editor can manage. Requires no group discussion.
+        - High
+        - Medium
+        - Low
     validations:
       required: true
   - type: checkboxes
