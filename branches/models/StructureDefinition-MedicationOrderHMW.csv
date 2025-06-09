@@ -1,0 +1,27 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicationOrderHMW","MedicationOrderHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for medication order","[HMW] Logical Model for medication order","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationOrderHMW.identifier","MedicationOrderHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.identifier",0,1,"",""
+"MedicationOrderHMW.patient","MedicationOrderHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.patient",1,1,"",""
+"MedicationOrderHMW.status","MedicationOrderHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the prescription","Status of the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.status",1,1,"",""
+"MedicationOrderHMW.statusReason","MedicationOrderHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for current prescription status","Reason for current prescription status","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.statusReason",0,*,"",""
+"MedicationOrderHMW.product[x]","MedicationOrderHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product prescribed","Product prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.product[x]",1,1,"",""
+"MedicationOrderHMW.encounter","MedicationOrderHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter on which the medication was prescribed","Encounter on which the medication was prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.encounter",0,1,"",""
+"MedicationOrderHMW.requester","MedicationOrderHMW.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.requester",0,1,"",""
+"MedicationOrderHMW.reason","MedicationOrderHMW.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason or indication for ordering or not ordering the product","Reason or indication for ordering or not ordering the product","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.reason",0,*,"",""
+"MedicationOrderHMW.groupIdentifier","MedicationOrderHMW.groupIdentifier","","","",0,1,"","","","Identifier {[]} {[]}
+","Composite request this is part of","Composite request this is part of","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.groupIdentifier",0,1,"",""
+"MedicationOrderHMW.dosageInstruction","MedicationOrderHMW.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
+","How the product should be taken/administered","How the product should be taken/administered","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.dosageInstruction",0,*,"",""
+"MedicationOrderHMW.note","MedicationOrderHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.note",0,*,"",""
+"MedicationOrderHMW.date","MedicationOrderHMW.date","","","",0,1,"","","","dateTime {[]} {[]}
+","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.date",0,1,"",""

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Use Case 3: Dispense before prescription - Medication Prescription and Delivery (MPD) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.2.3"}
+    h3,h4,h5,h6{--heading-prefix:"3.2.3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="ihe-logo" href="http://profiles.ihe.net">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a no-external="true" id="project-logo" href="http://profiles.ihe.net/PHARM/index.html"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-1.html">Overview</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="medication-concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="order-management.html">Order Management</a>
+      </li>
+      <li>
+        <a href="interoperability-model.html">Interoperability Model</a>
+      </li>
+      <li>
+        <a href="data-models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actor and Transactions Overview</a>
+      </li>
+      <li>
+        <a href="security.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross-profile.html">Cross-profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-2.html">Overview</a>
+      </li>
+      <li>
+        <a href="submit-medication-order.html">PHARM-X1 - Submit Medication Order</a>
+      </li>
+      <li>
+        <a href="retrieve-medication-order.html">PHARM-X2 - Retrieve Medication Order</a>
+      </li>
+      <li>
+        <a href="submit-medication-dispense.html">PHARM-X3 - Submit Medication Dispense</a>
+      </li>
+      <li>
+        <a href="retrieve-medication-dispense.html">PHARM-X4 - Retrieve Medication Dispense</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li><a name="l301">​</a>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="volume-1.html"><b>Volume 1</b></a></li><li><a href="usecases.html"><b>Use Cases</b></a></li><li><b>Use Case 3: Dispense before prescription</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Medication Prescription and Delivery (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd/tree/offLabelUse">https://github.com/IHE/pharm-mpd/tree/offLabelUse</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MPD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Use Case 3: Dispense before prescription</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<p>Proposal order
+In this case, the pharmacist proposes the medication to be ordered</p>
+
+<div>  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1126 396" zoomAndPan="magnify" preserveAspectRatio="none" width="1126px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1126px;height:396px;background:#FFFFFF;" version="1.1" height="396px"><defs></defs><g><line y1="97.5938" x1="274" y2="389.1875" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="274"></line><line y1="97.5938" x1="532.5" y2="389.1875" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="532.5"></line><line y1="97.5938" x1="783" y2="389.1875" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="783"></line><line y1="97.5938" x1="951" y2="389.1875" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="951"></line><line y1="97.5938" x1="1086" y2="389.1875" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="1086"></line><text lengthAdjust="spacing" x="204" font-size="14" textLength="135" y="77.9951" font-family="sans-serif" fill="#000000">Prescription Actor 1</text><text lengthAdjust="spacing" x="208" font-size="14" textLength="106" y="94.292" font-family="sans-serif" fill="#000000">'i.e. pharmacist'</text><ellipse cx="274.5" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M274.5,21.5 L274.5,48.5 M261.5,29.5 L287.5,29.5 M274.5,48.5 L261.5,63.5 M274.5,48.5 L287.5,63.5 " style="stroke:#181818;stroke-width:0.5;" fill="none"></path><rect rx="2.5" ry="2.5" width="58" x="503.5" y="66.2969" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="510.5" font-size="14" textLength="44" y="86.292" font-family="sans-serif" fill="#000000">Server</text><text lengthAdjust="spacing" x="713" font-size="14" textLength="135" y="77.9951" font-family="sans-serif" fill="#000000">Prescription Actor 2</text><text lengthAdjust="spacing" x="717" font-size="14" textLength="94" y="94.292" font-family="sans-serif" fill="#000000">'i.e. physician'</text><ellipse cx="783.5" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M783.5,21.5 L783.5,48.5 M770.5,29.5 L796.5,29.5 M783.5,48.5 L770.5,63.5 M783.5,48.5 L796.5,63.5 " style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="864" font-size="14" textLength="135" y="77.9951" font-family="sans-serif" fill="#000000">Prescription Actor 3</text><text lengthAdjust="spacing" x="868" font-size="14" textLength="164" y="94.292" font-family="sans-serif" fill="#000000">'i.e. another pharmacist'</text><ellipse cx="951" cy="13.5" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M951,21.5 L951,48.5 M938,29.5 L964,29.5 M951,48.5 L938,63.5 M951,48.5 L964,63.5 " style="stroke:#181818;stroke-width:0.5;" fill="none"></path><text lengthAdjust="spacing" x="1048" font-size="14" textLength="71" y="94.292" font-family="sans-serif" fill="#000000">Dispenser</text><ellipse cx="1086.5" cy="29.7969" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0"></ellipse><path d="M1086.5,37.7969 L1086.5,64.7969 M1073.5,45.7969 L1099.5,45.7969 M1086.5,64.7969 L1073.5,79.7969 M1086.5,64.7969 L1099.5,79.7969 " style="stroke:#181818;stroke-width:0.5;" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="520.5,173.125,530.5,177.125,520.5,181.125,524.5,177.125"></polygon><line y1="177.125" x1="274.5" y2="177.125" style="stroke:#181818;stroke-width:1.0;" x2="526.5"></line><text lengthAdjust="spacing" x="281.5" font-size="13" textLength="234" y="172.0591" font-family="sans-serif" fill="#000000">Send Prescription Proposal to Server</text><path d="M5,112.5938 L5,227.5938 L270,227.5938 L270,122.5938 L260,112.5938 L5,112.5938 " style="stroke:#181818;stroke-width:0.5;" fill="#FEFFDD"></path><path d="M260,112.5938 L260,122.5938 L270,122.5938 L260,112.5938 " style="stroke:#181818;stroke-width:0.5;" fill="#FEFFDD"></path><text font-weight="bold" lengthAdjust="spacing" x="11" font-size="13" textLength="128" y="129.6606" font-family="sans-serif" fill="#000000">Prescription data</text><text lengthAdjust="spacing" x="11" font-size="13" textLength="12" y="144.7935" font-family="sans-serif" fill="#000000">1.</text><text lengthAdjust="spacing" x="27" font-size="13" textLength="134" y="144.7935" font-family="sans-serif" fill="#000000">Product Identification</text><text lengthAdjust="spacing" x="43" font-size="13" textLength="12" y="159.9263" font-family="sans-serif" fill="#000000">1.</text><text font-weight="bold" lengthAdjust="spacing" x="59" font-size="13" textLength="196" y="159.9263" font-family="sans-serif" fill="#000000">National Product identifier</text><text lengthAdjust="spacing" x="43" font-size="13" textLength="12" y="175.0591" font-family="sans-serif" fill="#000000">2.</text><text font-weight="bold" lengthAdjust="spacing" x="59" font-size="13" textLength="99" y="175.0591" font-family="sans-serif" fill="#000000">Product code</text><text lengthAdjust="spacing" x="43" font-size="13" textLength="12" y="190.1919" font-family="sans-serif" fill="#000000">3.</text><text font-weight="bold" lengthAdjust="spacing" x="59" font-size="13" textLength="104" y="190.1919" font-family="sans-serif" fill="#000000">Product name</text><text lengthAdjust="spacing" x="11" font-size="13" textLength="12" y="205.3247" font-family="sans-serif" fill="#000000">2.</text><text font-weight="bold" lengthAdjust="spacing" x="27" font-size="13" textLength="56" y="205.3247" font-family="sans-serif" fill="#000000">Dosage</text><text lengthAdjust="spacing" x="11" font-size="13" textLength="12" y="220.4575" font-family="sans-serif" fill="#000000">...</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="771.5,250.6563,781.5,254.6563,771.5,258.6563,775.5,254.6563"></polygon><line y1="254.6563" x1="532.5" y2="254.6563" style="stroke:#181818;stroke-width:1.0;" x2="777.5"></line><text lengthAdjust="spacing" x="539.5" font-size="13" textLength="82" y="249.5903" font-family="sans-serif" fill="#000000">Get proposal</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="543.5,279.7891,533.5,283.7891,543.5,287.7891,539.5,283.7891"></polygon><line y1="283.7891" x1="537.5" y2="283.7891" style="stroke:#181818;stroke-width:1.0;" x2="782.5"></line><text lengthAdjust="spacing" x="549.5" font-size="13" textLength="227" y="278.7231" font-family="sans-serif" fill="#000000">Send approval or changed proposal</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="939,308.9219,949,312.9219,939,316.9219,943,312.9219"></polygon><line y1="312.9219" x1="532.5" y2="312.9219" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="945"></line><text lengthAdjust="spacing" x="539.5" font-size="13" textLength="184" y="307.856" font-family="sans-serif" fill="#000000">Get prescription and validate</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="543.5,338.0547,533.5,342.0547,543.5,346.0547,539.5,342.0547"></polygon><line y1="342.0547" x1="537.5" y2="342.0547" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="950"></line><text lengthAdjust="spacing" x="549.5" font-size="13" textLength="174" y="336.9888" font-family="sans-serif" fill="#000000">Send validated prescription</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="1074.5,367.1875,1084.5,371.1875,1074.5,375.1875,1078.5,371.1875"></polygon><line y1="371.1875" x1="532.5" y2="371.1875" style="stroke:#181818;stroke-width:1.0;" x2="1080.5"></line><text lengthAdjust="spacing" x="539.5" font-size="13" textLength="182" y="366.1216" font-family="sans-serif" fill="#000000">Get Prescription from Server</text></g></svg></div>
+<p><br clear="all"/></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Mar 20, 2025 09:05+0000">2025-03-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

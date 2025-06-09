@@ -1,0 +1,6 @@
+{
+  "version" : "0.1.0",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20230803133227",
+  "name" : "ihe.pharm.mpd"
+}

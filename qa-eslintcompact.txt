@@ -1,0 +1,12 @@
+IHE_PHARM_MPD
+=========================================
+
+/github/workspace/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json: line 86, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/github/workspace/fsh-generated/resources/Medication-01D-Cefuroxime750Branded.json: line 86, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/github/workspace/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json: line 53, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/github/workspace/fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json: line 51, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/github/workspace/fsh-generated/resources/Medication-04-FirmagonBranded.json: line 141, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/github/workspace/fsh-generated/resources/MedicationRequest-10-prescription-cefuroxime-singleline.json: line 104, col 12, Info - This element does not match any known slice defined in the profile https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder|1.0.0-comment-2 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
+
+err = 0, warn = 5, info = 1
+IG Publisher Version: 2.0.5

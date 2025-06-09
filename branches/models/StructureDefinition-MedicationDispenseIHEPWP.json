@@ -1,0 +1,460 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "MedicationDispenseIHEPWP",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP\" title=\"A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.\">MedicationDispenseIHEPWP</a><a name=\"MedicationDispenseIHEPWP\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">[IHE PHARM White Paper] Logical Model for medication dispense</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.dispenseID\" title=\"Pharmaceutical advice ID\">dispenseID</a><a name=\"MedicationDispenseIHEPWP.dispenseID\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pharmaceutical advice ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.refillnumber\" title=\"refill number\">refillnumber</a><a name=\"MedicationDispenseIHEPWP.refillnumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">refill number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.date\" title=\"Date/Time of dispense\">date</a><a name=\"MedicationDispenseIHEPWP.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date/Time of dispense</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.location\">location</a><a name=\"MedicationDispenseIHEPWP.location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.patient\" title=\"The person for which the medication is prescribed.\">patient</a><a name=\"MedicationDispenseIHEPWP.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The person for which the medication is prescribed.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.expectedQuantity\" title=\"Expected quantity (number of packs/number of units)\">expectedQuantity</a><a name=\"MedicationDispenseIHEPWP.expectedQuantity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Expected quantity (number of packs/number of units)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.quantityDelivered\" title=\"Quantity delivered (number of packs/number of units)\">quantityDelivered</a><a name=\"MedicationDispenseIHEPWP.quantityDelivered\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Quantity delivered (number of packs/number of units)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.dispensingperiod\" title=\"Dispensing period (period for which the medication is dispensed)\">dispensingperiod</a><a name=\"MedicationDispenseIHEPWP.dispensingperiod\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing period (period for which the medication is dispensed)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.dispensingPresentation\" title=\"Dispensing presentation: blister, box, single dose unit\">dispensingPresentation</a><a name=\"MedicationDispenseIHEPWP.dispensingPresentation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing presentation: blister, box, single dose unit</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.deliveryMode\" title=\" Delivery mode : bulk, nominative (per patient)\">deliveryMode</a><a name=\"MedicationDispenseIHEPWP.deliveryMode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Delivery mode : bulk, nominative (per patient)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.batchNumber\">batchNumber</a><a name=\"MedicationDispenseIHEPWP.batchNumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.expirationDate\">expirationDate</a><a name=\"MedicationDispenseIHEPWP.expirationDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.pharmaceuticalInstructions\">pharmaceuticalInstructions</a><a name=\"MedicationDispenseIHEPWP.pharmaceuticalInstructions\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.pricepaidbypatient\">pricepaidbypatient</a><a name=\"MedicationDispenseIHEPWP.pricepaidbypatient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispenseIHEPWP-definitions.html#MedicationDispenseIHEPWP.pharmacist\">pharmacist</a><a name=\"MedicationDispenseIHEPWP.pharmacist\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEPWP",
+  "version" : "0.1.0",
+  "name" : "MedicationDispenseIHEPWP",
+  "title" : "[IHE PHARM White Paper] Logical Model for medication dispense",
+  "status" : "active",
+  "date" : "2023-02-19T14:45:07+00:00",
+  "publisher" : "Integrating the Healthcare Enterprise (IHE)",
+  "contact" : [{
+    "name" : "Integrating the Healthcare Enterprise (IHE)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://ihe.net"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@ihe.net"
+    }]
+  },
+  {
+    "name" : "Jose Costa Teixeira",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "jose.a.teixeira@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "IHE http://www.ihe.net/Governance/#Intellectual_Property",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEPWP",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "MedicationDispenseIHEPWP",
+      "path" : "MedicationDispenseIHEPWP",
+      "short" : "[IHE PHARM White Paper] Logical Model for medication dispense",
+      "definition" : "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispenseID",
+      "path" : "MedicationDispenseIHEPWP.dispenseID",
+      "short" : "Pharmaceutical advice ID",
+      "definition" : "Pharmaceutical advice ID",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.dispenseID",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.refillnumber",
+      "path" : "MedicationDispenseIHEPWP.refillnumber",
+      "short" : "refill number",
+      "definition" : "refill number",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.refillnumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.date",
+      "path" : "MedicationDispenseIHEPWP.date",
+      "short" : "Date/Time of dispense",
+      "definition" : "Date/Time of dispense",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.date",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.location",
+      "path" : "MedicationDispenseIHEPWP.location",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.location",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.patient",
+      "path" : "MedicationDispenseIHEPWP.patient",
+      "short" : "The person for which the medication is prescribed.",
+      "definition" : "The person for which the medication is prescribed.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.patient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.expectedQuantity",
+      "path" : "MedicationDispenseIHEPWP.expectedQuantity",
+      "short" : "Expected quantity (number of packs/number of units)",
+      "definition" : "Expected quantity (number of packs/number of units)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.expectedQuantity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.quantityDelivered",
+      "path" : "MedicationDispenseIHEPWP.quantityDelivered",
+      "short" : "Quantity delivered (number of packs/number of units)",
+      "definition" : "Quantity delivered (number of packs/number of units)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.quantityDelivered",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispensingperiod",
+      "path" : "MedicationDispenseIHEPWP.dispensingperiod",
+      "short" : "Dispensing period (period for which the medication is dispensed)",
+      "definition" : "Dispensing period (period for which the medication is dispensed)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.dispensingperiod",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispensingPresentation",
+      "path" : "MedicationDispenseIHEPWP.dispensingPresentation",
+      "short" : "Dispensing presentation: blister, box, single dose unit",
+      "definition" : "Dispensing presentation: blister, box, single dose unit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.dispensingPresentation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.deliveryMode",
+      "path" : "MedicationDispenseIHEPWP.deliveryMode",
+      "short" : "Delivery mode : bulk, nominative (per patient)",
+      "definition" : " Delivery mode : bulk, nominative (per patient)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.deliveryMode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.batchNumber",
+      "path" : "MedicationDispenseIHEPWP.batchNumber",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.batchNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.expirationDate",
+      "path" : "MedicationDispenseIHEPWP.expirationDate",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.expirationDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pharmaceuticalInstructions",
+      "path" : "MedicationDispenseIHEPWP.pharmaceuticalInstructions",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.pharmaceuticalInstructions",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pricepaidbypatient",
+      "path" : "MedicationDispenseIHEPWP.pricepaidbypatient",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.pricepaidbypatient",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pharmacist",
+      "path" : "MedicationDispenseIHEPWP.pharmacist",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "MedicationDispenseIHEPWP.pharmacist",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "MedicationDispenseIHEPWP",
+      "path" : "MedicationDispenseIHEPWP",
+      "short" : "[IHE PHARM White Paper] Logical Model for medication dispense",
+      "definition" : "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care."
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispenseID",
+      "path" : "MedicationDispenseIHEPWP.dispenseID",
+      "short" : "Pharmaceutical advice ID",
+      "definition" : "Pharmaceutical advice ID",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.refillnumber",
+      "path" : "MedicationDispenseIHEPWP.refillnumber",
+      "short" : "refill number",
+      "definition" : "refill number",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.date",
+      "path" : "MedicationDispenseIHEPWP.date",
+      "short" : "Date/Time of dispense",
+      "definition" : "Date/Time of dispense",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.location",
+      "path" : "MedicationDispenseIHEPWP.location",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.patient",
+      "path" : "MedicationDispenseIHEPWP.patient",
+      "short" : "The person for which the medication is prescribed.",
+      "definition" : "The person for which the medication is prescribed.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.expectedQuantity",
+      "path" : "MedicationDispenseIHEPWP.expectedQuantity",
+      "short" : "Expected quantity (number of packs/number of units)",
+      "definition" : "Expected quantity (number of packs/number of units)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.quantityDelivered",
+      "path" : "MedicationDispenseIHEPWP.quantityDelivered",
+      "short" : "Quantity delivered (number of packs/number of units)",
+      "definition" : "Quantity delivered (number of packs/number of units)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispensingperiod",
+      "path" : "MedicationDispenseIHEPWP.dispensingperiod",
+      "short" : "Dispensing period (period for which the medication is dispensed)",
+      "definition" : "Dispensing period (period for which the medication is dispensed)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.dispensingPresentation",
+      "path" : "MedicationDispenseIHEPWP.dispensingPresentation",
+      "short" : "Dispensing presentation: blister, box, single dose unit",
+      "definition" : "Dispensing presentation: blister, box, single dose unit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.deliveryMode",
+      "path" : "MedicationDispenseIHEPWP.deliveryMode",
+      "short" : "Delivery mode : bulk, nominative (per patient)",
+      "definition" : " Delivery mode : bulk, nominative (per patient)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.batchNumber",
+      "path" : "MedicationDispenseIHEPWP.batchNumber",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.expirationDate",
+      "path" : "MedicationDispenseIHEPWP.expirationDate",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pharmaceuticalInstructions",
+      "path" : "MedicationDispenseIHEPWP.pharmaceuticalInstructions",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pricepaidbypatient",
+      "path" : "MedicationDispenseIHEPWP.pricepaidbypatient",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "MedicationDispenseIHEPWP.pharmacist",
+      "path" : "MedicationDispenseIHEPWP.pharmacist",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}

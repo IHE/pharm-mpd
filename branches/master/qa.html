@@ -1,0 +1,1210 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 201, errors = 0, warn = 11, info = 16-->
+<head>
+  <title>IHE_MPD : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IHE_MPD</h1>
+ <p>Generated Sun Jun 16 16:49:34 UTC 2024, FHIR version 5.0.0 for ihe.pharm.mpd#0.1.0 (canonical = <a href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd">http://profiles.ihe.net/PHARM/ihe.pharm.mpd</a> (<a href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ihe.pharm.mpd, Canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from http://profiles.ihe.net/PHARM/ihe.pharm.mpd: Not Found <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.pharm.mpd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://profiles.ihe.net/PHARM/ihe.pharm.mpd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r5</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.5.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.5.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r5</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.domain.logical-datatypes</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="background-color: #ffcccc">current</span><span style="background-color: #ffcccc"> </span><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; background-color: #ffcccc" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://profiles.ihe.net/Domain/LogicalDatatypes</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/IHE/datatypes/</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cannot be published with a dependency on a current build version</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r5</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.5.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r5</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
+</table><para>Templates: ihe.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/medication.html">Medication</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-status.html">MedicationStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-ingredientstrength.html">MedicationIngredientStrengthCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medicationknowledge.html">MedicationKnowledge</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medicationdispense.html">MedicationDispense</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/careplan.html">CarePlan</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationdispense-status.html">MedicationDispenseStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/detectedissue.html">DetectedIssue</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationdispense-status-reason.html">MedicationDispenseStatusReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationdispense-admin-location.html">MedicationDispenseAdministrationLocationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/group.html">Group</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationdispense-performer-function.html">MedicationDispensePerformerFunctionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R5/device.html">Device</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/location.html">Location</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/provenance.html">Provenance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationrequest-status.html">MedicationrequestStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationrequest-status-reason.html">MedicationRequestStatusReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationrequest-intent.html">MedicationRequestIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationrequest-admin-location.html">MedicationRequestAdministrationLocationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-intended-performer-role.html">MedicationIntendedPerformerRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/devicedefinition.html">DeviceDefinition</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/condition.html">Condition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medicationrequest-course-of-therapy.html">MedicationRequestCourseOfTherapyCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/claimresponse.html">ClaimResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureAdministrationSites</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-dose-aid.html">MedicationDoseAids</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r5#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (10 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (21 uses),     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-logical-target.html">LogicalTarget</a>
+ (3 uses)
+  </li>
+  <li>
+hl7.terminology.r5#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/ValueSet-dose-rate-type.html">DoseAndRateType</a>
+ (1 uses)
+  </li>
+  <li>
+ihe.domain.logical-datatypes#current:     <a href="https://build.fhir.org/ig/IHE/datatypes/ImplementationGuide-ihe.domain.logical-datatypes.html">LogicalDatatypes</a>
+ (1 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-INT.html">INT</a>
+ (12 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html">ST</a>
+ (22 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html">CD</a>
+ (62 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-Class.html">Class</a>
+ (36 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-PQ.html">PQ</a>
+ (28 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-RTO.html">RTO</a>
+ (6 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-BL.html">BL</a>
+ (6 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-InstanceIdentifier.html">II</a>
+ (18 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ANY.html">ANY</a>
+ (2 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-DT.html">DT</a>
+ (10 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-EN.html">EN</a>
+ (6 uses),     <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-AD.html">AD</a>
+ (2 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://profiles.ihe.net/PHARM/ihe.pharm.mpd (Problem #1 with package-list.json at http://profiles.ihe.net/PHARM/ihe.pharm.mpd: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 11, info = 16, broken links = 201</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>201</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-ihe.mpd"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-01A-Cefuroxime1500GenericExplicit"><b>/github/workspace/fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-01B-Cefuroxime1500GenericConcept"><b>/github/workspace/fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-01C-Cefuroxime1500Branded"><b>/github/workspace/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-02A-ClotrimazoleCanifugCremolum"><b>/github/workspace/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-02A1-CanifugCremolumCreamItem"><b>/github/workspace/fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-02A2-CanifugCremolumPessaryItem"><b>/github/workspace/fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-03B-VitaminBComplexBranded"><b>/github/workspace/fsh-generated/resources/Medication-03B-VitaminBComplexBranded</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DosagingInformation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedication"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHEMedication</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedicationDispensation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHEMedicationDispensation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedicationPrescription"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHEMedicationPrescription</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedicationDispensation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispensation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedicationPrescription"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedicationPrescription</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedicinalProductLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PatientBasic"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PatientBasic</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PractitionerBasic"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PractitionerBasic</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-classification"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-device"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-device</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-productname"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-sizeofitem"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medicationrequest-totalamount"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-totalamount</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be ihe.pharm.mpd</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MMA-chemotherapy.html#l295">output&#8203;/MMA-chemotherapy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MMA-homenursing.html#l295">output&#8203;/MMA-homenursing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01A-Cefuroxime1500GenericExplicit.change.history.html#l297">output&#8203;/Medication-01A-Cefuroxime1500GenericExplicit&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01A-Cefuroxime1500GenericExplicit.html#l295">output&#8203;/Medication-01A-Cefuroxime1500GenericExplicit&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01A-Cefuroxime1500GenericExplicit.json.html#l295">output&#8203;/Medication-01A-Cefuroxime1500GenericExplicit&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01A-Cefuroxime1500GenericExplicit.ttl.html#l295">output&#8203;/Medication-01A-Cefuroxime1500GenericExplicit&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01A-Cefuroxime1500GenericExplicit.xml.html#l295">output&#8203;/Medication-01A-Cefuroxime1500GenericExplicit&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01B-Cefuroxime1500GenericConcept.change.history.html#l297">output&#8203;/Medication-01B-Cefuroxime1500GenericConcept&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01B-Cefuroxime1500GenericConcept.html#l295">output&#8203;/Medication-01B-Cefuroxime1500GenericConcept&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01B-Cefuroxime1500GenericConcept.json.html#l295">output&#8203;/Medication-01B-Cefuroxime1500GenericConcept&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01B-Cefuroxime1500GenericConcept.ttl.html#l295">output&#8203;/Medication-01B-Cefuroxime1500GenericConcept&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01B-Cefuroxime1500GenericConcept.xml.html#l295">output&#8203;/Medication-01B-Cefuroxime1500GenericConcept&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01C-Cefuroxime1500Branded.change.history.html#l297">output&#8203;/Medication-01C-Cefuroxime1500Branded&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01C-Cefuroxime1500Branded.html#l295">output&#8203;/Medication-01C-Cefuroxime1500Branded&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01C-Cefuroxime1500Branded.json.html#l295">output&#8203;/Medication-01C-Cefuroxime1500Branded&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01C-Cefuroxime1500Branded.ttl.html#l295">output&#8203;/Medication-01C-Cefuroxime1500Branded&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-01C-Cefuroxime1500Branded.xml.html#l295">output&#8203;/Medication-01C-Cefuroxime1500Branded&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A-ClotrimazoleCanifugCremolum.change.history.html#l297">output&#8203;/Medication-02A-ClotrimazoleCanifugCremolum&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A-ClotrimazoleCanifugCremolum.html#l295">output&#8203;/Medication-02A-ClotrimazoleCanifugCremolum&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A-ClotrimazoleCanifugCremolum.json.html#l295">output&#8203;/Medication-02A-ClotrimazoleCanifugCremolum&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A-ClotrimazoleCanifugCremolum.ttl.html#l295">output&#8203;/Medication-02A-ClotrimazoleCanifugCremolum&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A-ClotrimazoleCanifugCremolum.xml.html#l295">output&#8203;/Medication-02A-ClotrimazoleCanifugCremolum&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A1-CanifugCremolumCreamItem.change.history.html#l297">output&#8203;/Medication-02A1-CanifugCremolumCreamItem&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A1-CanifugCremolumCreamItem.html#l295">output&#8203;/Medication-02A1-CanifugCremolumCreamItem&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A1-CanifugCremolumCreamItem.json.html#l295">output&#8203;/Medication-02A1-CanifugCremolumCreamItem&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A1-CanifugCremolumCreamItem.ttl.html#l295">output&#8203;/Medication-02A1-CanifugCremolumCreamItem&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A1-CanifugCremolumCreamItem.xml.html#l295">output&#8203;/Medication-02A1-CanifugCremolumCreamItem&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A2-CanifugCremolumPessaryItem.change.history.html#l297">output&#8203;/Medication-02A2-CanifugCremolumPessaryItem&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A2-CanifugCremolumPessaryItem.html#l295">output&#8203;/Medication-02A2-CanifugCremolumPessaryItem&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A2-CanifugCremolumPessaryItem.json.html#l295">output&#8203;/Medication-02A2-CanifugCremolumPessaryItem&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A2-CanifugCremolumPessaryItem.ttl.html#l295">output&#8203;/Medication-02A2-CanifugCremolumPessaryItem&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-02A2-CanifugCremolumPessaryItem.xml.html#l295">output&#8203;/Medication-02A2-CanifugCremolumPessaryItem&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-03B-VitaminBComplexBranded.change.history.html#l297">output&#8203;/Medication-03B-VitaminBComplexBranded&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-03B-VitaminBComplexBranded.html#l295">output&#8203;/Medication-03B-VitaminBComplexBranded&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-03B-VitaminBComplexBranded.json.html#l295">output&#8203;/Medication-03B-VitaminBComplexBranded&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-03B-VitaminBComplexBranded.ttl.html#l295">output&#8203;/Medication-03B-VitaminBComplexBranded&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-03B-VitaminBComplexBranded.xml.html#l295">output&#8203;/Medication-03B-VitaminBComplexBranded&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 178, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation-definitions.html#l296">output&#8203;/StructureDefinition-DosagingInformation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation-examples.html#l296">output&#8203;/StructureDefinition-DosagingInformation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation-mappings.html#l296">output&#8203;/StructureDefinition-DosagingInformation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation-testing.html#l296">output&#8203;/StructureDefinition-DosagingInformation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation.html#l296">output&#8203;/StructureDefinition-DosagingInformation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation.profile.history.html#l296">output&#8203;/StructureDefinition-DosagingInformation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation.profile.json.html#l296">output&#8203;/StructureDefinition-DosagingInformation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation.profile.ttl.html#l296">output&#8203;/StructureDefinition-DosagingInformation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-DosagingInformation.profile.xml.html#l296">output&#8203;/StructureDefinition-DosagingInformation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication-definitions.html#l296">output&#8203;/StructureDefinition-IHEMedication-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication-examples.html#l296">output&#8203;/StructureDefinition-IHEMedication-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication-mappings.html#l296">output&#8203;/StructureDefinition-IHEMedication-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication-testing.html#l296">output&#8203;/StructureDefinition-IHEMedication-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication.html#l296">output&#8203;/StructureDefinition-IHEMedication&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication.profile.history.html#l296">output&#8203;/StructureDefinition-IHEMedication&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication.profile.json.html#l296">output&#8203;/StructureDefinition-IHEMedication&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication.profile.ttl.html#l296">output&#8203;/StructureDefinition-IHEMedication&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedication.profile.xml.html#l296">output&#8203;/StructureDefinition-IHEMedication&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation-definitions.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation-examples.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation-mappings.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation-testing.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation.profile.history.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation.profile.json.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation.profile.ttl.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationDispensation.profile.xml.html#l296">output&#8203;/StructureDefinition-IHEMedicationDispensation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription-definitions.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription-examples.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription-mappings.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription-testing.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription.profile.history.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription.profile.json.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription.profile.ttl.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHEMedicationPrescription.profile.xml.html#l296">output&#8203;/StructureDefinition-IHEMedicationPrescription&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation-definitions.html#l296">output&#8203;/StructureDefinition-MedicationDispensation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation-examples.html#l296">output&#8203;/StructureDefinition-MedicationDispensation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation-mappings.html#l296">output&#8203;/StructureDefinition-MedicationDispensation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation-testing.html#l296">output&#8203;/StructureDefinition-MedicationDispensation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation.html#l296">output&#8203;/StructureDefinition-MedicationDispensation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation.profile.history.html#l296">output&#8203;/StructureDefinition-MedicationDispensation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation.profile.json.html#l296">output&#8203;/StructureDefinition-MedicationDispensation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation.profile.ttl.html#l296">output&#8203;/StructureDefinition-MedicationDispensation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationDispensation.profile.xml.html#l296">output&#8203;/StructureDefinition-MedicationDispensation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription-definitions.html#l296">output&#8203;/StructureDefinition-MedicationPrescription-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription-examples.html#l296">output&#8203;/StructureDefinition-MedicationPrescription-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription-mappings.html#l296">output&#8203;/StructureDefinition-MedicationPrescription-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription-testing.html#l296">output&#8203;/StructureDefinition-MedicationPrescription-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription.html#l296">output&#8203;/StructureDefinition-MedicationPrescription&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription.profile.history.html#l296">output&#8203;/StructureDefinition-MedicationPrescription&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription.profile.json.html#l296">output&#8203;/StructureDefinition-MedicationPrescription&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription.profile.ttl.html#l296">output&#8203;/StructureDefinition-MedicationPrescription&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicationPrescription.profile.xml.html#l296">output&#8203;/StructureDefinition-MedicationPrescription&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM-definitions.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM-examples.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM-mappings.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM-testing.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM.profile.history.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM.profile.json.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM.profile.ttl.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MedicinalProductLM.profile.xml.html#l296">output&#8203;/StructureDefinition-MedicinalProductLM&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic-definitions.html#l296">output&#8203;/StructureDefinition-PatientBasic-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic-examples.html#l296">output&#8203;/StructureDefinition-PatientBasic-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic-mappings.html#l296">output&#8203;/StructureDefinition-PatientBasic-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic-testing.html#l296">output&#8203;/StructureDefinition-PatientBasic-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic.html#l296">output&#8203;/StructureDefinition-PatientBasic&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic.profile.history.html#l296">output&#8203;/StructureDefinition-PatientBasic&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic.profile.json.html#l296">output&#8203;/StructureDefinition-PatientBasic&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic.profile.ttl.html#l296">output&#8203;/StructureDefinition-PatientBasic&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatientBasic.profile.xml.html#l296">output&#8203;/StructureDefinition-PatientBasic&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic-definitions.html#l296">output&#8203;/StructureDefinition-PractitionerBasic-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic-examples.html#l296">output&#8203;/StructureDefinition-PractitionerBasic-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic-mappings.html#l296">output&#8203;/StructureDefinition-PractitionerBasic-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic-testing.html#l296">output&#8203;/StructureDefinition-PractitionerBasic-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic.html#l296">output&#8203;/StructureDefinition-PractitionerBasic&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic.profile.history.html#l296">output&#8203;/StructureDefinition-PractitionerBasic&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic.profile.json.html#l296">output&#8203;/StructureDefinition-PractitionerBasic&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic.profile.ttl.html#l296">output&#8203;/StructureDefinition-PractitionerBasic&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PractitionerBasic.profile.xml.html#l296">output&#8203;/StructureDefinition-PractitionerBasic&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification-definitions.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification-mappings.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification-testing.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification.html#l295">output&#8203;/StructureDefinition-ihe-ext-medication-classification&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification.profile.history.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification.profile.json.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification.profile.ttl.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-classification.profile.xml.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-classification&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device-definitions.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device-mappings.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device-testing.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device.html#l295">output&#8203;/StructureDefinition-ihe-ext-medication-device&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device.profile.history.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device.profile.json.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device.profile.ttl.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-device.profile.xml.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-device&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname-definitions.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname-mappings.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname-testing.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname.html#l295">output&#8203;/StructureDefinition-ihe-ext-medication-productname&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname.profile.history.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname.profile.json.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname.profile.ttl.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-productname.profile.xml.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-productname&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem-definitions.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem-mappings.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem-testing.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem.html#l295">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem.profile.history.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem.profile.json.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem.profile.ttl.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medication-sizeofitem.profile.xml.html#l296">output&#8203;/StructureDefinition-ihe-ext-medication-sizeofitem&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount-definitions.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount-mappings.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount-testing.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.html#l295">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.history.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.json.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.ttl.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.xml.html#l296">output&#8203;/StructureDefinition-ihe-ext-medicationrequest-totalamount&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l295">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l476">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 898</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#order-placer' for &quot;Order Placer&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l484">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 1688</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#order-receiver' for &quot;Order Receiver&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l492">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 2494</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#order-receiver' for &quot;Order Responder&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l500">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 3294</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#orderfiller' for &quot;Order Filler&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l508">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 4143</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X1.html' for &quot;PHARM-X1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l508">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 4492</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X1.html' for &quot;Submit Medication Order&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l523">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 5475</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X1.html' for &quot;PHARM-X2&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l523">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 268, column 5824</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X1.html' for &quot;Retrieve Medication Orders&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l549">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 883</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#orderfiller' for &quot;Order Filler&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l557">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 1672</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#dispenseconsumer' for &quot;DispenseConsumer ??&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l565">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 2356</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#dipensereceiver' for &quot;Dispense Receiver&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l571">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 3035</a></b></td><td><b>error</b></td><td><b>The link 'actors_and_transactions.html#dipenseresponder' for &quot;Dispense Responder&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l577">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 3940</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X4.html' for &quot;PHARM-X4&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l577">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 4288</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X4.html' for &quot;Retrieve Dispense&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l592">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 5270</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X3.html' for &quot;PHARM-X3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="actors-transactions.html#l592">output&#8203;/actors-transactions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/figure&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 272, column 5618</a></b></td><td><b>error</b></td><td><b>The link 'PHARM-X3.html' for &quot;Submit Dispense&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l295">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="cross-profile.html#l295">output&#8203;/cross-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="data-models.html#l295">output&#8203;/data-models&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="error_codes.html#l295">output&#8203;/error_codes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="glossary.html#l295">output&#8203;/glossary&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l295">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l576">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 337, column 48</a></b></td><td><b>error</b></td><td><b>The link 'download_mpd.html' for &quot;Link&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l584">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 340, column 39</a></b></td><td><b>error</b></td><td><b>The link 'toc_mpd.html' for &quot;Table of Contents&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="interoperability-model.html#l295">output&#8203;/interoperability-model&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medication-concepts.html#l295">output&#8203;/medication-concepts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="order-management.html#l295">output&#8203;/order-management&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="order-statuses.html#l295">output&#8203;/order-statuses&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="presc-use-case-2.html#l295">output&#8203;/presc-use-case-2&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="presc-use-case1.html#l295">output&#8203;/presc-use-case1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="prescription-lines.html#l295">output&#8203;/prescription-lines&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="retrieve-medication-dispense.html#l295">output&#8203;/retrieve-medication-dispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="retrieve-medication-order.html#l295">output&#8203;/retrieve-medication-order&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="security.html#l295">output&#8203;/security&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="submit-medication-dispense.html#l295">output&#8203;/submit-medication-dispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="submit-medication-order.html#l295">output&#8203;/submit-medication-order&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="testplan.html#l295">output&#8203;/testplan&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l295">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="usecases.html#l295">output&#8203;/usecases&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="volume-1.html#l295">output&#8203;/volume-1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="volume-1.html#l511">output&#8203;/volume-1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 290, column 39</a></b></td><td><b>error</b></td><td><b>The link 'domain-YY.html' for &quot;transaction description&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="volume-2.html#l295">output&#8203;/volume-2&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 176, column 10</a></b></td><td><b>error</b></td><td><b>The link 'fhir_maps.html' for &quot;FHIR Maps&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-ihe.mpd"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-ihe.mpd.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/ihe.mpd: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide&#8203;.jurisdiction[0] (l1&#8203;/c1142)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-01A-Cefuroxime1500GenericExplicit"> </a>
+<h2><a href="Medication-01A-Cefuroxime1500GenericExplicit.html">fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-01B-Cefuroxime1500GenericConcept"> </a>
+<h2><a href="Medication-01B-Cefuroxime1500GenericConcept.html">fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-01C-Cefuroxime1500Branded"> </a>
+<h2><a href="Medication-01C-Cefuroxime1500Branded.html">fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-02A-ClotrimazoleCanifugCremolum"> </a>
+<h2><a href="Medication-02A-ClotrimazoleCanifugCremolum.html">fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-02A1-CanifugCremolumCreamItem"> </a>
+<h2><a href="Medication-02A1-CanifugCremolumCreamItem.html">fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-02A2-CanifugCremolumPessaryItem"> </a>
+<h2><a href="Medication-02A2-CanifugCremolumPessaryItem.html">fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-03B-VitaminBComplexBranded"> </a>
+<h2><a href="Medication-03B-VitaminBComplexBranded.html">fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-IHEMedication.html">Medicinal product</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-DosagingInformation"> </a>
+<h2><a href="StructureDefinition-DosagingInformation.html">fsh-generated/resources/StructureDefinition-DosagingInformation.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c82228)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedication"> </a>
+<h2><a href="StructureDefinition-IHEMedication.html">fsh-generated/resources/StructureDefinition-IHEMedication.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c32474)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedicationDispensation"> </a>
+<h2><a href="StructureDefinition-IHEMedicationDispensation.html">fsh-generated/resources/StructureDefinition-IHEMedicationDispensation.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c31668)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[0]&#8203;.map (l1&#8203;/c72657)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/profiles&#8203;.ihe&#8203;.net&#8203;/PHARM&#8203;/ihe&#8203;.pharm&#8203;.mpd&#8203;/StructureDefinition&#8203;/IHEMedicationDispensation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHEMedicationPrescription"> </a>
+<h2><a href="StructureDefinition-IHEMedicationPrescription.html">fsh-generated/resources/StructureDefinition-IHEMedicationPrescription.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c38988)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/profiles&#8203;.ihe&#8203;.net&#8203;/PHARM&#8203;/ihe&#8203;.pharm&#8203;.mpd&#8203;/StructureDefinition&#8203;/IHEMedicationPrescription')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedicationDispensation"> </a>
+<h2><a href="StructureDefinition-MedicationDispensation.html">fsh-generated/resources/StructureDefinition-MedicationDispensation.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c29331)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedicationPrescription"> </a>
+<h2><a href="StructureDefinition-MedicationPrescription.html">fsh-generated/resources/StructureDefinition-MedicationPrescription.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c49327)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-MedicinalProductLM"> </a>
+<h2><a href="StructureDefinition-MedicinalProductLM.html">fsh-generated/resources/StructureDefinition-MedicinalProductLM.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c56080)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PatientBasic"> </a>
+<h2><a href="StructureDefinition-PatientBasic.html">fsh-generated/resources/StructureDefinition-PatientBasic.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c15074)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PractitionerBasic"> </a>
+<h2><a href="StructureDefinition-PractitionerBasic.html">fsh-generated/resources/StructureDefinition-PractitionerBasic.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c24148)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-classification"> </a>
+<h2><a href="StructureDefinition-ihe-ext-medication-classification.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c11995)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-device"> </a>
+<h2><a href="StructureDefinition-ihe-ext-medication-device.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c27788)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for ihe-ext-medication-device: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/profiles&#8203;.ihe&#8203;.net&#8203;/PHARM&#8203;/ihe&#8203;.pharm&#8203;.mpd&#8203;/StructureDefinition&#8203;/ihe-ext-medication-device')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-productname"> </a>
+<h2><a href="StructureDefinition-ihe-ext-medication-productname.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c35807)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for ihe-ext-medication-productname: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medication-sizeofitem"> </a>
+<h2><a href="StructureDefinition-ihe-ext-medication-sizeofitem.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c11911)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for ihe-ext-medication-sizeofitem: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ihe-ext-medicationrequest-totalamount"> </a>
+<h2><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.html">fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-totalamount.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c11807)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/profiles&#8203;.ihe&#8203;.net&#8203;/PHARM&#8203;/ihe&#8203;.pharm&#8203;.mpd&#8203;/StructureDefinition&#8203;/ihe-ext-medicationrequest-totalamount')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="MSG_DEPRECATED"> </a>
+<h2>MSG_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-ihe.mpd.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-DosagingInformation.html">fsh-generated/resources/StructureDefinition-DosagingInformation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IHEMedication.html">fsh-generated/resources/StructureDefinition-IHEMedication.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IHEMedicationDispensation.html">fsh-generated/resources/StructureDefinition-IHEMedicationDispensation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IHEMedicationPrescription.html">fsh-generated/resources/StructureDefinition-IHEMedicationPrescription.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-MedicationDispensation.html">fsh-generated/resources/StructureDefinition-MedicationDispensation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-MedicationPrescription.html">fsh-generated/resources/StructureDefinition-MedicationPrescription.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-MedicinalProductLM.html">fsh-generated/resources/StructureDefinition-MedicinalProductLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PatientBasic.html">fsh-generated/resources/StructureDefinition-PatientBasic.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PractitionerBasic.html">fsh-generated/resources/StructureDefinition-PractitionerBasic.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ihe-ext-medication-classification.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ihe-ext-medication-device.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ihe-ext-medication-productname.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ihe-ext-medication-sizeofitem.html">fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ihe-ext-medicationrequest-totalamount.html">fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-totalamount.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IHEMedicationDispensation.html">fsh-generated/resources/StructureDefinition-IHEMedicationDispensation.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+</body>
+</html>
