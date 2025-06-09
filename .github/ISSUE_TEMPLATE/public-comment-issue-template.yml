@@ -15,7 +15,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: text
+  - type: string
     id: where
     attributes:
       label: Section Number
