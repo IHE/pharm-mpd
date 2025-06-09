@@ -15,7 +15,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: string
+  - type: input
     id: where
     attributes:
       label: Section Number
@@ -44,6 +44,11 @@ body:
     attributes:
       label: Priority
       multiple: false
+      description: |
+        Select the priority of the issue:
+        - **High**: Major issue that needs to be resolved. Requires discussion and debate.
+        - **Medium**: Significant issue or clarification. Requires discussion, but should not lead to long debate.
+        - **Low**: Typo or other minor issue. Can be handled without group discussion.
       options:
         - High
         - Medium
