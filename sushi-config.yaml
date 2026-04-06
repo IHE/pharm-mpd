@@ -86,6 +86,16 @@ pages:
     grouping.md: # if not finished, remove and reuse content in above section JCT
       title: "Single- and multiline prescriptions"
 
+    status-workflow-management.md:
+      title: "Status and Workflow Management"
+      workflow-order-lifecycle.md:
+        title: "Order Lifecycle Management"
+      workflow-grouping-coordination.md:
+        title: "Grouping and Coordinating Orders"
+      workflow-execution-tracking.md:
+        title: "Execution and Fulfillment Tracking"
+#    workflow-patterns.md:  # superseded by status-workflow-management and subpages
+#      title: "Workflow Patterns"
 #    order-management.md:  # possibly rename, but include key concept (reusing from COW?) - order status, Task, grouping, changes cancellation, ...  JCT can copy COW
 #      title: "Order Management"
       # order-statuses.md:
@@ -107,7 +117,9 @@ pages:
   volume-2.md:
     title: "Volume 2"
     pharm-5.md: # FCFS
-      title: "PHARM-5: Submit Medication Order" 
+      title: "PHARM-5: Submit Medication Order"
+    pharm-6.md:
+      title: "PHARM-6: Submit Prescription Bundle"
     pharm-7.md: # FCFS
       title: "PHARM-7: Retrieve Medication Orders"
     pharm-8.md: # FCFS
@@ -140,6 +152,7 @@ menu:
     Overview: volume-1.html
     "Use Cases": usecases.html
     "Medication Concepts": medication-concepts.html
+    "Status and Workflow Management": status-workflow-management.html
 #    "Order Management": order-management.html
 #    "Interoperability Model": interoperability-model.html
     "Data Models": data-models.html
@@ -149,6 +162,7 @@ menu:
   Volume 2:
 #    Overview: volume-2.html
     PHARM-5 - Submit Medication Order: pharm-5.html
+    PHARM-6 - Submit Prescription Bundle: pharm-6.html
     PHARM-7 - Retrieve Medication Order: pharm-7.html
     PHARM-8 - Submit Medication Dispense: pharm-8.html
     PHARM-9 - Retrieve Medication Dispense: pharm-9.html

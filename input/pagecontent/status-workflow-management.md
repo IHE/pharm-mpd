@@ -1,52 +1,193 @@
-One of the fundamental aspects in implementing prescription systems is the status management or workflow management. This commonly includes requirements and concepts such as that expressed as "prescription status" or other designations.
 
-The scope of the workflows varies widely:
-* Community prescription vs hospital prescription
-* Pre-authorization, co-signing,...
-* Tracking of execution - including dispense or even administration
-* Different status types - ordering, billing, etc.
-* Different jurisdictional constraints and expectations.
 
-Trying to achieve a common set of "statuses" across the different dimensions seems unlikely and may not even be desirable, with possibly conflicting and overlapping definitions. Even the term "status" is not semantically clear on its meaning.
+This page describes how medication orders are managed throughout their lifecycle — from creation through execution, modification, and completion. These patterns apply to prescriptions and dispenses and are aligned with the [HL7 FHIR Clinical Order Workflows (COW) Implementation Guide](https://hl7.org/fhir/uv/cow/2025May/), which provides the authoritative framework for clinical order lifecycle management in FHIR.
 
-IHE documentation has expressed some simplifications by projecting a common set of statuses, but also explored clearer definitions either separation of status (using HL7 V2 and its limitations) and status management with the introduction of workflow management (XDW).
+Implementers SHOULD consult the COW IG for detailed guidance. This page instantiates those patterns for medication ordering and dispensing.
 
-* **"status" usually refers to <span style="text-decoration: underline">status of execution</span>** - i.e. the status of the actions that are triggered by an order. This is sometimes called "status of prescription".
-  * These actions can be as diverse as dispense, billing, or administration - several aspects of the workflow that may need to be tracked.
+### 1. Fundamental Principles
 
-*  **"Status of prescription** or **Status of order** is the status of the authorization - i.e. whether it is draft, or actionable, or no longer actionable.
+The following principles govern order workflow management in this profile:
 
-FHIR separates these concepts and uses different attributes.
-One of the principles for workflow management in FHIR is that the request is only updated by the order placer.
+1. **Orders represent clinical intent and authorization.** A `MedicationRequest` captures what is authorized — the medication, dosage, and conditions. Its `status` reflects whether it is actionable, not how far along execution is.
 
-| Concept | descripition | FHIR |
-|--|--|-----|
-|Order status |Status of the order itself as authorization|MedicationRequest.status|
-|Execution status |Status of the execution actions|Task.businesStatus|
-{:.table-bordered}
+2. **Tasks represent workflow coordination.** The `Task` resource is the mechanism for tracking execution, communicating status, and requesting changes. Task carries the "please do" — the actionable request to fulfill or act upon an order.
 
-This separation allows this specification to allow interoperability between systems.
+3. **Only the placer modifies orders.** The party that created the order controls its status and content. All other parties — fillers, intermediaries, patients — request changes through Tasks.
 
-* Order status has a limited and common set of status, determining whether the order is actionable or not. This is clear and unambiguous for allowing interoperability.
-* Several workflow statuses may exist, and they may refer to different parts of the process
-  * It is common that "execution status" is a combined value set which combines statuses of dispensing, administration, etc.
-  * While it is likely impossible to have a single common and agreed set of statuses, having the separate aspects of the workflow allows parties to exchange their status as they intend.
+4. **Change requests are requests about requests.** When a filler or patient needs an order cancelled or modified, the mechanism is a Task — a request directed at the order owner. This is not an indirect workaround; it mirrors clinical and legal reality where a pharmacist asks the prescriber, not unilaterally acts.
 
-### Order Status
-* The status of the order or authorization is in `MedicationRequest.status`, and can be one of the values in [MedicationRequest Status](https://hl7.org/fhir/valueset-medicationrequest-status.html):
+
+### 2. Authorization Status vs. Business Status
+
+One of the most common sources of confusion in medication order systems is "status." Different stakeholders use this term to mean very different things — authorization state, dispensing progress, billing status, or clinical workflow stage.
+
+This profile separates these concerns clearly:
+
+| Concept | Meaning | FHIR Element |
+|---|---|---|
+| **Authorization status** | Whether the order is actionable (draft, active, stopped, etc.) | `MedicationRequest.status` |
+| **Execution status** | Progress of fulfillment activities | `Task.businessStatus` |
+| **Dispense status** | Status of a specific dispensation event | `MedicationDispense.status` |
+| **Administration status** | Status of administration to the patient | `MedicationAdministration.status` |
+{:.table-bordered .table-striped}
+
+
+#### 2.1. Authorization Status (MedicationRequest.status)
+
+The authorization status has a **limited, well-defined** set of values. It answers one question: *is this order actionable?*
+
 <figure>
   {% include order-statuses.svg %}
 </figure>
 
-* `MedicationRequest.statusReasons` is intended to capture the **reasons** for a status, and **NOT** the details of the status nor additional status. For example `expired` is not a detailed status, it is a reason why a prescription is no longer actionable (i.e. it is `stopped`). Statuses like `in preparation` or `in-dispensation` would not be reasons for changing if an authorization's status, and therefore would not be adequate values for statusReason.
+These statuses are intentionally few and unambiguous:
+
+| Status | Meaning |
+|---|---|
+| `draft` | The order is being prepared and is not yet actionable |
+| `active` | The order is current and actionable |
+| `on-hold` | The order is temporarily suspended |
+| `completed` | All activities associated with the order are complete |
+| `stopped` | The order has been withdrawn by the placer (after some execution may have occurred) |
+| `cancelled` | The order was cancelled before any execution occurred |
+| `entered-in-error` | The order was created in error and should be disregarded |
+| `unknown` | The status cannot be determined |
+{:.table-bordered .table-striped}
+
+`MedicationRequest.statusReason` captures the **reason** for a status change — not a sub-status or execution detail. For example:
+* `expired` is a valid statusReason for why an order is now `stopped`
+* `"in dispensation"` or `"awaiting approval"` are **not** valid statusReasons — they describe execution progress, which belongs on `Task.businessStatus`
 
 
-### Execution status
-The **statuses of execution** can be captured in 
-* `completed` is a status of the [MedicationRequest](https://hl7.org/fhir/MedicationRequest.html). This is an authorization status that is derived from the execution - this status is determined by the placer from the execution tasks
-* `MedicationDispense.status` captures the status of a dispense.
-* `MedicationAdministration.status` captures the status of an administration event or set of events.
-* `Task.businessStatus` captures the progress of the execution of activities. 
-(need picture - showing that a request may have one workflow, one wrkflow with children workflows, or several independent workflows)
+#### 2.2. Business and Execution Statuses (Task.businessStatus)
 
+The "business statuses" — the rich, varied statuses that systems actually need for day-to-day operations — live in `Task.businessStatus`. These can include values like:
+* *requested*, *accepted*, *in-progress*, *on-hold*, *completed*, *refused*
+* Domain-specific values: *awaiting stock*, *partially dispensed*, *ready for pickup*, *in validation*, *awaiting co-signature*...
+
+Because these statuses vary by jurisdiction, institution, and context, this profile does not prescribe a single universal set. Instead, the pattern is consistent: **authorization status on the order, business statuses on the Task.**
+
+This separation is what enables interoperability between systems that may have very different internal workflow models. A system does not need to understand another system's business statuses to know whether an order is actionable — it only needs `MedicationRequest.status`.
+
+> **In short**: Few, universal statuses on the order. Rich, context-specific statuses on the Task.
+
+
+The relationship between authorization status and execution status:
+
+```yaml
+# The order carries authorization status
+MedicationRequest:
+  status: "active"                    # Is this actionable? Yes.
+  statusReason: ...                   # Why did it change status? (if applicable)
+
+# The Task carries execution/business status  
+Task:
+  status: "in-progress"              # FHIR workflow status
+  businessStatus: "awaiting-stock"   # Domain-specific business status
+  focus: MedicationRequest/order-123
+```
+
+### 3. Task and RequestOrchestration as Coordination Mechanisms
+
+Two resources coordinate order workflows:
+
+* **Task** is the standard coordination mechanism for execution and change requests, as defined in the [COW IG](https://hl7.org/fhir/uv/cow/2025May/using-task.html). In most expected systems, Tasks will be present alongside orders and dispenses.
+* **RequestOrchestration** (previously RequestGroup) expresses relationships between orders — sequencing, alternatives, or conditional logic. It defines the clinical plan; Tasks coordinate its execution.
+
+Tasks serve two distinct roles:
+
+1. **Execution Tasks** — representing the work to be done ("please fulfill this order")
+2. **Communication Tasks** — representing requests for change ("please cancel/modify this order")
+
+Both follow the same FHIR Task structure but differ in their `code` and intent. The key elements of a Task in medication workflows:
+
+```yaml
+Task:
+  status: "requested"                          # FHIR workflow status
+  intent: "order"                              # This is an actionable request
+  code: ...                                    # What kind of task (fulfill, cancel, modify...)
+  focus: MedicationRequest/order-123           # The order this relates to
+  requester: Practitioner/pharmacist-456       # Who is asking
+  owner: Practitioner/prescriber-789           # Who should act on this
+  businessStatus: ...                          # Domain-specific progress
+  reasonCode: ...                              # Why this task was created
+```
+
+When multiple orders must be coordinated — for example, because local regulations require that all lines of a multi-line prescription be dispensed together — a **coordination Task** is created whose `focus` points at each of the individual MedicationRequests that must be fulfilled as a unit. This coordination Task represents the grouped fulfillment: one Task, multiple focus references, one coordinated dispensation event.
+
+```yaml
+# Coordination Task: all lines of a multi-line prescription must be dispensed together
+Task:
+  status: "requested"
+  intent: "order"
+  code:
+    coding:
+      - system: "http://hl7.org/fhir/CodeSystem/task-code"
+        code: "fulfill"
+  focus:
+    reference: "MedicationRequest/rx-line-001"
+  extension:
+    - url: "http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.focus"
+      valueReference:
+        reference: "MedicationRequest/rx-line-002"
+    - url: "http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.focus"
+      valueReference:
+        reference: "MedicationRequest/rx-line-003"
+  owner:
+    reference: "Organization/pharmacy-abc"
+```
+
+
+### 4. Workflow Pattern Groups
+
+The workflow patterns are organized into three groups, each detailed in its own page:
+
+
+#### 4.1. [Order Lifecycle Management](workflow-order-lifecycle.html)
+
+Patterns for changing, cancelling, refusing, or holding orders:
+
+* **[1. Cancellation by the placer](workflow-order-lifecycle.html#1-cancellation-by-the-placer)** — The prescriber directly cancels or stops the order
+* **[2. Cancellation requested by the filler](workflow-order-lifecycle.html#2-cancellation-requested-by-the-filler)** — A pharmacist asks the prescriber to cancel, via a Task
+* **[3. Refusing to fulfill an order](workflow-order-lifecycle.html#3-refusing-to-fulfill-an-order)** — A pharmacy rejects the execution Task
+* **[4. Placing an order on hold](workflow-order-lifecycle.html#4-placing-an-order-on-hold)** — Suspending an order, by placer or by request
+* **[5. Order modification by the placer](workflow-order-lifecycle.html#5-order-modification-by-the-placer)** — The prescriber updates order details directly
+* **[6. Order modification requested by the filler](workflow-order-lifecycle.html#6-order-modification-requested-by-the-filler)** — A pharmacist asks the prescriber to change order details, via a Task
+
+
+#### 4.2. [Grouping and Coordinating Orders](workflow-grouping-coordination.html)
+
+Patterns for managing related orders together:
+
+* **[1. Single-line prescriptions](workflow-grouping-coordination.html#1-single-line-prescriptions)** — Each MedicationRequest is an independent prescription
+* **[2. Multi-line prescriptions](workflow-grouping-coordination.html#2-multi-line-prescriptions)** — Multiple MedicationRequests share a groupIdentifier
+* **[3. Coordinating execution across lines](workflow-grouping-coordination.html#3-coordinating-execution-across-lines)** — Using a coordinating Task to fulfill multiple orders together
+* **[4. Dependencies between orders](workflow-grouping-coordination.html#4-dependencies-between-orders)** — Using RequestOrchestration for sequencing and conditional logic
+
+
+#### 4.3. [Execution and Fulfillment Tracking](workflow-execution-tracking.html)
+
+Patterns for tracking order fulfillment:
+
+* **[1. Straightforward prescription and dispense](workflow-execution-tracking.html#1-straightforward-prescription-and-dispense)** — The basic happy path
+* **[2. Partial and split dispenses](workflow-execution-tracking.html#2-partial-and-split-dispenses)** — Fulfilling an order across multiple dispensations
+* **[3. Tracking progress](workflow-execution-tracking.html#3-tracking-progress)** — Using Task to report completion ratios
+* **[4. Task in different architectures](workflow-execution-tracking.html#4-task-in-different-architectures)** — How Task applies in central repositories, direct systems, and hospital settings
+
+
+### 5. Use of Task in Practice
+
+In most implementations, Task will be present in the system alongside orders and dispenses. The degree of Task usage depends on the system architecture:
+
+* **Central prescription repositories** typically manage Tasks to coordinate between prescribers and pharmacies
+* **Direct prescriber-to-pharmacy** systems may use simpler Task patterns or rely on status observation
+* **Hospital systems** often have rich Task workflows with sub-Tasks per department or service
+
+Regardless of architecture, the principles remain:
+* Orders carry authorization status
+* Tasks carry execution and business status
+* Changes flow through Tasks
+* Only the placer modifies orders
+
+For detailed Task patterns and guidance, see the [COW IG - Using Task](https://hl7.org/fhir/uv/cow/2025May/using-task.html).
 

@@ -1,4 +1,6 @@
-This section corresponds to transaction [PHARM-7] of the IHE Technical Framework. Transaction [PHARM-7] is used by the [Medication Order Consumer](actors-transactions.html#order-consumer) and the [Medication Order Responder](actors-transactions.html#order-responder) actors. The Retrieve Medication Orders [PHARM-7] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
+This section corresponds to transaction [PHARM-7] of the IHE Technical Framework. Transaction [PHARM-7] is used by the [Medication Order Consumer](actors-transactions.html#order-consumer) and the [Medication Order Responder](actors-transactions.html#order-responder) actors. The Retrieve Medication Orders [PHARM-7] transaction is used to obtain MedicationRequests for further handling - for example getting a prescription for dispense.
+
+The response to this query is always a search Bundle. When prescriptions have been submitted as prescription Bundles (via [PHARM-6](pharm-6.html)), the response can include not only MedicationRequests but also the associated coordination Tasks, RequestOrchestration resources, and referenced supporting resources — providing the consumer with the full prescription context.
 
 ### X:Y.Z.1 Scope
 
@@ -47,13 +49,19 @@ Search parameters that **SHALL** be supported:
 - **`status`** — Filter MedicationRequests by their status (e.g., active, completed).  
 - **`intent`** — Filter by the intent of the MedicationRequest (e.g., order, plan).  
 
+Include parameters that **SHOULD** be supported:
+
+- **`_include=MedicationRequest:medication`** — Include referenced Medication resources in the response.
+- **`_revInclude=Task:focus`** — Include Tasks that reference the returned MedicationRequests — this is essential for retrieving coordination Tasks that group multiple prescription lines.
+- **`_include=MedicationRequest:patient`** — Include the Patient resource.
+- **`_revInclude=RequestOrchestration:activity-resource`** — Include RequestOrchestration resources that reference the returned MedicationRequests.
+
+This allows a consumer to retrieve, in a single query, the full prescription context — orders, coordination Tasks, grouping, and supporting resources — regardless of whether the prescription was originally submitted as a single MedicationRequest ([PHARM-5](pharm-5.html)) or as a prescription Bundle ([PHARM-6](pharm-6.html)).
+
 
 ###### X:Y.Z.4.1.2.1 Resource content
-* The Submit Medication Order is a `MedicationRequest` resource.
-The semantics of the request and data elements are captured in the [Submit Medication Order Data Model](StructureDefinition-IHEMedicationOrderModel.html) and the technical constraints in the [Submit Medication Order](StructureDefinition-IHEMedicationOrder.html) profile.
 
-
-The Retrieve Medication Orders is a search query. 
+The Retrieve Medication Orders is a search query. The response is a search Bundle containing `MedicationRequest` resources conforming to the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile, along with any included resources. 
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
@@ -72,11 +80,13 @@ The response is always expected.
 
 ##### X:Y.Z.4.2.2 Message Semantics
 
-The Response **SHALL** be a search `Bundle` containing the MedicationRequests (optionally RequestGroups if that is part of the search). 
+The Response **SHALL** be a search `Bundle`. The Bundle SHALL contain the matching MedicationRequests. When `_include` or `_revInclude` parameters are used, the Bundle SHALL also contain the included resources (Tasks, RequestOrchestration, Medication, Patient, etc.).
 
 ###### X:Y.Z.4.2.2.1 Resource content
 
 The content of the MedicationRequests in the Bundle **SHALL** conform to the profiles defined in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
+
+When coordination Tasks are included (via `_revInclude=Task:focus`), they provide the consumer with fulfillment constraints — for example, which prescription lines must be dispensed together. The consumer SHOULD process these Tasks to understand the coordination requirements before acting on the orders.
 
 In case of error, the response **SHALL** contain an `OperationOutcome`.
 

@@ -20,7 +20,9 @@ For Dispense, a similar approach is taken:
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
 | Medication Order Placer | PHARM-5 | Initiator        | O               | PHARM MPD TF-2: 3.Y1 |
+| Medication Order Placer | PHARM-6 | Initiator        | O               | PHARM MPD TF-2: 3.Y1 |
 | Medication Order Receiver | PHARM-5 | Responder        | O               | PHARM MPD TF-2: 3.Y1 |
+| Medication Order Receiver | PHARM-6 | Responder        | O               | PHARM MPD TF-2: 3.Y1 |
 | Medication Order Consumer | PHARM-7 | Initiator        | R               | PHARM MPD TF-2: 3.Y1 |
 | Medication Order Responder | PHARM-7 | Responder        | R               | PHARM MPD TF-2: 3.Y1 |
 | Medication Dispense Reporter | PHARM-8 | Initiator        | R               | PHARM MPD TF-2: 3.Y1 |
@@ -29,7 +31,9 @@ For Dispense, a similar approach is taken:
 | Medication Dispense Responder | PHARM-9 | Responder        | R               | PHARM MPD TF-2: 3.Y1 |
 {: .grid}
 
-Note 1: The transaction [PHARM-5](pharm-5.html) for submitting an order uses the MedicationRequest. IHE Recognizes that in common cases, the request also includes other resources, so in future editions we expect to prepare a new transaction for submitting medication orders. This current specification only provides the transaction using MedicationRequest.
+Note 1: The transaction [PHARM-5](pharm-5.html) submits a single MedicationRequest. The transaction [PHARM-6](pharm-6.html) submits a prescription Bundle — a complete prescription containing one or more MedicationRequests, coordination Tasks, RequestOrchestration, and supporting resources (Patient, Medication, etc.). Systems that need to submit multi-line prescriptions or prescriptions with coordination constraints SHOULD use PHARM-6.
+
+Note 2: Prescription data can be delivered through three patterns: direct push ([PHARM-5](pharm-5.html) for a single order, [PHARM-6](pharm-6.html) for a prescription Bundle), event-driven push via FHIR Subscription (delivering the same PHARM-6 Bundle), or pull/query ([PHARM-7](pharm-7.html) with `_include`/`_revInclude` to retrieve the full prescription context). See [PHARM-6](pharm-6.html#delivery-patterns) for details.
 
 
 
