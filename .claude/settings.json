@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh issue:*)",
+      "Bash(where gh:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(head -50 /c/work/ImplementationGuides/pharm-mpd/input/fsh/profiles/*.fsh)"
+    ]
+  }
+}
