@@ -15,6 +15,8 @@ Description: "MedicationDispense profile for capturing dispensation information 
 * quantity 1..1 MS // dispensedQuantity 1
 * whenHandedOver 1..1 MS // timeOfDispensation 1
 * substitution.wasSubstituted MS // substitutionOccurred
+* substitution.reason ^short = "Why substitution was (or was not) done"
   // reimbursementRate (I think we planned to leave it out of scope)
 * status MS // status 1
 * notPerformedReason MS // statusReason, statusText (partial mapping to logical model!)
+* note MS
