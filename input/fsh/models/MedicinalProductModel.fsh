@@ -35,4 +35,4 @@ Characteristics: #can-be-target
 * batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
   * lotNumber 0..1 string "Batch identifier of the medicinal product"
   * expirationDate 0..1 dateTime "Batch expiration date of the medicinal product."
-  * serialNumber 0..1 dateTime "Serial Number of the medicinal product."  
+  * serialNumber 0..1 string "Serial Number of the medicinal product."  
