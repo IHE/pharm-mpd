@@ -34,7 +34,7 @@ Alternatively, the [Dispense Consumer](actors-transactions.html#dispense-consume
 
 ##### X:Y.Z.4.1.1 Trigger Events
 
-This method is invoked when needing to view or process prescriptions, for example when selecting a medication for dispense.
+This method is invoked when needing to view or further processing medication dispenses.
 
 ##### X:Y.Z.4.1.2 Message Semantics
 
@@ -79,4 +79,4 @@ In case of error, the response **SHALL** contain an `OperationOutcome`.
 
 ##### X:Y.Z.4.2.3 Expected Actions
 
-Upon receiving the response, the [Dispense Consumer](actors-transactions.html#dispense-consumer) will store, process or initiate handling of the orders as part of the business process.
+Upon receiving the response, the [Dispense Consumer](actors-transactions.html#dispense-consumer) will store, process or initiate handling of the dispenses as part of the business process.
