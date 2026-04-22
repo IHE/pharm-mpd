@@ -14,7 +14,7 @@ The Retrieve Dispenses [PHARM-9] transaction allows the [Dispense Consumer](acto
 
 | Actor | Role |
 |-------------------+--------------------------|
-| [Dispense Consumer](actors-transactions.html#dispense-consumer) | Queries existing Dispenses from the Order Responder |
+| [Dispense Consumer](actors-transactions.html#dispense-consumer) | Queries existing Dispenses from the Dispense Responder |
 | [Dispense Responder](actors-transactions.html#dispense-responder) | Provides access to stored Dispenses |
 {:.table-bordered}
 
@@ -44,9 +44,9 @@ This method is invoked when needing to view or process prescriptions, for exampl
 Search parameters that **SHALL** be supported:  
 
 
-- **`identifier`** — Search by the identifier of the MedicationRequest.  
-- **`patient`** — Search by the patient subject of the MedicationRequest.  
-- **`status`** — Filter MedicationRequests by their status (e.g., active, completed).  
+- **`identifier`** — Search by the identifier of the `MedicationDispense`.  
+- **`patient`** — Search by the patient subject of the `MedicationDispense`.  
+- **`status`** — Filter `MedicationDispense`s by their status (e.g., active, completed).  
 - **`prescription`** — Filter by the prescription ID
 
 
@@ -56,7 +56,7 @@ The Retrieve Dispense transaction is a search query.
 
 ##### X:Y.Z.4.1.3 Expected Actions
 
-Upon receiving the `MedicationRequest`, the [Dispense Responder](actors-transactions.html#dispense-responder) is expected to respond with the orders if the conditions are met:
+Upon receiving the query, the [Dispense Responder](actors-transactions.html#dispense-responder) is expected to respond with the medication dispenses if the conditions are met:
 * The search parameters match
 * The resources can be accessed i.e. they are not restricted to the [Dispense Consumer](actors-transactions.html#dispense-consumer)
 
@@ -71,15 +71,15 @@ The response is always expected.
 
 ##### X:Y.Z.4.2.2 Message Semantics
 
-The Response **SHALL** be a search `Bundle` containing the MedicationRequests (optionally RequestGroups if that is part of the search).
+The Response **SHALL** be a search `Bundle` containing the matching `MedicationDispense` resources.
 
 ###### X:Y.Z.4.2.2.1 Resource content
 
 
-The content of the MedicationRequests in the `Bundle` **SHALL** conform to the profiles defined in the [MedicationOrder](StructureDefinition-IHEMedicationOrder.html) profile.
+The content of the `MedicationDispense` resources in the `Bundle` **SHALL** conform to the profiles defined in the IHE [MedicationDispense](StructureDefinition-IHEMedicationDispense.html) profile.
 
 In case of error, the response **SHALL** contain an `OperationOutcome`.
 
 ##### X:Y.Z.4.2.3 Expected Actions
 
-Upon receiving the response, the [Dispense Consumer](actors-transactions.html#dispense-consumer) can will store, process or initiate handling of the orders as part of the business process.
+Upon receiving the response, the [Dispense Consumer](actors-transactions.html#dispense-consumer) will store, process or initiate handling of the orders as part of the business process.
