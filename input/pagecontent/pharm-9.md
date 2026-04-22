@@ -1,7 +1,4 @@
-This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the [Dispense Consumer](actors-transactions.html#dispense-consumer) and the [Dispense Responder](actors-transactions.html#dispense-responder) actors. The Retrieve Medication Dispense [PHARM-9] transaction is used to transmit a `medicationDispense`.
-
-
-This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the [Dispense Consumer](actors-transactions.html#dispense-consumer) and the [Dispense Responder](actors-transactions.html#dispense-responder) actors. The Retrieve Dispense [PHARM-9] transaction is used to obtain MedicationRequests for further handling - for example gettting a prescription for dispense.
+This section corresponds to transaction [PHARM-9] of the IHE Technical Framework. Transaction [PHARM-9] is used by the [Dispense Consumer](actors-transactions.html#dispense-consumer) and the [Dispense Responder](actors-transactions.html#dispense-responder) actors. The Retrieve Medication Dispense [PHARM-9] transaction is used to retrieve existing `MedicationDispense` resources for further handling.
 
 ### X:Y.Z.1 Scope
 
