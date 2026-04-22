@@ -10,7 +10,7 @@ Usage: #example
 Description: "100. Canifug Cremolum (cream and pessaries in one package), defined using MedicationKnowledge + PackagedProductDefinition"
 
 * identifier.value = "1033692"
-* identifier.system = "https://www.ravimiregister.ee" // not official FHIR identifier URL
+* identifier.system = "https://example.org/medication"
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * definition = Reference(100-CanifugCremolum-MedicationKnowledge)
 * contained[0] = 100-CanifugCremolum-MedicationKnowledge
