@@ -17,7 +17,7 @@ This workflow can have many variations, so here is an overview of the supported 
 
 
 
-## Order initiation
+### Order initiation
 
 1. **Required order validation**  
   Depending on the drug type - e.g. controlled substances - or jurisdictional and professional practices, the medication order may need to be revised and "co-signed" by different authors. Functionally, this can correspond to the medication order being updated, with possibly some change requests by the order placer(s).  
@@ -38,13 +38,13 @@ This workflow can have many variations, so here is an overview of the supported 
   Order protocols are "generic" orders which get instantiated for a patient. This use case is similar to a normal order, except for the possible reference so that the order can be traced to the protocol.  
 
 
-## Order Changes
+### Order Changes
 
 1. **Cancellation/change of the prescription**  
    There are several triggers and possibilities for order changes or cancellations:  
 
    1.1. **By prescriber**  
-   In some cases, the prescriber (or a co-author with the necessary rights) needs to change the order. Besides other tracking mechanisms that may apply, this is usually a simple change in the request.
+   In some cases, a prescriber (be it the original prescriber or any other clinician with the appropriate rights) needs to change the order. Besides other tracking mechanisms that may apply, this is usually a simple change in the order.
 
    1.2. **By pharmacist or patient**  
    When the order needs to be changed by - or actually on behalf of - the patient or pharmacist, this actually implies a request to change or request to cancel, because neither the pharmacist or the patient are the "owners" of the order.  
@@ -54,7 +54,7 @@ This workflow can have many variations, so here is an overview of the supported 
 
 
 
-## Dispense
+### Dispense
 
 The dispense process can vary significantly depending on the clinical setting, regulatory framework, and product type. The following are common variations of the dispense use case:  
 
@@ -88,7 +88,7 @@ The dispense process can vary significantly depending on the clinical setting, r
 4. **Automated dispensing**  
    Automated dispensing machines may dispense medications either directly to the patient or to the administration team, and should record a Dispense with details of dispensing system and context.  
 
-## Administration
+### Administration
 
 The administration step represents the actual delivery of medication to the patient. This process is context-dependent and can include manual or automated administration, and may be planned or unplanned.
 
