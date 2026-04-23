@@ -1,0 +1,85 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"DosagingInformation","DosagingInformation","","","",0,*,"","","","null {[]} {[]}
+","Dosaging (model)","Logical model for usage instructions for administring the requested product. Based on FHIR Dosage complex data type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"DosagingInformation.sequence","DosagingInformation.sequence","","","",0,1,"","","","integer {[]} {[]}
+","Order of the dosage instruction, in case one treatment consists of several dosaging schemes","Order of the dosage instruction, in case one treatment consists of several dosaging schemes","","","","","","","","","",,,,,"",,,,"DosagingInformation.sequence",0,1,"",""
+"DosagingInformation.text","DosagingInformation.text","","","",0,1,"","","","string {[]} {[]}
+","Free text usage/dosage instructions","Free text usage/dosage instructions","","","","","","","","","",,,,,"",,,,"DosagingInformation.text",0,1,"",""
+"DosagingInformation.additionalInstruction","DosagingInformation.additionalInstruction","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Coded instructions, e.g warnings to the patient, like 'may cause drowsiness' etc","Coded instructions, e.g warnings to the patient, like 'may cause drowsiness' etc","","","","","","","","","",,,,,"",,,,"DosagingInformation.additionalInstruction",0,*,"",""
+"DosagingInformation.patientInstruction","DosagingInformation.patientInstruction","","","",0,1,"","","","string {[]} {[]}
+","Patient oriented instructions as free text","Patient oriented instructions as free text","","","","","","","","","",,,,,"",,,,"DosagingInformation.patientInstruction",0,1,"",""
+"DosagingInformation.doseAndRate","DosagingInformation.doseAndRate","","","",0,*,"","","","Base {[]} {[]}
+","Amount of medication administered per one dose (= one timing)","Amount of medication administered per one dose (= one timing)","","","","","","","","","",,,,,"",,,,"DosagingInformation.doseAndRate",0,*,"",""
+"DosagingInformation.doseAndRate.type","DosagingInformation.doseAndRate.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The kind of dose or rate specified (e.g calculated, ordered, etc).","The kind of dose or rate specified (e.g calculated, ordered, etc).","","","","","","","","","",,,,,"",,,,"DosagingInformation.doseAndRate.type",0,1,"",""
+"DosagingInformation.doseAndRate.dose[x]","DosagingInformation.doseAndRate.dose[x]","","","",0,1,"","","","Quantity {[]} {[]}
+Range {[]} {[]}","Amount of medication per one dose. (1 tablet, 2-3 tablets, 20ml)","Amount of medication per one dose. (1 tablet, 2-3 tablets, 20ml)","","","","","","","","","",,,,,"",,,,"DosagingInformation.doseAndRate.dose[x]",0,1,"",""
+"DosagingInformation.doseAndRate.rate[x]","DosagingInformation.doseAndRate.rate[x]","","","",0,1,"","","","Ratio {[]} {[]}
+Quantity {[]} {[]}Range {[]} {[]}","Time period during which one defined dose is administered (per 1 hour, per 5-10 minutes)","Time period during which one defined dose is administered (per 1 hour, per 5-10 minutes)","","","","","","","","","",,,,,"",,,,"DosagingInformation.doseAndRate.rate[x]",0,1,"",""
+"DosagingInformation.timing","DosagingInformation.timing","","","",0,1,"","","","Base {[]} {[]}
+","When medication should be administered (period, time of day, frequency, etc)","When medication should be administered (period, time of day, frequency, etc)","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing",0,1,"",""
+"DosagingInformation.timing.event","DosagingInformation.timing.event","","","",0,*,"","","","dateTime {[]} {[]}
+","Exact date and/or time of the administration","Exact date and/or time of the administration","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.event",0,*,"",""
+"DosagingInformation.timing.code","DosagingInformation.timing.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Timing abbreviation (AM - morning, Q4H - once in every 4 hours, BID - twice a day, etc)","Timing abbreviation (AM - morning, Q4H - once in every 4 hours, BID - twice a day, etc)","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.code",0,1,"",""
+"DosagingInformation.timing.repeat","DosagingInformation.timing.repeat","","","",0,1,"","","","Base {[]} {[]}
+","Repetition of the administration.","Repetition of the administration.","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat",0,1,"",""
+"DosagingInformation.timing.repeat.bounds","DosagingInformation.timing.repeat.bounds","","","",0,1,"","","","Base {[]} {[]}
+","Time bounds for the treatment (current dosaging scheme). Only one of the following can exist.","Time bounds for the treatment (current dosaging scheme). Only one of the following can exist.","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.bounds",0,1,"",""
+"DosagingInformation.timing.repeat.bounds.duration","DosagingInformation.timing.repeat.bounds.duration","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of time units, e.g 10 days","Number of time units, e.g 10 days","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.bounds.duration",0,1,"",""
+"DosagingInformation.timing.repeat.bounds.range","DosagingInformation.timing.repeat.bounds.range","","","",0,1,"","","","Range {[]} {[]}
+","A range of numbers of time units, 5-10 days","A range of numbers of time units, 5-10 days","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.bounds.range",0,1,"",""
+"DosagingInformation.timing.repeat.bounds.period","DosagingInformation.timing.repeat.bounds.period","","","",0,1,"","","","Period {[]} {[]}
+","Start and end date, 05.08.2023 - 10.08.2023","Start and end date, 05.08.2023 - 10.08.2023","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.bounds.period",0,1,"",""
+"DosagingInformation.timing.repeat.count","DosagingInformation.timing.repeat.count","","","",0,1,"","","","Base {[]} {[]}
+","Number of times to repeat, exact or range","Number of times to repeat, exact or range","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.count",0,1,"",""
+"DosagingInformation.timing.repeat.count.count","DosagingInformation.timing.repeat.count.count","","","",0,1,"","","","integer {[]} {[]}
+","Number of times (e.g 'once', '10 times')","Number of times (e.g 'once', '10 times')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.count.count",0,1,"",""
+"DosagingInformation.timing.repeat.count.countMax","DosagingInformation.timing.repeat.count.countMax","","","",0,1,"","","","integer {[]} {[]}
+","Maximum number of times (e.g 'maximum 10 times')","Maximum number of times (e.g 'maximum 10 times')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.count.countMax",0,1,"",""
+"DosagingInformation.timing.repeat.duration","DosagingInformation.timing.repeat.duration","","","",0,1,"","","","Base {[]} {[]}
+","Duration of one administration, exact or range","Duration of one administration, exact or range","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.duration",0,1,"",""
+"DosagingInformation.timing.repeat.duration.duration","DosagingInformation.timing.repeat.duration.duration","","","",0,1,"","","","Quantity {[]} {[]}
+","Duration of administration (e.g '5 minutes', '1 hour')","Duration of administration (e.g '5 minutes', '1 hour')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.duration.duration",0,1,"",""
+"DosagingInformation.timing.repeat.duration.durationMax","DosagingInformation.timing.repeat.duration.durationMax","","","",0,1,"","","","Quantity {[]} {[]}
+","Maximum duration of administration (e.g 'maximum 1 hour')","Maximum duration of administration (e.g 'maximum 1 hour')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.duration.durationMax",0,1,"",""
+"DosagingInformation.timing.repeat.frequency","DosagingInformation.timing.repeat.frequency","","","",0,1,"","","","Base {[]} {[]}
+","Frequency of intake/administration (e.g 'three times a day')","Frequency of intake/administration (e.g 'three times a day')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.frequency",0,1,"",""
+"DosagingInformation.timing.repeat.frequency.numberOfTimes","DosagingInformation.timing.repeat.frequency.numberOfTimes","","","",0,1,"","","","integer {[]} {[]}
+","Number of times per period (e.g '3 times')","Number of times per period (e.g '3 times')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.frequency.numberOfTimes",0,1,"",""
+"DosagingInformation.timing.repeat.frequency.maxNumberOfTimes","DosagingInformation.timing.repeat.frequency.maxNumberOfTimes","","","",0,1,"","","","integer {[]} {[]}
+","Maximum number of times per period (e.g. 'maximum 3 times')","Maximum number of times per period (e.g. 'maximum 3 times')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.frequency.maxNumberOfTimes",0,1,"",""
+"DosagingInformation.timing.repeat.frequency.period","DosagingInformation.timing.repeat.frequency.period","","","",0,1,"","","","Quantity {[]} {[]}
+","Duration to which the frequency applies (e.g '... / 1 day')","Duration to which the frequency applies (e.g '... / 1 day')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.frequency.period",0,1,"",""
+"DosagingInformation.timing.repeat.frequency.periodMax","DosagingInformation.timing.repeat.frequency.periodMax","","","",0,1,"","","","Quantity {[]} {[]}
+","Upper limit of the period (e.g ... / 4-6 hours)","Upper limit of the period (e.g ... / 4-6 hours)","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.frequency.periodMax",0,1,"",""
+"DosagingInformation.timing.repeat.dayOfWeek","DosagingInformation.timing.repeat.dayOfWeek","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","The day of the week of administration, e.g Mon, Tue, etc","The day of the week of administration, e.g Mon, Tue, etc","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.dayOfWeek",0,*,"",""
+"DosagingInformation.timing.repeat.timeOfDay","DosagingInformation.timing.repeat.timeOfDay","","","",0,*,"","","","time {[]} {[]}
+","Time of day of administration (e.g '10:00')","Time of day of administration (e.g '10:00')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.timeOfDay",0,*,"",""
+"DosagingInformation.timing.repeat.eventTime","DosagingInformation.timing.repeat.eventTime","","","",0,*,"","","","Base {[]} {[]}
+","An event the administration is bound to, e.g 'before meal', '30 min before meal'","An event the administration is bound to, e.g 'before meal', '30 min before meal'","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.eventTime",0,*,"",""
+"DosagingInformation.timing.repeat.eventTime.when","DosagingInformation.timing.repeat.eventTime.when","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Time period or event ('before meal', 'immediately', 'morning')","Time period or event ('before meal', 'immediately', 'morning')","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.eventTime.when",0,*,"",""
+"DosagingInformation.timing.repeat.eventTime.offset","DosagingInformation.timing.repeat.eventTime.offset","","","",0,1,"","","","integer {[]} {[]}
+","minutes from event, before or after (?not sure how to show before/after with only positive integers)","minutes from event, before or after (?not sure how to show before/after with only positive integers)","","","","","","","","","",,,,,"",,,,"DosagingInformation.timing.repeat.eventTime.offset",0,1,"",""
+"DosagingInformation.asNeeded","DosagingInformation.asNeeded","","","",0,1,"","","","boolean {[]} {[]}
+","Take as needed","Take as needed","","","","","","","","","",,,,,"",,,,"DosagingInformation.asNeeded",0,1,"",""
+"DosagingInformation.asNeededFor","DosagingInformation.asNeededFor","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Take as needed for the coded reason","Take as needed for the coded reason","","","","","","","","","",,,,,"",,,,"DosagingInformation.asNeededFor",0,*,"",""
+"DosagingInformation.bodySite","DosagingInformation.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Body site of administration","Body site of administration","","","","","","","","","",,,,,"",,,,"DosagingInformation.bodySite",0,1,"",""
+"DosagingInformation.routeOfAdministration","DosagingInformation.routeOfAdministration","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"DosagingInformation.routeOfAdministration",0,1,"",""
+"DosagingInformation.methodOfAdministration","DosagingInformation.methodOfAdministration","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Method of administration","Method of administration","","","","","","","","","",,,,,"",,,,"DosagingInformation.methodOfAdministration",0,1,"",""
+"DosagingInformation.maxDose","DosagingInformation.maxDose","","","",0,*,"","","","Base {[]} {[]}
+","Maximum dose for the patient","Maximum dose for the patient","","","","","","","","","",,,,,"",,,,"DosagingInformation.maxDose",0,*,"",""
+"DosagingInformation.maxDose.maxDosePerPeriod","DosagingInformation.maxDose.maxDosePerPeriod","","","",0,*,"","","","Ratio {[]} {[]}
+","Upper limit on medication per unit of time","Upper limit on medication per unit of time","","","","","","","","","",,,,,"",,,,"DosagingInformation.maxDose.maxDosePerPeriod",0,*,"",""
+"DosagingInformation.maxDose.maxDosePerAdministration","DosagingInformation.maxDose.maxDosePerAdministration","","","",0,1,"","","","Quantity {[]} {[]}
+","Upper limit on medication per one administration","Upper limit on medication per one administration","","","","","","","","","",,,,,"",,,,"DosagingInformation.maxDose.maxDosePerAdministration",0,1,"",""
+"DosagingInformation.maxDose.maxDosePerLifetime","DosagingInformation.maxDose.maxDosePerLifetime","","","",0,1,"","","","Quantity {[]} {[]}
+","Upper limit on medication per lifetime of the patient","Upper limit on medication per lifetime of the patient","","","","","","","","","",,,,,"",,,,"DosagingInformation.maxDose.maxDosePerLifetime",0,1,"",""
