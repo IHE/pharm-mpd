@@ -1,4 +1,5 @@
 Logical: IHEMultilineOrder
+Parent: Base
 Title: "Medication order - multiline (model)"
 Description: "Logical model for multiline medication prescription"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
@@ -20,7 +21,7 @@ Description: "Logical model for multiline medication prescription"
 //7
 
 
-* medicationLine 1..* BackboneElement "Medication line in the prescription"
+* medicationLine 1..* Base "Medication line in the prescription"
   * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
   //10
   * statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
@@ -50,7 +51,7 @@ Description: "Logical model for multiline medication prescription"
   * preparationInstructions 0..1 string "Additional instructions about preparation or dispense" 
   //22
 
-  * substitution 0..1 BackboneElement "Whether and which type of substitution is allowed for this medication treatment line"
+  * substitution 0..1 Base "Whether and which type of substitution is allowed for this medication treatment line"
     * allowed[x] 0..1 boolean or CodeableConcept "Whether substitution is allowed or not (or type of substitution)."
     // * allowed 0..1 boolean "Whether substitution is allowed or not."
     // //See issue 47 for removing or relaxing the following element
