@@ -27,7 +27,7 @@ Characteristics: #can-be-target
   * amount 0..1 Quantity "Number of such manufactured items in this product (5 vials)"
 * device 0..* BackboneElement "Administration device included in the product"
   * deviceQuantity 1..1 Quantity "Number of such devices"
-  * device[x] 1..1 CodeableConcept or Reference(Device) "Device coded"
+  * device[x] 1..1 CodeableConcept or Reference(DeviceBasic) "Device coded"
 * characteristic 0..* BackboneElement "Other features of the product"
   * type 1..1 CodeableConcept "A code expressing the type of characteristic"
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or unsignedInt or decimal or Ratio "Description of the characteristic"

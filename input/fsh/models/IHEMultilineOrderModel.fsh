@@ -7,10 +7,10 @@ Description: "Logical model for multiline medication prescription"
 //1
 * patient 1..1 Reference(PatientBasic) "The person for whom the medication is prescribed/ordered" "Question: would we want to add basic Patient model?"
 //4
-* prescriber 1..1 Reference(PractitionerBasic or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
+* prescriber 1..1 Reference(PractitionerBasic or PractitionerRoleBasic) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
 //2
 * issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
-* recorder 0..1 Reference(PractitionerBasic or PractitionerRole) "The recorder of the prescription/draft in the information system"
+* recorder 0..1 Reference(PractitionerBasic or PractitionerRoleBasic) "The recorder of the prescription/draft in the information system"
 //8
 * recordingDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
 //9
