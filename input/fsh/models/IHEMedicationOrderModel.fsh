@@ -60,8 +60,8 @@ Description: "Logical model for medication prescription or other types of medica
   // * allowed 0..1 boolean "Whether substitution is allowed or not."
   // //See issue 47 for removing or relaxing the following element
   // * type 0..1 CodeableConcept "The type of substitution that is allowed."
-  * reason[x] 0..1 CodeableConcept or string "Reason for the substitution requirement"
-//  * substitutionTypeReasonText 0..1 string "Textual reason for the substitution requirement"
+  * reason[x] 0..1 CodeableConcept or string "Reason for the substitution permission" "Reason why (a certain type of) substitution is or is not allowed"
+//  * substitutionTypeReasonText 0..1 string "Textual reason for the substitution permission" 
 
 * offLabel 0..1 Base "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
   * isOffLabelUse 1..1 boolean "Indicates off-label use. Must be 'true' when .reason is provided."
