@@ -1,0 +1,130 @@
+# ihe.pharm.mpd#1.0.0-comment-3: Medication Prescription and Dispense (MPD)
+
+## Pages
+
+* [IHE MPD (Medication Prescription and Dispense)](index.md)
+* [How to read this publication](howtoread.md)
+* [Downloads](downloads.md)
+* [Volume 1](volume-1.md)
+* [Data Models](data-models.md)
+* [Actor grouping examples](actor-grouping-examples.md)
+* [Single- and multiline prescriptions](grouping.md)
+* [Changes and issues in this version](changes.md)
+* [Medication Concepts](medication-concepts.md)
+* [Volume 2](volume-2.md)
+* [PHARM-5: Submit Medication Order](pharm-5.md)
+* [Glossary](glossary.md)
+* [Artifacts Summary](artifacts.md)
+* [Use Cases and Patterns](usecases.md)
+* [Error Codes](error_codes.md)
+* [Test Plan](testplan.md)
+* [Actors and Transactions Overview](actors-transactions.md)
+* [PHARM-9: Retrieve Medication Dispenses](pharm-9.md)
+* [PHARM-8: Submit Medication Dispense](pharm-8.md)
+* [PHARM-7: Retrieve Medication Orders](pharm-7.md)
+* [Usage Examples](usage-examples.md)
+
+## Resources
+
+### Logicals
+
+* [Device (model)](StructureDefinition-DeviceBasic.md)
+* [Dosaging (model)](StructureDefinition-DosagingInformation.md)
+* [Medication dispense (model)](StructureDefinition-IHEMedicationDispenseModel.md)
+* [Medication order (model)](StructureDefinition-IHEMedicationOrderModel.md)
+* [Medication order - multiline (model)](StructureDefinition-IHEMultilineOrder.md)
+* [Medicinal product (model)](StructureDefinition-MedicinalProductModel.md)
+* [Organization (model)](StructureDefinition-OrganizationBasic.md)
+* [Patient (model)](StructureDefinition-PatientBasic.md)
+* [Practitioner (model)](StructureDefinition-PractitionerBasic.md)
+* [Practitioner role (model)](StructureDefinition-PractitionerRoleBasic.md)
+* [Related person (model)](StructureDefinition-RelatedPersonBasic.md)
+
+### Resource Profiles
+
+* [IHE Medication](StructureDefinition-IHEMedication.md)
+* [IHE Medication Dispense](StructureDefinition-IHEMedicationDispense.md)
+* [IHE Medication Order](StructureDefinition-IHEMedicationOrder.md)
+
+### Extensions
+
+* [Medication - Characteristic](StructureDefinition-ihe-ext-medication-characteristic.md)
+* [Medication - Classification](StructureDefinition-ihe-ext-medication-classification.md)
+* [Medication - Device](StructureDefinition-ihe-ext-medication-device.md)
+* [Medication - Ingreditne role](StructureDefinition-ihe-ext-medication-ingredient-role.md)
+* [Medication - Product Name](StructureDefinition-ihe-ext-medication-productname.md)
+* [Medication - Size of Item](StructureDefinition-ihe-ext-medication-sizeofitem.md)
+* [Medication - Strength substance](StructureDefinition-ihe-ext-medication-strengthsubstance.md)
+* [Medication - Strength type](StructureDefinition-ihe-ext-medication-strengthtype.md)
+* [Medication - Unit of presentation](StructureDefinition-ihe-ext-medication-unitofpresentation.md)
+* [MedicationRequest - Prescribed Quantity](StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.md)
+* [Off-label use](StructureDefinition-ihe-ext-offLabel.md)
+
+### ActorDefinitions
+
+* [IHE MPD Dispense Consumer](ActorDefinition-IHE.MPD.DispenseConsumer.md)
+* [IHE MPD Dispense Receiver](ActorDefinition-IHE.MPD.DispenseReceiver.md)
+* [IHE MPD Dispense Reporter](ActorDefinition-IHE.MPD.DispenseReporter.md)
+* [IHE MPD Dispense Responder](ActorDefinition-IHE.MPD.DispenseResponder.md)
+* [IHE MPD Order Consumer](ActorDefinition-IHE.MPD.OrderConsumer.md)
+* [IHE MPD Order Placer](ActorDefinition-IHE.MPD.OrderPlacer.md)
+* [IHE MPD Order Receiver](ActorDefinition-IHE.MPD.OrderReceiver.md)
+* [IHE MPD Order Responder](ActorDefinition-IHE.MPD.OrderResponder.md)
+
+### CapabilityStatements
+
+* [IHE MPD Dispense Consumer Actor](CapabilityStatement-IHE.MPD.DispenseConsumerCS.md)
+* [IHE MPD Dispense Receiver Actor (server)](CapabilityStatement-IHE.MPD.DispenseReceiverCS.md)
+* [IHE MPD Dispense Reporter Actor (server)](CapabilityStatement-IHE.MPD.DispenseReporterCS.md)
+* [IHE MPD Dispense Responder Actor (server)](CapabilityStatement-IHE.MPD.DispenseResponderCS.md)
+* [IHE MPD Order Consumer Actor](CapabilityStatement-IHE.MPD.OrderConsumerCS.md)
+* [IHE MPD Order Placer Actor](CapabilityStatement-IHE.MPD.OrderPlacerCS.md)
+* [IHE MPD Order Receiver Actor (server)](CapabilityStatement-IHE.MPD.OrderReceiverCS.md)
+* [IHE MPD Order Responder Actor (server)](CapabilityStatement-IHE.MPD.OrderResponderCS.md)
+
+### ImplementationGuides
+
+* [Medication Prescription and Dispense (MPD)](index.md)
+
+### SearchParameters
+
+* [ActivityResource](SearchParameter-activity-resource.md)
+* [GroupOrIdentifier](SearchParameter-group-or-identifier.md)
+
+### Examples
+
+* [200-multiitem-prescription-without-orchestration (Bundle)](Bundle-200-multiitem-prescription-without-orchestration.md)
+* [01A-Cefuroxime1500GenericExplicit (Medication)](Medication-01A-Cefuroxime1500GenericExplicit.md)
+* [01B-Cefuroxime1500GenericConcept (Medication)](Medication-01B-Cefuroxime1500GenericConcept.md)
+* [01C-Cefuroxime1500Branded (Medication)](Medication-01C-Cefuroxime1500Branded.md)
+* [01D-Cefuroxime750Branded (Medication)](Medication-01D-Cefuroxime750Branded.md)
+* [02A-ClotrimazoleCanifugCremolum (Medication)](Medication-02A-ClotrimazoleCanifugCremolum.md)
+* [02A1-CanifugCremolumCreamItem (Medication)](Medication-02A1-CanifugCremolumCreamItem.md)
+* [02A2-CanifugCremolumPessaryItem (Medication)](Medication-02A2-CanifugCremolumPessaryItem.md)
+* [03B-VitaminBComplexBranded (Medication)](Medication-03B-VitaminBComplexBranded.md)
+* [04-FirmagonBranded (Medication)](Medication-04-FirmagonBranded.md)
+* [05A-Tilidin-Branded (Medication)](Medication-05A-Tilidin-Branded.md)
+* [10-dispense-1 (MedicationDispense)](MedicationDispense-10-dispense-1.md)
+* [10-dispense-2 (MedicationDispense)](MedicationDispense-10-dispense-2.md)
+* [300-dispense-for-2-requests (MedicationDispense)](MedicationDispense-300-dispense-for-2-requests.md)
+* [10-prescription-cefuroxime-singleline (MedicationRequest)](MedicationRequest-10-prescription-cefuroxime-singleline.md)
+* [100-3-medication-prescription-request1 (MedicationRequest)](MedicationRequest-100-3-medication-prescription-request1.md)
+* [100-3-medication-prescription-request2 (MedicationRequest)](MedicationRequest-100-3-medication-prescription-request2.md)
+* [100-3-medication-prescription-request3 (MedicationRequest)](MedicationRequest-100-3-medication-prescription-request3.md)
+* [PrescriptionLine1 (MedicationRequest)](MedicationRequest-PrescriptionLine1.md)
+* [PrescriptionLine2 (MedicationRequest)](MedicationRequest-PrescriptionLine2.md)
+* [PrescriptionLine3 (MedicationRequest)](MedicationRequest-PrescriptionLine3.md)
+* [PrescriptionLine4 (MedicationRequest)](MedicationRequest-PrescriptionLine4.md)
+* [PrescriptionLine5 (MedicationRequest)](MedicationRequest-PrescriptionLine5.md)
+* [PrescriptionLine6 (MedicationRequest)](MedicationRequest-PrescriptionLine6.md)
+* [PrescriptionLine7 (MedicationRequest)](MedicationRequest-PrescriptionLine7.md)
+* [PrescriptionLine8 (MedicationRequest)](MedicationRequest-PrescriptionLine8.md)
+* [PrescriptionLine9 (MedicationRequest)](MedicationRequest-PrescriptionLine9.md)
+* [Dr Ärztin Private Practice (Organization)](Organization-organization1.md)
+* [Su-Bin Pharmacy B (Organization)](Organization-organization2.md)
+* [patient1 (Patient)](Patient-patient1.md)
+* [patient2 (Patient)](Patient-patient2.md)
+* [practitioner1 (Practitioner)](Practitioner-practitioner1.md)
+* [practitioner2 (Practitioner)](Practitioner-practitioner2.md)
+* [doctor1 (PractitionerRole)](PractitionerRole-doctor1.md)
+* [pharmacist1 (PractitionerRole)](PractitionerRole-pharmacist1.md)

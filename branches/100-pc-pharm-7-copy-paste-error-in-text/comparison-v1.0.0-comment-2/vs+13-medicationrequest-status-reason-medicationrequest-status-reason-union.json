@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "c7e7fead-30b6-4927-b17e-00f8458fb2bf-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c7e7fead-30b6-4927-b17e-00f8458fb2bf-32",
+  "name" : "UnionMedicationRequestStatusReasonCodesAndMedicationRequestStatusReasonCodes",
+  "title" : "Union of medicationRequest Status Reason Codes And medicationRequest Status Reason Codes",
+  "status" : "draft",
+  "date" : "2026-04-22T17:06:41+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "url" : "https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd",
+  "name" : "IHE_PHARM_MPD",
+  "title" : "Medication Prescription and Dispense (MPD)",
+  "description" : "ImplementationGuide for IHE Pharmacy Medication Prescription and Dispense (MPD) profile",
+  "ig-date" : "2025-05-08",
+  "status" : "active",
+  "package-id" : "ihe.pharm.mpd",
+  "ig-ver" : "1.0.0-comment-3",
+  "date" : "Thu, 23 Apr, 2026 21:30:43 +0000",
+  "dateISO8601" : "2026-04-23T21:30:43+00:00",
+  "errs" : 1,
+  "warnings" : 6,
+  "hints" : 17,
+  "suppressed-hints" : 41,
+  "suppressed-warnings" : 14,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2579496960
+}

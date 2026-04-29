@@ -1,0 +1,61 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicinalProductModel","MedicinalProductModel","","","",0,*,"","","","null {[]} {[]}
+","Medicinal product (model)","Logical model for prescribed/dispensed medication. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"MedicinalProductModel.identifyingCode[x]","MedicinalProductModel.identifyingCode[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
+Identifier {[]} {[]}","Identifier or product code for the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings or very different granularities.","Identifier or product code for the product, independently of the level of product. If several identifiers are specified, they shall not have conflicting meanings or very different granularities.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.identifyingCode[x]",0,*,"",""
+"MedicinalProductModel.classification","MedicinalProductModel.classification","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Classification (e.g. ATC; narcotic/psychotropic; orphan drug; etc.)","Classification (e.g. ATC; narcotic/psychotropic; orphan drug; etc.)","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.classification",0,*,"",""
+"MedicinalProductModel.productName","MedicinalProductModel.productName","","","",0,1,"","","","string {[]} {[]}
+","Name of the product (full name, invented name, other). When the product has different names, the appropriate one for the context should be used. Translations of names can be provided.","Name of the product (full name, invented name, other). When the product has different names, the appropriate one for the context should be used. Translations of names can be provided.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.productName",0,1,"",""
+"MedicinalProductModel.marketingAuthorisationHolder","MedicinalProductModel.marketingAuthorisationHolder","","","",0,1,"","","","Base {[]} {[]}
+","Marketing authorisation holder of manufacturer of the medicinal product. Relevant for identifying the exact product.","Marketing authorisation holder of manufacturer of the medicinal product. Relevant for identifying the exact product.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.marketingAuthorisationHolder",0,1,"",""
+"MedicinalProductModel.marketingAuthorisationHolder.organizationName","MedicinalProductModel.marketingAuthorisationHolder.organizationName","","","",0,1,"","","","string {[]} {[]}
+","Name of the organisation holding the authorisation for marketing/mahufacturing","Name of the organisation holding the authorisation for marketing/mahufacturing","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.marketingAuthorisationHolder.organizationName",0,1,"",""
+"MedicinalProductModel.marketingAuthorisationHolder.organizationIdentifier","MedicinalProductModel.marketingAuthorisationHolder.organizationIdentifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifier of the organisation and/or its physical location","Identifier of the organisation and/or its physical location","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.marketingAuthorisationHolder.organizationIdentifier",0,*,"",""
+"MedicinalProductModel.doseForm","MedicinalProductModel.doseForm","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Dose form(s) on a product level. Dose form for a single package item is defined below.","Dose form(s) on a product level. Dose form for a single package item is defined below.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.doseForm",0,1,"",""
+"MedicinalProductModel.packSize","MedicinalProductModel.packSize","","","",0,*,"","","","Quantity {[]} {[]}
+","Overall amount of product in one package (100ml; 20 tablets; 1 creme & 6 pessaries)","Overall amount of product in one package (100ml; 20 tablets; 1 creme & 6 pessaries)","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.packSize",0,*,"",""
+"MedicinalProductModel.item","MedicinalProductModel.item","","","",0,*,"","","","Base {[]} {[]}
+","A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined","A medication item. For combination packs, this can be manufactured items with each item having its own dose form and ingredients+strengths defined","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item",0,*,"",""
+"MedicinalProductModel.item.doseForm","MedicinalProductModel.item.doseForm","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Dose form","Dose form","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.doseForm",0,1,"",""
+"MedicinalProductModel.item.ingredient","MedicinalProductModel.item.ingredient","","","",1,*,"","","","Base {[]} {[]}
+","Ingredients","Ingredients","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient",1,*,"",""
+"MedicinalProductModel.item.ingredient.role[x]","MedicinalProductModel.item.ingredient.role[x]","","","",0,1,"","","","boolean {[]} {[]}
+CodeableConcept {[]} {[]}","Role (active ingredient, excipient). Typically excipients are not needed, so by default active ingredients are expected.","Role (active ingredient, excipient). Typically excipients are not needed, so by default active ingredients are expected.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient.role[x]",0,1,"",""
+"MedicinalProductModel.item.ingredient.substance","MedicinalProductModel.item.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Substance","Substance","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient.substance",1,1,"",""
+"MedicinalProductModel.item.ingredient.strengthInfo","MedicinalProductModel.item.ingredient.strengthInfo","","","",0,1,"","","","Base {[]} {[]}
+","Concentration or presentation strength","Concentration or presentation strength","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient.strengthInfo",0,1,"",""
+"MedicinalProductModel.item.ingredient.strengthInfo.strength","MedicinalProductModel.item.ingredient.strengthInfo.strength","","","",1,1,"","","","Ratio {[]} {[]}
+","Concentration or presentation strength of the precise active ingredient","Concentration or presentation strength of the precise active ingredient","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient.strengthInfo.strength",1,1,"",""
+"MedicinalProductModel.item.ingredient.strengthInfo.basisOfStrengthSubstance","MedicinalProductModel.item.ingredient.strengthInfo.basisOfStrengthSubstance","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Substance that the strength refers to, if different from the main substance","Substance that the strength refers to, if different from the main substance","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.ingredient.strengthInfo.basisOfStrengthSubstance",0,1,"",""
+"MedicinalProductModel.item.unitOfPresentation","MedicinalProductModel.item.unitOfPresentation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package.","Unit of presentation for the manufactured item (tablet, vial, tube). Typically, the smallest countable object in the package.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.unitOfPresentation",0,1,"",""
+"MedicinalProductModel.item.containedQuantity","MedicinalProductModel.item.containedQuantity","","","",0,1,"","","","Ratio {[]} {[]}
+","Manufactured item quantity for liquids (3ml/vial)","Manufactured item quantity for liquids (3ml/vial)","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.containedQuantity",0,1,"",""
+"MedicinalProductModel.item.amount","MedicinalProductModel.item.amount","","","",0,1,"","","","Quantity {[]} {[]}
+","Number of such manufactured items in this product (5 vials)","Number of such manufactured items in this product (5 vials)","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.item.amount",0,1,"",""
+"MedicinalProductModel.device","MedicinalProductModel.device","","","",0,*,"","","","Base {[]} {[]}
+","Administration device included in the product","Administration device included in the product","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.device",0,*,"",""
+"MedicinalProductModel.device.deviceQuantity","MedicinalProductModel.device.deviceQuantity","","","",1,1,"","","","Quantity {[]} {[]}
+","Number of such devices","Number of such devices","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.device.deviceQuantity",1,1,"",""
+"MedicinalProductModel.device.device[x]","MedicinalProductModel.device.device[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}","Device coded","Device coded","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.device.device[x]",1,1,"",""
+"MedicinalProductModel.characteristic","MedicinalProductModel.characteristic","","","",0,*,"","","","Base {[]} {[]}
+","Other features of the product","Other features of the product","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.characteristic",0,*,"",""
+"MedicinalProductModel.characteristic.type","MedicinalProductModel.characteristic.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","A code expressing the type of characteristic","A code expressing the type of characteristic","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.characteristic.type",1,1,"",""
+"MedicinalProductModel.characteristic.value[x]","MedicinalProductModel.characteristic.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+CodeableConcept {[]} {[]}string {[]} {[]}Quantity {[]} {[]}dateTime {[]} {[]}unsignedInt {[]} {[]}decimal {[]} {[]}Ratio {[]} {[]}","Description of the characteristic","Description of the characteristic","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.characteristic.value[x]",0,1,"",""
+"MedicinalProductModel.batch","MedicinalProductModel.batch","","","",0,1,"","","","Base {[]} {[]}
+","Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request.","Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.batch",0,1,"",""
+"MedicinalProductModel.batch.lotNumber","MedicinalProductModel.batch.lotNumber","","","",0,1,"","","","string {[]} {[]}
+","Batch identifier of the medicinal product","Batch identifier of the medicinal product","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.batch.lotNumber",0,1,"",""
+"MedicinalProductModel.batch.expirationDate","MedicinalProductModel.batch.expirationDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Batch expiration date of the medicinal product.","Batch expiration date of the medicinal product.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.batch.expirationDate",0,1,"",""
+"MedicinalProductModel.batch.serialNumber","MedicinalProductModel.batch.serialNumber","","","",0,1,"","","","string {[]} {[]}
+","Serial Number of the medicinal product.","Serial Number of the medicinal product.","","","","","","","","","",,,,,"",,,,"MedicinalProductModel.batch.serialNumber",0,1,"",""

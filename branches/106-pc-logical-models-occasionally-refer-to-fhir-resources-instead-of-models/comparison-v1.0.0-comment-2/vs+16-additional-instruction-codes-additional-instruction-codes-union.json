@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d1533ac2-5d35-47a6-818d-373733e80ccf-41",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d1533ac2-5d35-47a6-818d-373733e80ccf-41",
+  "name" : "UnionSNOMEDCTAdditionalDosageInstructionsAndSNOMEDCTAdditionalDosageInstructions",
+  "title" : "Union of SNOMED CT Additional Dosage Instructions And SNOMED CT Additional Dosage Instructions",
+  "status" : "draft",
+  "date" : "2026-04-23T13:38:49+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "419492006"
+      }]
+    }]
+  }
+}

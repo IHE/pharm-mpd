@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e0171de5-d0ce-4d4d-8bef-905869990a7d-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e0171de5-d0ce-4d4d-8bef-905869990a7d-11",
+  "name" : "UnionMedicationIngredientStrengthCodesAndMedicationIngredientStrengthCodes",
+  "title" : "Union of Medication Ingredient Strength Codes And Medication Ingredient Strength Codes",
+  "status" : "draft",
+  "date" : "2026-04-23T21:32:30+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}
