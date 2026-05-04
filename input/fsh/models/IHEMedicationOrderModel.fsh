@@ -57,7 +57,7 @@ Description: "Logical model for medication prescription or other types of medica
 //22
 
 * substitution 0..1 Base "Whether and which type of substitution is allowed for this medication treatment line"
-  * allowed[x] 0..1 boolean or CodeableConcept "Whether substitution is allowed or not (or type of substitution)."
+  * allowed[x] 1..1 boolean or CodeableConcept "Whether substitution is allowed or not (or type of substitution)."
   // * allowed 0..1 boolean "Whether substitution is allowed or not."
   // //See issue 47 for removing or relaxing the following element
   // * type 0..1 CodeableConcept "The type of substitution that is allowed."
