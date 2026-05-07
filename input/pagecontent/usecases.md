@@ -44,7 +44,7 @@ This workflow can have many variations, so here is an overview of the supported 
    There are several triggers and possibilities for order changes or cancellations:  
 
    1.1. **By prescriber**  
-   In some cases, a prescriber (be it the original prescriber or any other clinician with the appropriate rights) needs to change the order. Besides other tracking mechanisms that may apply, this is usually a simple change in the order.
+   In some cases, a prescriber (be it the original prescriber or any other clinician with the appropriate rights) may need to change the order. This has to be strongly dependent on the applicable business rules and the workflow context; typically only the original prescriber or someone in the organization can modify the prescription. Besides other tracking mechanisms that may apply, this is usually a simple change in the order.
 
    1.2. **By pharmacist or patient**  
    When the order needs to be changed by - or actually on behalf of - the patient or pharmacist, this actually implies a request to change or request to cancel, because neither the pharmacist or the patient are the "owners" of the order.  
