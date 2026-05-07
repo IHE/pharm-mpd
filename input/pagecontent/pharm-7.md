@@ -48,7 +48,7 @@ The following search parameters **SHALL** be supported by the [Medication Order 
 - **`activity-resource`** - Search on the resources that are linked to a `RequestGroup` (R4) or to a `RequestOrchestration` (R5) - important to allow for example _revInclude
 - **`identifier`** — Search by the identifier of the medication order or group.  
 - **`patient`** — Search by the patient subject of the medication order or group.  
-- **`status`** — Filter medication orders or groups/orchestrations by their status (e.g., `active`, `completed`).  
+- **`status`** — Filter medication orders or groups by their status (e.g., `active`, `completed`).  
 - **`intent`** — Filter by the intent of the medication order or group/request (e.g., `order`, `plan`).
 
 
