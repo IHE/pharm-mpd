@@ -15,7 +15,7 @@ agent " [[actors-transactions.html#order-consumer Medication\nOrder Consumer   ]
 
 
 
-orderplacer -d- orderreceiver : "   [[pharm-5.html PHARM-5\nSubmit Medication Order]] ↓       "
+orderplacer -d- orderreceiver : "   [[pharm-6.html PHARM-6\nSubmit Medication Order]] ↓       "
 orderreceiver -[hidden]r- orderresponder : "\t\t\t "
 
 'orderresponder -d[hidden]- dispensereceiver

@@ -19,8 +19,8 @@ For Dispense, a similar approach is taken:
 
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
-| Medication Order Placer | PHARM-5 | Initiator        | O               | PHARM MPD TF-2: 3.Y1 |
-| Medication Order Receiver | PHARM-5 | Responder        | O               | PHARM MPD TF-2: 3.Y1 |
+| Medication Order Placer | PHARM-6 | Initiator        | O               | PHARM MPD TF-2: 3.Y1 |
+| Medication Order Receiver | PHARM-6 | Responder        | O               | PHARM MPD TF-2: 3.Y1 |
 | Medication Order Consumer | PHARM-7 | Initiator        | R               | PHARM MPD TF-2: 3.Y1 |
 | Medication Order Responder | PHARM-7 | Responder        | R               | PHARM MPD TF-2: 3.Y1 |
 | Medication Dispense Reporter | PHARM-8 | Initiator        | R               | PHARM MPD TF-2: 3.Y1 |
@@ -29,7 +29,7 @@ For Dispense, a similar approach is taken:
 | Medication Dispense Responder | PHARM-9 | Responder        | R               | PHARM MPD TF-2: 3.Y1 |
 {: .grid}
 
-Note 1: The transaction [PHARM-5](pharm-5.html) for submitting an order uses the MedicationRequest. IHE Recognizes that in common cases, the request also includes other resources, so in future editions we expect to prepare a new transaction for submitting medication orders. This current specification only provides the transaction using MedicationRequest.
+Note 1: The transaction [PHARM-6](pharm-6.html) for submitting an order uses the MedicationRequest. IHE Recognizes that in common cases, the request also includes other resources, so in future editions we expect to prepare a new transaction for submitting medication orders. This current specification only provides the transaction using MedicationRequest.
 
 
 
@@ -38,7 +38,7 @@ The actors in this profile are described in more detail in the sections below.
 
 <a name="order-placer"> </a>
 
-**Order Placer** - this actor is responsible for submitting an order. This can be a prescription, or an update of an existing prescription, or a draft prescrition, or other.
+**Order Placer** - this actor is responsible for submitting an order. This can be a prescription, or an update of an existing prescription, or a draft prescription, or other.
 
 <a name="order-receiver"> </a>
 
