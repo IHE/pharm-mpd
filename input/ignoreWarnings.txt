@@ -8,8 +8,6 @@
 URL value 'http://standardterms.edqm.eu' does not resolve
 
 
-# In some examples there is an URL value 'https://www.ravimiregister.ee'. Ignoring as not relevant / possible tooling-related
-URL value 'https://www.ravimiregister.ee' does not resolve
 
 # There's currently no support for ICD-11
 A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated

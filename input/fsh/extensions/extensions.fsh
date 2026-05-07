@@ -134,9 +134,9 @@ Context: MedicationRequest.dispenseRequest
 
 Extension: MedicationIngredientRole
 Id:        ihe-ext-medication-ingredient-role
-Title:     "Medication - Ingreditne role"
+Title:     "Medication - Ingredient role"
 Description: "Medication ingredient role - whether it is an active ingredient, excipient, adjuvant, solvent, flavouring, etc."
-Context: Medication
+Context: Medication.ingredient
 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from http://hl7.org/fhir/ValueSet/ingredient-role (example)

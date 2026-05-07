@@ -3,7 +3,7 @@ These transactions are part of the IHE Pharmacy Technical Framework and provide 
 
 ## Defined Transactions
 
-- **PHARM-5:** [Submit Medication Order](pharm-5.html)  
+- **PHARM-6:** [Submit Medication Order](pharm-6.html)  
   Allows an Order Placer to submit a new or updated medication order.
 
 - **PHARM-7:** [Retrieve Medication Order](pharm-7.html)  

@@ -46,17 +46,17 @@ Usage: #definition
       * code = #vread
     * interaction[+]
       * code = #create
-      * documentation = "Submit Medication Order [PHARM-5]"
+      * documentation = "Submit Medication Order [PHARM-6]"
     * interaction[+]
       * code = #update
-      * documentation = "Update Medication Order [PHARM-5]"
+      * documentation = "Update Medication Order [PHARM-6]"
     * interaction[+]
       * code = #delete
     * interaction[+]
       * code = #history-instance
     * interaction[+]
       * code = #search-type
-      * documentation = "conditional delete for Medication ORder [PHARM-5] for Remove Patient Option"
+      * documentation = "conditional delete for Medication ORder [PHARM-6] for Remove Patient Option"
     * conditionalCreate = true
     * conditionalUpdate = true
     * conditionalDelete = #single
@@ -65,7 +65,7 @@ Usage: #definition
 //    * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
     * interaction[0]
       * code = #create
-      * documentation = "Create MedicationOrders [PHARM-5]"
+      * documentation = "Create MedicationOrders [PHARM-6]"
     * conditionalCreate = true
     * conditionalUpdate = true
     * conditionalDelete = #single
