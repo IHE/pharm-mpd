@@ -49,7 +49,7 @@ The following search parameters **SHALL** be supported by the [Medication Order 
 - **`identifier`** — Search by the identifier of the medication order or group.  
 - **`patient`** — Search by the patient subject of the medication order or group.  
 - **`status`** — Filter medication orders or groups by their status (e.g., `active`, `completed`).  
-- **`intent`** — Filter by the intent of the medication order or group/request (e.g., `order`, `plan`).
+- **`intent`** — Filter by the intent of the medication order or group (e.g., `order`, `plan`).
 
 
 ##### X:Y.Z.4.1.3 Expected Actions
