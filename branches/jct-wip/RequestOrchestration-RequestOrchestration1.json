@@ -1,0 +1,65 @@
+{
+  "resourceType" : "RequestOrchestration",
+  "id" : "RequestOrchestration1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestOrchestration RequestOrchestration1</b></p><a name=\"RequestOrchestration1\"> </a><a name=\"hcRequestOrchestration1\"> </a><a name=\"RequestOrchestration1-en-US\"> </a><p><b>identifier</b>: <code>http://example.com/requestorchestration</code>/prescr1</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/prescr1</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>subject</b>: Identifier: patient1</p><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine1.html\">MedicationRequest: identifier = http://example.com/prescriptionlines#line1; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine2.html\">MedicationRequest: identifier = http://example.com/NamingSystem/prescriptionlines#line2; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>3</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine3.html\">MedicationRequest: identifier = http://example.com/prescriptionlines#line3; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.com/requestorchestration",
+    "value" : "prescr1"
+  }],
+  "groupIdentifier" : {
+    "system" : "http://example.com/prescriptions",
+    "value" : "prescr1"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "subject" : {
+    "identifier" : {
+      "value" : "patient1"
+    }
+  },
+  "action" : [{
+    "id" : "1",
+    "relatedAction" : [{
+      "targetId" : "2",
+      "relationship" : "concurrent-with-start"
+    },
+    {
+      "targetId" : "3",
+      "relationship" : "concurrent-with-start"
+    }],
+    "resource" : {
+      "reference" : "MedicationRequest/PrescriptionLine1"
+    }
+  },
+  {
+    "id" : "2",
+    "relatedAction" : [{
+      "targetId" : "1",
+      "relationship" : "concurrent-with-start"
+    },
+    {
+      "targetId" : "3",
+      "relationship" : "concurrent-with-start"
+    }],
+    "resource" : {
+      "reference" : "MedicationRequest/PrescriptionLine2"
+    }
+  },
+  {
+    "id" : "3",
+    "relatedAction" : [{
+      "targetId" : "1",
+      "relationship" : "concurrent-with-start"
+    },
+    {
+      "targetId" : "2",
+      "relationship" : "concurrent-with-start"
+    }],
+    "resource" : {
+      "reference" : "MedicationRequest/PrescriptionLine3"
+    }
+  }]
+}

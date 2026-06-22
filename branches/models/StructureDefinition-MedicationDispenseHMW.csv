@@ -1,0 +1,25 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicationDispenseHMW","MedicationDispenseHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for dispense","[HMW] Logical Model for dispense","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationDispenseHMW.identifier","MedicationDispenseHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication dispense session","The business identifier(s) for the medication dispense session","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.identifier",0,1,"",""
+"MedicationDispenseHMW.patient","MedicationDispenseHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is dispensed.","The person for which the medication is dispensed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.patient",1,1,"",""
+"MedicationDispenseHMW.dispenser","MedicationDispenseHMW.dispenser","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The dispenser, if known and relevant","The dispenser, if known and relevant","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dispenser",0,*,"",""
+"MedicationDispenseHMW.date","MedicationDispenseHMW.date","","","",1,1,"","","","dateTime {[]} {[]}
+","The date when the dispense ocurred (or not)","The date when the dispense ocurred (or not)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.date",1,1,"",""
+"MedicationDispenseHMW.prescription","MedicationDispenseHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+","The information about a prescription related to the dispense","The information about a prescription related to the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.prescription",0,1,"",""
+"MedicationDispenseHMW.status","MedicationDispenseHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the dispense","Status of the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.status",1,1,"",""
+"MedicationDispenseHMW.statusReason","MedicationDispenseHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for a dispense status","Reason for a dispense status","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.statusReason",0,*,"",""
+"MedicationDispenseHMW.product[x]","MedicationDispenseHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","The product that was dispensed","The product that was dispensed - coded or not (e.g. for magistral preparations)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.product[x]",1,1,"",""
+"MedicationDispenseHMW.quantitydispensed","MedicationDispenseHMW.quantitydispensed","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","The amound of product that was dispensed","The amound of product that was dispensed","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.quantitydispensed",0,1,"",""
+"MedicationDispenseHMW.dosageInstruction","MedicationDispenseHMW.dosageInstruction","","","",0,1,"","","","Dosage {[]} {[]}
+","The instructions for using the product","The instructions for using the product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dosageInstruction",0,1,"",""
+"MedicationDispenseHMW.note","MedicationDispenseHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional information about the dispensed product","Additional information about the dispensed product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.note",0,*,"",""

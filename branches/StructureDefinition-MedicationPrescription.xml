@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MedicationPrescription"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition MedicationPrescription</b></p><a name="MedicationPrescription"> </a><a name="hcMedicationPrescription"> </a><a name="MedicationPrescription-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription" title="Logical model for medication prescription (or some other form of order)">MedicationPrescription</a><a name="MedicationPrescription"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medication prescription (model)<br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.identifier" title="Business identifier(s) for the prescription">identifier</a><a name="MedicationPrescription.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-InstanceIdentifier.html" title="Element">II</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Business identifier(s) for the prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.groupIdentifier" title="Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders">groupIdentifier</a><a name="MedicationPrescription.groupIdentifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-InstanceIdentifier.html" title="Element">II</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.recordingDate" title="Time of authoring the prescription/draft in the information system">recordingDate</a><a name="MedicationPrescription.recordingDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-DT.html" title="Element">DT</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time of authoring the prescription/draft in the information system</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.issueDate" title="Time of issuing (signing) the prescription by health care practicioner">issueDate</a><a name="MedicationPrescription.issueDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-DT.html" title="Element">DT</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time of issuing (signing) the prescription by health care practicioner</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.recorder" title="The recorder of the prescription/draft in the information system">recorder</a><a name="MedicationPrescription.recorder"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="StructureDefinition-PractitionerBasic.html">Practitioner (model)</a> | <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The recorder of the prescription/draft in the information system</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.prescriber" title="Question: would we want to add basic Practicioner model?">prescriber</a><a name="MedicationPrescription.prescriber"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="StructureDefinition-PractitionerBasic.html">Practitioner (model)</a> | <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person who made the prescription, and who takes the responsibility of the treatment</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.category" title="Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc).">category</a><a name="MedicationPrescription.category"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc).<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.validFrom" title="Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate">validFrom</a><a name="MedicationPrescription.validFrom"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-DT.html" title="Element">DT</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.validUntil" title="The validity period end date. The prescription is not dispensable after this date.">validUntil</a><a name="MedicationPrescription.validUntil"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-DT.html" title="Element">DT</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The validity period end date. The prescription is not dispensable after this date.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.patient" title="Question: would we want to add basic Patient model?">patient</a><a name="MedicationPrescription.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="StructureDefinition-PatientBasic.html">Patient (model)</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person for whom the medication is prescribed/ordered</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.status" title="Status of the prescription, this should not be status of treatment">status</a><a name="MedicationPrescription.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status of the prescription, this should not be status of treatment</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.statusReason" title="Reason for the current status of prescription, for example the reason why the prescription was made invalid">statusReason</a><a name="MedicationPrescription.statusReason"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for the current status of prescription, for example the reason why the prescription was made invalid<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.statusReasonText" title="Textual reason for the current status of prescription">statusReasonText</a><a name="MedicationPrescription.statusReasonText"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html" title="Element">ST</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Textual reason for the current status of prescription</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.medication" title="Prescribed product, branded, generic, virtual, extemporal, etc">medication</a><a name="MedicationPrescription.medication"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="StructureDefinition-MedicinalProductLM.html">Medicinal product (model)</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Prescribed product, branded, generic, virtual, extemporal, etc</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.indication" title="Reason for the prescription (typically diagnosis, or a procedure)">indication</a><a name="MedicationPrescription.indication"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for the prescription (typically diagnosis, or a procedure)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.indicationText" title="Reason for the prescription in textual form. This might not be allowed by some implementations.">indicationText</a><a name="MedicationPrescription.indicationText"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html" title="Element">ST</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for the prescription in textual form. This might not be allowed by some implementations.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.treatmentPeriod" title="Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)">treatmentPeriod</a><a name="MedicationPrescription.treatmentPeriod"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.usageInstructions" title="Dosaging and administration instructions">usageInstructions</a><a name="MedicationPrescription.usageInstructions"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="StructureDefinition-DosagingInformation.html">Dosaging (model)</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dosaging and administration instructions<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.preparationInstructions" title="Additional instructions about preparation or dispense">preparationInstructions</a><a name="MedicationPrescription.preparationInstructions"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html" title="Element">ST</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional instructions about preparation or dispense</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.substitution" title="Whether and which type of substitution is allowed for this medication treatment line">substitution</a><a name="MedicationPrescription.substitution"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-Class.html" title="BackboneElement">Class</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether and which type of substitution is allowed for this medication treatment line</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.substitution.allowed" title="Whether substitution is allowed or not.">allowed</a><a name="MedicationPrescription.substitution.allowed"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-BL.html" title="Element">BL</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether substitution is allowed or not.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.substitution.type" title="The type of substitution that is allowed.">type</a><a name="MedicationPrescription.substitution.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The type of substitution that is allowed.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.substitution.reason[x]" title="Reason for the substitution requirement">reason[x]</a><a name="MedicationPrescription.substitution.reason_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html" title="Element">CD</a>, <a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html" title="Element">ST</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for the substitution requirement</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.offLabel" title="Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product.">offLabel</a><a name="MedicationPrescription.offLabel"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.offLabel.offLabelUse" title="Indicates off-label use. Must be 'true' when .reason is provided.">offLabelUse</a><a name="MedicationPrescription.offLabel.offLabelUse"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates off-label use. Must be 'true' when .reason is provided.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.offLabel.offLabelUseReason[x]" title="Reason or related clarification for off-label use.">offLabelUseReason[x]</a><a name="MedicationPrescription.offLabel.offLabelUseReason_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason or related clarification for off-label use.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">offLabelUseReasonCodeableConcept</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span title="string Type: A sequence of Unicode characters">offLabelUseReasonString</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MedicationPrescription-definitions.html#MedicationPrescription.comment" title="Additional information or comments">comment</a><a name="MedicationPrescription.comment"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html" title="Element">ST</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Additional information or comments<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription"/>
+  <version value="0.1.0"/>
+  <name value="MedicationPrescription"/>
+  <title value="Medication prescription (model)"/>
+  <status value="active"/>
+  <date value="2025-03-17T17:12:42+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for medication prescription (or some other form of order)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="MedicationPrescription">
+      <path value="MedicationPrescription"/>
+      <short value="Medication prescription (model)"/>
+      <definition value="Logical model for medication prescription (or some other form of order)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="MedicationPrescription.identifier">
+      <path value="MedicationPrescription.identifier"/>
+      <short value="Business identifier(s) for the prescription"/>
+      <definition value="Business identifier(s) for the prescription"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.identifier"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.groupIdentifier">
+      <path value="MedicationPrescription.groupIdentifier"/>
+      <short value="Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"/>
+      <definition value="Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.groupIdentifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.recordingDate">
+      <path value="MedicationPrescription.recordingDate"/>
+      <short value="Time of authoring the prescription/draft in the information system"/>
+      <definition value="Time of authoring the prescription/draft in the information system"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.recordingDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.issueDate">
+      <path value="MedicationPrescription.issueDate"/>
+      <short value="Time of issuing (signing) the prescription by health care practicioner"/>
+      <definition value="Time of issuing (signing) the prescription by health care practicioner"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.issueDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.recorder">
+      <path value="MedicationPrescription.recorder"/>
+      <short value="The recorder of the prescription/draft in the information system"/>
+      <definition value="The recorder of the prescription/draft in the information system"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.recorder"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.prescriber">
+      <path value="MedicationPrescription.prescriber"/>
+      <short value="The person who made the prescription, and who takes the responsibility of the treatment"/>
+      <definition value="Question: would we want to add basic Practicioner model?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.prescriber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.category">
+      <path value="MedicationPrescription.category"/>
+      <short value="Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."/>
+      <definition value="Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.category"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.validFrom">
+      <path value="MedicationPrescription.validFrom"/>
+      <short value="Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"/>
+      <definition value="Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.validFrom"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.validUntil">
+      <path value="MedicationPrescription.validUntil"/>
+      <short value="The validity period end date. The prescription is not dispensable after this date."/>
+      <definition value="The validity period end date. The prescription is not dispensable after this date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.validUntil"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.patient">
+      <path value="MedicationPrescription.patient"/>
+      <short value="The person for whom the medication is prescribed/ordered"/>
+      <definition value="Question: would we want to add basic Patient model?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.status">
+      <path value="MedicationPrescription.status"/>
+      <short value="Status of the prescription, this should not be status of treatment"/>
+      <definition value="Status of the prescription, this should not be status of treatment"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.statusReason">
+      <path value="MedicationPrescription.statusReason"/>
+      <short value="Reason for the current status of prescription, for example the reason why the prescription was made invalid"/>
+      <definition value="Reason for the current status of prescription, for example the reason why the prescription was made invalid"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.statusReason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.statusReasonText">
+      <path value="MedicationPrescription.statusReasonText"/>
+      <short value="Textual reason for the current status of prescription"/>
+      <definition value="Textual reason for the current status of prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.statusReasonText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.medication">
+      <path value="MedicationPrescription.medication"/>
+      <short value="Prescribed product, branded, generic, virtual, extemporal, etc"/>
+      <definition value="Prescribed product, branded, generic, virtual, extemporal, etc"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.medication"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.indication">
+      <path value="MedicationPrescription.indication"/>
+      <short value="Reason for the prescription (typically diagnosis, or a procedure)"/>
+      <definition value="Reason for the prescription (typically diagnosis, or a procedure)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.indication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.indicationText">
+      <path value="MedicationPrescription.indicationText"/>
+      <short value="Reason for the prescription in textual form. This might not be allowed by some implementations."/>
+      <definition value="Reason for the prescription in textual form. This might not be allowed by some implementations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.indicationText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.treatmentPeriod">
+      <path value="MedicationPrescription.treatmentPeriod"/>
+      <short value="Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"/>
+      <definition value="Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.treatmentPeriod"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.usageInstructions">
+      <path value="MedicationPrescription.usageInstructions"/>
+      <short value="Dosaging and administration instructions"/>
+      <definition value="Dosaging and administration instructions"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.usageInstructions"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.preparationInstructions">
+      <path value="MedicationPrescription.preparationInstructions"/>
+      <short value="Additional instructions about preparation or dispense"/>
+      <definition value="Additional instructions about preparation or dispense"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.preparationInstructions"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution">
+      <path value="MedicationPrescription.substitution"/>
+      <short value="Whether and which type of substitution is allowed for this medication treatment line"/>
+      <definition value="Whether and which type of substitution is allowed for this medication treatment line"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.substitution"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/Class"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="MedicationPrescription.substitution.id">
+      <path value="MedicationPrescription.substitution.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="id"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="MedicationPrescription.substitution.extension">
+      <path value="MedicationPrescription.substitution.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="MedicationPrescription.substitution.modifierExtension">
+      <path value="MedicationPrescription.substitution.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="MedicationPrescription.substitution.allowed">
+      <path value="MedicationPrescription.substitution.allowed"/>
+      <short value="Whether substitution is allowed or not."/>
+      <definition value="Whether substitution is allowed or not."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.substitution.allowed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution.type">
+      <path value="MedicationPrescription.substitution.type"/>
+      <short value="The type of substitution that is allowed."/>
+      <definition value="The type of substitution that is allowed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.substitution.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution.reason[x]">
+      <path value="MedicationPrescription.substitution.reason[x]"/>
+      <short value="Reason for the substitution requirement"/>
+      <definition value="Reason for the substitution requirement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.substitution.reason[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel">
+      <path value="MedicationPrescription.offLabel"/>
+      <short value="Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."/>
+      <definition value="Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.offLabel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel.offLabelUse">
+      <path value="MedicationPrescription.offLabel.offLabelUse"/>
+      <short value="Indicates off-label use. Must be 'true' when .reason is provided."/>
+      <definition value="Indicates off-label use. Must be 'true' when .reason is provided."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="MedicationPrescription.offLabel.offLabelUse"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel.offLabelUseReason[x]">
+      <path value="MedicationPrescription.offLabel.offLabelUseReason[x]"/>
+      <short value="Reason or related clarification for off-label use."/>
+      <definition value="Reason or related clarification for off-label use."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.offLabel.offLabelUseReason[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.comment">
+      <path value="MedicationPrescription.comment"/>
+      <short value="Additional information or comments"/>
+      <definition value="Additional information or comments"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="MedicationPrescription.comment"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="MedicationPrescription">
+      <path value="MedicationPrescription"/>
+      <short value="Medication prescription (model)"/>
+      <definition value="Logical model for medication prescription (or some other form of order)"/>
+    </element>
+    <element id="MedicationPrescription.identifier">
+      <path value="MedicationPrescription.identifier"/>
+      <short value="Business identifier(s) for the prescription"/>
+      <definition value="Business identifier(s) for the prescription"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.groupIdentifier">
+      <path value="MedicationPrescription.groupIdentifier"/>
+      <short value="Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"/>
+      <definition value="Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.recordingDate">
+      <path value="MedicationPrescription.recordingDate"/>
+      <short value="Time of authoring the prescription/draft in the information system"/>
+      <definition value="Time of authoring the prescription/draft in the information system"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.issueDate">
+      <path value="MedicationPrescription.issueDate"/>
+      <short value="Time of issuing (signing) the prescription by health care practicioner"/>
+      <definition value="Time of issuing (signing) the prescription by health care practicioner"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.recorder">
+      <path value="MedicationPrescription.recorder"/>
+      <short value="The recorder of the prescription/draft in the information system"/>
+      <definition value="The recorder of the prescription/draft in the information system"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.prescriber">
+      <path value="MedicationPrescription.prescriber"/>
+      <short value="The person who made the prescription, and who takes the responsibility of the treatment"/>
+      <definition value="Question: would we want to add basic Practicioner model?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.category">
+      <path value="MedicationPrescription.category"/>
+      <short value="Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."/>
+      <definition value="Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.validFrom">
+      <path value="MedicationPrescription.validFrom"/>
+      <short value="Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"/>
+      <definition value="Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.validUntil">
+      <path value="MedicationPrescription.validUntil"/>
+      <short value="The validity period end date. The prescription is not dispensable after this date."/>
+      <definition value="The validity period end date. The prescription is not dispensable after this date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/DT"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.patient">
+      <path value="MedicationPrescription.patient"/>
+      <short value="The person for whom the medication is prescribed/ordered"/>
+      <definition value="Question: would we want to add basic Patient model?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.status">
+      <path value="MedicationPrescription.status"/>
+      <short value="Status of the prescription, this should not be status of treatment"/>
+      <definition value="Status of the prescription, this should not be status of treatment"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.statusReason">
+      <path value="MedicationPrescription.statusReason"/>
+      <short value="Reason for the current status of prescription, for example the reason why the prescription was made invalid"/>
+      <definition value="Reason for the current status of prescription, for example the reason why the prescription was made invalid"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.statusReasonText">
+      <path value="MedicationPrescription.statusReasonText"/>
+      <short value="Textual reason for the current status of prescription"/>
+      <definition value="Textual reason for the current status of prescription"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.medication">
+      <path value="MedicationPrescription.medication"/>
+      <short value="Prescribed product, branded, generic, virtual, extemporal, etc"/>
+      <definition value="Prescribed product, branded, generic, virtual, extemporal, etc"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.indication">
+      <path value="MedicationPrescription.indication"/>
+      <short value="Reason for the prescription (typically diagnosis, or a procedure)"/>
+      <definition value="Reason for the prescription (typically diagnosis, or a procedure)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.indicationText">
+      <path value="MedicationPrescription.indicationText"/>
+      <short value="Reason for the prescription in textual form. This might not be allowed by some implementations."/>
+      <definition value="Reason for the prescription in textual form. This might not be allowed by some implementations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.treatmentPeriod">
+      <path value="MedicationPrescription.treatmentPeriod"/>
+      <short value="Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"/>
+      <definition value="Period over which the medication is to be taken (in case of multiple dosaging schemes, this would be the overall period of all dosages.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.usageInstructions">
+      <path value="MedicationPrescription.usageInstructions"/>
+      <short value="Dosaging and administration instructions"/>
+      <definition value="Dosaging and administration instructions"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.preparationInstructions">
+      <path value="MedicationPrescription.preparationInstructions"/>
+      <short value="Additional instructions about preparation or dispense"/>
+      <definition value="Additional instructions about preparation or dispense"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution">
+      <path value="MedicationPrescription.substitution"/>
+      <short value="Whether and which type of substitution is allowed for this medication treatment line"/>
+      <definition value="Whether and which type of substitution is allowed for this medication treatment line"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/Class"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution.allowed">
+      <path value="MedicationPrescription.substitution.allowed"/>
+      <short value="Whether substitution is allowed or not."/>
+      <definition value="Whether substitution is allowed or not."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution.type">
+      <path value="MedicationPrescription.substitution.type"/>
+      <short value="The type of substitution that is allowed."/>
+      <definition value="The type of substitution that is allowed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.substitution.reason[x]">
+      <path value="MedicationPrescription.substitution.reason[x]"/>
+      <short value="Reason for the substitution requirement"/>
+      <definition value="Reason for the substitution requirement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel">
+      <path value="MedicationPrescription.offLabel"/>
+      <short value="Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."/>
+      <definition value="Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel.offLabelUse">
+      <path value="MedicationPrescription.offLabel.offLabelUse"/>
+      <short value="Indicates off-label use. Must be 'true' when .reason is provided."/>
+      <definition value="Indicates off-label use. Must be 'true' when .reason is provided."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.offLabel.offLabelUseReason[x]">
+      <path value="MedicationPrescription.offLabel.offLabelUseReason[x]"/>
+      <short value="Reason or related clarification for off-label use."/>
+      <definition value="Reason or related clarification for off-label use."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="MedicationPrescription.comment">
+      <path value="MedicationPrescription.comment"/>
+      <short value="Additional information or comments"/>
+      <definition value="Additional information or comments"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

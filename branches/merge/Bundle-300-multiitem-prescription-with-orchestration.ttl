@@ -1,0 +1,414 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/MPD/Bundle/300-multiitem-prescription-with-orchestration> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "300-multiitem-prescription-with-orchestration"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://example.com/RequestOrchestration/300-RequestOrchestration"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/RequestOrchestration/300-RequestOrchestration> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/MedicationRequest/300-2-medication-prescription-request1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/MedicationRequest/300-2-medication-prescription-request1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/MedicationRequest/300-2-medication-prescription-request2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/MedicationRequest/300-2-medication-prescription-request2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/PractitionerRole/doctor1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/PractitionerRole/doctor1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/Patient/patient1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/Patient/patient1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/Medication/02A2-CanifugCremolumPessaryItem"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/Medication/02A2-CanifugCremolumPessaryItem> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/Medication/02A1-CanifugCremolumCreamItem"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/Medication/02A1-CanifugCremolumCreamItem> )
+  ] ) . # 
+
+<https://example.com/RequestOrchestration/300-RequestOrchestration> a fhir:RequestOrchestration ;
+  fhir:id [ fhir:v "300-RequestOrchestration"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestOrchestration_300-RequestOrchestration\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestOrchestration 300-RequestOrchestration</b></p><a name=\"300-RequestOrchestration\"> </a><a name=\"hc300-RequestOrchestration\"> </a><a name=\"300-RequestOrchestration-en-US\"> </a><p><b>groupIdentifier</b>: 300</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><blockquote><p><b>action</b></p><p><b>resource</b>: <a href=\"MedicationRequest-300-2-medication-prescription-request1.html\">MedicationRequest: identifier = 300-1/2; groupIdentifier = 300; status = active; intent = order; authoredOn = 2024-10-06</a></p></blockquote><blockquote><p><b>action</b></p><p><b>resource</b>: <a href=\"MedicationRequest-300-2-medication-prescription-request2.html\">MedicationRequest: identifier = 300-2/2; groupIdentifier = 300; status = active; intent = order; authoredOn = 2024-10-06</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "300" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/MedicationRequest/300-2-medication-prescription-request1> ;
+       fhir:reference [ fhir:v "MedicationRequest/300-2-medication-prescription-request1" ]
+     ]
+  ] [
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/MedicationRequest/300-2-medication-prescription-request2> ;
+       fhir:reference [ fhir:v "MedicationRequest/300-2-medication-prescription-request2" ]
+     ]
+  ] ) . # 
+
+<https://example.com/MedicationRequest/300-2-medication-prescription-request1> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "300-2-medication-prescription-request1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationPrescription"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_300-2-medication-prescription-request1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 300-2-medication-prescription-request1</b></p><a name=\"300-2-medication-prescription-request1\"> </a><a name=\"hc300-2-medication-prescription-request1\"> </a><a name=\"300-2-medication-prescription-request1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationPrescription.html\">IHE Medication Prescription</a></p></div><p><b>identifier</b>: 300-1/2</p><p><b>groupIdentifier</b>: 300</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-02A2-CanifugCremolumPessaryItem.html\">Medication: extension = Pessary; doseForm = Pessary; totalVolume = 6 Pessary</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">PractitionerRole Clinical oncologist</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 72934000}\">Candidiasis of vagina</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Late Evening, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733007009 = 'Pessary (unit of presentation)')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733007009 = 'Pessary (unit of presentation)')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "300-1/2" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "300" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/Medication/02A2-CanifugCremolumPessaryItem> ;
+       fhir:reference [ fhir:v "Medication/02A2-CanifugCremolumPessaryItem" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/PractitionerRole/doctor1> ;
+     fhir:reference [ fhir:v "PractitionerRole/doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:72934000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "72934000" ] ;
+         fhir:display [ fhir:v "Candidiasis of vagina" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ] ;
+         fhir:when ( [ fhir:v "EVE.late" ] )
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Pessary" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "733007009" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-06"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Pessary" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733007009" ]
+     ]
+  ] . # 
+
+<https://example.com/MedicationRequest/300-2-medication-prescription-request2> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "300-2-medication-prescription-request2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationPrescription"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_300-2-medication-prescription-request2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 300-2-medication-prescription-request2</b></p><a name=\"300-2-medication-prescription-request2\"> </a><a name=\"hc300-2-medication-prescription-request2\"> </a><a name=\"300-2-medication-prescription-request2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationPrescription.html\">IHE Medication Prescription</a></p></div><p><b>identifier</b>: 300-2/2</p><p><b>groupIdentifier</b>: 300</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-02A1-CanifugCremolumCreamItem.html\">Medication: extension = Tube,20 gram; doseForm = Vaginal cream; totalVolume = 1 Tube</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">PractitionerRole Clinical oncologist</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 72934000}\">Candidiasis of vagina</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Application - unit of product usage<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code413568008 = 'Application')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>20 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "300-2/2" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "300" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/Medication/02A1-CanifugCremolumCreamItem> ;
+       fhir:reference [ fhir:v "Medication/02A1-CanifugCremolumCreamItem" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/PractitionerRole/doctor1> ;
+     fhir:reference [ fhir:v "PractitionerRole/doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:72934000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "72934000" ] ;
+         fhir:display [ fhir:v "Candidiasis of vagina" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Application - unit of product usage" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "413568008" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-06"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "gram(s)" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g" ]
+     ]
+  ] . # 
+
+<https://example.com/PractitionerRole/doctor1> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "doctor1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_doctor1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole doctor1</b></p><a name=\"doctor1\"> </a><a name=\"hcdoctor1\"> </a><a name=\"doctor1-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-practitioner1.html\">Dr Meryl Ärztin</a></p><p><b>organization</b>: <a href=\"Organization-organization1.html\">Dr Ärztin Private Practice</a></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 309295000}\">Clinical oncologist</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/Practitioner/practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner1" ] ;
+     fhir:display [ fhir:v "Dr Meryl Ärztin" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://profiles.ihe.net/PHARM/MPD/Organization/organization1> ;
+     fhir:reference [ fhir:v "Organization/organization1" ] ;
+     fhir:display [ fhir:v "Dr Ärztin Private Practice" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:309295000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "309295000" ] ;
+       fhir:display [ fhir:v "Clinical oncologist" ]
+     ] )
+  ] ) . # 
+
+<https://example.com/Patient/patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient1</b></p><a name=\"patient1\"> </a><a name=\"hcpatient1\"> </a><a name=\"patient1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Engine" ] ;
+     fhir:given ( [ fhir:v "Thomas" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1950-09-15"^^xsd:date] . # 
+
+<https://example.com/Medication/02A2-CanifugCremolumPessaryItem> a fhir:Medication ;
+  fhir:id [ fhir:v "02A2-CanifugCremolumPessaryItem"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedication"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_02A2-CanifugCremolumPessaryItem\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication 02A2-CanifugCremolumPessaryItem</b></p><a name=\"02A2-CanifugCremolumPessaryItem\"> </a><a name=\"hc02A2-CanifugCremolumPessaryItem\"> </a><a name=\"02A2-CanifugCremolumPessaryItem-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedication.html\">IHE Medication</a></p></div><p><b>Medication - Unit of presentation</b>: <span title=\"Codes:{http://standardterms.edqm.eu 15039000}\">Pessary</span></p><p><b>doseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10909000}\">Pessary</span></p><p><b>totalVolume</b>: 6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = 'Pessary')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 387325003}\">Clotrimazole</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 100 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = 'Pessary')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-unitofpresentation"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15039000" ] ;
+         fhir:display [ fhir:v "Pessary" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10909000" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] ; # 
+  fhir:totalVolume [
+     fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pessary" ] ;
+     fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "15039000" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:387325003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "387325003" ] ;
+           fhir:display [ fhir:v "Clotrimazole" ]
+         ] )
+       ]
+     ] ;
+     fhir:isActive [ fhir:v true ] ;
+     fhir:strength [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Pessary" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15039000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://example.com/Medication/02A1-CanifugCremolumCreamItem> a fhir:Medication ;
+  fhir:id [ fhir:v "02A1-CanifugCremolumCreamItem"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedication"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_02A1-CanifugCremolumCreamItem\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication 02A1-CanifugCremolumCreamItem</b></p><a name=\"02A1-CanifugCremolumCreamItem\"> </a><a name=\"hc02A1-CanifugCremolumCreamItem\"> </a><a name=\"02A1-CanifugCremolumCreamItem-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedication.html\">IHE Medication</a></p></div><p><b>Medication - Unit of presentation</b>: <span title=\"Codes:{http://standardterms.edqm.eu 15058000}\">Tube</span></p><p><b>Medication - Size of Item</b>: 20 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p><p><b>doseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10901000}\">Vaginal cream</span></p><p><b>totalVolume</b>: 1 Tube<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15058000 = 'Tube')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 387325003}\">Clotrimazole</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-unitofpresentation"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15058000" ] ;
+         fhir:display [ fhir:v "Tube" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-sizeofitem"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "gram" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g" ]
+     ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10901000" ] ;
+       fhir:display [ fhir:v "Vaginal cream" ]
+     ] )
+  ] ; # 
+  fhir:totalVolume [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Tube" ] ;
+     fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "15058000" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:387325003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "387325003" ] ;
+           fhir:display [ fhir:v "Clotrimazole" ]
+         ] )
+       ]
+     ] ;
+     fhir:isActive [ fhir:v true ] ;
+     fhir:strength [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "gram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,7 @@
+{
+  "version" : "1.0.0-comment-3",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20260422131214",
+  "name" : "ihe.pharm.mpd",
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

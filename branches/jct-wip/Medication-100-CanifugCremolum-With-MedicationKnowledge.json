@@ -1,0 +1,209 @@
+{
+  "resourceType" : "Medication",
+  "id" : "100-CanifugCremolum-With-MedicationKnowledge",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication 100-CanifugCremolum-With-MedicationKnowledge</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge-en-US\"> </a><p><b>identifier</b>: <code>https://www.ravimiregister.ee</code>/1033692</p><p><b>doseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 14001000}\">Cream + pessary</span></p><p><b>definition</b>: <a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-MedicationKnowledge\">MedicationKnowledge Canifug Cremolum</a></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: MedicationKnowledge #100-CanifugCremolum-MedicationKnowledge</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-MedicationKnowledge\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-MedicationKnowledge\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-MedicationKnowledge-en-US\"> </a><p><b>name</b>: Canifug Cremolum</p><h3>MedicineClassifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">unknown</span></td><td><span title=\"Codes:{http://www.whocc.no/atc G01AF02}\">clotrimazole</span></td></tr></table><h3>Packagings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>PackagedProduct</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-PackagedProductDefinition\">PackagedProductDefinition: containedItemQuantity = 6 Pessary,1 Tube</a></td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition #100-CanifugCremolum-PackagedProductDefinition</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-PackagedProductDefinition\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-PackagedProductDefinition\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/100-CanifugCremolum-PackagedProductDefinition-en-US\"> </a><p><b>containedItemQuantity</b>: 6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = 'Pessary')</span>, 1 Tube<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15058000 = 'Tube')</span></p><blockquote><p><b>packaging</b></p><blockquote><p><b>containedItem</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-MID\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Pessary; unitOfPresentation = Pessary</a></td></tr></table><p><b>amount</b>: 6</p></blockquote><blockquote><p><b>containedItem</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-MID\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Vaginal cream; unitOfPresentation = Tube</a></td></tr></table><p><b>amount</b>: 20 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></blockquote></blockquote></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition #CanifugCremolum-10mg1g-Cream-EE-MID</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-MID\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-MID\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10901000}\">Vaginal cream</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{http://standardterms.edqm.eu 15058000}\">Tube</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition #CanifugCremolum-100mg-Pessary-EE-MID</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-MID\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-MID\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10909000}\">Pessary</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{http://standardterms.edqm.eu 15039000}\">Pessary</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Ingredient #CanifugCremolum-10mg1g-Cream-EE-I</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-I\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-I\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: <a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-10mg1g-Cream-EE-MID\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Vaginal cream; unitOfPresentation = Tube</a></p><p><b>role</b>: <span title=\"Codes:{http://hl7.org/fhir/ingredient-role 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}\">CLOTRIMAZOLE</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concentration[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></td></tr></table></blockquote></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Ingredient #CanifugCremolum-100mg-Pessary-EE-I</b></p><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-I\"> </a><a name=\"hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-I\"> </a><a name=\"100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: <a href=\"#hc100-CanifugCremolum-With-MedicationKnowledge/CanifugCremolum-100mg-Pessary-EE-MID\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Pessary; unitOfPresentation = Pessary</a></p><p><b>role</b>: <span title=\"Codes:{http://hl7.org/fhir/ingredient-role 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}\">CLOTRIMAZOLE</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Presentation[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>100 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = 'Pessary')</span></td></tr></table></blockquote></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "MedicationKnowledge",
+    "id" : "100-CanifugCremolum-MedicationKnowledge",
+    "name" : ["Canifug Cremolum"],
+    "medicineClassification" : [{
+      "type" : {
+        "coding" : [{
+          "code" : "unknown"
+        }]
+      },
+      "classification" : [{
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "G01AF02",
+          "display" : "clotrimazole"
+        }]
+      }]
+    }],
+    "packaging" : [{
+      "packagedProduct" : {
+        "reference" : "#100-CanifugCremolum-PackagedProductDefinition"
+      }
+    }]
+  },
+  {
+    "resourceType" : "PackagedProductDefinition",
+    "id" : "100-CanifugCremolum-PackagedProductDefinition",
+    "containedItemQuantity" : [{
+      "value" : 6,
+      "unit" : "Pessary",
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "15039000"
+    },
+    {
+      "value" : 1,
+      "unit" : "Tube",
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "15058000"
+    }],
+    "packaging" : {
+      "containedItem" : [{
+        "item" : {
+          "reference" : {
+            "reference" : "#CanifugCremolum-100mg-Pessary-EE-MID"
+          }
+        },
+        "amount" : {
+          "value" : 6
+        }
+      },
+      {
+        "item" : {
+          "reference" : {
+            "reference" : "#CanifugCremolum-10mg1g-Cream-EE-MID"
+          }
+        },
+        "amount" : {
+          "value" : 20,
+          "unit" : "gram(s)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g"
+        }
+      }]
+    }
+  },
+  {
+    "resourceType" : "ManufacturedItemDefinition",
+    "id" : "CanifugCremolum-10mg1g-Cream-EE-MID",
+    "status" : "active",
+    "manufacturedDoseForm" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "10901000",
+        "display" : "Vaginal cream"
+      }]
+    },
+    "unitOfPresentation" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "15058000",
+        "display" : "Tube"
+      }]
+    }
+  },
+  {
+    "resourceType" : "ManufacturedItemDefinition",
+    "id" : "CanifugCremolum-100mg-Pessary-EE-MID",
+    "status" : "active",
+    "manufacturedDoseForm" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "10909000",
+        "display" : "Pessary"
+      }]
+    },
+    "unitOfPresentation" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "15039000",
+        "display" : "Pessary"
+      }]
+    }
+  },
+  {
+    "resourceType" : "Ingredient",
+    "id" : "CanifugCremolum-10mg1g-Cream-EE-I",
+    "status" : "active",
+    "for" : [{
+      "reference" : "#CanifugCremolum-10mg1g-Cream-EE-MID"
+    }],
+    "role" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/ingredient-role",
+        "code" : "100000072072",
+        "display" : "Active"
+      }]
+    },
+    "substance" : {
+      "code" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+            "code" : "100000092074",
+            "display" : "CLOTRIMAZOLE"
+          }]
+        }
+      },
+      "strength" : [{
+        "concentrationRatio" : {
+          "numerator" : {
+            "value" : 10,
+            "unit" : "milligram(s)",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "gram(s)",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "g"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "resourceType" : "Ingredient",
+    "id" : "CanifugCremolum-100mg-Pessary-EE-I",
+    "status" : "active",
+    "for" : [{
+      "reference" : "#CanifugCremolum-100mg-Pessary-EE-MID"
+    }],
+    "role" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/ingredient-role",
+        "code" : "100000072072",
+        "display" : "Active"
+      }]
+    },
+    "substance" : {
+      "code" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+            "code" : "100000092074",
+            "display" : "CLOTRIMAZOLE"
+          }]
+        }
+      },
+      "strength" : [{
+        "presentationRatio" : {
+          "numerator" : {
+            "value" : 100,
+            "unit" : "milligram(s)",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Pessary",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15039000"
+          }
+        }
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://www.ravimiregister.ee",
+    "value" : "1033692"
+  }],
+  "doseForm" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "14001000",
+      "display" : "Cream + pessary"
+    }]
+  },
+  "definition" : {
+    "reference" : "#100-CanifugCremolum-MedicationKnowledge"
+  }
+}

@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ihe.mpd"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IHE_MPD</h2><p>The official URL for this implementation guide is: </p><pre>http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd</pre><div><p>ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery</p>
+</div></div>
+  </text>
+  <url value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd"/>
+  <version value="0.1.0"/>
+  <name value="IHE_MPD"/>
+  <title value="Medication Prescription and Delivery (MPD)"/>
+  <status value="active"/>
+  <date value="2024-04-07T18:26:49+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <packageId value="ihe.pharm.mpd"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_domain_logical_datatypes">
+    <uri value="https://profiles.ihe.net/Domain/LogicalDatatypes/ImplementationGuide/ihe.domain.logical-datatypes"/>
+    <packageId value="ihe.domain.logical-datatypes"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/01A-Cefuroxime1500GenericExplicit"/>
+      </reference>
+      <name value="01A-Cefuroxime1500GenericExplicit"/>
+      <description value="1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by attributes."/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/01B-Cefuroxime1500GenericConcept"/>
+      </reference>
+      <name value="01B-Cefuroxime1500GenericConcept"/>
+      <description value="1B. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by a code system (receiving system is expected to have access to the code system for additional attributes or display names)."/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/01C-Cefuroxime1500Branded"/>
+      </reference>
+      <name value="01C-Cefuroxime1500Branded"/>
+      <description value="1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Branded packaged product, defined by attributes."/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/02A-ClotrimazoleCanifugCremolum"/>
+      </reference>
+      <name value="02A-ClotrimazoleCanifugCremolum"/>
+      <description value="2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packaged product, consisting of different medication items. Defined by attributes."/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/02A1-CanifugCremolumCreamItem"/>
+      </reference>
+      <name value="02A1-CanifugCremolumCreamItem"/>
+      <description value="Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug Cremolum product (ISO IDMP manufactured item)"/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/02A2-CanifugCremolumPessaryItem"/>
+      </reference>
+      <name value="02A2-CanifugCremolumPessaryItem"/>
+      <description value="Clotrimazole pessary (6 pessaries of 100mg) as part of Canifug Cremolum product (ISO IDMP manufactured item)"/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/03B-VitaminBComplexBranded"/>
+      </reference>
+      <name value="03B-VitaminBComplexBranded"/>
+      <description value="3B. Milgamma N, B-vitamin complex. Branded packaged product, defined by attributes."/>
+      <isExample value="true"/>
+      <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Classification"/>
+      </reference>
+      <name value="Classification"/>
+      <description value="Medication classification/category. Allows the product to be classified by various systems, e.g ATC, narcotic class, legal status of supply, etc."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DosagingInformation"/>
+      </reference>
+      <name value="Dosaging - Data Model"/>
+      <description value="Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHEMedicationPrescription"/>
+      </reference>
+      <name value="IHE Medication Prescription"/>
+      <description value="IHE Medication Prescription profile"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHEMedicationDispensation"/>
+      </reference>
+      <name value="IHEMedicationDispensation"/>
+      <description value="MedicationDispense profile for capturing dispensation information based on a medication prescription."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ihe-ext-medication-classification"/>
+      </reference>
+      <name value="Medication Classification"/>
+      <description value="Classification."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicationDispensation"/>
+      </reference>
+      <name value="Medication dispensation - Data Model"/>
+      <description value="Logical model for medication dispensation (based on request or independently)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ihe-ext-medication-packsize"/>
+      </reference>
+      <name value="Medication Package Size"/>
+      <description value="Package size of a product."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ihe-ext-medication-productname"/>
+      </reference>
+      <name value="Medication Package Size"/>
+      <description value="Classification."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicationPrescription"/>
+      </reference>
+      <name value="Medication prescription - Data Model"/>
+      <description value="Logical model for medication prescription (or some other form of order)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ihe-ext-medicationrequest-totalamount"/>
+      </reference>
+      <name value="MedicationRequest - Total Amount"/>
+      <description value="Total amount of product being requested."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicinalProduct"/>
+      </reference>
+      <name value="Medicinal product"/>
+      <description value="Medication for clinical use cases. This could be a branded product or a generic concept, also allowing describing pack size and components of complex products."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicinalProductLM"/>
+      </reference>
+      <name value="Medicinal product"/>
+      <description value="Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicinalProductDevice"/>
+      </reference>
+      <name value="MedicinalProductDevice"/>
+      <description value="Device, typically an administration device, included in the medicinal product."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicinalProductName"/>
+      </reference>
+      <name value="MedicinalProductName"/>
+      <description value="Name of the medicinal product. Optionally the type of name (Full official name, prescribing name, invented name) and language of the name can be specified. The extension is a simplified approach of what is used in MedicinalProductDefinition resource."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PatientBasic"/>
+      </reference>
+      <name value="Patient - Data Model"/>
+      <description value="Basic patient data relevant for this use case"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PractitionerBasic"/>
+      </reference>
+      <name value="Practitioner - Data Model"/>
+      <description value="Basic prescribing/dispensing practitioner's data relevant for this use case"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SizeOfMedicationItem"/>
+      </reference>
+      <name value="SizeOfMedicationItem"/>
+      <description value="Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials."/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="MPD Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="volume-1.html"/>
+        <name value="volume-1.html"/>
+        <title value="Volume 1"/>
+        <generation value="markdown"/>
+        <page>
+          <sourceUrl value="glossary.html"/>
+          <name value="glossary.html"/>
+          <title value="Glossary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="usecases.html"/>
+          <name value="usecases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+          <page>
+            <sourceUrl value="presc-use-case1.html"/>
+            <name value="presc-use-case1.html"/>
+            <title value="Use Case 1: Order straight to dispense"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <sourceUrl value="presc-use-case-2.html"/>
+            <name value="presc-use-case-2.html"/>
+            <title value="Use Case 2: Proposal order"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <sourceUrl value="MMA-homenursing.html"/>
+            <name value="MMA-homenursing.html"/>
+            <title value="Mobile Medication Administration - Home Nursing"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <sourceUrl value="MMA-chemotherapy.html"/>
+            <name value="MMA-chemotherapy.html"/>
+            <title value="Mobile Medication Administration - Chemotherapy"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <sourceUrl value="medication-concepts.html"/>
+          <name value="medication-concepts.html"/>
+          <title value="Medication Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="order-management.html"/>
+          <name value="order-management.html"/>
+          <title value="Order Management"/>
+          <generation value="markdown"/>
+          <page>
+            <sourceUrl value="prescription-lines.html"/>
+            <name value="prescription-lines.html"/>
+            <title value="Single- and multiline prescriptions"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <sourceUrl value="order-statuses.html"/>
+            <name value="order-statuses.html"/>
+            <title value="Managing order status"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <sourceUrl value="interoperability-model.html"/>
+          <name value="interoperability-model.html"/>
+          <title value="Interoperability Model"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="data-models.html"/>
+          <name value="data-models.html"/>
+          <title value="Data Models"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="actors-transactions.html"/>
+          <name value="actors-transactions.html"/>
+          <title value="Actors and Transactions Overview"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="security.html"/>
+          <name value="security.html"/>
+          <title value="Security Considerations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="cross-profile.html"/>
+          <name value="cross-profile.html"/>
+          <title value="Cross-profile Considerations"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <sourceUrl value="volume-2.html"/>
+        <name value="volume-2.html"/>
+        <title value="Volume 2"/>
+        <generation value="markdown"/>
+        <page>
+          <sourceUrl value="submit-medication-order.html"/>
+          <name value="submit-medication-order.html"/>
+          <title value="PHARM-X1: Submit Medication Order"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="retrieve-medication-order.html"/>
+          <name value="retrieve-medication-order.html"/>
+          <title value="PHARM-X2: Retrieve Medication Orders"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="submit-medication-dispense.html"/>
+          <name value="submit-medication-dispense.html"/>
+          <title value="PHARM-X3: Submit Medication Dispense"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="retrieve-medication-dispense.html"/>
+          <name value="retrieve-medication-dispense.html"/>
+          <title value="PHARM-X4: Retrieve Medication Dispenses"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="error_codes.html"/>
+          <name value="error_codes.html"/>
+          <title value="Error Codes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="testplan.html"/>
+          <name value="testplan.html"/>
+          <title value="Test Plan"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="fsh-generated/includes"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="usage-stats-opt-out"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

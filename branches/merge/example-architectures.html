@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Example implementation architectures - Medication Prescription and Dispense (MPD) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="ihe-logo" href="http://profiles.ihe.net">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a no-external="true" id="project-logo" href="http://profiles.ihe.net/PHARM/index.html"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Dispense (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-1.html">Overview</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="medication-concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="order-management.html">Order Management</a>
+      </li>
+      <li><a name="l213">​</a>
+        <a href="interoperability-model.html">Interoperability Model</a>
+      </li>
+      <li>
+        <a href="data-models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actor and Transactions Overview</a>
+      </li>
+      <li>
+        <a href="security.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross-profile.html">Cross-profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-2.html">Overview</a>
+      </li>
+      <li>
+        <a href="pharm-5.html">PHARM-5 - Submit Medication Order</a>
+      </li>
+      <li>
+        <a href="pharm-7.html">PHARM-7 - Retrieve Medication Order</a>
+      </li>
+      <li>
+        <a href="pharm-8.html">PHARM-8 - Submit Medication Dispense</a>
+      </li>
+      <li>
+        <a href="pharm-9.html">PHARM-9 - Retrieve Medication Dispense</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li><a name="l301">​</a>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Example implementation architectures</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Medication Prescription and Dispense (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd/tree/84/merge">https://github.com/IHE/pharm-mpd/tree/84/merge</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MPD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Example implementation architectures</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#central-prescription-repository" id="markdown-toc-central-prescription-repository">Central prescription repository</a></li>
+  <li><a href="#pull-model" id="markdown-toc-pull-model">Pull model</a></li>
+  <li><a href="#push-model" id="markdown-toc-push-model">Push model</a></li>
+  <li><a href="#ordering-flows" id="markdown-toc-ordering-flows">Ordering flows</a></li>
+</ul>
+
+</div>
+<p>The actors illustrated the <a href="actors-transactions.html">actors and transactions</a> can be grouped in different architectures.</p>
+
+<p>This page provides some examples with some information on how this can be specified.</p>
+
+<h3 id="central-prescription-repository">Central prescription repository</h3>
+
+<p>In the central prescription repository, the order placer communicates the prescriptions with a central prescription repository (which therefore implements the specification (actors) of Order Receiver and Order Responder).
+Similarly, the Order Consumer consults that repository for checking which prescriptions are available and to fetch the information of those prescriptions.</p>
+
+<figure>
+    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 647 278" zoomAndPan="magnify" preserveAspectRatio="none" width="647px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:647px;height:278px;background:#FFFFFF;" version="1.1" height="278px"><defs></defs><g><text font-weight="bold" lengthAdjust="spacing" x="10" font-size="14" textLength="619" y="22.9951" font-family="sans-serif" fill="#000000">Medication Prescription and Dispense - Actors and Transactions - Prescription</text>  <!-- cluster Central Server --><g id="cluster_Central Server"><path d="M27.5,169.8628 C27.5,159.8628 249.5,159.8628 249.5,159.8628 C249.5,159.8628 471.5,159.8628 471.5,169.8628 L471.5,251.8628 C471.5,261.8628 249.5,261.8628 249.5,261.8628 C249.5,261.8628 27.5,261.8628 27.5,251.8628 L27.5,169.8628 " style="stroke:#181818;stroke-width:1.0;" fill="#CCEEEE"></path><path d="M27.5,169.8628 C27.5,179.8628 249.5,179.8628 249.5,179.8628 C249.5,179.8628 471.5,179.8628 471.5,169.8628 " style="stroke:#181818;stroke-width:1.0;" fill="none"></path><text font-weight="bold" lengthAdjust="spacing" x="192" font-size="14" textLength="115" y="194.8579" font-family="sans-serif" fill="#000000">Central Server</text></g>  <!-- entity orderreceiver --><g id="elem_orderreceiver"><a name="l454">​</a><rect rx="2.5" ry="2.5" width="131" x="44" y="209.8628" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="54" font-size="14" textLength="4" y="232.8579" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="58" font-size="14" textLength="103" y="232.8579" font-family="sans-serif" fill="#0000FF">Order Receiver</text></a></g>  <!-- entity orderresponder --><g id="elem_orderresponder"><a name="l462">​</a><rect rx="2.5" ry="2.5" width="148" x="307.5" y="209.8628" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="317.5" font-size="14" textLength="4" y="232.8579" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="321.5" font-size="14" textLength="120" y="232.8579" font-family="sans-serif" fill="#0000FF">Order Responder</text></a></g>  <!-- entity orderplacer --><g id="elem_orderplacer"><a name="l470">​</a><rect rx="2.5" ry="2.5" width="117" x="51" y="45.8628" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="61" font-size="14" textLength="8" y="68.8579" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-placer" href="actors_and_transactions.html#order-placer" xlink:actuate="onRequest" title="actors_and_transactions.html#order-placer" xlink:href="actors_and_transactions.html#order-placer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="69" font-size="14" textLength="85" y="68.8579" font-family="sans-serif" fill="#0000FF">Order Placer</text></a></g>  <!-- entity OrderConsumer --><g id="elem_OrderConsumer"><a name="l478">​</a><rect rx="2.5" ry="2.5" width="151" x="305" y="45.8628" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="315" font-size="14" textLength="4" y="68.8579" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#OrderConsumer" href="actors_and_transactions.html#OrderConsumer" xlink:actuate="onRequest" title="actors_and_transactions.html#OrderConsumer" xlink:href="actors_and_transactions.html#OrderConsumer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="319" font-size="14" textLength="115" y="68.8579" font-family="sans-serif" fill="#0000FF">Order Consumer</text></a></g>  <!-- link orderplacer to orderreceiver --><g id="link_orderplacer_orderreceiver"><path d="M109.5,81.8928 C109.5,112.9228 109.5,178.3528 109.5,209.5728 " style="stroke:#181818;stroke-width:1.0;" id="orderplacer-orderreceiver" fill="none"></path><text lengthAdjust="spacing" x="110.5" font-size="13" textLength="12" y="140.0625" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="pharm-5.html" href="pharm-5.html" xlink:actuate="onRequest" title="pharm-5.html" xlink:href="pharm-5.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="122.5" font-size="13" textLength="59" y="124.9297" font-family="sans-serif" fill="#0000FF">PHARM-5</text></a><a xlink:type="simple" xlink:show="new" xlink:title="pharm-5.html" href="pharm-5.html" xlink:actuate="onRequest" title="pharm-5.html" xlink:href="pharm-5.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="122.5" font-size="13" textLength="159" y="140.0625" font-family="sans-serif" fill="#0000FF">Submit Medication Order</text></a><text lengthAdjust="spacing" x="285.5" font-size="13" textLength="11" y="140.0625" font-family="sans-serif" fill="#000000">↓</text></g>  <!-- link orderreceiver to orderresponder -->  <!-- link orderresponder to OrderConsumer -->  <!-- link OrderConsumer to orderresponder --><g id="link_OrderConsumer_orderresponder"><path d="M381.6,82.0928 C382.46,95.5128 383.5,111.8628 383.5,111.8628 C383.5,111.8628 383.5,143.8628 383.5,143.8628 C383.5,143.8628 382.5,185.3528 381.91,209.6628 " style="stroke:#181818;stroke-width:1.0;" id="OrderConsumer-orderresponder" fill="none"></path><text lengthAdjust="spacing" x="384.5" font-size="13" textLength="12" y="140.0625" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="pharm-7.html" href="pharm-7.html" xlink:actuate="onRequest" title="pharm-7.html" xlink:href="pharm-7.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="396.5" font-size="13" textLength="59" y="124.9297" font-family="sans-serif" fill="#0000FF">PHARM-7</text></a><a xlink:type="simple" xlink:show="new" xlink:title="pharm-7.html" href="pharm-7.html" xlink:actuate="onRequest" title="pharm-7.html" xlink:href="pharm-7.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="396.5" font-size="13" textLength="172" y="140.0625" font-family="sans-serif" fill="#0000FF">Retrieve Medication Orders</text></a><text lengthAdjust="spacing" x="572.5" font-size="13" textLength="11" y="140.0625" font-family="sans-serif" fill="#000000">↓</text></g>  <!-- link orderplacer to OrderConsumer --></g></svg>
+    <!-- <figcaption>Actors and Transactions - Dispense</figcaption> -->
+</figure>
+<p><br clear="all"/></p>
+
+<h3 id="pull-model">Pull model</h3>
+<p>In the Pull-Based Architecture, the Order Placer is integrated with the system that holds the prescriptions. When a healthcare entity (acting as an Order Consumer) needs to access a prescription, it explicitly pulls the information from the Order Responder using an on-demand query.</p>
+
+<figure>
+    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 738 234" zoomAndPan="magnify" preserveAspectRatio="none" width="738px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:738px;height:234px;background:#FFFFFF;" version="1.1" height="234px"><defs></defs><g><text font-weight="bold" lengthAdjust="spacing" x="193.75" font-size="14" textLength="337" y="22.9951" font-family="sans-serif" fill="#000000">Prescription Exchange - "Pull" architecture</text>  <!-- cluster PS --><g id="cluster_PS"><rect rx="2.5" ry="2.5" width="347" x="7" y="44.2969" style="stroke:#181818;stroke-width:1.0;" fill="#CCEEEE" height="184"></rect><text font-weight="bold" lengthAdjust="spacing" x="125" font-size="14" textLength="111" y="59.292" font-family="sans-serif" fill="#000000">Placer system</text></g>  <!-- entity orderplacer --><g id="elem_orderplacer"><a name="l541">​</a><rect rx="2.5" ry="2.5" width="117" x="30.5" y="79.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="40.5" font-size="14" textLength="8" y="102.292" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-placer" href="actors_and_transactions.html#order-placer" xlink:actuate="onRequest" title="actors_and_transactions.html#order-placer" xlink:href="actors_and_transactions.html#order-placer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="48.5" font-size="14" textLength="85" y="102.292" font-family="sans-serif" fill="#0000FF">Order Placer</text></a></g>  <!-- entity orderreceiver --><g id="elem_orderreceiver"><a name="l549">​</a><rect rx="2.5" ry="2.5" width="131" x="23.5" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="33.5" font-size="14" textLength="4" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="37.5" font-size="14" textLength="103" y="199.292" font-family="sans-serif" fill="#0000FF">Order Receiver</text></a></g>  <!-- entity orderresponder --><g id="elem_orderresponder"><a name="l557">​</a><rect rx="2.5" ry="2.5" width="148" x="190" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="200" font-size="14" textLength="4" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="204" font-size="14" textLength="120" y="199.292" font-family="sans-serif" fill="#0000FF">Order Responder</text></a></g>  <!-- entity OrderConsumer --><g id="elem_OrderConsumer"><a name="l565">​</a><rect rx="2.5" ry="2.5" width="151" x="581.5" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="591.5" font-size="14" textLength="4" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#OrderConsumer" href="actors_and_transactions.html#OrderConsumer" xlink:actuate="onRequest" title="actors_and_transactions.html#OrderConsumer" xlink:href="actors_and_transactions.html#OrderConsumer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="595.5" font-size="14" textLength="115" y="199.292" font-family="sans-serif" fill="#0000FF">Order Consumer</text></a></g>  <!-- link orderplacer to orderreceiver --><g id="link_orderplacer_orderreceiver"><path d="M89,115.7169 C89,132.8669 89,158.8769 89,175.9869 " style="stroke:#181818;stroke-width:1.0;" id="orderplacer-orderreceiver" fill="none"></path></g>  <!-- link orderreceiver to orderresponder -->  <!-- link orderresponder to OrderConsumer --><g id="link_orderresponder_OrderConsumer"><path d="M338.38,194.2969 C407.92,194.2969 511.27,194.2969 581.25,194.2969 " style="stroke:#181818;stroke-width:1.0;" id="orderresponder-OrderConsumer" fill="none"></path><text lengthAdjust="spacing" x="360.25" font-size="13" textLength="11" y="187.4966" font-family="sans-serif" fill="#000000">←</text><a xlink:type="simple" xlink:show="new" xlink:title="pharm-7.html" href="pharm-7.html" xlink:actuate="onRequest" title="pharm-7.html" xlink:href="pharm-7.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="375.25" font-size="13" textLength="59" y="172.3638" font-family="sans-serif" fill="#0000FF">PHARM-7</text></a><a xlink:type="simple" xlink:show="new" xlink:title="pharm-7.html" href="pharm-7.html" xlink:actuate="onRequest" title="pharm-7.html" xlink:href="pharm-7.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="375.25" font-size="13" textLength="172" y="187.4966" font-family="sans-serif" fill="#0000FF">Retrieve Medication Orders</text></a><text lengthAdjust="spacing" x="547.25" font-size="13" textLength="16" y="187.4966" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</text></g></g></svg>
+    <!-- <figcaption>Actors and Transactions - Dispense</figcaption> -->
+</figure>
+<p><br clear="all"/></p>
+
+<h3 id="push-model">Push model</h3>
+<p>In a Push-Based Architecture, the Order Placer submits a medication order that is immediately pushed to the Order consumer. This is akin to messaging.</p>
+
+<figure>
+    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 683 234" zoomAndPan="magnify" preserveAspectRatio="none" width="683px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:683px;height:234px;background:#FFFFFF;" version="1.1" height="234px"><defs></defs><g><text font-weight="bold" lengthAdjust="spacing" x="160.75" font-size="14" textLength="348" y="22.9951" font-family="sans-serif" fill="#000000">Prescription Exchange - "Push" architecture</text>  <!-- cluster PS --><g id="cluster_PS"><rect rx="2.5" ry="2.5" width="347" x="330.5" y="44.2969" style="stroke:#181818;stroke-width:1.0;" fill="#CCEEEE" height="184"></rect><text font-weight="bold" lengthAdjust="spacing" x="417" font-size="14" textLength="174" y="59.292" font-family="sans-serif" fill="#000000">Filler/Receiver system</text></g>  <!-- entity orderreceiver --><g id="elem_orderreceiver"><a name="l616">​</a><rect rx="2.5" ry="2.5" width="131" x="347" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="357" font-size="14" textLength="4" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="361" font-size="14" textLength="103" y="199.292" font-family="sans-serif" fill="#0000FF">Order Receiver</text></a></g>  <!-- entity orderresponder --><g id="elem_orderresponder"><a name="l624">​</a><rect rx="2.5" ry="2.5" width="148" x="513.5" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="523.5" font-size="14" textLength="4" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-receiver" href="actors_and_transactions.html#order-receiver" xlink:actuate="onRequest" title="actors_and_transactions.html#order-receiver" xlink:href="actors_and_transactions.html#order-receiver" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="527.5" font-size="14" textLength="120" y="199.292" font-family="sans-serif" fill="#0000FF">Order Responder</text></a></g>  <!-- entity OrderConsumer --><g id="elem_OrderConsumer"><a name="l632">​</a><rect rx="2.5" ry="2.5" width="151" x="510" y="79.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="520" font-size="14" textLength="4" y="102.292" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#OrderConsumer" href="actors_and_transactions.html#OrderConsumer" xlink:actuate="onRequest" title="actors_and_transactions.html#OrderConsumer" xlink:href="actors_and_transactions.html#OrderConsumer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="524" font-size="14" textLength="115" y="102.292" font-family="sans-serif" fill="#0000FF">Order Consumer</text></a></g>  <!-- entity orderplacer --><g id="elem_orderplacer"><a name="l640">​</a><rect rx="2.5" ry="2.5" width="117" x="7" y="176.2969" style="stroke:#181818;stroke-width:0.5;" fill="#F1F1F1" height="36.2969"></rect><text lengthAdjust="spacing" x="17" font-size="14" textLength="8" y="199.292" font-family="sans-serif" fill="#000000">&nbsp;&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="actors_and_transactions.html#order-placer" href="actors_and_transactions.html#order-placer" xlink:actuate="onRequest" title="actors_and_transactions.html#order-placer" xlink:href="actors_and_transactions.html#order-placer" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="25" font-size="14" textLength="85" y="199.292" font-family="sans-serif" fill="#0000FF">Order Placer</text></a></g>  <!-- link orderplacer to orderreceiver --><g id="link_orderplacer_orderreceiver"><a name="l648">​</a><path d="M124.36,194.2969 C186.05,194.2969 282.72,194.2969 346.83,194.2969 " style="stroke:#181818;stroke-width:1.0;" id="orderplacer-orderreceiver" fill="none"></path><text lengthAdjust="spacing" x="142.5" font-size="13" textLength="4" y="187.4966" font-family="sans-serif" fill="#000000">&nbsp;</text><a xlink:type="simple" xlink:show="new" xlink:title="PHARM-5.html" href="PHARM-5.html" xlink:actuate="onRequest" title="PHARM-5.html" xlink:href="PHARM-5.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="146.5" font-size="13" textLength="59" y="172.3638" font-family="sans-serif" fill="#0000FF">PHARM-5</text></a><a xlink:type="simple" xlink:show="new" xlink:title="PHARM-5.html" href="PHARM-5.html" xlink:actuate="onRequest" title="PHARM-5.html" xlink:href="PHARM-5.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="146.5" font-size="13" textLength="159" y="187.4966" font-family="sans-serif" fill="#0000FF">Submit Medication Order</text></a><text lengthAdjust="spacing" x="309.5" font-size="13" textLength="11" y="187.4966" font-family="sans-serif" fill="#000000">→</text></g>  <!-- link orderreceiver to orderresponder -->  <!-- link OrderConsumer to orderresponder --><g id="link_OrderConsumer_orderresponder"><path d="M585.87,115.7169 C586.23,132.8669 586.78,158.8769 587.14,175.9869 " style="stroke:#181818;stroke-width:1.0;" id="OrderConsumer-orderresponder" fill="none"></path></g></g></svg>
+    <!-- <figcaption>Actors and Transactions - Dispense</figcaption> -->
+</figure>
+<p><br clear="all"/></p>
+
+<h3 id="ordering-flows">Ordering flows</h3>
+
+<p>The same actors can be used for ordering workflows, for example when orders need to be send for review by another entity, and that entity then acts as a placer for the updated order.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 1, 2025 22:37+0000">2025-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

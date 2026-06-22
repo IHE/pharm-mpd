@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9319da48-ae63-461a-b4c9-ca095843066e-39",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9319da48-ae63-461a-b4c9-ca095843066e-39",
+  "name" : "IntersectionConditionProblemDiagnosisCodesAndConditionProblemDiagnosisCodes",
+  "title" : "Intersection of Condition/Problem/Diagnosis Codes And Condition/Problem/Diagnosis Codes",
+  "status" : "draft",
+  "date" : "2026-05-07T15:22:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "160245001",
+        "display" : "No current problems or disability"
+      }]
+    }]
+  }
+}

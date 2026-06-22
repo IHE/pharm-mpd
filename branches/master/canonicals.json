@@ -1,0 +1,107 @@
+[
+  {
+    "id" : "ihe.mpd",
+    "type" : "ImplementationGuide",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd",
+    "version" : "0.1.0",
+    "name" : "IHE_MPD"
+  },
+  {
+    "id" : "DosagingInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DosagingInformation",
+    "version" : "0.1.0",
+    "name" : "DosagingInformation"
+  },
+  {
+    "id" : "IHEMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedication",
+    "version" : "0.1.0",
+    "name" : "IHEMedication"
+  },
+  {
+    "id" : "IHEMedicationDispensation",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispensation",
+    "version" : "0.1.0",
+    "name" : "IHEMedicationDispensation"
+  },
+  {
+    "id" : "IHEMedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription",
+    "version" : "0.1.0",
+    "name" : "IHEMedicationPrescription"
+  },
+  {
+    "id" : "MedicationDispensation",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispensation",
+    "version" : "0.1.0",
+    "name" : "MedicationDispensation"
+  },
+  {
+    "id" : "MedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription",
+    "version" : "0.1.0",
+    "name" : "MedicationPrescription"
+  },
+  {
+    "id" : "MedicinalProductLM",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM",
+    "version" : "0.1.0",
+    "name" : "MedicinalProductLM"
+  },
+  {
+    "id" : "PatientBasic",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic",
+    "version" : "0.1.0",
+    "name" : "PatientBasic"
+  },
+  {
+    "id" : "PractitionerBasic",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic",
+    "version" : "0.1.0",
+    "name" : "PractitionerBasic"
+  },
+  {
+    "id" : "ihe-ext-medication-classification",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-classification",
+    "version" : "0.1.0",
+    "name" : "MedicationClassification"
+  },
+  {
+    "id" : "ihe-ext-medication-device",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-device",
+    "version" : "0.1.0",
+    "name" : "MedicationDevice"
+  },
+  {
+    "id" : "ihe-ext-medication-productname",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-productname",
+    "version" : "0.1.0",
+    "name" : "MedicationProductName"
+  },
+  {
+    "id" : "ihe-ext-medication-sizeofitem",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-sizeofitem",
+    "version" : "0.1.0",
+    "name" : "MedicationSizeOfItem"
+  },
+  {
+    "id" : "ihe-ext-medicationrequest-totalamount",
+    "type" : "StructureDefinition",
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medicationrequest-totalamount",
+    "version" : "0.1.0",
+    "name" : "MedicationRequestTotalAmount"
+  }
+]

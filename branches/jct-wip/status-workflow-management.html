@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Status and Workflow Management - Medication Prescription and Delivery (MPD) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.4"}
+    h3,h4,h5,h6{--heading-prefix:"3.4.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="ihe-logo" href="http://profiles.ihe.net">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a no-external="true" id="project-logo" href="http://profiles.ihe.net/PHARM/index.html"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-1.html">Overview</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="medication-concepts.html">Medication Concepts</a>
+      </li>
+      <li><a name="l207">​</a>
+        <a href="order-management.html">Order Management</a>
+      </li>
+      <li>
+        <a href="interoperability-model.html">Interoperability Model</a>
+      </li>
+      <li>
+        <a href="data-models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actor and Transactions Overview</a>
+      </li>
+      <li>
+        <a href="security.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross-profile.html">Cross-profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-2.html">Overview</a>
+      </li>
+      <li>
+        <a href="submit-medication-order.html">PHARM-X1 - Submit Medication Order</a>
+      </li>
+      <li>
+        <a href="retrieve-medication-order.html">PHARM-X2 - Retrieve Medication Order</a>
+      </li>
+      <li>
+        <a href="submit-medication-dispense.html">PHARM-X3 - Submit Medication Dispense</a>
+      </li>
+      <li>
+        <a href="retrieve-medication-dispense.html">PHARM-X4 - Retrieve Medication Dispense</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li><a name="l301">​</a>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="volume-1.html"><b>Volume 1</b></a></li><li><b>Status and Workflow Management</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Medication Prescription and Delivery (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd/tree/jct-wip">https://github.com/IHE/pharm-mpd/tree/jct-wip</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Status and Workflow Management</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#order-status" id="markdown-toc-order-status">Order Status</a></li>
+  <li><a href="#execution-status" id="markdown-toc-execution-status">Execution status</a></li>
+</ul>
+
+</div>
+<p>One of the fundamental aspects in implementing prescription systems is the status management or workflow management. This commonly includes requirements and concepts such as that expressed as "prescription status" or other designations.</p>
+
+<p>The scope of the workflows varies widely:</p>
+<ul>
+  <li>Community prescription vs hospital prescription</li>
+  <li>Pre-authorization, co-signing,…</li>
+  <li>Tracking of execution - including dispense or even administration</li>
+  <li>Different status types - ordering, billing, etc.</li>
+  <li>Different jurisdictional constraints and expectations.</li>
+</ul>
+
+<p>Trying to achieve a common set of "statuses" across the different dimensions seems unlikely and may not even be desirable, with possibly conflicting and overlapping definitions. Even the term "status" is not semantically clear on its meaning.</p>
+
+<p>IHE documentation has expressed some simplifications by projecting a common set of statuses, but also explored clearer definitions either separation of status (using HL7 V2 and its limitations) and status management with the introduction of workflow management (XDW).</p>
+
+<ul>
+  <li><strong>"status" usually refers to <span style="text-decoration: underline">status of execution</span></strong> - i.e. the status of the actions that are triggered by an order. This is sometimes called "status of prescription".
+    <ul>
+      <li>These actions can be as diverse as dispense, billing, or administration - several aspects of the workflow that may need to be tracked.</li>
+    </ul>
+  </li>
+  <li><strong>"Status of prescription</strong> or <strong>Status of order</strong> is the status of the authorization - i.e. whether it is draft, or actionable, or no longer actionable.</li>
+</ul>
+
+<p>FHIR separates these concepts and uses different attributes.
+One of the principles for workflow management in FHIR is that the request is only updated by the order placer.</p>
+
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>descripition</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Order status</td>
+      <td>Status of the order itself as authorization</td>
+      <td>MedicationRequest.status</td>
+    </tr>
+    <tr>
+      <td>Execution status</td>
+      <td>Status of the execution actions</td>
+      <td>Task.businesStatus</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This separation allows this specification to allow interoperability between systems.</p>
+
+<ul>
+  <li>Order status has a limited and common set of status, determining whether the order is actionable or not. This is clear and unambiguous for allowing interoperability.</li>
+  <li>Several workflow statuses may exist, and they may refer to different parts of the process
+    <ul>
+      <li>It is common that "execution status" is a combined value set which combines statuses of dispensing, administration, etc.</li>
+      <li>While it is likely impossible to have a single common and agreed set of statuses, having the separate aspects of the workflow allows parties to exchange their status as they intend.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="order-status">Order Status</h3>
+<ul>
+  <li>The status of the order or authorization is in <code class="language-plaintext highlighter-rouge">MedicationRequest.status</code>, and can be one of the values in <a href="https://hl7.org/fhir/valueset-medicationrequest-status.html">MedicationRequest Status</a>:</li>
+</ul>
+<figure>
+    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 611 771" zoomAndPan="magnify" preserveAspectRatio="none" width="611.0236px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:611px;height:771px;background:#FFFFFF;" version="1.1" height="771.6535px"><defs></defs><g>  <!-- cluster State3 --><g id="cluster_State3"><path d="M30.7087,80.315 L570.8661,80.315 A19.685,19.685 0 0 1 590.5512,100 L590.5512,113.8533 L11.0236,113.8533 L11.0236,100 A19.685,19.685 0 0 1 30.7087,80.315 " style="stroke:#F1F1F1;stroke-width:1.5748031496062993;" fill="#F1F1F1"></path><rect rx="19.685" ry="19.685" width="579.5276" x="11.0236" y="80.315" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="none" height="581.1024"></rect><line y1="113.8533" x1="11.0236" y2="113.8533" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="590.5512"></line><text lengthAdjust="spacing" x="265.3543" font-size="22.0472" textLength="70.8661" y="107.0789" font-family="sans-serif" fill="#000000">State3</text></g><g id="State3.active"><rect rx="19.685" ry="19.685" width="94.4882" x="226.7717" y="308.6614" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="350.0738" x1="226.7717" y2="350.0738" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="321.2598"></line><text lengthAdjust="spacing" x="242.5197" font-size="22.0472" textLength="62.9921" y="337.0002" font-family="sans-serif" fill="#000000">active</text></g><g id="State3.onhold"><rect rx="19.685" ry="19.685" width="114.9606" x="377.1654" y="308.6614" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="350.0738" x1="377.1654" y2="350.0738" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="492.126"></line><text lengthAdjust="spacing" x="392.9134" font-size="22.0472" textLength="83.4646" y="337.0002" font-family="sans-serif" fill="#000000">on-hold</text></g><path d="M56.6929,481.8898 L513.3858,481.8898 A19.685,19.685 0 0 1 533.0709,501.5748 L533.0709,523.3022 L37.0079,523.3022 L37.0079,501.5748 A19.685,19.685 0 0 1 56.6929,481.8898 " style="stroke:#F1F1F1;stroke-width:1.5748031496062993;" fill="#F1F1F1"></path><rect rx="19.685" ry="19.685" width="496.063" x="37.0079" y="481.8898" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="none" height="154.7982"></rect><line y1="523.3022" x1="37.0079" y2="523.3022" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="533.0709"></line><text lengthAdjust="spacing" x="249.6063" font-size="22.0472" textLength="70.8661" y="510.2285" font-family="sans-serif" fill="#000000">ended</text><g id="State3.ended.stopped"><rect rx="19.685" ry="19.685" width="122.8346" x="55.9055" y="542.1998" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="583.6122" x1="55.9055" y2="583.6122" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="178.7402"></line><text lengthAdjust="spacing" x="71.6535" font-size="22.0472" textLength="91.3386" y="570.5386" font-family="sans-serif" fill="#000000">stopped</text></g><g id="State3.ended.completed"><rect rx="19.685" ry="19.685" width="148.0315" x="207.0866" y="542.1998" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="583.6122" x1="207.0866" y2="583.6122" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="355.1181"></line><text lengthAdjust="spacing" x="222.8346" font-size="22.0472" textLength="116.5354" y="570.5386" font-family="sans-serif" fill="#000000">completed</text></g><g id="State3.ended.cancelled"><rect rx="19.685" ry="19.685" width="135.4331" x="383.4646" y="542.1998" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="583.6122" x1="383.4646" y2="583.6122" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="518.8976"></line><text lengthAdjust="spacing" x="399.2126" font-size="22.0472" textLength="103.937" y="570.5386" font-family="sans-serif" fill="#000000">cancelled</text></g><g id="State3.error"><rect rx="19.685" ry="19.685" width="204.7244" x="360.6299" y="135.4331" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="176.8455" x1="360.6299" y2="176.8455" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="565.3543"></line><text lengthAdjust="spacing" x="376.378" font-size="22.0472" textLength="173.2283" y="163.7718" font-family="sans-serif" fill="#000000">entered-in-error</text></g><g id="State3.draft"><rect rx="19.685" ry="19.685" width="80.315" x="224.4094" y="135.4331" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="176.8455" x1="224.4094" y2="176.8455" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="304.7244"></line><text lengthAdjust="spacing" x="240.1575" font-size="22.0472" textLength="48.8189" y="163.7718" font-family="sans-serif" fill="#000000">draft</text></g><g id="State3.unknown"><rect rx="19.685" ry="19.685" width="132.2835" x="36.2205" y="135.4331" style="stroke:#181818;stroke-width:0.7874015748031497;" fill="#F1F1F1" height="78.7402"></rect><line y1="176.8455" x1="36.2205" y2="176.8455" style="stroke:#181818;stroke-width:0.7874015748031497;" x2="168.5039"></line><text lengthAdjust="spacing" x="51.9685" font-size="22.0472" textLength="100.7874" y="163.7718" font-family="sans-serif" fill="#000000">unknown</text></g><ellipse cx="182.6772" cy="25.1969" rx="15.748" ry="15.748" style="stroke:none;stroke-width:1.5748031496062993;" fill="#181818"></ellipse><ellipse cx="285.0394" cy="746.4567" rx="15.748" ry="15.748" style="stroke:#181818;stroke-width:1.5748031496062993;" fill="none"></ellipse><ellipse cx="285.8268" cy="747.2441" rx="9.4488" ry="9.4488" style="stroke:none;stroke-width:1.5748031496062993;" fill="#181818"></ellipse>  <!-- link *start* to unknown --><g id="link_*start*_unknown"><path d="M175.5433,39.7638 C164.8661,59.2598 144.1575,97.0079 127.4961,127.4016 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="*start*-to-unknown" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="123.3543,134.9606,135.7206,125.5992,127.1611,128.068,124.6923,119.5084,123.3543,134.9606"></polygon></g>  <!-- link *start* to draft --><g id="link_*start*_draft"><path d="M189.937,39.7638 C200.8346,59.2598 221.9528,97.0079 238.9449,127.4016 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="*start*-to-draft" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="243.1654,134.9606,241.7287,119.5173,239.3147,128.0924,230.7395,125.6784,243.1654,134.9606"></polygon></g>  <!-- link draft to active --><g id="link_draft_active"><path d="M266.6929,214.5512 C268.0945,239.937 269.9528,273.4173 271.4488,300.2992 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="draft-to-active" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="271.9055,308.4094,277.3859,293.8999,271.4563,300.5483,264.808,294.6187,271.9055,308.4094"></polygon></g>  <!-- link draft to error --><g id="link_draft_error"><path d="M304.8661,174.8031 C320.6457,174.8031 336.4252,174.8031 352.2047,174.8031 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="draft-to-error" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="360.4567,174.8031,346.2835,168.5039,352.5827,174.8031,346.2835,181.1024,360.4567,174.8031"></polygon></g>  <!-- link active to onhold --><g id="link_active_onhold"><path d="M321.7008,372.6929 C337.3543,377.3543 353.0079,378.6772 368.6614,376.6142 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="active-to-onhold" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="376.8504,375.2441,361.829,371.3818,369.0853,376.5495,363.9176,383.8059,376.8504,375.2441"></polygon></g>  <!-- reverse link active to onhold --><g id="link_active_onhold"><path d="M329.4646,321.3386 C345.2598,317.7323 361.0551,317.5748 376.8504,320.8189 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="active-backto-onhold" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="321.7008,323.3701,337.0108,325.8527,329.3153,321.3651,333.8028,313.6695,321.7008,323.3701"></polygon></g>  <!-- link active to ended --><g id="link_active_ended"><path d="M276.0315,387.7323 C277.3071,411.7323 279.0079,443.685 280.5827,473.3858 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="active-to-ended" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="281.0236,481.7008,286.5431,467.2061,280.5956,473.8384,273.9633,467.8909,281.0236,481.7008"></polygon></g>  <!-- link ended to *end* --><g id="link_ended_*end*"><path d="M285.0394,636.6299 C285.0394,667.5118 285.0394,700.8819 285.0394,722.2835 " style="stroke:#181818;stroke-width:1.5748031496062993;" id="ended-to-*end*" fill="none"></path><polygon style="stroke:#181818;stroke-width:1.5748031496062993;" fill="#181818" points="285.0394,730.6929,291.3386,716.5197,285.0394,722.8189,278.7402,716.5197,285.0394,730.6929"></polygon></g></g></svg>
+</figure>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MedicationRequest.statusReasons</code> is intended to capture the <strong>reasons</strong> for a status, and <strong>NOT</strong> the details of the status nor additional status. For example <code class="language-plaintext highlighter-rouge">expired</code> is not a detailed status, it is a reason why a prescription is no longer actionable (i.e. it is <code class="language-plaintext highlighter-rouge">stopped</code>). Statuses like <code class="language-plaintext highlighter-rouge">in preparation</code> or <code class="language-plaintext highlighter-rouge">in-dispensation</code> would not be reasons for changing if an authorization's status, and therefore would not be adequate values for statusReason.</li>
+</ul>
+
+<h3 id="execution-status">Execution status</h3>
+<p>The <strong>statuses of execution</strong> can be captured in</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">completed</code> is a status of the <a href="https://hl7.org/fhir/MedicationRequest.html">MedicationRequest</a>. This is an authorization status that is derived from the execution - this status is determined by the placer from the execution tasks</li>
+  <li><code class="language-plaintext highlighter-rouge">MedicationDispense.status</code> captures the status of a dispense.</li>
+  <li><code class="language-plaintext highlighter-rouge">MedicationAdministration.status</code> captures the status of an administration event or set of events.</li>
+  <li><code class="language-plaintext highlighter-rouge">Task.businessStatus</code> captures the progress of the execution of activities. 
+(need picture - showing that a request may have one workflow, one wrkflow with children workflows, or several independent workflows)</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Mar 20, 2025 14:45+0000">2025-03-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

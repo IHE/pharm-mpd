@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "180fd226-d4e1-4924-b223-1c9b58257c2f-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/180fd226-d4e1-4924-b223-1c9b58257c2f-18",
+  "name" : "IntersectionMedicationDispenseStatusReasonCodesAndMedicationDispenseStatusReasonCodes",
+  "title" : "Intersection of MedicationDispense Status Reason Codes And MedicationDispense Status Reason Codes",
+  "status" : "draft",
+  "date" : "2026-04-23T07:30:12+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}
