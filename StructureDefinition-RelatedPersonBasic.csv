@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"RelatedPersonBasic","RelatedPersonBasic","","","",0,*,"","","","null {[]} {[]}
+","Related person (model)","Logical model for a related person with basic data relevant to the IHE MPD use cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"RelatedPersonBasic.identifier","RelatedPersonBasic.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Human identifier for this person","Human identifier for this person","","","","","","","","","",,,,,"",,,,"RelatedPersonBasic.identifier",0,*,"",""
+"RelatedPersonBasic.patient","RelatedPersonBasic.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/PHARM/MPD/StructureDefinition/PatientBasic]]}
+","The patient this person is related to","The patient this person is related to","","","","","","","","","",,,,,"",,,,"RelatedPersonBasic.patient",1,1,"",""
+"RelatedPersonBasic.relationship","RelatedPersonBasic.relationship","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","The relationship of the related person to the patient","The relationship of the related person to the patient","","","","","","","","","",,,,,"",,,,"RelatedPersonBasic.relationship",0,*,"",""
+"RelatedPersonBasic.name","RelatedPersonBasic.name","","","",0,*,"","","","HumanName {[]} {[]}
+","A name associated with this person","A name associated with this person","","","","","","","","","",,,,,"",,,,"RelatedPersonBasic.name",0,*,"",""

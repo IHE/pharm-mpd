@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/RequestOrchestration/RequestOrchestration1> a fhir:RequestOrchestration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RequestOrchestration1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestOrchestration RequestOrchestration1</b></p><a name=\"RequestOrchestration1\"> </a><a name=\"hcRequestOrchestration1\"> </a><a name=\"RequestOrchestration1-en-US\"> </a><p><b>identifier</b>: <code>http://example.com/requestorchestration</code>/prescr1</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/prescr1</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>subject</b>: Identifier: patient1</p><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine1.html\">MedicationRequest: identifier = http://example.com/prescriptionlines#line1; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine2.html\">MedicationRequest: identifier = http://example.com/NamingSystem/prescriptionlines#line2; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>3</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-PrescriptionLine3.html\">MedicationRequest: identifier = http://example.com/prescriptionlines#line3; groupIdentifier = http://example.com/prescriptions#prescr1; status = active; intent = option</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.com/requestorchestration"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "prescr1" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "http://example.com/prescriptions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "prescr1" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:value [ fhir:v "patient1" ]
+     ]
+  ] ; # 
+  fhir:action ( [
+     fhir:id [ fhir:v "1" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "2" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "3" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/PrescriptionLine1> ;
+       fhir:reference [ fhir:v "MedicationRequest/PrescriptionLine1" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "2" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "1" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "3" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/PrescriptionLine2> ;
+       fhir:reference [ fhir:v "MedicationRequest/PrescriptionLine2" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "3" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "1" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "2" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/PrescriptionLine3> ;
+       fhir:reference [ fhir:v "MedicationRequest/PrescriptionLine3" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

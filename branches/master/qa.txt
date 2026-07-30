@@ -1,0 +1,281 @@
+IHE_MPD : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 16
+IG Publisher Version: 1.6.11
+Generated Sun Jun 16 16:49:34 UTC 2024. FHIR version 5.0.0 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+ Build Errors : 201 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-03B-VitaminBComplexBranded : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHEMedication : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHEMedicationDispensation : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHEMedicationPrescription : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispensation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationPrescription : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProductLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientBasic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerBasic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-device : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-totalamount : 0 / 1 / 2
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ihe.pharm.mpd
+ERROR: /github/workspace/output/MMA-chemotherapy.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/MMA-homenursing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01A-Cefuroxime1500GenericExplicit.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01A-Cefuroxime1500GenericExplicit.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01A-Cefuroxime1500GenericExplicit.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01A-Cefuroxime1500GenericExplicit.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01A-Cefuroxime1500GenericExplicit.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01B-Cefuroxime1500GenericConcept.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01B-Cefuroxime1500GenericConcept.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01B-Cefuroxime1500GenericConcept.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01B-Cefuroxime1500GenericConcept.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01B-Cefuroxime1500GenericConcept.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01C-Cefuroxime1500Branded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01C-Cefuroxime1500Branded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01C-Cefuroxime1500Branded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01C-Cefuroxime1500Branded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-01C-Cefuroxime1500Branded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A-ClotrimazoleCanifugCremolum.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A-ClotrimazoleCanifugCremolum.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A-ClotrimazoleCanifugCremolum.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A-ClotrimazoleCanifugCremolum.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A-ClotrimazoleCanifugCremolum.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A1-CanifugCremolumCreamItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A1-CanifugCremolumCreamItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A1-CanifugCremolumCreamItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A1-CanifugCremolumCreamItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A1-CanifugCremolumCreamItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A2-CanifugCremolumPessaryItem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A2-CanifugCremolumPessaryItem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A2-CanifugCremolumPessaryItem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A2-CanifugCremolumPessaryItem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-02A2-CanifugCremolumPessaryItem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-03B-VitaminBComplexBranded.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-03B-VitaminBComplexBranded.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-03B-VitaminBComplexBranded.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-03B-VitaminBComplexBranded.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/Medication-03B-VitaminBComplexBranded.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 178, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DosagingInformation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationDispensation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-IHEMedicationPrescription.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationDispensation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationPrescription.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProductLM.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PatientBasic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PractitionerBasic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-classification.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-device.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-productname.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 180, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ihe-ext-medicationrequest-totalamount.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 184, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 898: The link 'actors_and_transactions.html#order-placer' for "Order Placer" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 1688: The link 'actors_and_transactions.html#order-receiver' for "Order Receiver" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 2494: The link 'actors_and_transactions.html#order-receiver' for "Order Responder" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 3294: The link 'actors_and_transactions.html#orderfiller' for "Order Filler" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 4143: The link 'PHARM-X1.html' for "PHARM-X1" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 4492: The link 'PHARM-X1.html' for "Submit Medication Order" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 5475: The link 'PHARM-X1.html' for "PHARM-X2" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/div/svg/g/g/a at Line 268, column 5824: The link 'PHARM-X1.html' for "Retrieve Medication Orders" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 883: The link 'actors_and_transactions.html#orderfiller' for "Order Filler" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 1672: The link 'actors_and_transactions.html#dispenseconsumer' for "DispenseConsumer ??" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 2356: The link 'actors_and_transactions.html#dipensereceiver' for "Dispense Receiver" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 3035: The link 'actors_and_transactions.html#dipenseresponder' for "Dispense Responder" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 3940: The link 'PHARM-X4.html' for "PHARM-X4" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 4288: The link 'PHARM-X4.html' for "Retrieve Dispense" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 5270: The link 'PHARM-X3.html' for "PHARM-X3" cannot be resolved
+ERROR: /github/workspace/output/actors-transactions.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 272, column 5618: The link 'PHARM-X3.html' for "Submit Dispense" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/cross-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/data-models.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/error_codes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/glossary.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 337, column 48: The link 'download_mpd.html' for "Link" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 340, column 39: The link 'toc_mpd.html' for "Table of Contents" cannot be resolved
+ERROR: /github/workspace/output/interoperability-model.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/medication-concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/order-management.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/order-statuses.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/presc-use-case-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/presc-use-case1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/prescription-lines.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/retrieve-medication-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/retrieve-medication-order.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/security.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/submit-medication-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/submit-medication-order.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/testplan.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/volume-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+ERROR: /github/workspace/output/volume-1.html#/html/body/div/div/div/div/div/p/a at Line 290, column 39: The link 'domain-YY.html' for "transaction description" cannot be resolved
+ERROR: /github/workspace/output/volume-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 176, column 10: The link 'fhir_maps.html' for "FHIR Maps" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
+INFORMATION: ImplementationGuide/ihe.mpd: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json ==
+== fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json ==
+== fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json ==
+== fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json ==
+== fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json ==
+== fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json ==
+== fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json ==
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
+INFORMATION: StructureDefinition/DosagingInformation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-IHEMedication.json ==
+INFORMATION: StructureDefinition/IHEMedication: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-IHEMedicationDispensation.json ==
+INFORMATION: StructureDefinition/IHEMedicationDispensation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/IHEMedicationDispensation: StructureDefinition.snapshot.element[30].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationDispensation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-IHEMedicationPrescription.json ==
+INFORMATION: StructureDefinition/IHEMedicationPrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MedicationDispensation.json ==
+INFORMATION: StructureDefinition/MedicationDispensation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationPrescription.json ==
+INFORMATION: StructureDefinition/MedicationPrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicinalProductLM.json ==
+INFORMATION: StructureDefinition/MedicinalProductLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PatientBasic.json ==
+INFORMATION: StructureDefinition/PatientBasic: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PractitionerBasic.json ==
+INFORMATION: StructureDefinition/PractitionerBasic: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-classification: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-device: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-device: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-device: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-productname: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-productname: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-productname: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json ==
+INFORMATION: StructureDefinition/ihe-ext-medication-sizeofitem: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ihe-ext-medication-sizeofitem: StructureDefinition.context[0]: Review the extension type for ihe-ext-medication-sizeofitem: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-totalamount.json ==
+INFORMATION: StructureDefinition/ihe-ext-medicationrequest-totalamount: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medicationrequest-totalamount'): The Implementation Guide contains no examples for this extension

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MPD\Interoperability Model - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://profiles.ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+<div id="project-nav">
+  
+  
+    <a id="project-logo" no-external="true" href="http://profiles.ihe.net/PHARM/index.html"><img height="70" alt="Visit the PHARM website" src="assets/images/PHARM.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="actor_options.html">Actor Options</a>
+      </li>
+      <li>
+        <a href="alternative.html">Trial Models</a>
+      </li>
+      <li>
+        <a href="security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="intro_2.html">Introduction</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Interoperability Model</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Medication Prescription and Delivery (MPD), published by Integrating the Healthcare Enterprise (IHE). This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd">https://github.com/IHE/pharm-mpd</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Interoperability Model</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>The Pharmacy Interoperability Model provides the basis for the interactions needs that are supported by this publication.</p>
+
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="339px" preserveAspectRatio="none" style="width:802px;height:339px;background:#FFFFFF;" version="1.1" viewBox="0 0 802 339" width="802px" zoomAndPan="magnify"><defs><filter height="300%" id="fclcrh6yq1vdk" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="198" x="295.75" y="16.708">Interoperability Model</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="47" x="147" y="27.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="157" y="49.0918">Plan</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="91" x="298" y="27.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="308" y="49.0918">Order Entry</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="147" x="103" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="113" y="137.0918">Pharmacy Validation</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="157" x="7" y="291.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="137" x="17" y="313.0918">Pharmacy Distribution</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="178" x="334.5" y="291.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="158" x="344.5" y="313.0918">Distribution / Preparation</text><rect fill="#FEFECE" filter="url(#fclcrh6yq1vdk)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="110" x="368.5" y="203.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="90" x="378.5" y="225.0918">Administration</text><!--MD5=[13db040b2de2e69c817a591b25614c9a]
+link Plan to Order Entry--><path d="M194.1922,44.9531 C219.4024,44.9531 260.0555,44.9531 292.5804,44.9531 " fill="none" id="Plan-to-Order Entry" style="stroke:#00FFFF;stroke-width:1.0;" /><polygon fill="#00FFFF" points="297.7271,44.9531,288.7271,40.9531,292.7271,44.9531,288.7271,48.9531,297.7271,44.9531" style="stroke:#00FFFF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="222" y="39.1636">Planning</text><!--MD5=[0bc909eaed2be17edff85bfe3d0b7ae3]
+link Plan to Pharmacy Validation--><path d="M146.8183,46.5782 C105.806,50.3161 28.2491,61.9886 53.5,95.9531 C59.6893,104.2782 77.6268,111.4393 97.9553,117.1827 " fill="none" id="Plan-to-Pharmacy Validation" style="stroke:#00FFFF;stroke-width:1.0;" /><polygon fill="#00FFFF" points="102.8857,118.5366,95.2662,112.2962,98.0642,117.2126,93.1478,120.0107,102.8857,118.5366" style="stroke:#00FFFF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="54.5" y="93.1636">Planning</text><!--MD5=[72a5afff9ae3a5ed308069b9666b4eeb]
+link Order Entry to Pharmacy Validation--><path d="M297.7984,49.6874 C237.9444,56.3553 139.2993,69.1366 128.5,81.9531 C119.6308,92.479 127.9915,103.6684 140.0782,112.8762 " fill="none" id="Order Entry-to-Pharmacy Validation" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="144.3005,115.9191,139.3378,107.412,140.2442,112.9958,134.6604,113.9021,144.3005,115.9191" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="129.5" y="93.1636">Prescription Order</text><!--MD5=[166b427ae45d5471082eca6d41f903ac]
+link Pharmacy Validation to Order Entry--><path d="M204.4222,115.7603 C226.595,102.1482 254.7948,84.9414 260.5,81.9531 C272.3443,75.7492 285.4429,69.5978 297.6673,64.1442 " fill="none" id="Pharmacy Validation-to-Order Entry" style="stroke:#800080;stroke-width:1.0;" /><polygon fill="#800080" points="302.4842,62.0108,292.6354,61.9979,297.9125,64.0355,295.8749,69.3127,302.4842,62.0108" style="stroke:#800080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="261.5" y="93.1636">Pharmacy Validated Order</text><!--MD5=[8187535cfabcdfd94d26d7b5e67761e6]
+link Pharmacy Validation to Pharmacy Distribution--><path d="M118.2795,150.0792 C92.0994,161.0104 63.7154,178.114 48.5,203.9531 C32.6859,230.809 51.4737,265.4918 67.5474,287.4862 " fill="none" id="Pharmacy Validation-to-Pharmacy Distribution" style="stroke:#800080;stroke-width:1.0;" /><polygon fill="#800080" points="70.7149,291.7099,68.5153,282.1098,67.7151,287.7098,62.1151,286.9096,70.7149,291.7099" style="stroke:#800080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="49.5" y="225.1636">Pharmacy Validated Order</text><!--MD5=[08cc6c3993d5e46adccd3ac87636ad39]
+link Pharmacy Distribution to Distribution / Preparation--><path d="M164.3194,308.9531 C213.5424,308.9531 277.2,308.9531 329.1084,308.9531 " fill="none" id="Pharmacy Distribution-to-Distribution / Preparation" style="stroke:#800080;stroke-width:1.0;" /><polygon fill="#800080" points="334.4139,308.9531,325.4139,304.9531,329.4139,308.9531,325.4139,312.9531,334.4139,308.9531" style="stroke:#800080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="174.75" y="303.1636">Pharmacy Validated Order</text><!--MD5=[88e9011d31100017bf10658dbcf514fc]
+link Distribution / Preparation to Administration--><path d="M423.5,291.9027 C423.5,278.1651 423.5,258.7271 423.5,243.6697 " fill="none" id="Distribution / Preparation-to-Administration" style="stroke:#0000FF;stroke-width:1.0;" /><polygon fill="#0000FF" points="423.5,238.3391,419.5,247.3391,423.5,243.3391,427.5,247.3391,423.5,238.3391" style="stroke:#0000FF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="424.5" y="269.1636">Preparation Report</text><!--MD5=[831a2f426ee19feb8b9771b7695103bf]
+link Administration to Order Entry--><path d="M468.3697,203.8019 C510.9445,184.8594 564.924,152.2035 539.5,115.9531 C522.388,91.5542 446.1783,69.1642 393.9891,56.2958 " fill="none" id="Administration-to-Order Entry" style="stroke:#FFA500;stroke-width:1.0;" /><polygon fill="#FFA500" points="389.0163,55.0805,396.8092,61.103,393.8733,56.2677,398.7087,53.3318,389.0163,55.0805" style="stroke:#FFA500;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="546.5" y="137.1636">Administration Report</text><!--MD5=[45c8e7637b7a3cbec579da5c2b9e49a1]
+link Order Entry to Administration--><path d="M389.1308,61.0736 C398.2513,66.3529 406.7748,73.1913 412.5,81.9531 C424.692,100.6117 425.0356,164.3505 424.2681,198.6597 " fill="none" id="Order Entry-to-Administration" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="424.137,203.9021,428.3608,195.0049,424.262,198.9037,420.3633,194.8049,424.137,203.9021" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="424.5" y="137.1636">Prescription Order</text><!--MD5=[133c160b397f412877d48482bbc8c7d6]
+link Distribution / Preparation to Order Entry--><path d="M482.6755,291.9112 C575.9689,262.1274 740.3017,196.0783 675.5,115.9531 C640.6926,72.915 478.2564,54.8112 394.1998,48.2208 " fill="none" id="Distribution / Preparation-to-Order Entry" style="stroke:#0000FF;stroke-width:1.0;" /><polygon fill="#0000FF" points="389.025,47.8219,397.6908,52.502,394.0102,48.2063,398.3059,44.5257,389.025,47.8219" style="stroke:#0000FF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="687.5" y="181.1636">Preparation Report</text><!--MD5=[d17980d3f0f59fadeaa76e40f795f393]
+link Pharmacy Validation to Administration--><path d="M204.4292,150.2038 C227.6762,164.5159 257.4555,182.7214 260.5,183.9531 C270.2259,187.8879 320.9831,199.1852 363.3083,208.2707 " fill="none" id="Pharmacy Validation-to-Administration" style="stroke:#800080;stroke-width:1.0;" /><polygon fill="#800080" points="368.4248,209.367,360.4628,203.5699,363.5358,208.3193,358.7864,211.3923,368.4248,209.367" style="stroke:#800080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="261.5" y="181.1636">Pharmacy Validated Order</text><!--MD5=[20b064237b9e15215ca934b01e464435]
+link Administration to Pharmacy Distribution--><path d="M368.4422,235.2877 C310.4665,250.3819 219.0042,274.1946 155.839,290.64 " fill="none" id="Administration-to-Pharmacy Distribution" style="stroke:#FFA500;stroke-width:1.0;" /><polygon fill="#FFA500" points="150.9609,291.91,160.6784,293.5132,155.7996,290.6502,158.6626,285.7714,150.9609,291.91" style="stroke:#FFA500;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="275.5" y="269.1636">Administration Report</text><!--MD5=[a809b58eb2d05ea4cc79224c34483640]
+link Distribution / Preparation to Pharmacy Validation--><path d="M334.3539,298.7972 C295.157,292.7895 254.6103,283.9698 239.5,271.9531 C220.2293,256.6278 195.7332,190.289 183.7566,155.0876 " fill="none" id="Distribution / Preparation-to-Pharmacy Validation" style="stroke:#0000FF;stroke-width:1.0;" /><polygon fill="#0000FF" points="182.0825,150.1296,181.172,159.9363,183.6821,154.8668,188.7516,157.3769,182.0825,150.1296" style="stroke:#0000FF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="217.5" y="225.1636">Preparation Report</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<p>As for the sequence, we have the following:</p>
+
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="497px" preserveAspectRatio="none" style="width:750px;height:497px;background:#FFFFFF;" version="1.1" viewBox="0 0 750 497" width="750px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="257" x="243" y="28.708">Typical Medication Workflow</text><rect fill="#D1EBF1" height="79.3984" style="stroke:#000000;stroke-width:1.0;" width="10" x="53" y="145.5469" /><rect fill="#EDCDCB" height="58.2656" style="stroke:#000000;stroke-width:1.0;" width="10" x="245" y="254.0781" /><rect fill="#CADAA9" height="29.1328" style="stroke:#000000;stroke-width:1.0;" width="10" x="442" y="341.4766" /><rect fill="#FFFF99" height="29.1328" style="stroke:#000000;stroke-width:1.0;" width="10" x="626" y="442.875" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="58" x2="58" y1="135.5469" y2="490.0078" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="250" x2="250" y1="135.5469" y2="490.0078" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="446.5" x2="446.5" y1="135.5469" y2="490.0078" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="631" x2="631" y1="135.5469" y2="490.0078" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="5" y="115.9482">Prescription</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="105" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="32.5" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="49" x="32.5" y="132.2451">Placer</text><ellipse cx="58" cy="57.4531" fill="#D1EBF1" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M58,77.4531 C62,77.4531 65,77.4531 69,73.4531 C77,73.4531 85,81.4531 85,89.4531 L85,93.4531 C85,97.4531 81,101.4531 77,101.4531 L39,101.4531 C35,101.4531 31,97.4531 31,93.4531 L31,89.4531 C31,81.4531 39,73.4531 47,73.4531 C51,77.4531 54,77.4531 58,77.4531 " fill="#D1EBF1" style="stroke:#808080;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="120" x="185" y="115.9482">Pharmaceutical</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="309" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="219" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="60" x="219" y="132.2451">Adviser</text><ellipse cx="250" cy="57.4531" fill="#EDCDCB" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M250,77.4531 C254,77.4531 257,77.4531 261,73.4531 C269,73.4531 277,81.4531 277,89.4531 L277,93.4531 C277,97.4531 273,101.4531 269,101.4531 L231,101.4531 C227,101.4531 223,97.4531 223,93.4531 L223,89.4531 C223,81.4531 231,73.4531 239,73.4531 C243,77.4531 246,77.4531 250,77.4531 " fill="#EDCDCB" style="stroke:#808080;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="399.5" y="115.9482">Medication</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="488.5" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="406" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="406" y="132.2451">Dispenser</text><ellipse cx="447" cy="57.4531" fill="#CADAA9" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M447,77.4531 C451,77.4531 454,77.4531 458,73.4531 C466,73.4531 474,81.4531 474,89.4531 L474,93.4531 C474,97.4531 470,101.4531 466,101.4531 L428,101.4531 C424,101.4531 420,97.4531 420,93.4531 L420,89.4531 C420,81.4531 428,73.4531 436,73.4531 C440,77.4531 443,77.4531 447,77.4531 " fill="#CADAA9" style="stroke:#808080;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="204" x="524" y="115.9482">Medication Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="732" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="596" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="596" y="132.2451">Informer</text><ellipse cx="631" cy="57.4531" fill="#FFFF99" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M631,77.4531 C635,77.4531 638,77.4531 642,73.4531 C650,73.4531 658,81.4531 658,89.4531 L658,93.4531 C658,97.4531 654,101.4531 650,101.4531 L612,101.4531 C608,101.4531 604,97.4531 604,93.4531 L604,89.4531 C604,81.4531 612,73.4531 620,73.4531 C624,77.4531 627,77.4531 631,77.4531 " fill="#FFFF99" style="stroke:#808080;stroke-width:1.5;" /><rect fill="#D1EBF1" height="79.3984" style="stroke:#000000;stroke-width:1.0;" width="10" x="53" y="145.5469" /><rect fill="#EDCDCB" height="58.2656" style="stroke:#000000;stroke-width:1.0;" width="10" x="245" y="254.0781" /><rect fill="#CADAA9" height="29.1328" style="stroke:#000000;stroke-width:1.0;" width="10" x="442" y="341.4766" /><rect fill="#FFFF99" height="29.1328" style="stroke:#000000;stroke-width:1.0;" width="10" x="626" y="442.875" /><polygon fill="#808080" points="619,162.6797,629,166.6797,619,170.6797,623,166.6797" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="625" y1="166.6797" y2="166.6797" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="70" y="161.6138">Advance Prescription Notification</text><polygon fill="#808080" points="435,191.8125,445,195.8125,435,199.8125,439,195.8125" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="441" y1="195.8125" y2="195.8125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="70" y="190.7466">Advance Prescription Notification</text><polygon fill="#808080" points="238,220.9453,248,224.9453,238,228.9453,242,224.9453" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58" x2="244" y1="224.9453" y2="224.9453" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109" x="65" y="219.8794">Medication Order</text><polygon fill="#808080" points="69,250.0781,59,254.0781,69,258.0781,65,254.0781" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="244" y1="254.0781" y2="254.0781" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="75" y="249.0122">Pharmacy Validated Order</text><polygon fill="#808080" points="619,279.2109,629,283.2109,619,287.2109,623,283.2109" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="255" x2="625" y1="283.2109" y2="283.2109" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="262" y="278.145">Validated Order Confirmation</text><polygon fill="#808080" points="435,308.3438,445,312.3438,435,316.3438,439,312.3438" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="250" x2="441" y1="312.3438" y2="312.3438" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="257" y="307.2778">Pharmacy Validated Order</text><polygon fill="#808080" points="69,337.4766,59,341.4766,69,345.4766,65,341.4766" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="441" y1="341.4766" y2="341.4766" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="75" y="336.4106">Med. Preparation Report</text><polygon fill="#808080" points="619,366.6094,629,370.6094,619,374.6094,623,370.6094" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="447" x2="625" y1="370.6094" y2="370.6094" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="454" y="365.5435">Med. Preparation Report</text><rect fill="#EEEEEE" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="743" x="0" y="399.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="743" y1="399.1758" y2="399.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="743" y1="402.1758" y2="402.1758" /><rect fill="#EEEEEE" height="23.1328" style="stroke:#000000;stroke-width:2.0;" width="95" x="324" y="388.6094" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="76" x="330" y="404.6763">Repetition</text><polygon fill="#808080" points="69,438.875,59,442.875,69,446.875,65,442.875" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="625" y1="442.875" y2="442.875" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="75" y="437.8091">Administration report</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="8" x="215" y="437.8091">n</text><polygon fill="#808080" points="458,468.0078,448,472.0078,458,476.0078,454,472.0078" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="452" x2="630" y1="472.0078" y2="472.0078" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="464" y="466.9419">Administration report</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="8" x="604" y="466.9419">n</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<p>Regarding the whitepaper, the state transitions should act as follows:</p>
+
+<ol>
+  <li>Hospital setting</li>
+</ol>
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="339px" preserveAspectRatio="none" style="width:684px;height:339px;background:#FFFFFF;" version="1.1" viewBox="0 0 684 339" width="684px" zoomAndPan="magnify"><defs><filter height="300%" id="f1q8uwc2kdjdum" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="675" x="2" y="16.708">State transitions of Medication Prescription (Item) in the Hospital subdomain</text><rect fill="#FEFECE" filter="url(#f1q8uwc2kdjdum)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="62" x="207" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="42" x="217" y="137.0918">Placed</text><rect fill="#FEFECE" filter="url(#f1q8uwc2kdjdum)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="91" x="327.5" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="337.5" y="137.0918">In Progress</text><rect fill="#FEFECE" filter="url(#f1q8uwc2kdjdum)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="102" x="322" y="27.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="332" y="49.0918">Discontinued</text><rect fill="#FEFECE" filter="url(#f1q8uwc2kdjdum)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="87" x="281.5" y="291.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="291.5" y="313.0918">Completed</text><rect fill="#FEFECE" filter="url(#f1q8uwc2kdjdum)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="91" x="381.5" y="203.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="391.5" y="225.0918">Suspended</text><!--MD5=[1bb2378239119ff20150848825a387e6]
+link Placed to In Progress--><path d="M269.311,132.9531 C284.9112,132.9531 304.1728,132.9531 321.8443,132.9531 " fill="none" id="Placed-to-In Progress" style="stroke:#FFA500;stroke-width:1.0;" /><polygon fill="#FFA500" points="327.2716,132.9531,318.2716,128.9531,322.2716,132.9531,318.2716,136.9531,327.2716,132.9531" style="stroke:#FFA500;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="279.75" y="127.1636">accept</text><!--MD5=[51cca4aa2206005b394ed87204c6604a]
+reverse link Discontinued to Placed--><path d="M342.3597,64.9261 C318.8211,80.2697 286.6576,101.2356 264.2834,115.8202 " fill="none" id="Discontinued-backto-Placed" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="346.6502,62.1293,336.9263,63.6931,342.4615,64.8597,341.2949,70.395,346.6502,62.1293" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="315" y="93.1636">abort</text><!--MD5=[71c496ef2993242154cf0a141a5d0362]
+reverse link Discontinued to In Progress--><path d="M373,67.6697 C373,82.7271 373,102.1651 373,115.9027 " fill="none" id="Discontinued-backto-In Progress" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="373,62.3391,369,71.3391,373,67.3391,377,71.3391,373,62.3391" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="374" y="93.1636">abort</text><!--MD5=[d2a7167cd7fb40a1f2de0e8bbb701aa3]
+link In Progress to Completed--><path d="M353.4615,149.9721 C340.0476,163.125 323.5321,182.6389 317,203.9531 C308.5195,231.6247 313.5869,265.2255 318.6893,286.8405 " fill="none" id="In Progress-to-Completed" style="stroke:#008000;stroke-width:1.0;" /><polygon fill="#008000" points="319.9102,291.7987,321.6422,282.1033,318.7146,286.9438,313.8742,284.0162,319.9102,291.7987" style="stroke:#008000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="52" x="318" y="225.1636">complete</text><!--MD5=[350cb0fcfa2471cbca0c8f8eb8c136a0]
+link In Progress to Suspended--><path d="M354.8611,150.4145 C346.6481,160.4849 340.1481,173.2349 347,183.9531 C353.9125,194.7661 364.8819,202.4654 376.5082,207.9305 " fill="none" id="In Progress-to-Suspended" style="stroke:#00FFFF;stroke-width:1.0;" /><polygon fill="#00FFFF" points="381.1649,209.9909,374.5529,202.6915,376.5924,207.9679,371.3161,210.0075,381.1649,209.9909" style="stroke:#00FFFF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="348" y="181.1636">suspend</text><!--MD5=[56b861a5cac0a483b9f7fa05c65acb90]
+link Suspended to In Progress--><path d="M418.1287,203.6826 C412.8383,193.6757 405.8383,180.9257 399,169.9531 C395.7559,164.7477 392.0704,159.2735 388.515,154.1794 " fill="none" id="Suspended-to-In Progress" style="stroke:#0000FF;stroke-width:1.0;" /><polygon fill="#0000FF" points="385.5717,150.004,387.4878,159.6647,388.4525,154.0907,394.0265,155.0554,385.5717,150.004" style="stroke:#0000FF;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="44" x="409" y="181.1636">resume</text><!--MD5=[119030a822c0905ea872c715510ed704]
+reverse link Discontinued to Suspended--><path d="M395.8861,65.8355 C400.8234,70.8715 405.8123,76.407 410,81.9531 C436.9748,117.6786 447.7501,126.6242 459,169.9531 C460.5637,175.9756 461.1717,178.1222 459,183.9531 C456.2729,191.2751 451.3732,198.113 446.2145,203.869 " fill="none" id="Discontinued-backto-Suspended" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="392.1347,62.09,395.6773,71.2797,395.6729,65.6228,401.3298,65.6185,392.1347,62.09" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="454" y="137.1636">abort</text><!--MD5=[b84b64eaf8e418893156762f47e82b5f]
+link Suspended to Completed--><path d="M406.8481,238.3391 C390.1155,252.7751 366.2865,273.3334 348.652,288.5474 " fill="none" id="Suspended-to-Completed" style="stroke:#008000;stroke-width:1.0;" /><polygon fill="#008000" points="344.763,291.9027,354.1903,289.052,348.5487,288.6365,348.9642,282.9949,344.763,291.9027" style="stroke:#008000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="52" x="384" y="269.1636">complete</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<ol>
+  <li>Community setting</li>
+</ol>
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="163px" preserveAspectRatio="none" style="width:681px;height:163px;background:#FFFFFF;" version="1.1" viewBox="0 0 681 163" width="681px" zoomAndPan="magnify"><defs><filter height="300%" id="fwjjl20d3cmul" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="672" x="2" y="16.708">State transitions of Medication Prescription (Item) in Community subdomain</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="71" x="58.5" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="51" x="68.5" y="137.0918">Ordered</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="62" x="256" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="42" x="266" y="137.0918">Placed</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="81" x="53.5" y="27.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="63.5" y="49.0918">Cancelled</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="102" x="303" y="27.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="313" y="49.0918">Discontinued</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="91" x="376.5" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="386.5" y="137.0918">In Progress</text><rect fill="#FEFECE" filter="url(#fwjjl20d3cmul)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="87" x="541.5" y="115.9531" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="551.5" y="137.0918">Completed</text><!--MD5=[23b5b390fbe34fc7fd45f1d29a9741d5]
+link Ordered to Placed--><path d="M129.8495,132.9531 C164.2036,132.9531 215.8039,132.9531 250.4049,132.9531 " fill="none" id="Ordered-to-Placed" style="stroke:#800080;stroke-width:1.0;" /><polygon fill="#800080" points="255.8069,132.9531,246.8069,128.9531,250.8069,132.9531,246.8069,136.9531,255.8069,132.9531" style="stroke:#800080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="140.25" y="127.1636">place to pharmacy</text><!--MD5=[c2164c630dbe6a05af4b4d5ace87f6e2]
+reverse link Cancelled to Ordered--><path d="M94,67.6697 C94,82.7271 94,102.1651 94,115.9027 " fill="none" id="Cancelled-backto-Ordered" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="94,62.3391,90,71.3391,94,67.3391,98,71.3391,94,62.3391" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="95" y="93.1636">cancel or expire</text><!--MD5=[51cca4aa2206005b394ed87204c6604a]
+reverse link Discontinued to Placed--><path d="M337.6024,66.4902 C326.0222,81.7001 310.7161,101.8036 299.9816,115.9027 " fill="none" id="Discontinued-backto-Placed" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="340.763,62.3391,332.1285,67.0767,337.7341,66.3173,338.4936,71.9229,340.763,62.3391" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="325" y="93.1636">abort</text><!--MD5=[1bb2378239119ff20150848825a387e6]
+link Placed to In Progress--><path d="M318.311,132.9531 C333.9112,132.9531 353.1728,132.9531 370.8443,132.9531 " fill="none" id="Placed-to-In Progress" style="stroke:#FFA500;stroke-width:1.0;" /><polygon fill="#FFA500" points="376.2716,132.9531,367.2716,128.9531,371.2716,132.9531,367.2716,136.9531,376.2716,132.9531" style="stroke:#FFA500;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="328.75" y="127.1636">accept</text><!--MD5=[71c496ef2993242154cf0a141a5d0362]
+reverse link Discontinued to In Progress--><path d="M370.6423,66.4902 C382.3954,81.7001 397.9299,101.8036 408.8247,115.9027 " fill="none" id="Discontinued-backto-In Progress" style="stroke:#000000;stroke-width:1.0;" /><polygon fill="#000000" points="367.4346,62.3391,369.7726,71.9065,370.4919,66.2955,376.1028,67.0148,367.4346,62.3391" style="stroke:#000000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="393" y="93.1636">abort</text><!--MD5=[d2a7167cd7fb40a1f2de0e8bbb701aa3]
+link In Progress to Completed--><path d="M467.8384,132.9531 C489.196,132.9531 514.6237,132.9531 536.3239,132.9531 " fill="none" id="In Progress-to-Completed" style="stroke:#008000;stroke-width:1.0;" /><polygon fill="#008000" points="541.4671,132.9531,532.4671,128.9531,536.4671,132.9531,532.4671,136.9531,541.4671,132.9531" style="stroke:#008000;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="52" x="478.5" y="127.1636">complete</text></g></svg></div>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 19, 2023 14:45+0000">2023-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">Version History</a></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ihe.net/resources/public_comment/">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HLBNC861DJ');
+</script>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

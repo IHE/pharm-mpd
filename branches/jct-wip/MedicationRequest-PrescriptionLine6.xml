@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="PrescriptionLine6"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest PrescriptionLine6</b></p><a name="PrescriptionLine6"> </a><a name="hcPrescriptionLine6"> </a><a name="PrescriptionLine6-en-US"> </a><p><b>identifier</b>: <code>http://example.com/prescriptionlines</code>/line6</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/prescr3</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">med1</span></td></tr></table><p><b>subject</b>: Identifier: patient1</p></div>
+  </text>
+  <identifier>
+    <system value="http://example.com/prescriptionlines"/>
+    <value value="line6"/>
+  </identifier>
+  <groupIdentifier>
+    <system value="http://example.com/prescriptions"/>
+    <value value="prescr3"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <medication>
+    <concept>
+      <coding>
+        <code value="med1"/>
+      </coding>
+    </concept>
+  </medication>
+  <subject>
+    <identifier>
+      <value value="patient1"/>
+    </identifier>
+  </subject>
+</MedicationRequest>

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9319da48-ae63-461a-b4c9-ca095843066e-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9319da48-ae63-461a-b4c9-ca095843066e-5",
+  "name" : "UnionSNOMEDCTMedicationCodesAndSNOMEDCTMedicationCodes",
+  "title" : "Union of SNOMED CT Medication Codes And SNOMED CT Medication Codes",
+  "status" : "draft",
+  "date" : "2026-05-07T15:22:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "763158003"
+      }]
+    }]
+  }
+}

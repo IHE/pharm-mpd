@@ -1,0 +1,168 @@
+{
+  "resourceType" : "Medication",
+  "id" : "03B-VitaminBComplexBranded",
+  "meta" : {
+    "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"03B-VitaminBComplexBranded\"> </a><a name=\"hc03B-VitaminBComplexBranded\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;03B-VitaminBComplexBranded&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProduct.html\">Medicinal product</a></p></div><p><b>Classification</b>: Vitamin B1 in combination with vitamin B6 and/or vitamin B12 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A11DB)</span></p><blockquote><p><b>MedicinalProductName</b></p><blockquote><p><b>url</b></p><code>name</code></blockquote><p><b>value</b>: MILGAMMA N</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-language.html\">Human Language</a></blockquote><p><b>value</b>: Estonian (Estonia) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#et-EE)</span></p></blockquote><p><b>SizeOfMedicationItem</b>: 2 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p><p><b>identifier</b>: <code>https://www.ravimiregister.ee</code>/1029776</p><p><b>doseForm</b>: Solution for suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#13047000)</span></p><p><b>totalVolume</b>: 5 Ampoule<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15002000 = 'Ampoule')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Thiamine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#259659006)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Pyridoxine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#430469009)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 50 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Cyanocobalamin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#419382002)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 0.5 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Lidocaine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387480006)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Classification",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.whocc.no/atc",
+        "code" : "A11DB",
+        "display" : "Vitamin B1 in combination with vitamin B6 and/or vitamin B12"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "name",
+      "valueString" : "MILGAMMA N"
+    },
+    {
+      "url" : "language",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:ietf:bcp:47",
+          "code" : "et-EE",
+          "display" : "Estonian (Estonia)"
+        }]
+      }
+    }],
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductName"
+  },
+  {
+    "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/SizeOfMedicationItem",
+    "valueQuantity" : {
+      "value" : 2,
+      "unit" : "milliliter",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://www.ravimiregister.ee",
+    "value" : "1029776"
+  }],
+  "doseForm" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "13047000",
+      "display" : "Solution for suspension for injection"
+    }]
+  },
+  "totalVolume" : {
+    "value" : 5,
+    "unit" : "Ampoule",
+    "system" : "http://standardterms.edqm.eu",
+    "code" : "15002000"
+  },
+  "ingredient" : [{
+    "item" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "259659006",
+          "display" : "Thiamine"
+        }]
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 50,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    }
+  },
+  {
+    "item" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "430469009",
+          "display" : "Pyridoxine"
+        }]
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 50,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    }
+  },
+  {
+    "item" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419382002",
+          "display" : "Cyanocobalamin"
+        }]
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 0.5,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    }
+  },
+  {
+    "item" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "387480006",
+          "display" : "Lidocaine"
+        }]
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 10,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    }
+  }]
+}
