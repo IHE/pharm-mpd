@@ -1,0 +1,12 @@
+{
+  "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd",
+  "name" : "IHE_MPD",
+  "package-id" : "ihe.pharm.mpd",
+  "ig-ver" : "0.1.0",
+  "date" : "Thu, 03 Aug, 2023 13:33:51 +0000",
+  "errs" : 6,
+  "warnings" : 69,
+  "hints" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)"
+}

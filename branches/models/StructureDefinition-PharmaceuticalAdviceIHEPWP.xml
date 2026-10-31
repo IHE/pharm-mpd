@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PharmaceuticalAdviceIHEPWP"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP" title="Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations.">PharmaceuticalAdviceIHEPWP</a><a name="PharmaceuticalAdviceIHEPWP"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">[IHE PHARM White Paper] Logical Model for pharmaceutical advice</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID" title="Pharmaceutical advice ID">pharmaceuticalAdviceID</a><a name="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pharmaceutical advice ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.date" title="Date/Time of advice">date</a><a name="PharmaceuticalAdviceIHEPWP.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date/Time of advice</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.patient" title="The person for which the medication is prescribed.">patient</a><a name="PharmaceuticalAdviceIHEPWP.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The person for which the medication is prescribed.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.problems" title="A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)">problems</a><a name="PharmaceuticalAdviceIHEPWP.problems"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.summary" title="Summary of physician/pharmacist discussion (by phone, mail, messages…)">summary</a><a name="PharmaceuticalAdviceIHEPWP.summary"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Summary of physician/pharmacist discussion (by phone, mail, messages…)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.status" title="OPEN|CLOSED">status</a><a name="PharmaceuticalAdviceIHEPWP.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">OPEN|CLOSED</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.decision" title="Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)">decision</a><a name="PharmaceuticalAdviceIHEPWP.decision"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.datetimeDecision" title="Date/Time of decision">datetimeDecision</a><a name="PharmaceuticalAdviceIHEPWP.datetimeDecision"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date/Time of decision</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PharmaceuticalAdviceIHEPWP-definitions.html#PharmaceuticalAdviceIHEPWP.pharmacist" title="pharmacist">pharmacist</a><a name="PharmaceuticalAdviceIHEPWP.pharmacist"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">pharmacist</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEPWP"/>
+  <version value="0.1.0"/>
+  <name value="PharmaceuticalAdviceIHEPWP"/>
+  <title value="[IHE PHARM White Paper] Logical Model for pharmaceutical advice"/>
+  <status value="active"/>
+  <date value="2023-02-19T14:45:07+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
+  <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEPWP"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="PharmaceuticalAdviceIHEPWP">
+      <path value="PharmaceuticalAdviceIHEPWP"/>
+      <short value="[IHE PHARM White Paper] Logical Model for pharmaceutical advice"/>
+      <definition value="Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID">
+      <path value="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID"/>
+      <short value="Pharmaceutical advice ID"/>
+      <definition value="Pharmaceutical advice ID"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.date">
+      <path value="PharmaceuticalAdviceIHEPWP.date"/>
+      <short value="Date/Time of advice"/>
+      <definition value="Date/Time of advice"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.patient">
+      <path value="PharmaceuticalAdviceIHEPWP.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.problems">
+      <path value="PharmaceuticalAdviceIHEPWP.problems"/>
+      <short value="A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)"/>
+      <definition value="A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.problems"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.summary">
+      <path value="PharmaceuticalAdviceIHEPWP.summary"/>
+      <short value="Summary of physician/pharmacist discussion (by phone, mail, messages…)"/>
+      <definition value="Summary of physician/pharmacist discussion (by phone, mail, messages…)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.summary"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.status">
+      <path value="PharmaceuticalAdviceIHEPWP.status"/>
+      <short value="OPEN|CLOSED"/>
+      <definition value="OPEN|CLOSED"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.status"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.decision">
+      <path value="PharmaceuticalAdviceIHEPWP.decision"/>
+      <short value="Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)"/>
+      <definition value="Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.decision"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.datetimeDecision">
+      <path value="PharmaceuticalAdviceIHEPWP.datetimeDecision"/>
+      <short value="Date/Time of decision"/>
+      <definition value="Date/Time of decision"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.datetimeDecision"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.pharmacist">
+      <path value="PharmaceuticalAdviceIHEPWP.pharmacist"/>
+      <short value="pharmacist"/>
+      <definition value="pharmacist"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PharmaceuticalAdviceIHEPWP.pharmacist"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PharmaceuticalAdviceIHEPWP">
+      <path value="PharmaceuticalAdviceIHEPWP"/>
+      <short value="[IHE PHARM White Paper] Logical Model for pharmaceutical advice"/>
+      <definition value="Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations."/>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID">
+      <path value="PharmaceuticalAdviceIHEPWP.pharmaceuticalAdviceID"/>
+      <short value="Pharmaceutical advice ID"/>
+      <definition value="Pharmaceutical advice ID"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.date">
+      <path value="PharmaceuticalAdviceIHEPWP.date"/>
+      <short value="Date/Time of advice"/>
+      <definition value="Date/Time of advice"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.patient">
+      <path value="PharmaceuticalAdviceIHEPWP.patient"/>
+      <short value="The person for which the medication is prescribed."/>
+      <definition value="The person for which the medication is prescribed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.problems">
+      <path value="PharmaceuticalAdviceIHEPWP.problems"/>
+      <short value="A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)"/>
+      <definition value="A problem can be a supply problem (suspended medication, out-of-stock...) or a medical issue (redundancy, interaction, contra-indication, overdose, adverse effect...)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.summary">
+      <path value="PharmaceuticalAdviceIHEPWP.summary"/>
+      <short value="Summary of physician/pharmacist discussion (by phone, mail, messages…)"/>
+      <definition value="Summary of physician/pharmacist discussion (by phone, mail, messages…)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.status">
+      <path value="PharmaceuticalAdviceIHEPWP.status"/>
+      <short value="OPEN|CLOSED"/>
+      <definition value="OPEN|CLOSED"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.decision">
+      <path value="PharmaceuticalAdviceIHEPWP.decision"/>
+      <short value="Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)"/>
+      <definition value="Decision (i.e. dispense without change | dispense with changes | refusal to dispense until further discussion with prescriber | definite cancellation of the prescription item)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.datetimeDecision">
+      <path value="PharmaceuticalAdviceIHEPWP.datetimeDecision"/>
+      <short value="Date/Time of decision"/>
+      <definition value="Date/Time of decision"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PharmaceuticalAdviceIHEPWP.pharmacist">
+      <path value="PharmaceuticalAdviceIHEPWP.pharmacist"/>
+      <short value="pharmacist"/>
+      <definition value="pharmacist"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

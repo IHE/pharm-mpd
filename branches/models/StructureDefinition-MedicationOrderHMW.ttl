@@ -1,0 +1,514 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW> a fhir:StructureDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MedicationOrderHMW"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW\" title=\"[HMW] Logical Model for medication order\">MedicationOrderHMW</a><a name=\"MedicationOrderHMW\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">[HMW] Logical Model for medication order</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.identifier\" title=\"The business identifier(s) for the medication order\">identifier</a><a name=\"MedicationOrderHMW.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The business identifier(s) for the medication Order</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.patient\" title=\"The person for which the medication is prescribed.\">patient</a><a name=\"MedicationOrderHMW.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The person for which the medication is prescribed.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.status\" title=\"Status of the prescription\">status</a><a name=\"MedicationOrderHMW.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Status of the prescription</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.statusReason\" title=\"Reason for current prescription status\">statusReason</a><a name=\"MedicationOrderHMW.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for current prescription status<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.product[x]\" title=\"Product prescribed\">product[x]</a><a name=\"MedicationOrderHMW.product_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product prescribed</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">productCodeableConcept</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> productReference</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.encounter\" title=\"Encounter on which the medication was prescribed\">encounter</a><a name=\"MedicationOrderHMW.encounter\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Encounter on which the medication was prescribed</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.requester\" title=\"Who made the prescription\">requester</a><a name=\"MedicationOrderHMW.requester\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Who made the prescription</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.reason\" title=\"Reason or indication for ordering or not ordering the product\">reason</a><a name=\"MedicationOrderHMW.reason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a> | <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason or indication for ordering or not ordering the product<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.groupIdentifier\" title=\"Composite request this is part of\">groupIdentifier</a><a name=\"MedicationOrderHMW.groupIdentifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Composite request this is part of</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.dosageInstruction\" title=\"How the product should be taken/administered\">dosageInstruction</a><a name=\"MedicationOrderHMW.dosageInstruction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Dosage\">Dosage</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">How the product should be taken/administered<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.note\" title=\"Additional Information about the prescription\">note</a><a name=\"MedicationOrderHMW.note\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Annotation\">Annotation</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Additional Information about the prescription<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationOrderHMW-definitions.html#MedicationOrderHMW.date\" title=\"When prescription was initially made\">date</a><a name=\"MedicationOrderHMW.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">When prescription was initially made</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ]; # 
+  fhir:StructureDefinition.url [ fhir:value "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW"]; # 
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"]; # 
+  fhir:StructureDefinition.name [ fhir:value "MedicationOrderHMW"]; # 
+  fhir:StructureDefinition.title [ fhir:value "[HMW] Logical Model for medication order"]; # 
+  fhir:StructureDefinition.status [ fhir:value "active"]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-19T14:45:07+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"]; # 
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Integrating the Healthcare Enterprise (IHE)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ihe.net" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "secretary@ihe.net" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Jose Costa Teixeira" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "jose.a.teixeira@gmail.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ]; # 
+  fhir:StructureDefinition.description [ fhir:value "[HMW] Logical Model for medication order"]; # 
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ]; # 
+  fhir:StructureDefinition.copyright [ fhir:value "IHE http://www.ihe.net/Governance/#Intellectual_Property"]; # 
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"]; # 
+  fhir:StructureDefinition.mapping [
+     fhir:index 0;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ]; # 
+  fhir:StructureDefinition.kind [ fhir:value "logical"]; # 
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:StructureDefinition.type [ fhir:value "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW"]; # 
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base";
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ]; # 
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"]; # 
+  fhir:StructureDefinition.snapshot [
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW" ];
+       fhir:ElementDefinition.short [ fhir:value "[HMW] Logical Model for medication order" ];
+       fhir:ElementDefinition.definition [ fhir:value "[HMW] Logical Model for medication order" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "The business identifier(s) for the medication Order" ];
+       fhir:ElementDefinition.definition [ fhir:value "The business identifier(s) for the medication order" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "The person for which the medication is prescribed." ];
+       fhir:ElementDefinition.definition [ fhir:value "The person for which the medication is prescribed." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.patient" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.status" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.status" ];
+       fhir:ElementDefinition.short [ fhir:value "Status of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Status of the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.status" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.statusReason" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.statusReason" ];
+       fhir:ElementDefinition.short [ fhir:value "Reason for current prescription status" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reason for current prescription status" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.statusReason" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.product[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.product[x]" ];
+       fhir:ElementDefinition.short [ fhir:value "Product prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Product prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.product[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Medication";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication>
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.encounter" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.encounter" ];
+       fhir:ElementDefinition.short [ fhir:value "Encounter on which the medication was prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Encounter on which the medication was prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.encounter" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Encounter";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.requester" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.requester" ];
+       fhir:ElementDefinition.short [ fhir:value "Who made the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Who made the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.requester" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.reason" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.reason" ];
+       fhir:ElementDefinition.short [ fhir:value "Reason or indication for ordering or not ordering the product" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reason or indication for ordering or not ordering the product" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.reason" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+         ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.groupIdentifier" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.groupIdentifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Composite request this is part of" ];
+       fhir:ElementDefinition.definition [ fhir:value "Composite request this is part of" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.groupIdentifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.dosageInstruction" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.dosageInstruction" ];
+       fhir:ElementDefinition.short [ fhir:value "How the product should be taken/administered" ];
+       fhir:ElementDefinition.definition [ fhir:value "How the product should be taken/administered" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.dosageInstruction" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Dosage" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.note" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.note" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Information about the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Additional Information about the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.note" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.date" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.date" ];
+       fhir:ElementDefinition.short [ fhir:value "When prescription was initially made" ];
+       fhir:ElementDefinition.definition [ fhir:value "When prescription was initially made" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "MedicationOrderHMW.date" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ]
+  ]; # 
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW" ];
+       fhir:ElementDefinition.short [ fhir:value "[HMW] Logical Model for medication order" ];
+       fhir:ElementDefinition.definition [ fhir:value "[HMW] Logical Model for medication order" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "The business identifier(s) for the medication Order" ];
+       fhir:ElementDefinition.definition [ fhir:value "The business identifier(s) for the medication order" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "The person for which the medication is prescribed." ];
+       fhir:ElementDefinition.definition [ fhir:value "The person for which the medication is prescribed." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.status" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.status" ];
+       fhir:ElementDefinition.short [ fhir:value "Status of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Status of the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.statusReason" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.statusReason" ];
+       fhir:ElementDefinition.short [ fhir:value "Reason for current prescription status" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reason for current prescription status" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.product[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.product[x]" ];
+       fhir:ElementDefinition.short [ fhir:value "Product prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Product prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Medication";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication>
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.encounter" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.encounter" ];
+       fhir:ElementDefinition.short [ fhir:value "Encounter on which the medication was prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Encounter on which the medication was prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Encounter";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.requester" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.requester" ];
+       fhir:ElementDefinition.short [ fhir:value "Who made the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Who made the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.reason" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.reason" ];
+       fhir:ElementDefinition.short [ fhir:value "Reason or indication for ordering or not ordering the product" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reason or indication for ordering or not ordering the product" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+         ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.groupIdentifier" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.groupIdentifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Composite request this is part of" ];
+       fhir:ElementDefinition.definition [ fhir:value "Composite request this is part of" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.dosageInstruction" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.dosageInstruction" ];
+       fhir:ElementDefinition.short [ fhir:value "How the product should be taken/administered" ];
+       fhir:ElementDefinition.definition [ fhir:value "How the product should be taken/administered" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Dosage" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.note" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.note" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Information about the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Additional Information about the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "MedicationOrderHMW.date" ];
+       fhir:ElementDefinition.path [ fhir:value "MedicationOrderHMW.date" ];
+       fhir:ElementDefinition.short [ fhir:value "When prescription was initially made" ];
+       fhir:ElementDefinition.definition [ fhir:value "When prescription was initially made" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

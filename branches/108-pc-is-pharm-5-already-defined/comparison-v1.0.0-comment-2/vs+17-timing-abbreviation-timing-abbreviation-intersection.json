@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "48d3721a-1c8b-416d-9212-2c694fe4f036-45",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/48d3721a-1c8b-416d-9212-2c694fe4f036-45",
+  "name" : "IntersectionTimingAbbreviationAndTimingAbbreviation",
+  "title" : "Intersection of TimingAbbreviation And TimingAbbreviation",
+  "status" : "draft",
+  "date" : "2026-04-29T13:39:22+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      "concept" : [{
+        "code" : "BID",
+        "display" : "BID"
+      },
+      {
+        "code" : "TID",
+        "display" : "TID"
+      },
+      {
+        "code" : "QID",
+        "display" : "QID"
+      },
+      {
+        "code" : "AM",
+        "display" : "AM"
+      },
+      {
+        "code" : "PM",
+        "display" : "PM"
+      },
+      {
+        "code" : "QD",
+        "display" : "QD"
+      },
+      {
+        "code" : "QOD",
+        "display" : "QOD"
+      },
+      {
+        "code" : "Q1H",
+        "display" : "every hour"
+      },
+      {
+        "code" : "Q2H",
+        "display" : "every 2 hours"
+      },
+      {
+        "code" : "Q3H",
+        "display" : "every 3 hours"
+      },
+      {
+        "code" : "Q4H",
+        "display" : "Q4H"
+      },
+      {
+        "code" : "Q6H",
+        "display" : "Q6H"
+      },
+      {
+        "code" : "Q8H",
+        "display" : "every 8 hours"
+      },
+      {
+        "code" : "BED",
+        "display" : "at bedtime"
+      },
+      {
+        "code" : "WK",
+        "display" : "weekly"
+      },
+      {
+        "code" : "MO",
+        "display" : "monthly"
+      }]
+    }]
+  }
+}

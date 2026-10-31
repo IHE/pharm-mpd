@@ -1,0 +1,30 @@
+IHE_PHARM_MPD
+=========================================
+
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 33683, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 33795, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 33915, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 34023, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 34134, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35041, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35156, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35269, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35378, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35491, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35602, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35715, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35825, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 35932, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 36041, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json: line 1, col 36719, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json: line 86, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/work/fsh-generated/resources/Medication-01D-Cefuroxime750Branded.json: line 86, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/work/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json: line 53, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/work/fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json: line 51, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/work/fsh-generated/resources/Medication-04-FirmagonBranded.json: line 141, col 48, Warning - No definition could be found for URL value 'https://www.ravimiregister.ee' (INVALID)
+/work/fsh-generated/resources/MedicationRequest-10-prescription-cefuroxime-singleline.json: line 104, col 12, Info - This element does not match any known slice defined in the profile https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder|1.0.0-comment-3 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
+/work/fsh-generated/resources/StructureDefinition-IHEMedication.json: line 0, col 0, Warning - The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength|5.0.0' which is experimental, but this structure is not labeled as experimental (BUSINESSRULE)
+/work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-strengthtype.json: line 0, col 0, Error - The element Medication.ingredient.strength[x] is not valid (INVALID)
+
+err = 1, warn = 6, info = 17
+IG Publisher Version: 2.2.6

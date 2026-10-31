@@ -1,0 +1,23 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "pharmacist1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole pharmacist1</b></p><a name=\"pharmacist1\"> </a><a name=\"hcpharmacist1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Moon Farmatseut: Pharmacist at Su-Bin Pharmacy B</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The practitioner who is able to provide the services in this role\">Practitioner:</td><td colspan=\"3\"><a href=\"Practitioner-practitioner2.html\">Moon Farmatseut</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization where the practitioner performs the roles\">Organization:</td><td colspan=\"3\"><a href=\"Organization-organization2.html\">Su-Bin Pharmacy B</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Roles which this practitioner is authorized to perform for the organization\">Role:</td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 46255001}\">Pharmacist</span></td></tr></table></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/practitioner2",
+    "display" : "Moon Farmatseut"
+  },
+  "organization" : {
+    "reference" : "Organization/organization2",
+    "display" : "Su-Bin Pharmacy B"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "46255001",
+      "display" : "Pharmacist"
+    }]
+  }]
+}

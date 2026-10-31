@@ -1,0 +1,88 @@
+﻿IHE_MPD : Validation Results
+=========================================
+
+err = 8, warn = 29, info = 0
+IG Publisher Version: 1.2.37
+Generated Sun Feb 19 14:45:34 UTC 2023. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+ Build Errors : 0 / 6 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CD : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DT : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationIHEMM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseHMW : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderHMW : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderIHEMM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderIHEPWP : 1 / 8 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceHMW : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEMM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEPWP : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-QT : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ST : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-class : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ePrescription : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-untyped : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ihe.pharm.mpd
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ePrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
+== fsh-generated/resources/StructureDefinition-CD.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CD'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-DT.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-II.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/II'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW.json ==
+ERROR: StructureDefinition/MedicationAdministrationHMW: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+== fsh-generated/resources/StructureDefinition-MedicationAdministrationIHEMM.json ==
+== fsh-generated/resources/StructureDefinition-MedicationDispenseHMW.json ==
+== fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM.json ==
+ERROR: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+ERROR: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.differential.element[19].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension|4.0.1], which is not a Resource (which is required because the MedicationDispenseIHEMM.destination element has type Reference)
+ERROR: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.snapshot.element[22].type[0].targetProfile[0]: Profile http://hl7.org/fhir/StructureDefinition/openEHR-location is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Extension|4.0.1], which is not a Resource (which is required because the MedicationDispenseIHEMM.destination element has type Reference)
+== fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP.json ==
+ERROR: StructureDefinition/MedicationDispenseIHEPWP: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+== fsh-generated/resources/StructureDefinition-MedicationOrderHMW.json ==
+== fsh-generated/resources/StructureDefinition-MedicationOrderIHEMM.json ==
+== fsh-generated/resources/StructureDefinition-MedicationOrderIHEPWP.json ==
+ERROR: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace ' Prescription...ID '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[13].short: value should not start or finish with whitespace 'Beginning...renewals '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[18]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace ' Prescription...ID '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace 'Beginning...renewals '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[12]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceHMW.json ==
+ERROR: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.snapshot.element[13]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.snapshot.element[17]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.differential.element[13]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.differential.element[17]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEMM.json ==
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEPWP.json ==
+== fsh-generated/resources/StructureDefinition-QT.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/QT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ST.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ST'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-TS.json ==
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/TS'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-class.json ==
+WARNING: StructureDefinition/class: StructureDefinition: Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/class'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ePrescription.json ==
+WARNING: StructureDefinition/ePrescription: StructureDefinition: Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: StructureDefinition/ePrescription: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+== fsh-generated/resources/StructureDefinition-untyped.json ==
+WARNING: StructureDefinition/untyped: StructureDefinition: Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/untyped'): The Implementation Guide contains no examples for this data type profile

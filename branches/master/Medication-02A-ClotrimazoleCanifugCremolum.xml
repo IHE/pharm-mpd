@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="02A-ClotrimazoleCanifugCremolum"/>
+  <meta>
+    <profile value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication </b><a name="02A-ClotrimazoleCanifugCremolum"> </a><a name="hc02A-ClotrimazoleCanifugCremolum"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceMedication &quot;02A-ClotrimazoleCanifugCremolum&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-IHEMedication.html">Medicinal product</a></p></div><p><b>Medication - Classification</b>: clotrimazole <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html">WHO ATC</a>#G01AF02)</span></p><blockquote><p><b>Medication - Product Name</b></p><blockquote><p><b>url</b></p><code>name</code></blockquote><p><b>value</b>: Canifug Cremolum</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-language.html">Human Language</a></blockquote><p><b>value</b>: Estonian (Estonia) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#et-EE)</span></p></blockquote><p><b>identifier</b>: <code>https://www.ravimiregister.ee</code>/1033692</p><p><b>doseForm</b>: Cream + pessary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#14001000)</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-02A1-CanifugCremolumCreamItem.html">Medication/02A1-CanifugCremolumCreamItem</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-02A2-CanifugCremolumPessaryItem.html">Medication/02A2-CanifugCremolumPessaryItem</a></td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-classification">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="G01AF02"/>
+        <display value="clotrimazole"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ihe-ext-medication-productname">
+    <extension url="name">
+      <valueString value="Canifug Cremolum"/>
+    </extension>
+    <extension url="language">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:ietf:bcp:47"/>
+          <code value="et-EE"/>
+          <display value="Estonian (Estonia)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="https://www.ravimiregister.ee"/>
+    <value value="1033692"/>
+  </identifier>
+  <doseForm>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="14001000"/>
+      <display value="Cream + pessary"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/02A1-CanifugCremolumCreamItem"/>
+      </reference>
+    </item>
+  </ingredient>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/02A2-CanifugCremolumPessaryItem"/>
+      </reference>
+    </item>
+  </ingredient>
+</Medication>

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "390e93c7-8dd5-41a0-8658-0f6133e5e786-48",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/390e93c7-8dd5-41a0-8658-0f6133e5e786-48",
+  "name" : "IntersectionSNOMEDCTMedicationAsNeededReasonCodesAndSNOMEDCTMedicationAsNeededReasonCodes",
+  "title" : "Intersection of SNOMED CT Medication As Needed Reason Codes And SNOMED CT Medication As Needed Reason Codes",
+  "status" : "draft",
+  "date" : "2026-04-22T14:51:43+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    }]
+  }
+}

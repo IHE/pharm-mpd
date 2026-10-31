@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/all-languages,5.0.0,active,"2.16.840.1.113883.4.642.3.21",AllLanguages,All Languages,"This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)","StructureDefinition/ihe-ext-medication-productname","hl7.terminology.r5"

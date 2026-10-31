@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"OrganizationBasic","OrganizationBasic","","","",0,*,"","","","null {[]} {[]}
+","Organization (model)","Logical model for an organization (basic data relevant for IHE MPD use cases)","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"OrganizationBasic.identifier","OrganizationBasic.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiers for an organization","Identifiers for an organization","","","","","","","","","",,,,,"",,,,"OrganizationBasic.identifier",0,*,"",""
+"OrganizationBasic.type","OrganizationBasic.type","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Type of organization","Type of organization","","","","","","","","","",,,,,"",,,,"OrganizationBasic.type",0,*,"",""
+"OrganizationBasic.name","OrganizationBasic.name","","","",0,1,"","","","string {[]} {[]}
+","Name used for the organization","Name used for the organization","","","","","","","","","",,,,,"",,,,"OrganizationBasic.name",0,1,"",""

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MPD\Trial Models - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://profiles.ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+<div id="project-nav">
+  
+  
+    <a id="project-logo" no-external="true" href="http://profiles.ihe.net/PHARM/index.html"><img height="70" alt="Visit the PHARM website" src="assets/images/PHARM.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="actor_options.html">Actor Options</a>
+      </li>
+      <li>
+        <a href="alternative.html">Trial Models</a>
+      </li>
+      <li>
+        <a href="security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="intro_2.html">Introduction</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Trial Models</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Medication Prescription and Delivery (MPD), published by Integrating the Healthcare Enterprise (IHE). This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd">https://github.com/IHE/pharm-mpd</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Trial Models</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>The proposal in this Profile is for simplyfing the standard workflow.</p>
+
+<p>The current proposal only counts with 3 actors:</p>
+<ol>
+  <li>Prescription Placer (name TBC)</li>
+  <li>Medication Dispenser</li>
+  <li>Medication Administration Informer</li>
+</ol>
+
+<p>The following image shows exatcly that:</p>
+<div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="646px" preserveAspectRatio="none" style="width:763px;height:646px;background:#FFFFFF;" version="1.1" viewBox="0 0 763 646" width="763px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="257" x="249.5" y="28.708">Typical Medication Workflow</text><rect fill="#D1EBF1" height="189.6641" style="stroke:#000000;stroke-width:1.0;" width="10" x="53" y="145.5469" /><rect fill="#CADAA9" height="100.3984" style="stroke:#000000;stroke-width:1.0;" width="10" x="320" y="335.2109" /><rect fill="#FFFF99" height="185.6641" style="stroke:#000000;stroke-width:1.0;" width="10" x="504" y="435.6094" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="58" x2="58" y1="135.5469" y2="639.2734" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="324.5" x2="324.5" y1="135.5469" y2="639.2734" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="509" x2="509" y1="135.5469" y2="639.2734" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="5" y="115.9482">Prescription</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="105" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="32.5" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="49" x="32.5" y="132.2451">Placer</text><ellipse cx="58" cy="57.4531" fill="#D1EBF1" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M58,77.4531 C62,77.4531 65,77.4531 69,73.4531 C77,73.4531 85,81.4531 85,89.4531 L85,93.4531 C85,97.4531 81,101.4531 77,101.4531 L39,101.4531 C35,101.4531 31,97.4531 31,93.4531 L31,89.4531 C31,81.4531 39,73.4531 47,73.4531 C51,77.4531 54,77.4531 58,77.4531 " fill="#D1EBF1" style="stroke:#808080;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="277.5" y="115.9482">Medication</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="366.5" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="284" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="284" y="132.2451">Dispenser</text><ellipse cx="325" cy="57.4531" fill="#CADAA9" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M325,77.4531 C329,77.4531 332,77.4531 336,73.4531 C344,73.4531 352,81.4531 352,89.4531 L352,93.4531 C352,97.4531 348,101.4531 344,101.4531 L306,101.4531 C302,101.4531 298,97.4531 298,93.4531 L298,89.4531 C298,81.4531 306,73.4531 314,73.4531 C318,77.4531 321,77.4531 325,77.4531 " fill="#CADAA9" style="stroke:#808080;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="204" x="402" y="115.9482">Medication Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="610" y="115.9482" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="474" y="132.2451" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="474" y="132.2451">Informer</text><ellipse cx="509" cy="57.4531" fill="#FFFF99" rx="16" ry="16" style="stroke:#808080;stroke-width:1.5;" /><path d="M509,77.4531 C513,77.4531 516,77.4531 520,73.4531 C528,73.4531 536,81.4531 536,89.4531 L536,93.4531 C536,97.4531 532,101.4531 528,101.4531 L490,101.4531 C486,101.4531 482,97.4531 482,93.4531 L482,89.4531 C482,81.4531 490,73.4531 498,73.4531 C502,77.4531 505,77.4531 509,77.4531 " fill="#FFFF99" style="stroke:#808080;stroke-width:1.5;" /><rect fill="#D1EBF1" height="189.6641" style="stroke:#000000;stroke-width:1.0;" width="10" x="53" y="145.5469" /><rect fill="#CADAA9" height="100.3984" style="stroke:#000000;stroke-width:1.0;" width="10" x="320" y="335.2109" /><rect fill="#FFFF99" height="185.6641" style="stroke:#000000;stroke-width:1.0;" width="10" x="504" y="435.6094" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="105" y1="166.6797" y2="166.6797" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="105" x2="105" y1="166.6797" y2="179.6797" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="105" y1="179.6797" y2="179.6797" /><polygon fill="#808080" points="74,175.6797,64,179.6797,74,183.6797,70,179.6797" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="70" y="161.6138">Plan</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="105" y1="208.8125" y2="208.8125" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="105" x2="105" y1="208.8125" y2="221.8125" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="105" y1="221.8125" y2="221.8125" /><polygon fill="#808080" points="74,217.8125,64,221.8125,74,225.8125,70,221.8125" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="70" y="203.7466">Review</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="105" y1="250.9453" y2="250.9453" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="105" x2="105" y1="250.9453" y2="263.9453" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="105" y1="263.9453" y2="263.9453" /><polygon fill="#808080" points="74,259.9453,64,263.9453,74,267.9453,70,263.9453" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="70" y="245.8794">Validation</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="105" y1="293.0781" y2="293.0781" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="105" x2="105" y1="293.0781" y2="306.0781" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="105" y1="306.0781" y2="306.0781" /><polygon fill="#808080" points="74,302.0781,64,306.0781,74,310.0781,70,306.0781" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="149" x="70" y="288.0122">Confirmation (ordering)</text><polygon fill="#808080" points="308,331.2109,318,335.2109,308,339.2109,312,335.2109" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;" x1="58" x2="314" y1="335.2109" y2="335.2109" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="238" x="65" y="330.145">Validated (or not) Order Confirmation</text><polygon fill="#808080" points="69,360.3438,59,364.3438,69,368.3438,65,364.3438" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;" x1="63" x2="319" y1="364.3438" y2="364.3438" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="75" y="359.2778">Med. Preparation Report</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="330" x2="372" y1="393.4766" y2="393.4766" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="372" x2="372" y1="393.4766" y2="406.4766" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="331" x2="372" y1="406.4766" y2="406.4766" /><polygon fill="#808080" points="341,402.4766,331,406.4766,341,410.4766,337,406.4766" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="337" y="388.4106">Review/validate</text><polygon fill="#808080" points="492,431.6094,502,435.6094,492,439.6094,496,435.6094" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;" x1="325" x2="498" y1="435.6094" y2="435.6094" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="332" y="430.5435">Med. Preparation Report</text><rect fill="#EEEEEE" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="756" x="0" y="464.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="756" y1="464.1758" y2="464.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="756" y1="467.1758" y2="467.1758" /><rect fill="#EEEEEE" height="23.1328" style="stroke:#000000;stroke-width:2.0;" width="95" x="330.5" y="453.6094" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="76" x="336.5" y="469.6763">Repetition</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="514" x2="556" y1="507.875" y2="507.875" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="556" x2="556" y1="507.875" y2="520.875" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="515" x2="556" y1="520.875" y2="520.875" /><polygon fill="#808080" points="525,516.875,515,520.875,525,524.875,521,520.875" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="521" y="502.8091">Review/validate</text><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="514" x2="556" y1="550.0078" y2="550.0078" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="556" x2="556" y1="550.0078" y2="563.0078" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="515" x2="556" y1="563.0078" y2="563.0078" /><polygon fill="#808080" points="525,559.0078,515,563.0078,525,567.0078,521,563.0078" style="stroke:#808080;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223" x="521" y="544.9419">Reviewed/Validated  administration</text><polygon fill="#808080" points="69,588.1406,59,592.1406,69,596.1406,65,592.1406" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="63" x2="503" y1="592.1406" y2="592.1406" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="75" y="587.0747">Administration report</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="8" x="215" y="587.0747">n</text><polygon fill="#808080" points="336,617.2734,326,621.2734,336,625.2734,332,621.2734" style="stroke:#808080;stroke-width:1.0;" /><line style="stroke:#808080;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="330" x2="508" y1="621.2734" y2="621.2734" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="342" y="616.2075">Administration report</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="8" x="482" y="616.2075">n</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h3 id="prescription-placer-name-tbc">Prescription Placer (name TBC)</h3>
+<p>This actors groups together all previous actors that had something to do with ordering and validation of the order.
+So it couples together traditional concepts such as planner, ordering, reviewer or  validation.
+This actor can be impersonated by a physician, a pharmacist, a clinical decision support system or a team.</p>
+
+<p>The actions are mainly planning, drafting, reviewing and/or validating medication orders.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 19, 2023 14:45+0000">2023-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html">Version History</a></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ihe.net/resources/public_comment/">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HLBNC861DJ');
+</script>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

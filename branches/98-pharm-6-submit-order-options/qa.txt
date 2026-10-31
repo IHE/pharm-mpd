@@ -1,0 +1,920 @@
+IHE_PHARM_MPD : Validation Results
+=========================================
+
+err = 18, warn = 528, info = 66, broken links = 0
+IG Publisher Version: 3.0.1
+Generated Sat Oct 31 22:44:54 UTC 2026. FHIR version 5.0.0 for ihe.pharm.mpd#1.0.0-comment-3 (canonical = https://profiles.ihe.net/PHARM/MPD)
+ Build Errors : 17 / 511 / 0
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseConsumer : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseReceiver : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseReporter : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseResponder : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.OrderConsumer : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.OrderPlacer : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.OrderReceiver : 0 / 0 / 3
+ /work/fsh-generated/resources/ActorDefinition-IHE.MPD.OrderResponder : 0 / 0 / 3
+ /work/fsh-generated/resources/Bundle-200-multiitem-prescription-without-orchestration : 0 / 0 / 5
+ /work/fsh-generated/resources/Bundle-pharm6-notification-multi-line : 0 / 0 / 13
+ /work/fsh-generated/resources/Bundle-pharm6-notification-single-line : 0 / 2 / 13
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseConsumerCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseReceiverCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseReporterCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseResponderCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderConsumerCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderPlacerCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderReceiverCS : 0 / 0 / 3
+ /work/fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderResponderCS : 0 / 0 / 3
+ /work/fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd : 0 / 0 / 19
+ /work/fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit : 0 / 1 / 1
+ /work/fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept : 0 / 0 / 1
+ /work/fsh-generated/resources/Medication-01C-Cefuroxime1500Branded : 0 / 2 / 1
+ /work/fsh-generated/resources/Medication-01D-Cefuroxime750Branded : 0 / 2 / 1
+ /work/fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum : 0 / 0 / 1
+ /work/fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem : 0 / 1 / 1
+ /work/fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem : 0 / 2 / 1
+ /work/fsh-generated/resources/Medication-03B-VitaminBComplexBranded : 0 / 1 / 1
+ /work/fsh-generated/resources/Medication-04-FirmagonBranded : 0 / 2 / 1
+ /work/fsh-generated/resources/Medication-05A-Tilidin-Branded : 0 / 2 / 1
+ /work/fsh-generated/resources/MedicationDispense-10-dispense-1 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationDispense-10-dispense-2 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationDispense-300-dispense-for-2-requests : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-10-prescription-cefuroxime-singleline : 0 / 1 / 1
+ /work/fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request1 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request2 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request3 : 0 / 0 / 1
+ /work/fsh-generated/resources/Organization-organization1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Organization-organization2 : 0 / 0 / 1
+ /work/fsh-generated/resources/Patient-patient1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Patient-patient2 : 0 / 0 / 1
+ /work/fsh-generated/resources/Practitioner-practitioner1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Practitioner-practitioner2 : 0 / 0 / 1
+ /work/fsh-generated/resources/PractitionerRole-doctor1 : 0 / 0 / 1
+ /work/fsh-generated/resources/PractitionerRole-pharmacist1 : 0 / 0 / 1
+ /work/fsh-generated/resources/SearchParameter-activity-resource : 0 / 0 / 3
+ /work/fsh-generated/resources/SearchParameter-group-or-identifier : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-DeviceBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedication : 0 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationDispense : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationDispenseModel : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationOrder : 0 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationOrderModel : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationOrderNotificationBundle : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-IHEMedicationOrderNotificationStatus : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-IHEMultilineOrder : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-MedicinalProductModel : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-OrganizationBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-PatientBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-PractitionerBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-PractitionerRoleBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-RelatedPersonBasic : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-characteristic : 0 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-device : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-ingredient-role : 0 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-strengthsubstance : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-strengthtype : 1 / 1 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medication-unitofpresentation : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-ihe-ext-offLabel : 0 / 1 / 3
+</table>
+
+== n/a ==
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseConsumer.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReceiver.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseReporter.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.DispenseResponder.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderConsumer.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderPlacer.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderReceiver.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/ActorDefinition-IHE.MPD.OrderResponder.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-200-multiitem-prescription-without-orchestration.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-200-multiitem-prescription-without-orchestration.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-200-multiitem-prescription-without-orchestration.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-200-multiitem-prescription-without-orchestration.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-200-multiitem-prescription-without-orchestration.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-multi-line.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-multi-line.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-multi-line.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-multi-line.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-multi-line.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-single-line.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-single-line.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-single-line.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-single-line.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Bundle-pharm6-notification-single-line.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseConsumerCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReceiverCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseReporterCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.DispenseResponderCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderConsumerCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderPlacerCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderReceiverCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/CapabilityStatement-IHE.MPD.OrderResponderCS.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01A-Cefuroxime1500GenericExplicit.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01A-Cefuroxime1500GenericExplicit.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01A-Cefuroxime1500GenericExplicit.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01A-Cefuroxime1500GenericExplicit.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01A-Cefuroxime1500GenericExplicit.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01B-Cefuroxime1500GenericConcept.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01B-Cefuroxime1500GenericConcept.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01B-Cefuroxime1500GenericConcept.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01B-Cefuroxime1500GenericConcept.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01B-Cefuroxime1500GenericConcept.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01C-Cefuroxime1500Branded.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01C-Cefuroxime1500Branded.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01C-Cefuroxime1500Branded.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01C-Cefuroxime1500Branded.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01C-Cefuroxime1500Branded.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01D-Cefuroxime750Branded.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01D-Cefuroxime750Branded.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01D-Cefuroxime750Branded.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01D-Cefuroxime750Branded.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-01D-Cefuroxime750Branded.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A-ClotrimazoleCanifugCremolum.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A-ClotrimazoleCanifugCremolum.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A-ClotrimazoleCanifugCremolum.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A-ClotrimazoleCanifugCremolum.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A-ClotrimazoleCanifugCremolum.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A1-CanifugCremolumCreamItem.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A1-CanifugCremolumCreamItem.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A1-CanifugCremolumCreamItem.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A1-CanifugCremolumCreamItem.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A1-CanifugCremolumCreamItem.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A2-CanifugCremolumPessaryItem.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A2-CanifugCremolumPessaryItem.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A2-CanifugCremolumPessaryItem.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A2-CanifugCremolumPessaryItem.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-02A2-CanifugCremolumPessaryItem.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-03B-VitaminBComplexBranded.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-03B-VitaminBComplexBranded.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-03B-VitaminBComplexBranded.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-03B-VitaminBComplexBranded.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-03B-VitaminBComplexBranded.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-04-FirmagonBranded.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-04-FirmagonBranded.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-04-FirmagonBranded.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-04-FirmagonBranded.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-04-FirmagonBranded.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-05A-Tilidin-Branded.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-05A-Tilidin-Branded.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-05A-Tilidin-Branded.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-05A-Tilidin-Branded.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Medication-05A-Tilidin-Branded.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-2.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-2.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-2.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-10-dispense-2.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-300-dispense-for-2-requests.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-300-dispense-for-2-requests.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-300-dispense-for-2-requests.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-300-dispense-for-2-requests.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationDispense-300-dispense-for-2-requests.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-10-prescription-cefuroxime-singleline.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-10-prescription-cefuroxime-singleline.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-10-prescription-cefuroxime-singleline.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-10-prescription-cefuroxime-singleline.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-10-prescription-cefuroxime-singleline.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request2.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request2.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request2.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request2.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request3.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request3.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request3.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request3.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/MedicationRequest-100-3-medication-prescription-request3.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization2.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization2.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization2.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Organization-organization2.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient2.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient2.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient2.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Patient-patient2.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner2.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner2.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner2.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/Practitioner-practitioner2.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-doctor1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-doctor1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-doctor1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-doctor1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-doctor1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-pharmacist1.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-pharmacist1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-pharmacist1.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-pharmacist1.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/PractitionerRole-pharmacist1.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-activity-resource.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier.change.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/SearchParameter-group-or-identifier.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DeviceBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-DosagingInformation.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedication.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispense.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationDispenseModel.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrder.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderModel.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationBundle.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMedicationOrderNotificationStatus.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-IHEMultilineOrder.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-MedicinalProductModel.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-OrganizationBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PatientBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-PractitionerRoleBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-RelatedPersonBasic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-characteristic.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-classification.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-device.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-ingredient-role.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-productname.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-sizeofitem.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthsubstance.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-strengthtype.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medication-unitofpresentation.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel-definitions.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel-mappings.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel-testing.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel.profile.history.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel.profile.json.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel.profile.ttl.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/StructureDefinition-ihe-ext-offLabel.profile.xml.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/actor-grouping-examples.html: The html source has duplicate element ids: OrderConsumer-orderresponder,cluster_PS,entity_OrderConsumer,entity_orderplacer,entity_orderreceiver,entity_orderresponder,link_OrderConsumer_orderresponder,link_orderplacer_orderreceiver,orderplacer-orderreceiver,project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/actors-options.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/actors-transactions.html: The html source has duplicate element ids: entity_OrderConsumer,project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/artifacts.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/changes.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/data-models.html: The page skips a heading level: <h4> 'Medication Order' (id=medication-order) follows <h2> 'Data Models', so it should be <h3>. Heading levels must not skip a level going down (WCAG compliance test)
+WARNING: /work/output/data-models.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/downloads.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/error_codes.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/glossary.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/grouping.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/howtoread.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/index.html: The page has more than one top level heading: <h2> 'Overview' (id=overview) is at the same level as the first heading on the page (<h2> 'IHE MPD (Medication Prescription and Dispense)'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/index.html: The page has more than one top level heading: <h2> 'Organization of This Guide' (id=organization-of-this-guide) is at the same level as the first heading on the page (<h2> 'IHE MPD (Medication Prescription and Dispense)'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/index.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/medication-concepts.html: The page has more than one top level heading: <h2> 'Usage in the clinical lifecycle' (id=usage-in-the-clinical-lifecycle) is at the same level as the first heading on the page (<h2> 'Medication Concepts'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/medication-concepts.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/pharm-6.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/pharm-7.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/pharm-8.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/pharm-9.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+WARNING: /work/output/testplan.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+WARNING: /work/output/toc.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/usage-examples.html: The page has more than one top level heading: <h2> 'Workflow Concepts' (id=workflow-concepts) is at the same level as the first heading on the page (<h2> 'Usage Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/usage-examples.html: The page has more than one top level heading: <h2> 'Order initiation' (id=order-initiation) is at the same level as the first heading on the page (<h2> 'Usage Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/usage-examples.html: The page has more than one top level heading: <h2> 'Changes' (id=changes) is at the same level as the first heading on the page (<h2> 'Usage Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/usage-examples.html: The page has more than one top level heading: <h2> 'Dispense' (id=dispense) is at the same level as the first heading on the page (<h2> 'Usage Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/usage-examples.html: The page has more than one top level heading: <h2> 'Administration' (id=administration) is at the same level as the first heading on the page (<h2> 'Usage Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/usage-examples.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/usecases.html: The page has more than one top level heading: <h2> 'Core Workflow concepts' (id=core-workflow-concepts) is at the same level as the first heading on the page (<h2> 'Use Cases and Patterns'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/usecases.html: The page has more than one top level heading: <h2> 'Simple prescription and dispense' (id=simple-prescription-and-dispense) is at the same level as the first heading on the page (<h2> 'Use Cases and Patterns'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/usecases.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/volume-1.html: The page has more than one top level heading: <h2> 'XX.2 Actor Options' (id=xx2-actor-options) is at the same level as the first heading on the page (<h2> 'Volume 1'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/volume-1.html: The page has more than one top level heading: <h2> 'XX.3 Required Actor Groupings' (id=xx3-required-actor-groupings) is at the same level as the first heading on the page (<h2> 'Volume 1'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/volume-1.html: The page has more than one top level heading: <h2> 'XX.4 Overview' (id=xx4-overview) is at the same level as the first heading on the page (<h2> 'Volume 1'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/volume-1.html: The page has more than one top level heading: <h2> 'XX.5 Security Considerations' (id=xx5-security-considerations) is at the same level as the first heading on the page (<h2> 'Volume 1'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /work/output/volume-1.html: The page has more than one top level heading: <h2> 'XX.6 Cross-Profile Considerations' (id=xx6-cross-profile-considerations) is at the same level as the first heading on the page (<h2> 'Volume 1'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/volume-1.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+ERROR: /work/output/volume-2.html: The page has more than one top level heading: <h2> 'Defined Transactions' (id=defined-transactions) is at the same level as the first heading on the page (<h2> 'Volume 2'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+WARNING: /work/output/volume-2.html: The html source has duplicate element ids: project-nav. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseConsumer.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.DispenseConsumer could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseReceiver.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.DispenseReceiver could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseReporter.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.DispenseReporter could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.DispenseResponder.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.DispenseResponder could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.OrderConsumer.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.OrderConsumer could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.OrderPlacer.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.OrderPlacer could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.OrderReceiver.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.OrderReceiver could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ActorDefinition-IHE.MPD.OrderResponder.json ==
+INFORMATION: Resource: The resource ActorDefinition/IHE.MPD.OrderResponder could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Bundle-200-multiitem-prescription-without-orchestration.json ==
+
+
+== fsh-generated/resources/Bundle-pharm6-notification-multi-line.json ==
+INFORMATION: Bundle/pharm6-notification-multi-line: Bundle.entry[4]: This element does not match any known slice defined in the profile https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle|1.0.0-comment-3 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Bundle-pharm6-notification-single-line.json ==
+INFORMATION: Bundle/pharm6-notification-single-line: Bundle.entry[3]: This element does not match any known slice defined in the profile https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle|1.0.0-comment-3 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/pharm6-notification-single-line: Bundle.entry[4]: This element does not match any known slice defined in the profile https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle|1.0.0-comment-3 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/pharm6-notification-single-line: Bundle.entry[1].resource/*MedicationRequest/10-prescription-cefuroxime-singleline*/.dispenseRequest.extension[0].value.ofType(Quantity).system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Bundle/pharm6-notification-single-line: Bundle.entry[4].resource/*Medication/01A-Cefuroxime1500GenericExplicit*/.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseConsumerCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.DispenseConsumerCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseReceiverCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.DispenseReceiverCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseReporterCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.DispenseReporterCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.DispenseResponderCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.DispenseResponderCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderConsumerCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.OrderConsumerCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderPlacerCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.OrderPlacerCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderReceiverCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.OrderReceiverCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CapabilityStatement-IHE.MPD.OrderResponderCS.json ==
+INFORMATION: Resource: The resource CapabilityStatement/IHE.MPD.OrderResponderCS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ImplementationGuide-ihe.pharm.mpd.json ==
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[2].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[3].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[20].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[21].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[22].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[23].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ihe.pharm.mpd: ImplementationGuide.definition.parameter[29].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: Resource: The resource ImplementationGuide/ihe.pharm.mpd could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Medication-01A-Cefuroxime1500GenericExplicit.json ==
+WARNING: Medication/01A-Cefuroxime1500GenericExplicit: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-01B-Cefuroxime1500GenericConcept.json ==
+
+
+== fsh-generated/resources/Medication-01C-Cefuroxime1500Branded.json ==
+WARNING: Medication/01C-Cefuroxime1500Branded: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Medication/01C-Cefuroxime1500Branded: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-01D-Cefuroxime750Branded.json ==
+WARNING: Medication/01D-Cefuroxime750Branded: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Medication/01D-Cefuroxime750Branded: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-02A-ClotrimazoleCanifugCremolum.json ==
+
+
+== fsh-generated/resources/Medication-02A1-CanifugCremolumCreamItem.json ==
+WARNING: Medication/02A1-CanifugCremolumCreamItem: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-02A2-CanifugCremolumPessaryItem.json ==
+WARNING: Medication/02A2-CanifugCremolumPessaryItem: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Medication/02A2-CanifugCremolumPessaryItem: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-03B-VitaminBComplexBranded.json ==
+WARNING: Medication/03B-VitaminBComplexBranded: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-04-FirmagonBranded.json ==
+WARNING: Medication/04-FirmagonBranded: Medication.totalVolume.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Medication/04-FirmagonBranded: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/Medication-05A-Tilidin-Branded.json ==
+WARNING: Medication/05A-Tilidin-Branded: Medication.ingredient[0].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+WARNING: Medication/05A-Tilidin-Branded: Medication.ingredient[1].strength.ofType(Ratio).denominator.system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/MedicationDispense-10-dispense-1.json ==
+
+
+== fsh-generated/resources/MedicationDispense-10-dispense-2.json ==
+
+
+== fsh-generated/resources/MedicationDispense-300-dispense-for-2-requests.json ==
+
+
+== fsh-generated/resources/MedicationRequest-10-prescription-cefuroxime-singleline.json ==
+WARNING: MedicationRequest/10-prescription-cefuroxime-singleline: MedicationRequest.dispenseRequest.extension[0].value.ofType(Quantity).system: No definition could be found for URL value 'http://standardterms.edqm.eu'
+
+
+== fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request1.json ==
+
+
+== fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request2.json ==
+
+
+== fsh-generated/resources/MedicationRequest-100-3-medication-prescription-request3.json ==
+
+
+== fsh-generated/resources/Organization-organization1.json ==
+
+
+== fsh-generated/resources/Organization-organization2.json ==
+
+
+== fsh-generated/resources/Patient-patient1.json ==
+
+
+== fsh-generated/resources/Patient-patient2.json ==
+
+
+== fsh-generated/resources/Practitioner-practitioner1.json ==
+
+
+== fsh-generated/resources/Practitioner-practitioner2.json ==
+
+
+== fsh-generated/resources/PractitionerRole-doctor1.json ==
+
+
+== fsh-generated/resources/PractitionerRole-pharmacist1.json ==
+
+
+== fsh-generated/resources/SearchParameter-activity-resource.json ==
+INFORMATION: Resource: The resource SearchParameter/activity-resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/SearchParameter-group-or-identifier.json ==
+INFORMATION: Resource: The resource SearchParameter/group-or-identifier could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-DeviceBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/DeviceBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
+INFORMATION: Resource: The resource StructureDefinition/DosagingInformation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedication.json ==
+WARNING: StructureDefinition/IHEMedication: StructureDefinition.snapshot.element[28].binding: The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/IHEMedication could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationDispense.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationDispense could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationDispenseModel.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationDispenseModel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationOrder.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationOrder could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationOrderModel.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationOrderModel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationOrderNotificationBundle.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationOrderNotificationBundle could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-IHEMedicationOrderNotificationStatus.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMedicationOrderNotificationStatus could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+INFORMATION: StructureDefinition.where(url = 'https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationStatus'): The Implementation Guide contains no explicitly linked examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-IHEMultilineOrder.json ==
+INFORMATION: Resource: The resource StructureDefinition/IHEMultilineOrder could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-MedicinalProductModel.json ==
+INFORMATION: Resource: The resource StructureDefinition/MedicinalProductModel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-OrganizationBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/OrganizationBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-PatientBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/PatientBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-PractitionerBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/PractitionerBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-PractitionerRoleBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/PractitionerRoleBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-RelatedPersonBasic.json ==
+INFORMATION: Resource: The resource StructureDefinition/RelatedPersonBasic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-characteristic.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-characteristic could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-classification.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-classification could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-device.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-device could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-ingredient-role.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-ingredient-role could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-productname.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-productname could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-sizeofitem.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-sizeofitem could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-strengthsubstance.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-strengthsubstance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-strengthtype.json ==
+ERROR: StructureDefinition/ihe-ext-medication-strengthtype: StructureDefinition.context[0]: The element Medication.ingredient.strength[x] is not valid
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-strengthtype could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medication-unitofpresentation.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medication-unitofpresentation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ihe-ext-offLabel.json ==
+INFORMATION: Resource: The resource StructureDefinition/ihe-ext-offLabel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

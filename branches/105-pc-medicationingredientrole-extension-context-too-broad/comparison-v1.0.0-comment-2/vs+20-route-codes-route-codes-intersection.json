@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "05918032-1ac3-4384-b9c7-1996e9d13805-54",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/05918032-1ac3-4384-b9c7-1996e9d13805-54",
+  "name" : "IntersectionSNOMEDCTRouteCodesAndSNOMEDCTRouteCodes",
+  "title" : "Intersection of SNOMED CT Route Codes And SNOMED CT Route Codes",
+  "status" : "draft",
+  "date" : "2026-04-22T08:42:01+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "284009009"
+      }]
+    }]
+  }
+}

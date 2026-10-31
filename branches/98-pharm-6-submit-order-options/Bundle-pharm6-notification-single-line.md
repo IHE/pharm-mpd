@@ -1,0 +1,289 @@
+# pharm6-notification-single-line - Medication Prescription and Dispense (MPD) v1.0.0-comment-3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **pharm6-notification-single-line**
+
+## Example Bundle: pharm6-notification-single-line
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "pharm6-notification-single-line",
+  "meta" : {
+    "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle"]
+  },
+  "type" : "subscription-notification",
+  "timestamp" : "2026-10-22T10:00:00+02:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:4f7c1e2a-6b0d-4c4e-9d61-0a1f2b3c4d01",
+    "resource" : {
+      "resourceType" : "SubscriptionStatus",
+      "id" : "pharm6-status-single-line",
+      "meta" : {
+        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationStatus"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"SubscriptionStatus_pharm6-status-single-line\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SubscriptionStatus pharm6-status-single-line</b></p><a name=\"pharm6-status-single-line\"> </a><a name=\"hcpharm6-status-single-line\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationOrderNotificationStatus.html\">Medication Order Notification Status</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: Event Notification</p><p><b>eventsSinceSubscriptionStart</b>: 1</p><h3>NotificationEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>EventNumber</b></td><td><b>Timestamp</b></td><td><b>Focus</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>2026-10-22 10:00:00+0200</td><td><a href=\"Bundle-pharm6-notification-single-line.html#http-//example.org/fhir/MedicationRequest/10-prescription-cefuroxime-singleline\">MedicationRequest: identifier = 10-123EP; status = active; intent = order; authoredOn = 2024-12-06</a></td></tr></table><p><b>subscription</b>: Identifier: <code>http://example.org/order-subscriptions</code>/pharmacy-orders</p></div>"
+      },
+      "status" : "active",
+      "type" : "event-notification",
+      "eventsSinceSubscriptionStart" : "1",
+      "notificationEvent" : [{
+        "eventNumber" : "1",
+        "timestamp" : "2026-10-22T10:00:00+02:00",
+        "focus" : {
+          "reference" : "http://example.org/fhir/MedicationRequest/10-prescription-cefuroxime-singleline"
+        }
+      }],
+      "subscription" : {
+        "identifier" : {
+          "system" : "http://example.org/order-subscriptions",
+          "value" : "pharmacy-orders"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/MedicationRequest/10-prescription-cefuroxime-singleline",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "10-prescription-cefuroxime-singleline",
+      "meta" : {
+        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"],
+        "tag" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/common-tags",
+          "code" : "actionable"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_10-prescription-cefuroxime-singleline\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 10-prescription-cefuroxime-singleline</b></p><a name=\"10-prescription-cefuroxime-singleline\"> </a><a name=\"hc10-prescription-cefuroxime-singleline\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationOrder.html\">IHE Medication Order</a></p><p style=\"margin-bottom: 0px\">Tag: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-common-tags.html\">Actionable (Details: Common Tags code actionable = 'Actionable')</a></p></div><p><b>identifier</b>: 10-123EP</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-01A-Cefuroxime1500GenericExplicit.html\">Medication: extension = cefuroxime; doseForm = Powder for solution for injection or infusion</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-12-06</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 10625071000119104}\">Bronchopneumonia caused by bacteria (disorder)</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>timing</b>: Once per 8 hours</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 78421000}\">Intramuscular route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>timing</b>: Once per 8 hours</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 78421000}\">Intramuscular route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>750-1500 milligram(s)</td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>ValidityPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>2024-12-06 --&gt; 2024-12-13</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "value" : "10-123EP"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medication" : {
+        "reference" : {
+          "reference" : "Medication/01A-Cefuroxime1500GenericExplicit"
+        }
+      },
+      "subject" : {
+        "reference" : "Patient/patient1"
+      },
+      "authoredOn" : "2024-12-06",
+      "requester" : {
+        "reference" : "PractitionerRole/doctor1"
+      },
+      "reason" : [{
+        "concept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "10625071000119104",
+            "display" : "Bronchopneumonia caused by bacteria (disorder)"
+          }]
+        }
+      }],
+      "dosageInstruction" : [{
+        "sequence" : 1,
+        "timing" : {
+          "repeat" : {
+            "boundsDuration" : {
+              "value" : 3,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            },
+            "frequency" : 1,
+            "period" : 8,
+            "periodUnit" : "h"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "78421000",
+            "display" : "Intramuscular route"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 1500,
+            "unit" : "milligram(s)",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      },
+      {
+        "sequence" : 2,
+        "timing" : {
+          "repeat" : {
+            "boundsDuration" : {
+              "value" : 4,
+              "unit" : "day",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "d"
+            },
+            "frequency" : 1,
+            "period" : 8,
+            "periodUnit" : "h"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "78421000",
+            "display" : "Intramuscular route"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseRange" : {
+            "low" : {
+              "value" : 750,
+              "unit" : "milligram(s)",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "high" : {
+              "value" : 1500,
+              "unit" : "milligram(s)",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          }
+        }]
+      }],
+      "dispenseRequest" : {
+        "extension" : [{
+          "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity",
+          "valueQuantity" : {
+            "value" : 21,
+            "unit" : "Vial",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15060000"
+          }
+        }],
+        "validityPeriod" : {
+          "start" : "2024-12-06",
+          "end" : "2024-12-13"
+        }
+      },
+      "substitution" : {
+        "allowedBoolean" : true
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/Patient/patient1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient1</b></p><a name=\"patient1\"> </a><a name=\"hcpatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "value" : "12345"
+      }],
+      "name" : [{
+        "family" : "Engine",
+        "given" : ["Thomas"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1950-09-15"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/PractitionerRole/doctor1",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "doctor1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_doctor1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole doctor1</b></p><a name=\"doctor1\"> </a><a name=\"hcdoctor1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The practitioner who is able to provide the services in this role\">Practitioner:</td><td colspan=\"3\"><a href=\"Practitioner-practitioner1.html\">Dr Meryl Ärztin</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization where the practitioner performs the roles\">Organization:</td><td colspan=\"3\"><a href=\"Organization-organization1.html\">Dr Ärztin Private Practice</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Roles which this practitioner is authorized to perform for the organization\">Role:</td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 309295000}\">Clinical oncologist</span></td></tr></table></div>"
+      },
+      "practitioner" : {
+        "reference" : "Practitioner/practitioner1",
+        "display" : "Dr Meryl Ärztin"
+      },
+      "organization" : {
+        "reference" : "Organization/organization1",
+        "display" : "Dr Ärztin Private Practice"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "309295000",
+          "display" : "Clinical oncologist"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/Medication/01A-Cefuroxime1500GenericExplicit",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "01A-Cefuroxime1500GenericExplicit",
+      "meta" : {
+        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedication"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_01A-Cefuroxime1500GenericExplicit\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication 01A-Cefuroxime1500GenericExplicit</b></p><a name=\"01A-Cefuroxime1500GenericExplicit\"> </a><a name=\"hc01A-Cefuroxime1500GenericExplicit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedication.html\">IHE Medication</a></p></div><p><b>Medication - Classification</b>: <span title=\"Codes:{http://www.whocc.no/atc J01DC02}\">cefuroxime</span></p><p><b>doseForm</b>: <span title=\"Codes:{http://standardterms.edqm.eu 50053000}\">Powder for solution for injection or infusion</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372833007}\">Cefuroxime</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 1500 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15060000 = 'Vial')</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.whocc.no/atc",
+            "code" : "J01DC02",
+            "display" : "cefuroxime"
+          }]
+        }
+      }],
+      "doseForm" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "50053000",
+          "display" : "Powder for solution for injection or infusion"
+        }]
+      },
+      "ingredient" : [{
+        "item" : {
+          "concept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "372833007",
+              "display" : "Cefuroxime"
+            }]
+          }
+        },
+        "isActive" : true,
+        "strengthRatio" : {
+          "numerator" : {
+            "value" : 1500,
+            "unit" : "milligram",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Vial",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15060000"
+          }
+        }
+      }]
+    }
+  }]
+}
+
+```

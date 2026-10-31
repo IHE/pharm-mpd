@@ -1,0 +1,551 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+<div id="smart-ci-build-banner" style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffda6a;padding:.5rem 1rem;font-size:.9rem;"><p style="margin:0;">CI build for version <strong>1.0.0-comment-3</strong>. <br/><span  style="font-size:.85em;">Built from commit <a href="https://github.com/IHE/pharm-mpd/commit/fe10af7952c1c133bf1855ae4d77e136a28f87de"><code>fe10af79</code></a>. &nbsp; Branch: <a href="https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options"><code>98-pharm-6-submit-order-options</code></a>.</span></p></div>
+
+    <h1>IP Review</h1>
+    <h2>Unattributed Code Systems</h2>
+    <ul>
+      <li>
+        <a href="PractitionerRole-pharmacist1.html">
+<code>http://snomed.info/sct</code>        </a>
+      </li>
+      <li>
+        <a href="Medication-05A-Tilidin-Branded.html">
+<code>http://standardterms.edqm.eu</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ihe-ext-offLabel.html">
+<code>http://unstats.un.org/unsd/methods/m49/m49.htm</code>        </a>
+      </li>
+      <li>
+        <a href="Medication-04-FirmagonBranded.html">
+<code>http://www.whocc.no/atc</code>        </a>
+      </li>
+    </ul>
+    <h2>Copyright Fragment</h2>
+    <p>
+This fragment is available on       <a href="index.html">index.html</a>
+    </p>
+    <p>Error parsing IP fragment: unable to parse character reference ' Conditions in https://www.whocc.no/use_of_atc_ddd/'' (last text = '
+' at line 3 column 272</p>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2021+ Integrating the Healthcare Enterprise (IHE).  Package ihe.pharm.mpd#1.0.0-comment-3 based on FHIR 5.0.0. Generated 2026-10-31
+          
+          
+                      Links: Table of Contents |
+                 QA Report
+                  | New Issue | Issues
+                
+                 Version History |
+                 CC0 |
+                
+                 Propose a changeexternal
+                  
+
+          
+         (        <a href="volume-2.html">src</a>
+)
+      </li>
+      <li>
+
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide  &reg;&copy; HL7 |
+             
+                CC0
+         (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+Medication - Product Name: Tilidin HEXAL&reg; comp Lösung, 50/4 mg je 0,72 ml Tropfen zum Einnehmen, Lösung (        <a href="Medication-05A-Tilidin-Branded.html">src</a>
+)
+      </li>
+      <li>
+Medication Prescription and Dispense (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 1.0.0-comment-3  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options and changes regularly. See the Directory of published versions (        <a href="volume-2.html">src</a>
+)
+      </li>
+      <li>
+There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, "Ondansetron 8mg orally or IV twice a day as needed for nausea" or "Compazine&reg; (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. (        <a href="StructureDefinition-IHEMedicationOrder-definitions.html">src</a>
+)
+      </li>
+      <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html Show Usage
+
+
+* Common Tags: Bundle/pharm6-notification-single-line and MedicationRequest/10-prescription-cefuroxime-singleline
+
+* MedicationKnowledge Characteristic Codes: MedicationCharacteristic
+
+
+
+
+ (        <a href="index.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="CapabilityStatement-IHE.MPD.DispenseReceiverCS.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">profiles.ihe.net</a>
+        </td>
+        <td>
+Recommend           <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">ATNA</a>
+, encouraged           <a href="https://profiles.ihe.net/ITI/IUA/index.html">IHE-IUA</a>
+ or           <a href="http://www.hl7.org/fhir/smart-app-launch/">SMART-app-launch</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CapabilityStatement-IHE.MPD.DispenseReceiverCS.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/IUA/index.html">profiles.ihe.net</a>
+        </td>
+        <td>
+Recommend           <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">ATNA</a>
+, encouraged           <a href="https://profiles.ihe.net/ITI/IUA/index.html">IHE-IUA</a>
+ or           <a href="http://www.hl7.org/fhir/smart-app-launch/">SMART-app-launch</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://profiles.ihe.net">profiles.ihe.net</a>
+        </td>
+        <td>
+
+            <a id="ihe-logo" href="http://profiles.ihe.net" data-no-external="true">
+
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  
+          </a>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://profiles.ihe.net/PHARM/index.html">profiles.ihe.net</a>
+        </td>
+        <td>
+
+  
+  
+              <a id="project-logo" href="http://profiles.ihe.net/PHARM/index.html" data-no-external="true">
+<img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> 
+          </a>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options">github.com</a>
+        </td>
+        <td>
+Medication Prescription and Dispense (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 1.0.0-comment-3  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of           <a href="https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options">https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options</a>
+ and changes regularly. See the           <a href="https://profiles.ihe.net/PHARM/MPD/history.html">Directory of published versions</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://ihe.net">ihe.net</a>
+        </td>
+        <td>
+
+          IG &copy; 2021+           <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>
+.  Package ihe.pharm.mpd#1.0.0-comment-3 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Sat, Oct 31, 2026 22:42+0000">2026-10-31</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues/new/choose" target="_blank">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues" target="_blank">Issues</a>
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                            <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/IHE/pharm-mpd/issues/new/choose">github.com</a>
+        </td>
+        <td>
+
+                      Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+
+                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues/new/choose" target="_blank">New Issue</a>
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues" target="_blank">Issues</a>
+
+                
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a>
+ |
+                           <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html">
+<img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/>          </a>
+ |
+                          <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">
+Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/>          </a>
+
+                           <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/IHE/pharm-mpd/issues">github.com</a>
+        </td>
+        <td>
+
+                      Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+
+                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues/new/choose" target="_blank">New Issue</a>
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues" target="_blank">Issues</a>
+
+                
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a>
+ |
+                           <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html">
+<img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/>          </a>
+ |
+                          <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">
+Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/>          </a>
+
+                           <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/GeneralIntro/ch-9.html">profiles.ihe.net</a>
+        </td>
+        <td>
+
+                      Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+
+                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues/new/choose" target="_blank">New Issue</a>
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues" target="_blank">Issues</a>
+
+                
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a>
+ |
+                           <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html">
+<img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/>          </a>
+ |
+                          <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">
+Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/>          </a>
+
+                           <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ActorDefinition-IHE.MPD.DispenseConsumer-testing.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/resources/public_comment/">www.ihe.net</a>
+        </td>
+        <td>
+
+                      Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+
+                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues/new/choose" target="_blank">New Issue</a>
+ |           <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/IHE/pharm-mpd/issues" target="_blank">Issues</a>
+
+                
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a>
+ |
+                           <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html">
+<img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/>          </a>
+ |
+                          <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+
+                           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">
+Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/>          </a>
+
+                           <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-IHEMedication-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://ncpdp.org/SCRIPT10_6">ncpdp.org</a>
+        </td>
+        <td>
+          <a href="http://ncpdp.org/SCRIPT10_6" title="http://ncpdp.org/SCRIPT10_6">Mapping to NCPDP SCRIPT 10.6</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-IHEMedicationOrderNotificationBundle-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://en.wikipedia.org/wiki/HATEOAS">en.wikipedia.org</a>
+        </td>
+        <td>
+Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="glossary.html">web</a>
+        </td>
+        <td>
+          <a href="https://link.springer.com/book/10.1007/978-3-7091-1523-7">link.springer.com</a>
+        </td>
+        <td>
+Some defintions are or adpated from           <a href="https://link.springer.com/book/10.1007/978-3-7091-1523-7">Dictionary of Pharmaceutical Medicine</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="howtoread.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/GeneralIntro">profiles.ihe.net</a>
+        </td>
+        <td>
+This publication is in the form of a FHIR implementation guide.
+Readers are invited to refer to the           <a href="https://profiles.ihe.net/GeneralIntro">IHE General Intro</a>
+. Implementers are expected to be familiar with the key concepts of the IHE approach.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="howtoread.html">web</a>
+        </td>
+        <td>
+          <a href="http://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir">profiles.ihe.net</a>
+        </td>
+        <td>
+This specification defines           <code class="language-plaintext highlighter-rouge">Must Support</code>
+ in StructureDefinition profiles as the element, when the minimal cardionality is zero, is           <strong>R2</strong>
+           <code class="language-plaintext highlighter-rouge">Required if Known</code>
+, as found in           <a href="http://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir">Appendix Z</a>
+. 
+          <code class="language-plaintext highlighter-rouge">Must Support</code>
+ when the element minimal cardionality is not zero means           <strong>R</strong>
+. Note that data access controls may apply to this rule.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="http://hl7.eu/fhir/mpd">hl7.eu</a>
+        </td>
+        <td>
+The IHE MPD Work was initiated based on the existing IHE profiles and anticipating a FHIR implementation, but has been decisively supported by HL7 Europe, who has worked on           <a href="http://hl7.eu/fhir/mpd">related specifications</a>
+, which are related to past and ongoing projects and specifications that may be relevant.:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_CMPD.pdf">www.ihe.net</a>
+        </td>
+        <td>
+the           <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharmacy_Suppl_CMPD.pdf">IHE Community Medication Prescription and Dispense</a>
+ is a CDA-based specification of Prescription and Dispense documents. 
+The current IHE MPD profile covers a superset of the functionalities in CMPD, to allow transitioning from CDA-based architeture to FHIR-based interoperability.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharm_Suppl_MMA.pdf">www.ihe.net</a>
+        </td>
+        <td>
+The           <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharm_Suppl_MMA.pdf">IHE Mobile Medication Administration</a>
+ supports the request and report of medication administrations. The Medication Administration is a specific type of medication order, and therefore is technically compatible with the current profile, but is further specified in the MMA profile.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="pharm-6.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">profiles.ihe.net</a>
+        </td>
+        <td>
+Orders contain personal health information. Implementations are expected to use secure transport and to authenticate and authorize the communicating systems. For example, they can use           <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">ATNA</a>
+ Secure Node / Secure Application together with           <a href="https://profiles.ihe.net/ITI/IUA/index.html">IUA</a>
+ or           <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART Backend Services</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="pharm-6.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/IUA/index.html">profiles.ihe.net</a>
+        </td>
+        <td>
+Orders contain personal health information. Implementations are expected to use secure transport and to authenticate and authorize the communicating systems. For example, they can use           <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">ATNA</a>
+ Secure Node / Secure Application together with           <a href="https://profiles.ihe.net/ITI/IUA/index.html">IUA</a>
+ or           <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART Backend Services</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="pharm-6.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/BALP/">profiles.ihe.net</a>
+        </td>
+        <td>
+When grouped with ATNA Secure Application or Secure Node, the Medication Order Placer and Medication Order Receiver SHALL be able to record an audit event for each order submitted or received. The           <a href="https://profiles.ihe.net/ITI/BALP/">Basic Audit Log Patterns (BALP)</a>
+ Create and Update patterns are suitable for this purpose.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="pharm-7.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations">profiles.ihe.net</a>
+        </td>
+        <td>
+Based on the query results, the           <a href="actors-transactions.html#order-responder">Medication Order Responder</a>
+ will either return an error or success. Guidance on handling Access Denied related to use of 200, 403 and 404 can be found in           <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations">ITI TF-2x: Appendix Z.7</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="pharm-7.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.1-resource-bundles">profiles.ihe.net</a>
+        </td>
+        <td>
+Resource Bundling shall comply with the guidelines in           <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.1-resource-bundles">ITI TF-2x: Appendix Z.1</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="usecases.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharm_Suppl_MMA.pdf">www.ihe.net</a>
+        </td>
+        <td>
+For Administration use cases and definitions, readers are directed to the           <a href="https://www.ihe.net/uploadedFiles/Documents/Pharmacy/IHE_Pharm_Suppl_MMA.pdf">IHE MMA profile</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="volume-1.html">web</a>
+        </td>
+        <td>
+          <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations">profiles.ihe.net</a>
+        </td>
+        <td>
+See ITI TF-2x:           <a href="https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations">Appendix Z.8 "Mobile Security Considerations"</a>
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid">
+      <tr>
+        <td>
+gemini-logo-fin.png          <br/>
+          <img src="gemini-logo-fin.png" alt="gemini-logo-fin.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

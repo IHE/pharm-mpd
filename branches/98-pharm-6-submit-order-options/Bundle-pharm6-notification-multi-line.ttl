@@ -1,0 +1,290 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://profiles.ihe.net/PHARM/MPD/Bundle/pharm6-notification-multi-line> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pharm6-notification-multi-line"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "subscription-notification"] ; # 
+  fhir:timestamp [ fhir:v "2026-10-22T10:05:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:4f7c1e2a-6b0d-4c4e-9d61-0a1f2b3c4d02"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:4f7c1e2a-6b0d-4c4e-9d61-0a1f2b3c4d02> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/patient1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Patient/patient1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/PractitionerRole/doctor1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/PractitionerRole/doctor1> )
+  ] ) . # 
+
+<urn:uuid:4f7c1e2a-6b0d-4c4e-9d61-0a1f2b3c4d02> a fhir:SubscriptionStatus ;
+  fhir:id [ fhir:v "pharm6-status-multi-line"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationStatus"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationStatus>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"SubscriptionStatus_pharm6-status-multi-line\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SubscriptionStatus pharm6-status-multi-line</b></p><a name=\"pharm6-status-multi-line\"> </a><a name=\"hcpharm6-status-multi-line\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationOrderNotificationStatus.html\">Medication Order Notification Status</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: Event Notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><h3>NotificationEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>EventNumber</b></td><td><b>Timestamp</b></td><td><b>Focus</b></td><td><b>AdditionalContext</b></td></tr><tr><td style=\"display: none\">*</td><td>2</td><td>2026-10-22 10:05:00+0200</td><td><a href=\"Bundle-pharm6-notification-multi-line.html#http-//example.org/fhir/MedicationRequest/200-2-medication-prescription-request1\">MedicationRequest: identifier = 200-1/2; groupIdentifier = 200; status = active; intent = order; authoredOn = 2024-10-06</a></td><td><a href=\"Bundle-pharm6-notification-multi-line.html#http-//example.org/fhir/MedicationRequest/200-2-medication-prescription-request2\">MedicationRequest: identifier = 200-2/2; groupIdentifier = 200; status = active; intent = order; authoredOn = 2024-10-06</a></td></tr></table><p><b>subscription</b>: Identifier: <code>http://example.org/order-subscriptions</code>/pharmacy-orders</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [ fhir:v "event-notification"] ; # 
+  fhir:eventsSinceSubscriptionStart [ fhir:v "2"^^xsd:long] ; # 
+  fhir:notificationEvent ( [
+     fhir:eventNumber [ fhir:v "2"^^xsd:long ] ;
+     fhir:timestamp [ fhir:v "2026-10-22T10:05:00+02:00"^^xsd:dateTime ] ;
+     fhir:focus [
+       fhir:link <http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1> ;
+       fhir:reference [ fhir:v "http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1" ]
+     ] ;
+     fhir:additionalContext ( [
+       fhir:link <http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2> ;
+       fhir:reference [ fhir:v "http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2" ]
+     ] )
+  ] ) ; # 
+  fhir:subscription [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.org/order-subscriptions"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "pharmacy-orders" ]
+     ]
+  ] . # 
+
+<http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "200-2-medication-prescription-request1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_200-2-medication-prescription-request1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 200-2-medication-prescription-request1</b></p><a name=\"200-2-medication-prescription-request1\"> </a><a name=\"hc200-2-medication-prescription-request1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationOrder.html\">IHE Medication Order</a></p></div><p><b>identifier</b>: 200-1/2</p><p><b>groupIdentifier</b>: 200</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 324821004}\">Valacyclovir (as valacyclovir hydrochloride) 500 mg oral tablet</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 407451003}\">Herpes simplex type 1 infection</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>10 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "200-1/2" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "200" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:324821004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "324821004" ] ;
+         fhir:display [ fhir:v "Valacyclovir (as valacyclovir hydrochloride) 500 mg oral tablet" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/PractitionerRole/doctor1> ;
+     fhir:reference [ fhir:v "PractitionerRole/doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:407451003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "407451003" ] ;
+         fhir:display [ fhir:v "Herpes simplex type 1 infection" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "732936001" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-06"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Tablet" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "732936001" ]
+     ]
+  ] . # 
+
+<http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "200-2-medication-prescription-request2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_200-2-medication-prescription-request2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 200-2-medication-prescription-request2</b></p><a name=\"200-2-medication-prescription-request2\"> </a><a name=\"hc200-2-medication-prescription-request2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationOrder.html\">IHE Medication Order</a></p></div><p><b>identifier</b>: 200-2/2</p><p><b>groupIdentifier</b>: 200</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 374647008}\">Amoxicillin 875 mg oral tablet</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 88348008}\">Maxillary sinusitis</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>14 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "200-2/2" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "200" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:374647008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "374647008" ] ;
+         fhir:display [ fhir:v "Amoxicillin 875 mg oral tablet" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/PractitionerRole/doctor1> ;
+     fhir:reference [ fhir:v "PractitionerRole/doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:88348008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "88348008" ] ;
+         fhir:display [ fhir:v "Maxillary sinusitis" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "732936001" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-06"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "14"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Tablet" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "732936001" ]
+     ]
+  ] . # 
+
+<http://example.org/fhir/Patient/patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient1</b></p><a name=\"patient1\"> </a><a name=\"hcpatient1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</p><hr/></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Engine" ] ;
+     fhir:given ( [ fhir:v "Thomas" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1950-09-15"^^xsd:date] . # 
+
+<http://example.org/fhir/PractitionerRole/doctor1> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "doctor1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_doctor1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole doctor1</b></p><a name=\"doctor1\"> </a><a name=\"hcdoctor1\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The practitioner who is able to provide the services in this role\">Practitioner:</td><td colspan=\"3\"><a href=\"Practitioner-practitioner1.html\">Dr Meryl Ärztin</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization where the practitioner performs the roles\">Organization:</td><td colspan=\"3\"><a href=\"Organization-organization1.html\">Dr Ärztin Private Practice</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Roles which this practitioner is authorized to perform for the organization\">Role:</td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 309295000}\">Clinical oncologist</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/Practitioner/practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner1" ] ;
+     fhir:display [ fhir:v "Dr Meryl Ärztin" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://profiles.ihe.net/PHARM/MPD/Organization/organization1> ;
+     fhir:reference [ fhir:v "Organization/organization1" ] ;
+     fhir:display [ fhir:v "Dr Ärztin Private Practice" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:309295000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "309295000" ] ;
+       fhir:display [ fhir:v "Clinical oncologist" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

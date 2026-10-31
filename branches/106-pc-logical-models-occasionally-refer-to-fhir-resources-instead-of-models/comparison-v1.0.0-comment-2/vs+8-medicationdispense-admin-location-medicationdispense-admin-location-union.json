@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3105000f-bf24-48a9-bdce-d4fcf65b3d59-20",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3105000f-bf24-48a9-bdce-d4fcf65b3d59-20",
+  "name" : "UnionMedicationDispenseAdministrationLocationCodesAndMedicationDispenseAdministrationLocationCodes",
+  "title" : "Union of MedicationDispense Administration Location Codes And MedicationDispense Administration Location Codes",
+  "status" : "draft",
+  "date" : "2026-05-07T15:31:23+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}

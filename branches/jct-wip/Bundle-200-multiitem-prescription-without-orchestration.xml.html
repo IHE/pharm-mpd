@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>200-multiitem-prescription-without-orchestration - XML Representation - Medication Prescription and Dispense (MPD) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript"> </script> 
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.55"}
+    h3,h4,h5,h6{--heading-prefix:"6.55"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="ihe-logo" href="http://profiles.ihe.net">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+<div id="project-nav">
+  
+  
+    <a no-external="true" id="project-logo" href="http://profiles.ihe.net/PHARM/index.html"><img src="assets/images/PHARM.png" alt="Visit the PHARM website" height="70"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Dispense (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">MPD Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-1.html">Overview</a>
+      </li>
+      <li>
+        <a href="usecases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="medication-concepts.html">Medication Concepts</a>
+      </li>
+      <li>
+        <a href="order-management.html">Order Management</a>
+      </li>
+      <li><a name="l213">​</a>
+        <a href="interoperability-model.html">Interoperability Model</a>
+      </li>
+      <li>
+        <a href="data-models.html">Data Models</a>
+      </li>
+      <li>
+        <a href="actors-transactions.html">Actor and Transactions Overview</a>
+      </li>
+      <li>
+        <a href="security.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="cross-profile.html">Cross-profile Considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="volume-2.html">Overview</a>
+      </li>
+      <li>
+        <a href="pharm-5.html">PHARM-5 - Submit Medication Order</a>
+      </li>
+      <li>
+        <a href="pharm-7.html">PHARM-7 - Retrieve Medication Order</a>
+      </li>
+      <li>
+        <a href="pharm-8.html">PHARM-8 - Submit Medication Dispense</a>
+      </li>
+      <li>
+        <a href="pharm-9.html">PHARM-9 - Retrieve Medication Dispense</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="error_codes.html">Error Codes</a>
+      </li>
+      <li><a name="l301">​</a>
+        <a href="fhir_maps.html">FHIR Maps</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>200-multiitem-prescription-without-orchestration</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Medication Prescription and Dispense (MPD), published by Integrating the Healthcare Enterprise (IHE). This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/IHE/pharm-mpd/tree/jct-wip">https://github.com/IHE/pharm-mpd/tree/jct-wip</a> and changes regularly. See the <a href="http://profiles.ihe.net/PHARM/MPD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-200-multiitem-prescription-without-orchestration.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-200-multiitem-prescription-without-orchestration.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-200-multiitem-prescription-without-orchestration.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: 200-multiitem-prescription-without-orchestration - XML Representation</h2>
+
+
+<p><a href="Bundle-200-multiitem-prescription-without-orchestration.xml" no-download="true">Raw xml</a> | <a download="null" href="Bundle-200-multiitem-prescription-without-orchestration.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
+&lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle">Bundle</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="200-multiitem-prescription-without-orchestration"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="collection"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://example.com/MedicationRequest/200-2-medication-prescription-request2"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest">MedicationRequest</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="200-2-medication-prescription-request2"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="http://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="MedicationRequest_200-2-medication-prescription-request2"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: MedicationRequest 200-2-medication-prescription-request2&lt;/b&gt;&lt;/p&gt;&lt;a name="200-2-medication-prescription-request2"&gt; &lt;/a&gt;&lt;a name="hc200-2-medication-prescription-request2"&gt; &lt;/a&gt;&lt;a name="200-2-medication-prescription-request2-en-US"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"/&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="StructureDefinition-IHEMedicationOrder.html"&gt;IHE Medication Order&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 200-2/2&lt;/p&gt;&lt;p&gt;&lt;b&gt;groupIdentifier&lt;/b&gt;: 200&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Order&lt;/p&gt;&lt;h3&gt;Medications&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 374647008}"&gt;Amoxicillin 875 mg oral tablet&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href="Patient-patient1.html"&gt;Thomas Engine  Male, DoB: 1950-09-15 ( 12345)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2024-10-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href="PractitionerRole-doctor1.html"&gt;PractitionerRole Clinical oncologist&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Reasons&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 88348008}"&gt;Maxillary sinusitis&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosageInstruction&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: 2 per 1 day&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;1 Tablet&lt;span style="background: LightGoldenRodYellow"&gt; (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;h3&gt;DispenseRequests&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ValidityPeriod&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;NumberOfRepeatsAllowed&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;2024-10-06 --&amp;gt; 2024-12-06&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;14 Tablet&lt;span style="background: LightGoldenRodYellow"&gt; (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="200-2/2"/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.groupIdentifier">groupIdentifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="200"/&gt;
+        &lt;/groupIdentifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.intent">intent</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="order"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.medication">medication</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="374647008"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Amoxicillin 875 mg oral tablet"/&gt;
+            &lt;/coding&gt;
+          &lt;/concept&gt;
+        &lt;/medication&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.subject">subject</a>&gt;<a style="color: Maroon" href="Patient-patient1.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Patient/patient1"/&gt;
+        &lt;/subject&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.authoredOn">authoredOn</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2024-10-06"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.requester">requester</a>&gt;<a style="color: Maroon" href="PractitionerRole-doctor1.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="PractitionerRole/doctor1"/&gt;
+        &lt;/requester&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.reason">reason</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="88348008"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Maxillary sinusitis"/&gt;
+            &lt;/coding&gt;
+          &lt;/concept&gt;
+        &lt;/reason&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.dosageInstruction">dosageInstruction</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.bounds[x]">boundsDuration</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Duration#Duration.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="7"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Duration#Duration.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="day"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Duration#Duration.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Duration#Duration.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="d"/&gt;
+              &lt;/boundsDuration&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>="2"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="d"/&gt;
+            &lt;/repeat&gt;
+          &lt;/timing&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.doseAndRate">doseAndRate</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.doseAndRate.dose[x]">doseQuantity</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Tablet"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="732936001"/&gt;
+            &lt;/doseQuantity&gt;
+          &lt;/doseAndRate&gt;
+        &lt;/dosageInstruction&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.dispenseRequest">dispenseRequest</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.dispenseRequest.validityPeriod">validityPeriod</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2024-10-06"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2024-12-06"/&gt;
+          &lt;/validityPeriod&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">numberOfRepeatsAllowed</a> <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">value</a>="1"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/medicationrequest.html#MedicationRequest.dispenseRequest.quantity">quantity</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="14"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Tablet"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="732936001"/&gt;
+          &lt;/quantity&gt;
+        &lt;/dispenseRequest&gt;
+      &lt;/MedicationRequest&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://example.com/PractitionerRole/doctor1"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole">PractitionerRole</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="doctor1"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="PractitionerRole_doctor1"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: PractitionerRole doctor1&lt;/b&gt;&lt;/p&gt;&lt;a name="doctor1"&gt; &lt;/a&gt;&lt;a name="hcdoctor1"&gt; &lt;/a&gt;&lt;a name="doctor1-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href="Practitioner-practitioner1.html"&gt;Dr Meryl Ärztin&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href="Organization-organization1.html"&gt;Dr Ärztin Private Practice&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 309295000}"&gt;Clinical oncologist&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole.practitioner">practitioner</a>&gt;<a style="color: Maroon" href="Practitioner-practitioner1.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Practitioner/practitioner1"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Dr Meryl Ärztin"/&gt;
+        &lt;/practitioner&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole.organization">organization</a>&gt;<a style="color: Maroon" href="Organization-organization1.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Organization/organization1"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Dr Ärztin Private Practice"/&gt;
+        &lt;/organization&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/practitionerrole.html#PractitionerRole.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="309295000"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical oncologist"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+      &lt;/PractitionerRole&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://example.com/Patient/patient1"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient">Patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="patient1"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Patient_patient1"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Patient patient1&lt;/b&gt;&lt;/p&gt;&lt;a name="patient1"&gt; &lt;/a&gt;&lt;a name="hcpatient1"&gt; &lt;/a&gt;&lt;a name="patient1-en-US"&gt; &lt;/a&gt;&lt;p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"&gt;Thomas Engine  Male, DoB: 1950-09-15 ( 12345)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="12345"/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Engine"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Thomas"/&gt;
+        &lt;/name&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="male"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R5/datatypes.html#date">value</a>="1950-09-15"/&gt;
+      &lt;/Patient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Apr 1, 2025 22:36+0000">2025-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://profiles.ihe.net/PHARM/MPD/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="https://profiles.ihe.net/GeneralIntro/ch-9.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                  <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://www.ihe.net/resources/public_comment/" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <script src=".assets/js/google-analytics.js" type="text/javascript"> </script>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

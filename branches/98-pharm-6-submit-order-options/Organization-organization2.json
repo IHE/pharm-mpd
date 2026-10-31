@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "organization2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization organization2</b></p><a name=\"organization2\"> </a><a name=\"hcorganization2\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Su-Bin Pharmacy B (Ph-1234)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "value" : "Ph-1234"
+  }],
+  "name" : "Su-Bin Pharmacy B"
+}

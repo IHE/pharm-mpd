@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Medication/02A1-CanifugCremolumCreamItem> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "02A1-CanifugCremolumCreamItem"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"02A1-CanifugCremolumCreamItem\"> </a><a name=\"hc02A1-CanifugCremolumCreamItem\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;02A1-CanifugCremolumCreamItem&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicinalProduct.html\">Medicinal product</a></p></div><p><b>SizeOfMedicationItem</b>: 20 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p><p><b>doseForm</b>: Vaginal cream <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10901000)</span></p><p><b>totalVolume</b>: 1 Tube<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15058000 = 'Tube')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Clotrimazole <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387325003)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/SizeOfMedicationItem"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "gram" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g" ]
+     ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10901000" ] ;
+       fhir:display [ fhir:v "Vaginal cream" ]
+     ] )
+  ] ; # 
+  fhir:totalVolume [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Tube" ] ;
+     fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "15058000" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:387325003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "387325003" ] ;
+           fhir:display [ fhir:v "Clotrimazole" ]
+         ] )
+       ]
+     ] ;
+     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:strength [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "gram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

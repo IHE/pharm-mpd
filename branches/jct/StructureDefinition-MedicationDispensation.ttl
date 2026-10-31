@@ -1,0 +1,516 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispensation> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicationDispensation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation\" title=\"Logical model for medication dispensation (based on request or independently)\">MedicationDispensation</a><a name=\"MedicationDispensation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication dispensation - Data Model<br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.identifier\" title=\"Identifier for the dispense\">identifier</a><a name=\"MedicationDispensation.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-InstanceIdentifier.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifier for the dispense</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.patient\" title=\"The person for whom the medication is prescribed/ordered\">patient</a><a name=\"MedicationDispensation.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PatientBasic.html\">Patient - Data Model</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The person for whom the medication is prescribed/ordered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.receiver\" title=\"Identification of the person who received the dispensed medication, especially when it was not the patient\">receiver</a><a name=\"MedicationDispensation.receiver\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ANY.html\" title=\"Element\">ANY</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identification of the person who received the dispensed medication, especially when it was not the patient</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.dispenser\" title=\"The person who dispensed the product, and takes the responsibility of the dispensation\">dispenser</a><a name=\"MedicationDispensation.dispenser\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PractitionerBasic.html\">Practitioner - Data Model</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The person who dispensed the product, and takes the responsibility of the dispensation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.relatedRequest\" title=\"Prescription/request/order the dispense is related to\">relatedRequest</a><a name=\"MedicationDispensation.relatedRequest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-MedicationPrescription.html\">Medication prescription - Data Model</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Prescription/request/order the dispense is related to</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.medication\" title=\"Exact dispensed product\">medication</a><a name=\"MedicationDispensation.medication\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-MedicinalProductLM.html\">Medicinal product</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Exact dispensed product</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.dispensedQuantity\" title=\"Number of dispensed packages if the pack size is known, or number of smaller items/units\">dispensedQuantity</a><a name=\"MedicationDispensation.dispensedQuantity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-PQ.html\" title=\"Element\">PQ</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of dispensed packages if the pack size is known, or number of smaller items/units</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.timeOfDispensation\" title=\"Date and time of dispensation\">timeOfDispensation</a><a name=\"MedicationDispensation.timeOfDispensation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date and time of dispensation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.substitutionOccurred\" title=\"Question: is this relevant? It is in eHDSI dispensation.\">substitutionOccurred</a><a name=\"MedicationDispensation.substitutionOccurred\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-BL.html\" title=\"Element\">BL</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indicated whether substitution was made by the dispenser</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.reimbursementRate\" title=\"Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation.\">reimbursementRate</a><a name=\"MedicationDispensation.reimbursementRate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-PQ.html\" title=\"Element\">PQ</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.status\" title=\"Status of the dispensation\">status</a><a name=\"MedicationDispensation.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Status of the dispensation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.statusReason\" title=\"Reason for the current status of dispensation, for example the reason why the dispensation was made invalid\">statusReason</a><a name=\"MedicationDispensation.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for the current status of dispensation, for example the reason why the dispensation was made invalid<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MedicationDispensation-definitions.html#MedicationDispensation.statusReasonText\" title=\"Textual reason for the current status of dispensation\">statusReasonText</a><a name=\"MedicationDispensation.statusReasonText\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/IHE/datatypes/StructureDefinition-ST.html\" title=\"Element\">ST</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Textual reason for the current status of dispensation</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/logical-target"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispensation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MedicationDispensation"] ; # 
+  fhir:title [ fhir:v "Medication dispensation - Data Model"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-04-07T18:26:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Integrating the Healthcare Enterprise (IHE)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Integrating the Healthcare Enterprise (IHE)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://ihe.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "secretary@ihe.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Jose Costa Teixeira" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jose.a.teixeira@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Logical model for medication dispensation (based on request or independently)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "IHE http://www.ihe.net/Governance/#Intellectual_Property"] ; # 
+  fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispensation"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "MedicationDispensation" ] ;
+       fhir:path [ fhir:v "MedicationDispensation" ] ;
+       fhir:short [ fhir:v "Medication dispensation - Data Model" ] ;
+       fhir:definition [ fhir:v "Logical model for medication dispensation (based on request or independently)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.identifier" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.identifier" ] ;
+       fhir:short [ fhir:v "Identifier for the dispense" ] ;
+       fhir:definition [ fhir:v "Identifier for the dispense" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.patient" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.patient" ] ;
+       fhir:short [ fhir:v "The person for whom the medication is prescribed/ordered" ] ;
+       fhir:definition [ fhir:v "The person for whom the medication is prescribed/ordered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.patient" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.receiver" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.receiver" ] ;
+       fhir:short [ fhir:v "Identification of the person who received the dispensed medication, especially when it was not the patient" ] ;
+       fhir:definition [ fhir:v "Identification of the person who received the dispensed medication, especially when it was not the patient" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.receiver" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ANY"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ANY>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.dispenser" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.dispenser" ] ;
+       fhir:short [ fhir:v "The person who dispensed the product, and takes the responsibility of the dispensation" ] ;
+       fhir:definition [ fhir:v "The person who dispensed the product, and takes the responsibility of the dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.dispenser" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.relatedRequest" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.relatedRequest" ] ;
+       fhir:short [ fhir:v "Prescription/request/order the dispense is related to" ] ;
+       fhir:definition [ fhir:v "Prescription/request/order the dispense is related to" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.relatedRequest" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.medication" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.medication" ] ;
+       fhir:short [ fhir:v "Exact dispensed product" ] ;
+       fhir:definition [ fhir:v "Exact dispensed product" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.medication" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.dispensedQuantity" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.dispensedQuantity" ] ;
+       fhir:short [ fhir:v "Number of dispensed packages if the pack size is known, or number of smaller items/units" ] ;
+       fhir:definition [ fhir:v "Number of dispensed packages if the pack size is known, or number of smaller items/units" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.dispensedQuantity" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.timeOfDispensation" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.timeOfDispensation" ] ;
+       fhir:short [ fhir:v "Date and time of dispensation" ] ;
+       fhir:definition [ fhir:v "Date and time of dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.timeOfDispensation" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.substitutionOccurred" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.substitutionOccurred" ] ;
+       fhir:short [ fhir:v "Indicated whether substitution was made by the dispenser" ] ;
+       fhir:definition [ fhir:v "Question: is this relevant? It is in eHDSI dispensation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.substitutionOccurred" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.reimbursementRate" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.reimbursementRate" ] ;
+       fhir:short [ fhir:v "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation." ] ;
+       fhir:definition [ fhir:v "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.reimbursementRate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.status" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.status" ] ;
+       fhir:short [ fhir:v "Status of the dispensation" ] ;
+       fhir:definition [ fhir:v "Status of the dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.status" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.statusReason" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.statusReason" ] ;
+       fhir:short [ fhir:v "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid" ] ;
+       fhir:definition [ fhir:v "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.statusReason" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.statusReasonText" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.statusReasonText" ] ;
+       fhir:short [ fhir:v "Textual reason for the current status of dispensation" ] ;
+       fhir:definition [ fhir:v "Textual reason for the current status of dispensation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "MedicationDispensation.statusReasonText" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST>
+         ] )
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "MedicationDispensation" ] ;
+       fhir:path [ fhir:v "MedicationDispensation" ] ;
+       fhir:short [ fhir:v "Medication dispensation - Data Model" ] ;
+       fhir:definition [ fhir:v "Logical model for medication dispensation (based on request or independently)" ]
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.identifier" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.identifier" ] ;
+       fhir:short [ fhir:v "Identifier for the dispense" ] ;
+       fhir:definition [ fhir:v "Identifier for the dispense" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/InstanceIdentifier>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.patient" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.patient" ] ;
+       fhir:short [ fhir:v "The person for whom the medication is prescribed/ordered" ] ;
+       fhir:definition [ fhir:v "The person for whom the medication is prescribed/ordered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PatientBasic>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.receiver" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.receiver" ] ;
+       fhir:short [ fhir:v "Identification of the person who received the dispensed medication, especially when it was not the patient" ] ;
+       fhir:definition [ fhir:v "Identification of the person who received the dispensed medication, especially when it was not the patient" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ANY"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ANY>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.dispenser" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.dispenser" ] ;
+       fhir:short [ fhir:v "The person who dispensed the product, and takes the responsibility of the dispensation" ] ;
+       fhir:definition [ fhir:v "The person who dispensed the product, and takes the responsibility of the dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PractitionerBasic>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.relatedRequest" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.relatedRequest" ] ;
+       fhir:short [ fhir:v "Prescription/request/order the dispense is related to" ] ;
+       fhir:definition [ fhir:v "Prescription/request/order the dispense is related to" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationPrescription>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.medication" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.medication" ] ;
+       fhir:short [ fhir:v "Exact dispensed product" ] ;
+       fhir:definition [ fhir:v "Exact dispensed product" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM"^^xsd:anyURI ;
+           fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProductLM>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.dispensedQuantity" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.dispensedQuantity" ] ;
+       fhir:short [ fhir:v "Number of dispensed packages if the pack size is known, or number of smaller items/units" ] ;
+       fhir:definition [ fhir:v "Number of dispensed packages if the pack size is known, or number of smaller items/units" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.timeOfDispensation" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.timeOfDispensation" ] ;
+       fhir:short [ fhir:v "Date and time of dispensation" ] ;
+       fhir:definition [ fhir:v "Date and time of dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.substitutionOccurred" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.substitutionOccurred" ] ;
+       fhir:short [ fhir:v "Indicated whether substitution was made by the dispenser" ] ;
+       fhir:definition [ fhir:v "Question: is this relevant? It is in eHDSI dispensation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/BL>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.reimbursementRate" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.reimbursementRate" ] ;
+       fhir:short [ fhir:v "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation." ] ;
+       fhir:definition [ fhir:v "Reimbursement rate at the time of dispensation. In some cases, it may be different than on dispensation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/PQ>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.status" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.status" ] ;
+       fhir:short [ fhir:v "Status of the dispensation" ] ;
+       fhir:definition [ fhir:v "Status of the dispensation" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.statusReason" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.statusReason" ] ;
+       fhir:short [ fhir:v "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid" ] ;
+       fhir:definition [ fhir:v "Reason for the current status of dispensation, for example the reason why the dispensation was made invalid" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/CD>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "MedicationDispensation.statusReasonText" ] ;
+       fhir:path [ fhir:v "MedicationDispensation.statusReasonText" ] ;
+       fhir:short [ fhir:v "Textual reason for the current status of dispensation" ] ;
+       fhir:definition [ fhir:v "Textual reason for the current status of dispensation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Element"^^xsd:anyURI ] ;
+         fhir:profile ( [
+           fhir:v "https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST"^^xsd:anyURI ;
+           fhir:link <https://profiles.ihe.net/Domain/LogicalDatatypes/StructureDefinition/ST>
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,148 @@
+﻿IHE_MPD : Validation Results
+=========================================
+
+err = 6, warn = 69, info = 0
+IG Publisher Version: 1.3.26
+Generated Thu Aug 03 13:36:41 UTC 2023. FHIR version 5.0.0 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+ Build Errors : 0 / 6 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AD : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ANY : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BL : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CD : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Class : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CommonPrescription : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderProduct : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DT : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EN : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-INT : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationIHEMM : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseHMW : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderHMW : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderIHEMM : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderIHEPWP : 0 / 9 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PQ : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceHMW : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEMM : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEPWP : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PrescribedProductModel1 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-QT : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-REAL : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RTO : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ST : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TS : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Untyped : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-eHDSIePrescription : 6 / 4 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ihe.pharm.mpd
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/eHDSIePrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CommonPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
+WARNING: ImplementationGuide/ihe.mpd: ImplementationGuide.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-AD.json ==
+WARNING: StructureDefinition/AD: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/AD'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ANY.json ==
+WARNING: StructureDefinition/ANY: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ANY'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-BL.json ==
+WARNING: StructureDefinition/BL: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/BL'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-CD.json ==
+WARNING: StructureDefinition/CD: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CD'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-Class.json ==
+WARNING: StructureDefinition/Class: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Class'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-CommonPrescription.json ==
+WARNING: StructureDefinition/CommonPrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-CrossBorderProduct.json ==
+WARNING: StructureDefinition/CrossBorderProduct: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-DT.json ==
+WARNING: StructureDefinition/DT: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/DT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-EN.json ==
+WARNING: StructureDefinition/EN: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/EN'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-II.json ==
+WARNING: StructureDefinition/II: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/II'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-INT.json ==
+WARNING: StructureDefinition/INT: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/INT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW.json ==
+WARNING: StructureDefinition/MedicationAdministrationHMW: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationAdministrationIHEMM.json ==
+WARNING: StructureDefinition/MedicationAdministrationIHEMM: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationDispenseHMW.json ==
+WARNING: StructureDefinition/MedicationDispenseHMW: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM.json ==
+WARNING: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP.json ==
+WARNING: StructureDefinition/MedicationDispenseIHEPWP: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationOrderHMW.json ==
+WARNING: StructureDefinition/MedicationOrderHMW: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationOrderIHEMM.json ==
+WARNING: StructureDefinition/MedicationOrderIHEMM: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicationOrderIHEPWP.json ==
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace ' Prescription Item ID '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[13].short: value should not start or finish with whitespace 'Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[15]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[18]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace ' Prescription Item ID '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace 'Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals '
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[12]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[15]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+== fsh-generated/resources/StructureDefinition-PQ.json ==
+WARNING: StructureDefinition/PQ: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PQ'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceHMW.json ==
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.snapshot.element[13]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.snapshot.element[17]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.differential.element[13]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+WARNING: StructureDefinition/PharmaceuticalAdviceHMW: StructureDefinition.differential.element[17]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEMM.json ==
+WARNING: StructureDefinition/PharmaceuticalAdviceIHEMM: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PharmaceuticalAdviceIHEPWP.json ==
+WARNING: StructureDefinition/PharmaceuticalAdviceIHEPWP: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-PrescribedProductModel1.json ==
+WARNING: StructureDefinition/PrescribedProductModel1: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-QT.json ==
+WARNING: StructureDefinition/QT: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/QT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-REAL.json ==
+WARNING: StructureDefinition/REAL: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/REAL'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-RTO.json ==
+WARNING: StructureDefinition/RTO: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/RTO'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ST.json ==
+WARNING: StructureDefinition/ST: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ST'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-TS.json ==
+WARNING: StructureDefinition/TS: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/TS'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-Untyped.json ==
+WARNING: StructureDefinition/Untyped: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Untyped'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-eHDSIePrescription.json ==
+WARNING: StructureDefinition/eHDSIePrescription: StructureDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition/eHDSIePrescription: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.snapshot.element[13].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.snapshot.element[34].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.snapshot.element[36].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+WARNING: StructureDefinition/eHDSIePrescription: StructureDefinition.snapshot.element[68]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.differential.element[5].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.differential.element[15].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+ERROR: StructureDefinition/eHDSIePrescription: StructureDefinition.differential.element[17].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0)
+WARNING: StructureDefinition/eHDSIePrescription: StructureDefinition.differential.element[35]: Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed

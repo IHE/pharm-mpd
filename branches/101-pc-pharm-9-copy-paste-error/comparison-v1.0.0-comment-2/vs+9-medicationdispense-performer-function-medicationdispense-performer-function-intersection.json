@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "081d3a68-7f9e-4777-9faa-2317d8ca3b83-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/081d3a68-7f9e-4777-9faa-2317d8ca3b83-24",
+  "name" : "IntersectionMedicationDispensePerformerFunctionCodesAndMedicationDispensePerformerFunctionCodes",
+  "title" : "Intersection of MedicationDispense Performer Function Codes And MedicationDispense Performer Function Codes",
+  "status" : "draft",
+  "date" : "2026-04-22T16:10:30+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}

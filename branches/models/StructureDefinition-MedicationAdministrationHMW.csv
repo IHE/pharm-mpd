@@ -1,0 +1,35 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicationAdministrationHMW","MedicationAdministrationHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for administration","[HMW] Logical Model for administration","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationAdministrationHMW.identifier","MedicationAdministrationHMW.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Administration","The business identifier(s) for the medication Administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.identifier",0,*,"",""
+"MedicationAdministrationHMW.status","MedicationAdministrationHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the medication administration","Status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.status",1,1,"",""
+"MedicationAdministrationHMW.statusReason","MedicationAdministrationHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason supporting the status of the medication administration","Reason supporting the status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.statusReason",0,*,"",""
+"MedicationAdministrationHMW.product[x]","MedicationAdministrationHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What was administered","What was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.product[x]",1,1,"",""
+"MedicationAdministrationHMW.subject","MedicationAdministrationHMW.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","Who received medication","Who received medication","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.subject",1,1,"",""
+"MedicationAdministrationHMW.encounter","MedicationAdministrationHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter administered as part of","Encounter administered as part of","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.encounter",0,1,"",""
+"MedicationAdministrationHMW.occurence[x]","MedicationAdministrationHMW.occurence[x]","","","",1,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Start and end time of administration","Start and end time of administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.occurence[x]",1,1,"",""
+"MedicationAdministrationHMW.recorded","MedicationAdministrationHMW.recorded","","","",0,1,"","","","dateTime {[]} {[]}
+","When the Medication administration was first captured in the subject's record","When the Medication administration was first captured in the subject's record","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.recorded",0,1,"",""
+"MedicationAdministrationHMW.performer","MedicationAdministrationHMW.performer","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Who performed the medication administration and what they did","Who performed the medication administration and what they did","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.performer",0,*,"",""
+"MedicationAdministrationHMW.reason[x]","MedicationAdministrationHMW.reason[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport]]}","Information that supports why the medication was administered","Information that supports why the medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reason[x]",0,*,"",""
+"MedicationAdministrationHMW.prescription","MedicationAdministrationHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+","Prescription for which the administration was performed against","Prescription for which the administration was performed against","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.prescription",0,1,"",""
+"MedicationAdministrationHMW.device","MedicationAdministrationHMW.device","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
+","Device used to administer","Device used to administer","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.device",0,*,"",""
+"MedicationAdministrationHMW.note","MedicationAdministrationHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Further information about the administration","Further information about the administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.note",0,*,"",""
+"MedicationAdministrationHMW.dosage","MedicationAdministrationHMW.dosage","","","",0,1,"","","","Dosage {[]} {[]}
+","Details of how medication was administered","Details of how medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.dosage",0,1,"",""
+"MedicationAdministrationHMW.location","MedicationAdministrationHMW.location","","","",0,1,"","","","string {[]} {[]}
+","Where the administration was performed","Where the administration was performed","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.location",0,1,"",""
+"MedicationAdministrationHMW.reaction","MedicationAdministrationHMW.reaction","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reaction",0,1,"",""

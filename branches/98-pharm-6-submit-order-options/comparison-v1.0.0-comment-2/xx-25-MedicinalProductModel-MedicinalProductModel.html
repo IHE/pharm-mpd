@@ -1,0 +1,13 @@
+<html lang="en"><body>
+<div id="smart-ci-build-banner" style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffda6a;padding:.5rem 1rem;font-size:.9rem;"><p style="margin:0;">CI build for version <strong>1.0.0-comment-3</strong>. <br/><span  style="font-size:.85em;">Built from commit <a href="https://github.com/IHE/pharm-mpd/commit/fe10af7952c1c133bf1855ae4d77e136a28f87de"><code>fe10af79</code></a>. &nbsp; Branch: <a href="https://github.com/IHE/pharm-mpd/tree/98-pharm-6-submit-order-options"><code>98-pharm-6-submit-order-options</code></a>.</span></p></div>
+<pre>org.hl7.fhir.exceptions.DefinitionException: StructureDefinition is not for an profile - can't be compared (left: MedicinalProductModel)
+	at org.hl7.fhir.services.comparison.StructureDefinitionComparer.check(StructureDefinitionComparer.java:183)
+	at org.hl7.fhir.services.comparison.StructureDefinitionComparer.compare(StructureDefinitionComparer.java:112)
+	at org.hl7.fhir.services.comparison.ComparisonSession.compare(ComparisonSession.java:93)
+	at org.hl7.fhir.igtools.publisher.comparators.PreviousVersionComparator.finishChecks(PreviousVersionComparator.java:269)
+	at org.hl7.fhir.igtools.publisher.PublisherProcessor.checkConformanceResources(PublisherProcessor.java:1516)
+	at org.hl7.fhir.igtools.publisher.PublisherProcessor.loadConformance2(PublisherProcessor.java:109)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:397)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:226)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1623)
+</pre></body></html>

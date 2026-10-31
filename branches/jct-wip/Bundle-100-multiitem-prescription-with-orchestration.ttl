@@ -1,0 +1,397 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Bundle/100-multiitem-prescription-with-orchestration> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "100-multiitem-prescription-with-orchestration"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://example.com/RequestOrchestration/100-RequestOrchestration"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/RequestOrchestration/100-RequestOrchestration> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/MedicationRequest/100-3-medication-prescription-request1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/MedicationRequest/100-3-medication-prescription-request1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/MedicationRequest/100-3-medication-prescription-request2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/MedicationRequest/100-3-medication-prescription-request2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/MedicationRequest/100-3-medication-prescription-request3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/MedicationRequest/100-3-medication-prescription-request3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/PractitionerRole/doctor1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/PractitionerRole/doctor1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/Patient/patient1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/Patient/patient1> )
+  ] ) . # 
+
+<https://example.com/RequestOrchestration/100-RequestOrchestration> a fhir:RequestOrchestration ;
+  fhir:id [ fhir:v "100-RequestOrchestration"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestOrchestration_100-RequestOrchestration\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestOrchestration 100-RequestOrchestration</b></p><a name=\"100-RequestOrchestration\"> </a><a name=\"hc100-RequestOrchestration\"> </a><a name=\"100-RequestOrchestration-en-US\"> </a><p><b>identifier</b>: <code>http://example.com/requestorchestration</code>/prescr1</p><p><b>groupIdentifier</b>: <code>http://example.com/prescriptions</code>/100</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>subject</b>: <code>Patient1</code></p><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-100-3-medication-prescription-request1.html\">MedicationRequest: identifier = 100-1/3; groupIdentifier = 100; status = active; intent = order; authoredOn = 2024-10-03</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 3</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-100-3-medication-prescription-request2.html\">MedicationRequest: identifier = 100-2/3; groupIdentifier = 100; status = active; intent = order; authoredOn = 2024-10-03</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>3</blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 1</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><blockquote><p><b>relatedAction</b></p><p><b>targetId</b>: 2</p><p><b>relationship</b>: Concurrent With Start</p></blockquote><p><b>resource</b>: <a href=\"MedicationRequest-100-3-medication-prescription-request1.html\">MedicationRequest: identifier = 100-1/3; groupIdentifier = 100; status = active; intent = order; authoredOn = 2024-10-03</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.com/requestorchestration"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "prescr1" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "http://example.com/prescriptions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "Patient1" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:id [ fhir:v "1" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "2" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "3" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/100-3-medication-prescription-request1> ;
+       fhir:reference [ fhir:v "MedicationRequest/100-3-medication-prescription-request1" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "2" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "1" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "3" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/100-3-medication-prescription-request2> ;
+       fhir:reference [ fhir:v "MedicationRequest/100-3-medication-prescription-request2" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "3" ] ;
+     fhir:relatedAction ( [
+       fhir:targetId [ fhir:v "1" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] [
+       fhir:targetId [ fhir:v "2" ] ;
+       fhir:relationship [ fhir:v "concurrent-with-start" ]
+     ] ) ;
+     fhir:resource [
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/MedicationRequest/100-3-medication-prescription-request1> ;
+       fhir:reference [ fhir:v "MedicationRequest/100-3-medication-prescription-request1" ]
+     ]
+  ] ) . # 
+
+<https://example.com/MedicationRequest/100-3-medication-prescription-request1> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "100-3-medication-prescription-request1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_100-3-medication-prescription-request1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 100-3-medication-prescription-request1</b></p><a name=\"100-3-medication-prescription-request1\"> </a><a name=\"hc100-3-medication-prescription-request1\"> </a><a name=\"100-3-medication-prescription-request1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationPrescription.html\">IHE Medication Prescription</a></p></div><p><b>identifier</b>: 100-1/3</p><p><b>groupIdentifier</b>: 100</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 376255008}\">Thalidomide 50 mg oral capsule</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-patient1.html\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-03</p><p><b>requester</b>: <a href=\"PractitionerRole-doctor1.html\">PractitionerRole Clinical oncologist</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 109989006}\">Multiple myeloma</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Late Evening, Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>4 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-03 --&gt; 2024-12-03</td><td>1</td><td>168 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "100-1/3" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "100" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:376255008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "376255008" ] ;
+         fhir:display [ fhir:v "Thalidomide 50 mg oral capsule" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Patient/patient1> ;
+     fhir:reference [ fhir:v "Patient/patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-03"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/PractitionerRole/doctor1> ;
+     fhir:reference [ fhir:v "PractitionerRole/doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:109989006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "109989006" ] ;
+         fhir:display [ fhir:v "Multiple myeloma" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "42"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ] ;
+         fhir:when ( [ fhir:v "EVE.late" ] )
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "732936001" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-03"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-03"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "168"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Tablet" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "732936001" ]
+     ]
+  ] . # 
+
+<https://example.com/MedicationRequest/100-3-medication-prescription-request2> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "100-3-medication-prescription-request2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_100-3-medication-prescription-request2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 100-3-medication-prescription-request2</b></p><a name=\"100-3-medication-prescription-request2\"> </a><a name=\"hc100-3-medication-prescription-request2\"> </a><a name=\"100-3-medication-prescription-request2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationPrescription.html\">IHE Medication Prescription</a></p></div><p><b>identifier</b>: 100-2/3</p><p><b>groupIdentifier</b>: 100</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 326766003}\">Melphalan 2 mg oral tablet</span></td></tr></table><p><b>subject</b>: <code>Patient1</code></p><p><b>authoredOn</b>: 2024-10-03</p><p><b>requester</b>: <code>Doctor1</code></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 109989006}\">Multiple myeloma</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>4 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-03 --&gt; 2024-12-03</td><td>1</td><td>16 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "100-2/3" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "100" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:326766003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "326766003" ] ;
+         fhir:display [ fhir:v "Melphalan 2 mg oral tablet" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "Patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-03"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:reference [ fhir:v "Doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:109989006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "109989006" ] ;
+         fhir:display [ fhir:v "Multiple myeloma" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "732936001" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-03"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-03"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "16"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Tablet" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "732936001" ]
+     ]
+  ] . # 
+
+<https://example.com/MedicationRequest/100-3-medication-prescription-request3> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "100-3-medication-prescription-request3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription"^^xsd:anyURI ;
+       fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/IHEMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_100-3-medication-prescription-request3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 100-3-medication-prescription-request3</b></p><a name=\"100-3-medication-prescription-request3\"> </a><a name=\"hc100-3-medication-prescription-request3\"> </a><a name=\"100-3-medication-prescription-request3-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHEMedicationPrescription.html\">IHE Medication Prescription</a></p></div><p><b>identifier</b>: 100-3/3</p><p><b>groupIdentifier</b>: 100</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 374072009}\">Prednisone 50 mg oral tablet</span></td></tr></table><p><b>subject</b>: <code>Patient1</code></p><p><b>authoredOn</b>: 2024-10-03</p><p><b>requester</b>: <code>Doctor1</code></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 109989006}\">Multiple myeloma</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>3 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-10-03 --&gt; 2024-12-03</td><td>1</td><td>12 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "100-3/3" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:value [ fhir:v "100" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:374072009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "374072009" ] ;
+         fhir:display [ fhir:v "Prednisone 50 mg oral tablet" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "Patient1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-10-03"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:reference [ fhir:v "Doctor1" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:coding ( [
+         a sct:109989006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "109989006" ] ;
+         fhir:display [ fhir:v "Multiple myeloma" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "732936001" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2024-10-03"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-12-03"^^xsd:date ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Tablet" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "732936001" ]
+     ]
+  ] . # 
+
+<https://example.com/PractitionerRole/doctor1> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "doctor1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_doctor1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole doctor1</b></p><a name=\"doctor1\"> </a><a name=\"hcdoctor1\"> </a><a name=\"doctor1-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-practitioner1.html\">Dr Meryl Ärztin</a></p><p><b>organization</b>: <a href=\"Organization-organization1.html\">Dr Ärztin Private Practice</a></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 309295000}\">Clinical oncologist</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Practitioner/practitioner1> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner1" ] ;
+     fhir:display [ fhir:v "Dr Meryl Ärztin" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/Organization/organization1> ;
+     fhir:reference [ fhir:v "Organization/organization1" ] ;
+     fhir:display [ fhir:v "Dr Ärztin Private Practice" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       a sct:309295000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "309295000" ] ;
+       fhir:display [ fhir:v "Clinical oncologist" ]
+     ] )
+  ] ) . # 
+
+<https://example.com/Patient/patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient1</b></p><a name=\"patient1\"> </a><a name=\"hcpatient1\"> </a><a name=\"patient1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Engine" ] ;
+     fhir:given ( [ fhir:v "Thomas" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1950-09-15"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "688c826b-0909-43b7-8542-5cca9c19e04e-35",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/688c826b-0909-43b7-8542-5cca9c19e04e-35",
+  "name" : "UnionMedicationRequestAdministrationLocationCodesAndMedicationRequestAdministrationLocationCodes",
+  "title" : "Union of medicationRequest Administration Location Codes And medicationRequest Administration Location Codes",
+  "status" : "draft",
+  "date" : "2026-10-31T22:44:17+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }]
+}

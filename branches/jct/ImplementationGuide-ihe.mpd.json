@@ -1,0 +1,816 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ihe.mpd",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IHE_MPD</h2><p>The official URL for this implementation guide is: </p><pre>http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd</pre><div><p>ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery</p>\n</div></div>"
+  },
+  "url" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd",
+  "version" : "0.1.0",
+  "name" : "IHE_MPD",
+  "title" : "Medication Prescription and Delivery (MPD)",
+  "status" : "active",
+  "date" : "2024-04-07T18:26:49+00:00",
+  "publisher" : "Integrating the Healthcare Enterprise (IHE)",
+  "contact" : [{
+    "name" : "Integrating the Healthcare Enterprise (IHE)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://ihe.net"
+    },
+    {
+      "system" : "email",
+      "value" : "secretary@ihe.net"
+    }]
+  },
+  {
+    "name" : "Jose Costa Teixeira",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "jose.a.teixeira@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "IHE http://www.ihe.net/Governance/#Intellectual_Property",
+  "packageId" : "ihe.pharm.mpd",
+  "license" : "CC-BY-SA-4.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "ihe_domain_logical_datatypes",
+    "uri" : "https://profiles.ihe.net/Domain/LogicalDatatypes/ImplementationGuide/ihe.domain.logical-datatypes",
+    "packageId" : "ihe.domain.logical-datatypes",
+    "version" : "current"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/01A-Cefuroxime1500GenericExplicit"
+      },
+      "name" : "01A-Cefuroxime1500GenericExplicit",
+      "description" : "1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by attributes.",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/01B-Cefuroxime1500GenericConcept"
+      },
+      "name" : "01B-Cefuroxime1500GenericConcept",
+      "description" : "1B. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by a code system (receiving system is expected to have access to the code system for additional attributes or display names).",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/01C-Cefuroxime1500Branded"
+      },
+      "name" : "01C-Cefuroxime1500Branded",
+      "description" : "1C. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Branded packaged product, defined by attributes.",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/02A-ClotrimazoleCanifugCremolum"
+      },
+      "name" : "02A-ClotrimazoleCanifugCremolum",
+      "description" : "2A. Clotrimazole cream 10mg/g and 6 pessaries 100g. Branded packaged product, consisting of different medication items. Defined by attributes.",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/02A1-CanifugCremolumCreamItem"
+      },
+      "name" : "02A1-CanifugCremolumCreamItem",
+      "description" : "Clotrimazole cream (10mg/g, 1 tube of 20g) as part of Canifug Cremolum product (ISO IDMP manufactured item)",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/02A2-CanifugCremolumPessaryItem"
+      },
+      "name" : "02A2-CanifugCremolumPessaryItem",
+      "description" : "Clotrimazole pessary (6 pessaries of 100mg) as part of Canifug Cremolum product (ISO IDMP manufactured item)",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/03B-VitaminBComplexBranded"
+      },
+      "name" : "03B-VitaminBComplexBranded",
+      "description" : "3B. Milgamma N, B-vitamin complex. Branded packaged product, defined by attributes.",
+      "isExample" : true,
+      "profile" : ["http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Classification"
+      },
+      "name" : "Classification",
+      "description" : "Medication classification/category. Allows the product to be classified by various systems, e.g ATC, narcotic class, legal status of supply, etc.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DosagingInformation"
+      },
+      "name" : "Dosaging - Data Model",
+      "description" : "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IHEMedicationPrescription"
+      },
+      "name" : "IHE Medication Prescription",
+      "description" : "IHE Medication Prescription profile",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IHEMedicationDispensation"
+      },
+      "name" : "IHEMedicationDispensation",
+      "description" : "MedicationDispense profile for capturing dispensation information based on a medication prescription.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ihe-ext-medication-classification"
+      },
+      "name" : "Medication Classification",
+      "description" : "Classification.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationDispensation"
+      },
+      "name" : "Medication dispensation - Data Model",
+      "description" : "Logical model for medication dispensation (based on request or independently)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ihe-ext-medication-packsize"
+      },
+      "name" : "Medication Package Size",
+      "description" : "Package size of a product.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ihe-ext-medication-productname"
+      },
+      "name" : "Medication Package Size",
+      "description" : "Classification.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationPrescription"
+      },
+      "name" : "Medication prescription - Data Model",
+      "description" : "Logical model for medication prescription (or some other form of order)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ihe-ext-medicationrequest-totalamount"
+      },
+      "name" : "MedicationRequest - Total Amount",
+      "description" : "Total amount of product being requested.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicinalProduct"
+      },
+      "name" : "Medicinal product",
+      "description" : "Medication for clinical use cases. This could be a branded product or a generic concept, also allowing describing pack size and components of complex products.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicinalProductLM"
+      },
+      "name" : "Medicinal product",
+      "description" : "Medication information. The model is shared by statements, requests, dispensations, and treatment lines. Each of those may have different restrictions in FHIR profile.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicinalProductDevice"
+      },
+      "name" : "MedicinalProductDevice",
+      "description" : "Device, typically an administration device, included in the medicinal product.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicinalProductName"
+      },
+      "name" : "MedicinalProductName",
+      "description" : "Name of the medicinal product. Optionally the type of name (Full official name, prescribing name, invented name) and language of the name can be specified. The extension is a simplified approach of what is used in MedicinalProductDefinition resource.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PatientBasic"
+      },
+      "name" : "Patient - Data Model",
+      "description" : "Basic patient data relevant for this use case",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PractitionerBasic"
+      },
+      "name" : "Practitioner - Data Model",
+      "description" : "Basic prescribing/dispensing practitioner's data relevant for this use case",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SizeOfMedicationItem"
+      },
+      "name" : "SizeOfMedicationItem",
+      "description" : "Size of a manufactured item or unit of presentation. For example, size of one vial in a package that may contain several vials.",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "MPD Home",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "volume-1.html",
+        "name" : "volume-1.html",
+        "title" : "Volume 1",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "glossary.html",
+          "name" : "glossary.html",
+          "title" : "Glossary",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "usecases.html",
+          "name" : "usecases.html",
+          "title" : "Use Cases",
+          "generation" : "markdown",
+          "page" : [{
+            "sourceUrl" : "presc-use-case1.html",
+            "name" : "presc-use-case1.html",
+            "title" : "Use Case 1: Order straight to dispense",
+            "generation" : "markdown"
+          },
+          {
+            "sourceUrl" : "presc-use-case-2.html",
+            "name" : "presc-use-case-2.html",
+            "title" : "Use Case 2: Proposal order",
+            "generation" : "markdown"
+          },
+          {
+            "sourceUrl" : "MMA-homenursing.html",
+            "name" : "MMA-homenursing.html",
+            "title" : "Mobile Medication Administration - Home Nursing",
+            "generation" : "markdown"
+          },
+          {
+            "sourceUrl" : "MMA-chemotherapy.html",
+            "name" : "MMA-chemotherapy.html",
+            "title" : "Mobile Medication Administration - Chemotherapy",
+            "generation" : "markdown"
+          }]
+        },
+        {
+          "sourceUrl" : "medication-concepts.html",
+          "name" : "medication-concepts.html",
+          "title" : "Medication Concepts",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "order-management.html",
+          "name" : "order-management.html",
+          "title" : "Order Management",
+          "generation" : "markdown",
+          "page" : [{
+            "sourceUrl" : "prescription-lines.html",
+            "name" : "prescription-lines.html",
+            "title" : "Single- and multiline prescriptions",
+            "generation" : "markdown"
+          },
+          {
+            "sourceUrl" : "order-statuses.html",
+            "name" : "order-statuses.html",
+            "title" : "Managing order status",
+            "generation" : "markdown"
+          }]
+        },
+        {
+          "sourceUrl" : "interoperability-model.html",
+          "name" : "interoperability-model.html",
+          "title" : "Interoperability Model",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "data-models.html",
+          "name" : "data-models.html",
+          "title" : "Data Models",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "actors-transactions.html",
+          "name" : "actors-transactions.html",
+          "title" : "Actors and Transactions Overview",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "security.html",
+          "name" : "security.html",
+          "title" : "Security Considerations",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "cross-profile.html",
+          "name" : "cross-profile.html",
+          "title" : "Cross-profile Considerations",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "volume-2.html",
+        "name" : "volume-2.html",
+        "title" : "Volume 2",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "submit-medication-order.html",
+          "name" : "submit-medication-order.html",
+          "title" : "PHARM-X1: Submit Medication Order",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "retrieve-medication-order.html",
+          "name" : "retrieve-medication-order.html",
+          "title" : "PHARM-X2: Retrieve Medication Orders",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "submit-medication-dispense.html",
+          "name" : "submit-medication-dispense.html",
+          "title" : "PHARM-X3: Submit Medication Dispense",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "retrieve-medication-dispense.html",
+          "name" : "retrieve-medication-dispense.html",
+          "title" : "PHARM-X4: Retrieve Medication Dispenses",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "error_codes.html",
+          "name" : "error_codes.html",
+          "title" : "Error Codes",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "testplan.html",
+          "name" : "testplan.html",
+          "title" : "Test Plan",
+          "generation" : "markdown"
+        }]
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2021+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/pagecontent"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "fsh-generated/includes"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "usage-stats-opt-out"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

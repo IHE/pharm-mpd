@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="pharm6-notification-multi-line"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationBundle"/>
+  </meta>
+  <type value="subscription-notification"/>
+  <timestamp value="2026-10-22T10:05:00+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:4f7c1e2a-6b0d-4c4e-9d61-0a1f2b3c4d02"/>
+    <resource>
+      <SubscriptionStatus>
+        <id value="pharm6-status-multi-line"/>
+        <meta>
+          <profile value="https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrderNotificationStatus"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="SubscriptionStatus_pharm6-status-multi-line"> </a><p class="res-header-id"><b>Generated Narrative: SubscriptionStatus pharm6-status-multi-line</b></p><a name="pharm6-status-multi-line"> </a><a name="hcpharm6-status-multi-line"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-IHEMedicationOrderNotificationStatus.html">Medication Order Notification Status</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: Event Notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><h3>NotificationEvents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>EventNumber</b></td><td><b>Timestamp</b></td><td><b>Focus</b></td><td><b>AdditionalContext</b></td></tr><tr><td style="display: none">*</td><td>2</td><td>2026-10-22 10:05:00+0200</td><td><a href="Bundle-pharm6-notification-multi-line.html#http-//example.org/fhir/MedicationRequest/200-2-medication-prescription-request1">MedicationRequest: identifier = 200-1/2; groupIdentifier = 200; status = active; intent = order; authoredOn = 2024-10-06</a></td><td><a href="Bundle-pharm6-notification-multi-line.html#http-//example.org/fhir/MedicationRequest/200-2-medication-prescription-request2">MedicationRequest: identifier = 200-2/2; groupIdentifier = 200; status = active; intent = order; authoredOn = 2024-10-06</a></td></tr></table><p><b>subscription</b>: Identifier: <code>http://example.org/order-subscriptions</code>/pharmacy-orders</p></div>
+        </text>
+        <status value="active"/>
+        <type value="event-notification"/>
+        <eventsSinceSubscriptionStart value="2"/>
+        <notificationEvent>
+          <eventNumber value="2"/>
+          <timestamp value="2026-10-22T10:05:00+02:00"/>
+          <focus>
+            <reference value="http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1"/>
+          </focus>
+          <additionalContext>
+            <reference value="http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2"/>
+          </additionalContext>
+        </notificationEvent>
+        <subscription>
+          <identifier>
+            <system value="http://example.org/order-subscriptions"/>
+            <value value="pharmacy-orders"/>
+          </identifier>
+        </subscription>
+      </SubscriptionStatus>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request1"/>
+    <resource>
+      <MedicationRequest>
+        <id value="200-2-medication-prescription-request1"/>
+        <meta>
+          <profile value="https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_200-2-medication-prescription-request1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 200-2-medication-prescription-request1</b></p><a name="200-2-medication-prescription-request1"> </a><a name="hc200-2-medication-prescription-request1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-IHEMedicationOrder.html">IHE Medication Order</a></p></div><p><b>identifier</b>: 200-1/2</p><p><b>groupIdentifier</b>: 200</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 324821004}">Valacyclovir (as valacyclovir hydrochloride) 500 mg oral tablet</span></td></tr></table><p><b>subject</b>: <a href="Patient-patient1.html">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href="PractitionerRole-doctor1.html">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</a></p><h3>Reasons</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 407451003}">Herpes simplex type 1 infection</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 Tablet<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style="display: none">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>10 Tablet<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <value value="200-1/2"/>
+        </identifier>
+        <groupIdentifier>
+          <value value="200"/>
+        </groupIdentifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <medication>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="324821004"/>
+              <display value="Valacyclovir (as valacyclovir hydrochloride) 500 mg oral tablet"/>
+            </coding>
+          </concept>
+        </medication>
+        <subject>
+          <reference value="Patient/patient1"/>
+        </subject>
+        <authoredOn value="2024-10-06"/>
+        <requester>
+          <reference value="PractitionerRole/doctor1"/>
+        </requester>
+        <reason>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="407451003"/>
+              <display value="Herpes simplex type 1 infection"/>
+            </coding>
+          </concept>
+        </reason>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="5"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+              </boundsDuration>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://snomed.info/sct"/>
+              <code value="732936001"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <dispenseRequest>
+          <validityPeriod>
+            <start value="2024-10-06"/>
+            <end value="2024-12-06"/>
+          </validityPeriod>
+          <numberOfRepeatsAllowed value="1"/>
+          <quantity>
+            <value value="10"/>
+            <unit value="Tablet"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="732936001"/>
+          </quantity>
+        </dispenseRequest>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/MedicationRequest/200-2-medication-prescription-request2"/>
+    <resource>
+      <MedicationRequest>
+        <id value="200-2-medication-prescription-request2"/>
+        <meta>
+          <profile value="https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_200-2-medication-prescription-request2"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 200-2-medication-prescription-request2</b></p><a name="200-2-medication-prescription-request2"> </a><a name="hc200-2-medication-prescription-request2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-IHEMedicationOrder.html">IHE Medication Order</a></p></div><p><b>identifier</b>: 200-2/2</p><p><b>groupIdentifier</b>: 200</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 374647008}">Amoxicillin 875 mg oral tablet</span></td></tr></table><p><b>subject</b>: <a href="Patient-patient1.html">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</a></p><p><b>authoredOn</b>: 2024-10-06</p><p><b>requester</b>: <a href="PractitionerRole-doctor1.html">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</a></p><h3>Reasons</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 88348008}">Maxillary sinusitis</span></td></tr></table><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 Tablet<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style="display: none">*</td><td>2024-10-06 --&gt; 2024-12-06</td><td>1</td><td>14 Tablet<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code732936001 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <value value="200-2/2"/>
+        </identifier>
+        <groupIdentifier>
+          <value value="200"/>
+        </groupIdentifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <medication>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="374647008"/>
+              <display value="Amoxicillin 875 mg oral tablet"/>
+            </coding>
+          </concept>
+        </medication>
+        <subject>
+          <reference value="Patient/patient1"/>
+        </subject>
+        <authoredOn value="2024-10-06"/>
+        <requester>
+          <reference value="PractitionerRole/doctor1"/>
+        </requester>
+        <reason>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="88348008"/>
+              <display value="Maxillary sinusitis"/>
+            </coding>
+          </concept>
+        </reason>
+        <dosageInstruction>
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="7"/>
+                <unit value="day"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+              </boundsDuration>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://snomed.info/sct"/>
+              <code value="732936001"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <dispenseRequest>
+          <validityPeriod>
+            <start value="2024-10-06"/>
+            <end value="2024-12-06"/>
+          </validityPeriod>
+          <numberOfRepeatsAllowed value="1"/>
+          <quantity>
+            <value value="14"/>
+            <unit value="Tablet"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="732936001"/>
+          </quantity>
+        </dispenseRequest>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Patient/patient1"/>
+    <resource>
+      <Patient>
+        <id value="patient1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient1"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient1</b></p><a name="patient1"> </a><a name="hcpatient1"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Thomas Engine  Male, DoB: 1950-09-15 ( 12345)</p><hr/></div>
+        </text>
+        <identifier>
+          <value value="12345"/>
+        </identifier>
+        <name>
+          <family value="Engine"/>
+          <given value="Thomas"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1950-09-15"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/PractitionerRole/doctor1"/>
+    <resource>
+      <PractitionerRole>
+        <id value="doctor1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_doctor1"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole doctor1</b></p><a name="doctor1"> </a><a name="hcdoctor1"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Dr Meryl Ärztin: Clinical oncologist at Dr Ärztin Private Practice</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="The practitioner who is able to provide the services in this role">Practitioner:</td><td colspan="3"><a href="Practitioner-practitioner1.html">Dr Meryl Ärztin</a></td></tr><tr><td style="background-color: #f3f5da" title="The organization where the practitioner performs the roles">Organization:</td><td colspan="3"><a href="Organization-organization1.html">Dr Ärztin Private Practice</a></td></tr><tr><td style="background-color: #f3f5da" title="Roles which this practitioner is authorized to perform for the organization">Role:</td><td colspan="3"><span title="Codes:{http://snomed.info/sct 309295000}">Clinical oncologist</span></td></tr></table></div>
+        </text>
+        <practitioner>
+          <reference value="Practitioner/practitioner1"/>
+          <display value="Dr Meryl Ärztin"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/organization1"/>
+          <display value="Dr Ärztin Private Practice"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="309295000"/>
+            <display value="Clinical oncologist"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+</Bundle>
