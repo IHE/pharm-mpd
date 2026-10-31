@@ -29,7 +29,7 @@ For Dispense, a similar approach is taken:
 | Medication Dispense Responder | PHARM-9 | Responder        | R               | PHARM MPD TF-2: 3.Y1 |
 {: .grid}
 
-Note 1: The transaction [PHARM-6](pharm-6.html) for submitting an order uses the MedicationRequest. IHE Recognizes that in common cases, the request also includes other resources, so in future editions we expect to prepare a new transaction for submitting medication orders. This current specification only provides the transaction using MedicationRequest.
+Note 1: The transaction [PHARM-6](pharm-6.html) for submitting an order can send a single `MedicationRequest` (Single Order Option) or a Bundle with the order(s) and the resources needed to act on them (Order Bundle Option). See [Actor Options](actors-options.html).
 
 
 

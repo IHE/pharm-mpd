@@ -30,14 +30,17 @@ Usage: #definition
 * format[+] = #application/fhir+json
 * rest
   * mode = #server
-  * documentation = "The Order Receiver allows Order Placers to send the orders..."
+  * documentation = "The Order Receiver accepts orders from Order Placers in [PHARM-6]. With the Order Bundle Option it exposes a notification endpoint that accepts a Medication Order Notification Bundle (POST, responds 200 or 202). With the Single Order Option it supports create and update of MedicationRequest."
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
     * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
-    // * interaction[0]
-    //   * code = #update
-    //   * documentation = "conditional update for [PHARM-104]"
+    * interaction[0]
+      * code = #create
+      * documentation = "[PHARM-6] Single Order Option: receive a new order"
+    * interaction[+]
+      * code = #update
+      * documentation = "[PHARM-6] Single Order Option: receive an update or cancellation of an order"
     // * interaction[+]
     //   * code = #delete
     //   * documentation = "conditional delete for [PHARM-104] for Remove Patient Option"

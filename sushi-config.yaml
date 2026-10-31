@@ -96,6 +96,8 @@ pages:
       title: "Data Models" 
     actors-transactions.md: # Finish it MR on monday
       title: "Actors and Transactions Overview"
+    actors-options.md:
+      title: "Actor Options"
 #    security.md: # Copy from somewhere MR
 #      title: "Security Considerations"   
 #    cross-profile.md: # Add some narrative to say "this is empty for now" JCT
@@ -144,6 +146,7 @@ menu:
 #    "Interoperability Model": interoperability-model.html
     "Data Models": data-models.html
     "Actor and Transactions Overview": actors-transactions.html
+    "Actor Options": actors-options.html
 #    "Security Considerations": security.html
 #    "Cross-profile Considerations": cross-profile.html
   Volume 2:
