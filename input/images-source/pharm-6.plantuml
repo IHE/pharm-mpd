@@ -13,8 +13,13 @@ activate OP
 activate OF
 
 OP -[hidden]> OF
-OP -> OF: \t[[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]
-OP <-- OF: \t(response)\t
+alt Order Bundle Option
+  OP -> OF: \tPOST [[StructureDefinition-IHEMedicationOrderNotificationBundle.html{Medication Order Notification Bundle} Order Notification Bundle]]\n\t(new or updated orders)
+  OP <-- OF: \t200 OK / 202 Accepted\t
+else Single Order Option
+  OP -> OF: \tPOST /MedicationRequest [[StructureDefinition-IHEMedicationOrder.html{Medication Order} Medication Order]]\n\tor PUT /MedicationRequest/[id] (update)
+  OP <-- OF: \t201 Created / 200 OK (+ MedicationRequest)\t
+end
 OP -[hidden]> OF
 
 deactivate OP

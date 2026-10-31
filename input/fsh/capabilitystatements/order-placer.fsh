@@ -31,16 +31,17 @@ Usage: #definition
 * format[+] = #application/fhir+json
 * rest
   * mode = #client
-  * documentation = "The Order Placer is the producer of Orders or Medication Orders."
+  * documentation = "The Order Placer is the producer of Orders or Medication Orders. In [PHARM-6], with the Order Bundle Option it POSTs a Medication Order Notification Bundle to the Receiver's notification endpoint; with the Single Order Option it creates and updates MedicationRequest resources on the Receiver."
   * security.description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource
     * type = #MedicationRequest
     * supportedProfile = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/IHEMedicationOrder"
-/// NOT adding interactions here yet
-    // * interaction[0]
-    //   * code = #create
-    // * interaction[+]
-    //   * code = #update
+    * interaction[0]
+      * code = #create
+      * documentation = "[PHARM-6] Single Order Option: submit a new order"
+    * interaction[+]
+      * code = #update
+      * documentation = "[PHARM-6] Single Order Option: update or cancel an order previously sent by this Placer"
     // * interaction[+]
     //   * code = #delete
     //   * documentation = "conditional delete for [PHARM-104] for Remove Patient Option"
